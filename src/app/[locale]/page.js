@@ -13,13 +13,13 @@ import {useTranslations} from 'next-intl';
 import useLanguageDirection from "@/i18n/useLanguageDirection";
 export default function Home() {
   const t = useTranslations();
-  useLanguageDirection();
+  // useLanguageDirection();
   return (
     <div className="w-full overflow-x-hidden">
       <div className="w-full h-full bg-[#3040614]">
         <Banner />
       </div>
-      {/* <h1 className="text-white text-2xl ">{t('hi')}</h1> */}
+      <h1 className="text-white text-2xl ">{t("HomePage.title")}</h1>
       <TypesOfAccounts />
       <div className="w-full px-8 mt-[80px] h-[100vh] max-sm:mt-[10px] ">
         <div className="flex flex-col justify-center items-center text-white">

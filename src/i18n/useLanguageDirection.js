@@ -7,7 +7,7 @@ const useLanguageDirection = () => {
   const lang = pathname.split("/")[1];  
 
   useEffect(() => {
-    document.documentElement.dir = lang === "en" ? "rtl" : "ltr";
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   }, [lang]);
 };
 

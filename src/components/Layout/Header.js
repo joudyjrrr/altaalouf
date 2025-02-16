@@ -13,10 +13,10 @@ import { IoIosArrowDown, IoMdClose, IoMdMenu } from "react-icons/io";
 import { Link } from "@/i18n/routing";
 import { useRouter, usePathname } from "next/navigation";
 const Lang = [
-  {flag : kr , lang: "de"},
-  {flag : fr , lang: "en"},
+  {flag : kr , lang: "kr"},
+  {flag : fr , lang: "fr"},
   {flag : uk , lang: "en"},
-  {flag : iraq , lang: "en"},
+  {flag : iraq , lang: "ar"},
 
 
 ]
@@ -131,6 +131,7 @@ const LanguageSwitcher = ({ className }) => {
     pathSegments[0] = lang; 
   
     router.replace(`/${pathSegments.join("/")}`);
+ 
   };
 
   return (
