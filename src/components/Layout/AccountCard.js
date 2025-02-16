@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
 const AccountCard = ({ img, dataArr }) => {
+  const t = useTranslations()
   return (
     <div
       className="accounts-types-container w-fit mx-auto rounded-[40px] px-4 pt-0 pb-4 
@@ -25,7 +27,7 @@ const AccountCard = ({ img, dataArr }) => {
                 index !== array.length - 1 ? "border-b border-gray-50" : ""
               }`}
             >
-              <p>{value}</p>
+              <p className="text-center">{t(value)}</p>
             </div>
           ))}
         </div>

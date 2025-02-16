@@ -13,17 +13,17 @@ import {useTranslations} from 'next-intl';
 import useLanguageDirection from "@/i18n/useLanguageDirection";
 export default function Home() {
   const t = useTranslations();
-  // useLanguageDirection();
+  useLanguageDirection();
   return (
     <div className="w-full overflow-x-hidden">
       <div className="w-full h-full bg-[#3040614]">
         <Banner />
       </div>
-      <h1 className="text-white text-2xl ">{t("trading")}</h1>
+  
       <TypesOfAccounts />
       <div className="w-full px-8 mt-[80px] h-[100vh] max-sm:mt-[10px] ">
         <div className="flex flex-col justify-center items-center text-white">
-          <Title className={`mb-8`} title={` حمل الان`} />
+          <Title className={`mb-8`} title={t("downloadNow")} />
           <div className="flex gap-8 mt-8">
             <Button variant="red">cTrader</Button>
             <Button variant="red">MT5</Button>
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center w-full h-full gap-4 mt-8 ">
             <h1 className="mb-2 text-[2.5rem]">INZO MT5</h1>
-            <p className="text-[1rem]">ميتاتريدر 5 لنظام ويندوز</p>
+            <p className="text-[1rem]">{t("metatraderWindows")}</p>
             <Link
               href={``}
               className="max-w-[150px] my-0 mx-auto rounded-[6px]"
@@ -54,7 +54,8 @@ export default function Home() {
                 className="img-soial"
               />
             </Link>
-            <p className="text-[1rem]">ميتاتريدر 5 لنظام الحاسب Mac</p>
+            <p className="text-[1rem]">{t("metatraderMac")}</p>
+            
             <Link
               href={``}
               className="max-w-[150px] my-0 mx-auto rounded-[6px]"
@@ -67,7 +68,7 @@ export default function Home() {
                 className="img-soial"
               />
             </Link>
-            <p className="text-[1rem]"> ميتاتريدر 5 لنظام الاندرويد و iOS</p>
+            <p className="text-[1rem]">{t("metatraderAndroidIOS")}</p>
             <div className="flex">
               <Link
                 href={``}
@@ -101,21 +102,10 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center text-white">
           <Title
             className={`mb-8 max-sm:text-2xl mt-[100px]  max-sm:mt-[10px]`}
-            title={`Straight through processing (STP)`}
+            title={t("stpTitle")}
           />
           <h2 className="text-4xl text-start max-sm:text-xl leading-[2.7rem]">
-            وهو نظام تعتمده الشركات التي توجه تداولات العملاء لمجموعة من مزودي
-            السيولة ويعمل هذا النظام وفق ادوات لا يتم استخدامها من قبل مزود منصة
-            التداول بل من خلال طرف ثالث يعمل على ربط مجموعة من مزودي السيولة
-            بنظام يسمى ال (Aggregation) حيث يعمل هذا النظام على تنقية الأسعار
-            المُستلمة من مزودي السيولة والحصول على افضل سعر للشراء وافضل سعر
-            للبيع حيث يمكن ان يكون سعر الشراء من مزود سيولة X على سبيل المثال
-            وسعر البيع من مزود سيولة Y وتفضل الشركات هذا النظام للحصول على افضل
-            فروقات سعرية لتوفيرها لعملائها حيث يوفر هذا النظام فروقات سعرية تصل
-            الى (– 3 ) وتعتمد شركة انزو هذا النظام من خلال نظام ال (Aggregation)
-            الذي توفره شركة OneZero وشركة Centroid وهي شركات برمجية (طرف ثالث )
-            تعمل على توفير حلول ربط التداولات بين منصة التداول التي توفرها شركة
-            الوساطة ومزودي السيولة
+          {t("stpDescription")}
           </h2>
         </div>
       </div>

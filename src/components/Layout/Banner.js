@@ -5,25 +5,35 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useTranslations } from "next-intl";
 const Slider = [
   {
-    title: "بونص الإيداع ",
-    num: "30%",
-    desc: "قم بإيداع الأموال في حسابك واحصل على ٪30 بونص على إيداعك",
+    title: "accountStandard9",
+    desc: "carouselCaption4",
+    key_desc: "WELCOME_BOUNES_PERCENTAGE",
+    num_esc: "30"
+    // desc: "قم بإيداع الأموال في حسابك واحصل على ٪30 بونص على إيداعك",
   },
   {
-    title: "تداول مثل الأسطورة",
-    desc: " تداول بأكثر من 400 أداة عالمية من العملات الأجنبية والأسهم والمعادن والسلع مع  ",
-    span2: "INZO انزو",
+    title: "carouselCaption1",
+    desc: "carouselCaption2",
+    key_desc: "TRADING_TOOLS:20",
+
+    // desc: " تداول بأكثر من 400 أداة عالمية من العملات الأجنبية والأسهم والمعادن والسلع مع  ",
+    // span2: "INZO انزو",
   },
   {
-    title: "بونص ترحيبي ",
+    title: "carouselCaption5",
     num: "30$",
-    desc: "قم بإيداع الأموال في حسابك واحصل على ٪30 بونص على إيداعك",
+    desc: "carouselCaption6",
+    key_desc: "WELCOME_BOUNES : 20",
+
+    // desc: "قم بإيداع الأموال في حسابك واحصل على ٪30 بونص على إيداعك",
   },
 ];
 
 const Banner = () => {
+  const t = useTranslations()
   return (
     <div className="w-full pt-4 bg-banner h-[100vh] bg-cover bg-center bg-no-repeat  mt-[80px] z-[100]">
       {/* <div className="w-full h-full absolute top-0 end-0 bg-[rgb(15,33,71)] opacity-[0.6]"></div> */}
@@ -47,25 +57,22 @@ const Banner = () => {
               <SwiperSlide key={index}>
                 <div
                   className="relative flex flex-col items-center text-center p-4 !bg-[#00000038] rounded-lg 
-                        shadow-lg border !border-gray-400"
+            shadow-lg border !border-gray-400"
                 >
                   <div className="flex gap-2 items-center  text-7xl max-lg:text-5xl max-xs:text-[20px]">
                     <h2 className=" font-extrabold mb-3 ">
-                      {slide.title}
+                      {t(slide.title)}
                     </h2>
-                    {slide.num && (
-                      <span className="text-white  font-[700]  ">
-                        {slide.num}
-                      </span>
-                    )}
+                    <h2 className=" font-[900] mb-3 ">
+                      {slide.title === "carouselCaption1" && t("carouselCaptionSpecial")}
+                    </h2>
                   </div>
                   <div className="flex gap-2 items-center font-semibold text-2xl max-lg:text-lg max-xs:text-sm">
-                    <p className="mb-5">{slide.desc}</p>
-                    {slide.span2 && (
-                      <span className="">
-                        {slide.span2}
-                      </span>
-                    )}
+                    <p className="mb-5">
+                      {t(slide.desc, {
+                        WELCOME_BOUNES_PERCENTAGE:  30,
+                      })}
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>

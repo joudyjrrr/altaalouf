@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { logo, kr, fr, uk, iraq } from "../../../public/images"
+import { logo, kr, fr, uk, iraq  , pl} from "../../../public/images"
 import { Button } from "../ui/button";
-
+import { routing } from '../../i18n/routing';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,29 +12,55 @@ import {
 import { IoIosArrowDown, IoMdClose, IoMdMenu } from "react-icons/io";
 import { Link } from "@/i18n/routing";
 import { useRouter, usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 const Lang = [
-  {flag : kr , lang: "kr"},
-  {flag : fr , lang: "fr"},
-  {flag : uk , lang: "en"},
-  {flag : iraq , lang: "ar"},
-
+  { flag: kr, lang: "kr" },
+  { flag: fr, lang: "fr" },
+  { flag: uk, lang: "en" },
+  { flag: iraq, lang: "ar" },
+  { flag: pl, lang: "po" },
 
 ]
 const LINKS = [
-  { title: "الرئيسية", link: "/" },
-  { title: "شركاء النجاح", link: "/h" },
-  { title: "بوابة النسخ", link: "/" },
+  { title: "home", link: "/" },
+  { title: "sucessPartner", link: "https://www.agents-inzo.co/" },
+
+  { title: "copyPortal", link: "https://social.inzo.co/portal/login/" },
   {
-    title: "التداول",
+    title: "trading",
     link: "/",
     subLinks: [
-      { title: "التداول", link: "/h" },
-      { title: "أنواع الحسابات", link: "/accounts-types" },
+      { title: "trading", link: "/h" },
+      { title: "accountsTypes", link: "/accounts-types" },
+      { title: "market", link: "/accounts-types" },
+      { title: "cTraderAccountDeletion", link: "/accounts-types" },
+
     ],
   },
-  { title: "الشركاء", link: "/", subLinks: [] },
-  { title: "التعليم", link: "/", subLinks: [] },
-  { title: "الشركة", link: "/", subLinks: [] },
+  {
+    title: "partnerships", link: "/", subLinks: [
+      { title: "ibProgram", link: "/h" },
+      { title: "knowUs", link: "https://www.agents-inzo.co/" },
+
+
+    ],
+  },
+  {
+    title: "education", link: "/", subLinks: [
+      { title: "forexTerms", link: "/h" },
+      { title: "forexTutorial", link: "/accounts-types" },
+      { title: "economicCalendar", link: "/accounts-types" },
+
+    ],
+  },
+  {
+    title: "company", link: "/", subLinks: [
+      { title: "aboutUs", link: "/h" },
+      { title: "termsAndConditions", link: "/accounts-types" },
+      { title: "contactUs", link: "/accounts-types" },
+
+    ],
+  },
 ];
 
 const Header = () => {
@@ -74,43 +100,77 @@ const Header = () => {
 
 export default Header;
 
-const NavLinks = ({ links, className = "" }) => (
-  <div className={`md:flex gap-12 max-lg:gap-4 max-lg:text-lg items-center ${className}`}>
-    {links.map((li) =>
-      li.subLinks?.length > 0 ? (
-        <DropdownMenu key={li.title}>
-          <DropdownMenuTrigger asChild>
-            <Button
-              variant="outline"
-              className="border-none bg-transparent !text-xl flex items-center gap-1 max-lg:!text-sm"
-            >
-              {li.title} <IoIosArrowDown className="text-2xl mt-2 " />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="text-white !text-xl !bg-secondary  ">
-            {li.subLinks.map((sub) => (
-              <Link
-                key={sub.link}
-                href={sub.link}
-                className="block px-4 py-2 hover:bg-gray-200 hover:text-black !text-xl max-lg:text-sm"
+const NavLinks = ({ links, className = "" }) => {
+  const t = useTranslations();
+  return (
+    <div className={`md:flex gap-12 max-lg:gap-4 max-lg:text-lg items-center ${className}`}>
+      {links.map((li) =>
+        li.subLinks?.length > 0 ? (
+          <DropdownMenu key={li.title}>
+            <DropdownMenuTrigger asChild>
+              <Button
+                variant="outline"
+                className="border-none bg-transparent !text-xl flex items-center gap-1 max-lg:!text-sm"
               >
-                {sub.title}
-              </Link>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
-      ) : (
-        <Link
-          key={li.title}
-          href={li.link}
-          className="hover:text-[#de6462] text-xl max-lg:text-sm"
-        >
-          {li.title}
-        </Link>
-      )
-    )}
-  </div>
-);
+                {t(li.title)} <IoIosArrowDown className="text-2xl mt-2 " />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="text-white !text-xl !bg-secondary  ">
+              {li.subLinks.map((sub) => (
+                <Link
+                  key={sub.link}
+                  href={sub.link}
+                  className="block px-4 py-2 hover:bg-gray-200 hover:text-black !text-xl max-lg:text-sm"
+                >
+                  {t(sub.title)}
+                </Link>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ) : (
+          <Link
+            key={li.title}
+            href={li.link}
+            className="hover:text-[#de6462] text-xl max-lg:text-sm"
+          >
+            {t(li.title)}
+          </Link>
+        )
+      )}
+    </div>
+  )
+}
+const LanguageSwitcher = ({ className }) => {
+  const router = useRouter();
+  const pathname = usePathname();
+  const pathSegments = pathname.split("/").filter(Boolean);
+
+  // استخراج اللغة الحالية من الـ URL
+  const currentLang = Lang.find((l) => l.lang === pathSegments[0])?.flag || iraq;
+
+  const changeLanguage = (lang) => {
+    pathSegments[0] = lang;
+    router.replace(`/${pathSegments.join("/")}`);
+  };
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild className={`bg-transparent ${className}`}>
+        <Button variant="outline" className="border-none">
+          <Image width={30} height={30} src={currentLang} alt="Current Language Flag" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="text-black flex flex-col items-center gap-2">
+        {Lang.map((flag, idx) => (
+          <Button key={idx} onClick={() => changeLanguage(flag.lang)}>
+            <Image width={30} height={30} src={flag.flag} alt={`Flag ${flag.lang}`} />
+          </Button>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+};
+
 
 const ActionButtons = ({ className = "" }) => (
   <div className={`flex gap-2 items-center ${className}`}>
@@ -121,41 +181,4 @@ const ActionButtons = ({ className = "" }) => (
     ))}
   </div>
 );
-const LanguageSwitcher = ({ className }) => {
-  const router = useRouter();
-  const pathname = usePathname();
 
-  const changeLanguage = (lang) => {
-  
-    const pathSegments = pathname.split("/").filter(Boolean);
-    pathSegments[0] = lang; 
-  
-    router.replace(`/${pathSegments.join("/")}`);
- 
-  };
-
-  return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild className={`bg-transparent ${className}`}>
-        <Button variant="outline" className="border-none">
-          <Image width={30} height={30} src={iraq} alt="Iraq Flag" />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="text-black flex flex-col items-center gap-2">
-
-        {Lang.map((flag, idx) => (
-          <Button   key={idx} onClick={() => changeLanguage(flag.lang)}>
-            <Image
-            
-              width={30}
-              height={30}
-              src={flag.flag}
-              alt={`Flag ${idx}`}
-            />
-          </Button>
-        ))}
-
-      </DropdownMenuContent>
-    </DropdownMenu>
-  )
-}

@@ -3,84 +3,90 @@ import Title from "./Title";
 import { Button } from "../ui/button";
 import { account1, account2, account3, account4 } from "../../../public/images";
 import AccountCard from "./AccountCard";
+import { useTranslations } from "next-intl";
 
 const TypesOfAccounts = () => {
   const data = [
     {
-      1: "سبريد يبدأ من 0.8 PIP",
-      2: "تنفيذ مباشر وفق نظام STP",
-      3: "رافعة مالية تصل إلى 1:500",
-      4: "الحد الأدنى لحجم اللوت 0.01",
-      5: "الحد الأدنى للإيداع 100 دولار",
-      6: "بدون عمولات اضافية",
-      7: "حساب اسلامي خالي من عمولة التبييت",
-      8: "إمكانية الوصول الى التداول الالي",
-      9: "30% بونص على الايداع",
+
+      1: "accountInzoVip1",
+      2: "accountInzoVip2",
+      3: "accountInzoVip3",
+      4: "accountInzoVip4",
+      5: "accountInzoVip5",
+      6: "accountInzoVip6",
+      7: "accountInzoVip7",
+      8: "accountInzoVip8",
+      9: "accountInzoVip9"
     },
     {
-      1: "سبريد منخفص يبدأ من 0.0 PIP",
-      2: "تنفيذ مباشر وفق نظام STP",
-      3: "رافعة مالية تصل إلى 1:200",
-      4: "الحد الأدنى لحجم اللوت 0.01",
-      5: "الحد الأدنى للإيداع 5000 دولار",
-      6: "العمولة 8 دولار لكل 1 لوت",
-      7: "حساب اسلامي خالي من عمولة التبييت",
-      8: "إمكانية الوصول الى التداول الالي",
-      9: "لا يوجد بونص على الايداع",
+
+      1: "accountZeroStandard1",
+      2: "accountZeroStandard2",
+      3: "accountZeroStandard3",
+      4: "accountZeroStandard4",
+      5: "accountZeroStandard5",
+      6: "accountZeroStandard6",
+      7: "accountZeroStandard7",
+      8: "accountZeroStandard8",
+      9: "accountZeroStandard9",
     },
     {
-      1: "سبريد منخفص يبدأ من 0.0 PIP",
-      2: "تنفيذ مباشر وفق نظام STP",
-      3: "رافعة مالية تصل إلى 1:50",
-      4: "الحد الأدنى لحجم اللوت 0.01",
-      5: "الحد الأدنى للإيداع 50,000 دولار",
-      6: "العمولة 4 دولار لكل 1 لوت",
-      7: "اكثر من 400 اداة قابلة للتداول",
-      8: "إمكانية الوصول الى التداول الالي",
-      9: "لا يوجد بونص على الايداع",
+
+      1: "accountStandard1",
+      2: "accountStandard2",
+      3: "accountStandard3",
+      4: "accountStandard4",
+      5: "accountStandard5",
+      6: "accountStandard6",
+      7: "accountStandard7",
+      8: "accountStandard8",
+      9: "accountStandard9",
     },
     {
-      1: "سبريد منخفص يبدأ من 5.0 Point",
-      2: "تنفيذ مباشر وفق نظام STP",
-      3: "رافعة مالية تصل إلى 1:20",
-      4: "الحد الأدنى لحجم اللوت 1",
-      5: "الحد الأدنى للإيداع 500 دولار",
-      6: "بدون عمولات اضافية",
-      7: "اكثر من 250 سهم قابل للتداول",
-      8: "إمكانية الوصول الى التداول الالي",
-      9: "لا يوجد بونص على الايداع",
+
+      1: "accountStocksVip1",
+      2: "accountStocksVip2",
+      3: "accountStocksVip3",
+      4: "accountStocksVip4",
+      5: "accountStocksVip5",
+      6: "accountStocksVip6",
+      7: "accountStocksVip7",
+      8: "accountStocksVip8",
+      9: "accountStocksVip9",
+
     },
     {
-      1: "سبريد مزود السيولة الخام",
-      2: "تنفيذ مباشر وفق نظام STP",
-      3: "رافعة مالية تصل الى 1:100",
-      4: "الحد الادنى لحجم اللوت 0.01",
-      5: "الحد الادنى للايداع 50$",
-      6: "اكثر من 144 عملة رقمية قابلة للتداول",
-      7: "عمولة تبدأ من $ 0.08",
-      8: "حساب اسلامي خالي من عمولة التبييت",
+
+      1: "accountCrypto1",
+      2: "accountCrypto2",
+      3: "accountCrypto3",
+      4: "accountCrypto4",
+      5: "accountCrypto5",
+      6: "accountCrypto6",
+      7: "accountCrypto7",
+      8: "accountCrypto8",
+
     },
     {
-      1: "سبريد منخفص يبدأ من 0.0 PIP",
-      2: "تنفيذ مباشر وفق نظام STP",
-      3: "رافعة مالية تصل إلى 1:500",
-      4: "الحد الأدنى لحجم اللوت 0.01",
-      5: "الحد الأدنى للإيداع 50 دولار",
-      6: "عمولة تبدأ من $ 0.08",
-      7: "حساب اسلامي خالي من عمولة التبييت",
-      8: "إمكانية الوصول الى التداول الالي",
-      9: "لا يوجد بونص على الايداع",
-      10: "اكثر من 230 زوج عملة قابل للتداول",
+      1: "accountStandard1",
+      2: "accountStandard2",
+      3: "accountStandard3",
+      4: "accountStandard4",
+      5: "accountStandard5",
+      6: "accountStandard6",
+      7: "accountStandard7",
+      8: "accountStandard8",
+      9: "accountStandard9",
     },
   ];
-
-  // console.log(data[0]);
+  const t = useTranslations()  // console.log(data[0]);
   return (
     <div className="w-full px-8 mt-[100px]   max-sm:mt-[10px]">
       <div className="flex flex-col justify-center  items-center text-white">
-        <Title className={`mb-8`} title={`أنواع حسابات INZO انزو الحقيقية`} />
+        <Title className={`mb-8`} title={t("accountsTypesTitle")} />
         <h2 className="text-[25px] text-center ">
-          تقدم INZO انزو عدة أنواع من الحسابات المناسبة لبيئات التداول المختلفة
+          {t("accountsTypesDescription")}
         </h2>
         <div className="flex gap-8 mt-8">
           <Button variant="red">cTrader</Button>

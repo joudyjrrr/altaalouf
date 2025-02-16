@@ -31,13 +31,16 @@ import logo from "./inzo-logo.png";
 import kr from "./kr-flag.webp";
 import fr from "./fr-flag.webp";
 import uk from "./uk-flag.webp";
-import iraq from "./iraq-flag.webp";
+import iraq from "./iraq-flag2.webp";
+import pl from "./pl-flag.webp";
+
 import account1 from "./انزو-في-اي-بي.png";
 import account2 from "./زيرو.png";
 import account3 from "./ستاندارد.png";
 import account4 from "./كريبتو.png";
 
 export {
+  pl,
   account1,
   account2,
   account3,
