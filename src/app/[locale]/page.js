@@ -1,16 +1,47 @@
-"use client"
+"use client";
 import Banner from "@/components/Layout/Banner";
 import Header from "@/components/Layout/Header";
 import Title from "@/components/Layout/Title";
-import TypesOfAccounts from "@/components/Layout/TypesOfAccounts";
 import { Button } from "@/components/ui/button";
-import { downloadApps, downloadwindows, googleplay, appstore, downloadmac } from "../../../public/images"
-import Image from "next/image";
+import { Ethereum, BNB, Bitocin, shiba } from "../../../public/images";
 import Link from "next/link";
-import WhyInzo from "@/components/Layout/WhyInzo";
-import DepositMethod from "@/components/Layout/DepositMethod";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 import useLanguageDirection from "@/i18n/useLanguageDirection";
+import { IoMdArrowDropup } from "react-icons/io";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import Image from "next/image";
+const cryptoData = [
+  {
+    name: "Bitcoin (BTC)",
+    price: "$46,755.00",
+    change: "+7.45%",
+    icon: Bitocin,
+  },
+  {
+    name: "Ethereum (ETH)",
+    price: "$2,308.64",
+    change: "+5.33%",
+    icon: Ethereum,
+  },
+  { name: "BNB (BNB)", price: "$298.75", change: "+1.35%", icon: BNB },
+  { name: "Shiba Inu (SHIB)", price: "$0.0594", change: "+7.4%", icon: shiba },
+  {
+    name: "Bitcoin (BTC)",
+    price: "$46,755.00",
+    change: "+7.45%",
+    icon: Bitocin,
+  },
+  {
+    name: "Ethereum (ETH)",
+    price: "$2,308.64",
+    change: "+5.33%",
+    icon: Ethereum,
+  },
+];
+
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
@@ -18,99 +49,50 @@ export default function Home() {
     <div className="w-full overflow-x-hidden">
       <div className="w-full h-full bg-[#3040614]">
         <Banner />
-      </div>
-  
-      <TypesOfAccounts />
-      <div className="w-full px-8 mt-[80px] h-[100vh] max-sm:mt-[10px] ">
-        <div className="flex flex-col justify-center items-center text-white">
-          <Title className={`mb-8`} title={t("downloadNow")} />
-          <div className="flex gap-8 mt-8">
-            <Button variant="red">cTrader</Button>
-            <Button variant="red">MT5</Button>
-          </div>
-        </div>
-        <div className="flex justify-between w-full text-white px-32 max-lg:px-16 max-sm:px-4 max-sm:flex-col max-sm:items-center max-sm:justify-center mx-auto">
-          <div className="w-full">
-            <Image
-              alt=""
-              src={downloadApps}
-              width={`100%`}
-              height={``}
-              className="max-w-[500px] max-sm:max-w-[300px] mx-auto"
-            />
-          </div>
-          <div className="flex flex-col items-center w-full h-full gap-4 mt-8 ">
-            <h1 className="mb-2 text-[2.5rem]">INZO MT5</h1>
-            <p className="text-[1rem]">{t("metatraderWindows")}</p>
-            <Link
-              href={``}
-              className="max-w-[150px] my-0 mx-auto rounded-[6px]"
-            >
-              <Image
-                alt=""
-                src={downloadwindows}
-                width={`100%`}
-                height={``}
-                className="img-soial"
-              />
-            </Link>
-            <p className="text-[1rem]">{t("metatraderMac")}</p>
-            
-            <Link
-              href={``}
-              className="max-w-[150px] my-0 mx-auto rounded-[6px]"
-            >
-              <Image
-                alt=""
-                src={downloadmac}
-                width={`100%`}
-                height={``}
-                className="img-soial"
-              />
-            </Link>
-            <p className="text-[1rem]">{t("metatraderAndroidIOS")}</p>
-            <div className="flex">
-              <Link
-                href={``}
-                className="max-w-[150px] my-0 mx-auto rounded-[6px]"
-              >
-                <Image
-                  alt=""
-                  src={googleplay}
-                  width={`100%`}
-                  height={``}
-                  className="img-soial"
-                />
-              </Link>
-              <Link
-                href={``}
-                className="max-w-[150px] my-0 mx-auto rounded-[6px]"
-              >
-                <Image
-                  src={appstore}
-                  alt=""
-                  width={`100%`}
-                  height={``}
-                  className="img-soial"
-                />
-              </Link>
-            </div>
-          </div>
+        <div className="w-full bg-[#0D0D2B] pb-3">
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={20}
+            slidesPerView={3}
+            autoplay={{ delay: 3000 }}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 4 },
+            }}
+            className="px-6"
+          >
+            {cryptoData.map((crypto, index) => (
+              <SwiperSlide key={index}>
+                <div className="button-border  rounded-xl">
+                  <div className="p-6 bg-card_bakgound  rounded-xl text-white flex flex-col items-center">
+                    <div className="w-full flex gap-4">
+                      <Image
+                        src={crypto.icon}
+                        alt={crypto.name}
+                        width={70}
+                        height={70}
+                      />
+                      <div className="w-full flex flex-col ">
+                        <h3 className="text-xl font-semibold mt-2">
+                          {crypto.name}
+                        </h3>
+                        <p className="text-xl font-medium mt-1 flex items-center">
+                          {crypto.price}{" "}
+                          <IoMdArrowDropup className="text-[#14FF38] mt-3" />
+                          <span className="text-[#14FF38] font-medium mt-1  ">
+                            {crypto.change}
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
-      <div className="w-full px-8 mt-[80px]  max-sm:mt-[10px]">
-        <div className="flex flex-col justify-center items-center text-white">
-          <Title
-            className={`mb-8 max-sm:text-2xl mt-[100px]  max-sm:mt-[10px]`}
-            title={t("stpTitle")}
-          />
-          <h2 className="text-4xl text-start max-sm:text-xl leading-[2.7rem]">
-          {t("stpDescription")}
-          </h2>
-        </div>
-      </div>
-      <WhyInzo />
-      <DepositMethod />
     </div>
   );
 }

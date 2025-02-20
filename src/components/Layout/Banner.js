@@ -6,12 +6,22 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useTranslations } from "next-intl";
+import { Button } from "../ui/button";
+import {
+  FaCaretRight,
+  FaFacebookF,
+  FaInstagram,
+  FaTelegramPlane,
+  FaYoutube,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import VerticalSotial from "./VerticalSotial";
 const Slider = [
   {
     title: "accountStandard9",
     desc: "carouselCaption4",
     key_desc: "WELCOME_BOUNES_PERCENTAGE",
-    num_esc: "30"
+    num_esc: "30",
     // desc: "قم بإيداع الأموال في حسابك واحصل على ٪30 بونص على إيداعك",
   },
   {
@@ -33,52 +43,36 @@ const Slider = [
 ];
 
 const Banner = () => {
-  const t = useTranslations()
+  const t = useTranslations();
   return (
-    <div className="w-full pt-4 bg-banner h-[100vh] bg-cover bg-center bg-no-repeat  mt-[80px] z-[100]">
-      {/* <div className="w-full h-full absolute top-0 end-0 bg-[rgb(15,33,71)] opacity-[0.6]"></div> */}
-
-      <div className="flex flex-col justify-end items-end h-full text-white relative z-[100]">
-        {/* <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 justify-center items-center z-[100]">
-          <Button className="!bg-[#177522] text-white rounded-lg text-xl p-4">النسخ</Button>
-          <Button className="!bg-[#751817] text-white rounded-lg text-xl p-4">فتح حساب تداول حقيقي</Button>
-          <Button className="!bg-[#11295e] text-white rounded-lg text-xl p-4">فتح حساب تداول تجريبي</Button>
-          <Button className="!bg-[#9d5d27] text-white rounded-lg text-xl p-4">P2P</Button>
-        </div> */}
-        <div className="w-full text-white pb-24 max-lg:px-4 max-xs:!pb-32">
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 7000 }}
-            // loop
-            className="w-full max-w-4xl"
-          >
-            {Slider.map((slide, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="relative flex flex-col items-center text-center p-4 !bg-[#00000038] rounded-lg 
-            shadow-lg border !border-gray-400"
-                >
-                  <div className="flex gap-2 items-center  text-7xl max-lg:text-5xl max-xs:text-[20px]">
-                    <h2 className=" font-extrabold mb-3 ">
-                      {t(slide.title)}
-                    </h2>
-                    <h2 className=" font-[900] mb-3 ">
-                      {slide.title === "carouselCaption1" && t("carouselCaptionSpecial")}
-                    </h2>
-                  </div>
-                  <div className="flex gap-2 items-center font-semibold text-2xl max-lg:text-lg max-xs:text-sm">
-                    <p className="mb-5">
-                      {t(slide.desc, {
-                        WELCOME_BOUNES_PERCENTAGE:  30,
-                      })}
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+    <div className="w-full pt-4 bg-banner h-[100vh]  bg-cover bg-center bg-no-repeat   z-[100]">
+      <div className="flex justify-between relative w-full  mt-[70px]">
+        <div className="w-full flex justify-start text-white pt-20  px-16 max-lg:px-4 max-xs:!pb-32">
+          <div className="flex flex-col gap-4 ">
+            <h1 className="text-7xl font-extrabold">Trade Like a </h1>
+            <h1 className="text-7xl font-extrabold text-secondary">Legend</h1>
+            <div>
+              <p className="text-2xl">
+                Trade over 400 Global Instruments from FX,
+              </p>
+              <p className="text-2xl">
+                {" "}
+                Metals Shares, and Indices with{" "}
+                <span className="font-semibold">INZO</span>.
+              </p>
+            </div>
+            <div className="flex gap-4 items-center">
+              <Button className="bg-main_button">
+                Open Real Account
+                <FaCaretRight />
+              </Button>
+              <Button className="button-border">
+                Open Demo Account <FaCaretRight />
+              </Button>
+            </div>
+          </div>
         </div>
+        <VerticalSotial />
       </div>
     </div>
   );

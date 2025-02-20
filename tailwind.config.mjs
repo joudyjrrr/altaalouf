@@ -25,7 +25,7 @@ export default {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#040614",
+          DEFAULT: "#00C0FF",
           foreground: "hsl(var(--secondary-foreground))",
         },
         muted: {
@@ -57,8 +57,14 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        banner: "url('/images/banner-copy.webp')",
-        main_gradian: "linear-gradient(to bottom, #040614, #0a1f44)",
+        banner: "url('/images/banner.png')",
+        main_button: "linear-gradient(90deg, #084196 0%, #00C0FF 100%)",
+        header_gradiant:
+          "linear-gradient(180deg, #08142E 34.01%, rgba(8, 20, 46, 0) 100%)",
+        border_gradiant: " linear-gradient(90deg, #084398, #00befd)",
+        star_background:
+          "linear-gradient(60deg, rgba(15,33,71,0.7) 88%, rgba(0,192,255,1) 100%), url('/images/start.jpg')",
+        card_bakgound:"linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)"
       },
       fontFamily: {
         moharram: ["Ah Moharram Bold", "sans-serif"],
@@ -66,9 +72,10 @@ export default {
       screens: {
         xl: "1800px",
         lg: "1400px",
-        xs:"500px"
-      }
+        xs: "500px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
 };
+// linear-gradient(60deg, rgba(15,33,71,0.5) 88%, rgba(0,192,255,1) 100%)

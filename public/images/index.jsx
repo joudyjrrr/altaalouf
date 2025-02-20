@@ -1,7 +1,6 @@
 import asia from "./asia.png";
 import bit from "./bit.png";
 import bank from "./bank.png";
-import Ethereum from "./Ethereum.png";
 import perfect from "./perfect.png";
 import payeer from "./payeer.png";
 import p2p from "./p2p.png";
@@ -14,12 +13,7 @@ import downloadwindows from "./download-windows.png";
 import downloadmac from "./download-mac.png";
 import googleplay from "./google-play.png";
 import appstore from "./app-store.png";
-import why1 from "./1.png";
-import why2 from "./2.png";
-import why3 from "./3.png";
-import why4 from "./4.png";
-import why5 from "./5.png";
-import why6 from "./6.png";
+
 import contact1 from "./contact-us-1.webp";
 import contact2 from "./contact-us-2.webp";
 import contact3 from "./contact-us-3.webp";
@@ -39,8 +33,24 @@ import account2 from "./زيرو.png";
 import account3 from "./ستاندارد.png";
 import account4 from "./كريبتو.png";
 
+
+import banner from "./banner.png"
+import star from "./start.jpg"
+import BNB from "./BNB.svg"
+import Ethereum from "./Ethereum.svg"
+import Bitocin from "./Bitocin.svg"
+import shiba from "./shiba-inu-shib-logo 1.svg"
+
+
+
 export {
   pl,
+  BNB,
+  banner,
+  Bitocin,
+  shiba,
+  Ethereum,
+  star,
   account1,
   account2,
   account3,
@@ -49,8 +59,7 @@ export {
   kr,
   fr,
   uk,
-  why1,
-  logo,
+  why1,  logo,
   social1,
   social2,
   social3,
@@ -58,15 +67,10 @@ export {
   contact1,
   contact2,
   contact3,
-  why2,
-  why3,
-  why4,
-  why5,
-  why6,
+ 
   asia,
   bit,
   bank,
-  Ethereum,
   perfect,
   payeer,
   p2p,
