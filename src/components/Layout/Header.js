@@ -123,7 +123,7 @@ const Header = () => {
            className="w-full mt-8 flex justify-between"
            
          >
-           <div className="grid grid-cols-2 w-full gap-8 justify-start items-start text-white">
+           <div className="grid grid-cols-2 w-full  justify-start items-start text-white">
              {LINKS.map((li, index) => (
                <div key={index} className="flex flex-col gap-3 w-fit">
                  <Link href={li.link} className="text-white text-3xl font- w-fit">
@@ -142,48 +142,6 @@ const Header = () => {
 
 export default Header;
 
-const NavLinks = ({ links, className = "" }) => {
-  const t = useTranslations();
-  return (
-    <div
-      className={`md:flex gap-12 max-lg:gap-4 max-lg:text-lg items-center ${className}`}
-    >
-      {links.map((li) =>
-        li.subLinks?.length > 0 ? (
-          <DropdownMenu key={li.title}>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                className="border-none bg-transparent !text-xl flex items-center gap-1 max-lg:!text-sm"
-              >
-                {t(li.title)} <IoIosArrowDown className="text-2xl mt-2 " />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="text-white !text-xl !bg-secondary  ">
-              {li.subLinks.map((sub) => (
-                <Link
-                  key={sub.link}
-                  href={sub.link}
-                  className="block px-4 py-2 hover:bg-gray-200 hover:text-black !text-xl max-lg:text-sm"
-                >
-                  {t(sub.title)}
-                </Link>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        ) : (
-          <Link
-            key={li.title}
-            href={li.link}
-            className="hover:text-[#de6462] text-xl max-lg:text-sm"
-          >
-            {t(li.title)}
-          </Link>
-        )
-      )}
-    </div>
-  );
-};
 const LanguageSwitcher = ({ className }) => {
   const router = useRouter();
   const pathname = usePathname();
@@ -232,13 +190,3 @@ const LanguageSwitcher = ({ className }) => {
     </DropdownMenu>
   );
 };
-
-const ActionButtons = ({ className = "" }) => (
-  <div className={`flex gap-2 items-center ${className}`}>
-    {["فتح حساب تاجر p2p", "بوابة العملاء", "بوابة النسخ"].map((text) => (
-      <Button key={text} className="text-white bg-[#751817] rounded-lg shadow">
-        {text}
-      </Button>
-    ))}
-  </div>
-);

@@ -63,7 +63,7 @@ export default {
           "linear-gradient(180deg, #08142E 34.01%, rgba(8, 20, 46, 0) 100%)",
         border_gradiant: " linear-gradient(90deg, #084398, #00befd)",
         star_background:
-          "linear-gradient(60deg, rgba(15,33,71,0.7) 88%, rgba(0,192,255,1) 100%), url('/images/start.jpg')",
+          "url('/images/star2.png')",
         card_bakgound:"linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)"
       },
       fontFamily: {
