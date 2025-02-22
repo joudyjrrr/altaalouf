@@ -20,10 +20,14 @@ import award1 from "./award1.png";
 import award2 from "./award2.png";
 import award3 from "./award3.png";
 import award4 from "./award4.png";
+import arrowIcon from "./arrowIcon.svg"
+import syrcleGlass from "./syrcleGlass.svg"
 
 export {
   BNB,
   award1,
+  arrowIcon,
+  syrcleGlass,
   pl,
   award2,
   award3,

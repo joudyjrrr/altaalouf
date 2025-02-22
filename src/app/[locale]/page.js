@@ -18,7 +18,7 @@ export default function Home() {
         <Banner />
         <TeamSection />
       <AwardSection/>
-      <Banner />
+
       
         <RealAccountTypes/>
       </div>

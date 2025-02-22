@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -17,7 +17,7 @@ import {
 } from "react-icons/fa";
 import {arrowIcon, syrcleGlass} from "../../../public/images";
 
-import { FaXTwitter } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight, FaXTwitter } from "react-icons/fa6";
 
 const cryptoData = [
   {
@@ -79,6 +79,7 @@ const cryptoData = [
 ];
 
 const RealAccountTypes = () => {
+  const swiperRef = useRef(null);
   return (
     <div className="w-full bg-[#fff] pt-[100px] h-screen flex gap-[50px] relative -z-2">
     <Image
@@ -95,7 +96,7 @@ const RealAccountTypes = () => {
         INZO offer several types of accounts that are suitable for different trading environments.
         </p>
       </div>
-
+    
       <div className="w-[70%] ">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
@@ -104,7 +105,7 @@ const RealAccountTypes = () => {
           autoplay={{ delay: 3000 }}
           navigation
           pagination
-         
+         ref={swiperRef}
           className="!p-8"
         >
           {cryptoData.map((crypto, index) => (
