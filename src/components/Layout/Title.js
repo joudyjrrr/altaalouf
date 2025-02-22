@@ -1,14 +1,12 @@
 import React from "react";
-
-const Title = ({ title, className = "" }) => {
+import { Inzo } from "../../../public/images"
+import Image from "next/image";
+const Title = ({ title1, title2, className = "" }) => {
   return (
-    <h1
-      className={`text-[50px] font-semibold text-center text-white transition-all duration-300 
-      hover:bg-gradient-to-r hover:from-[#ca4246] hover:via-[#f18f43] hover:to-[#a7489b] 
-      hover:bg-clip-text hover:text-transparent max-sm:text-2xl ${className}`}
-    >
-      {title}
-    </h1>
+    <div className="relative w-full bg-transparent flex justify-center items-center text-center pt-8">
+      <Image src={Inzo} width={150} height={50} className="" alt="inzo" />
+      <div className="absolute top-[55px] flex gap-2 text-5xl font-bold">  <h1 className="text-secondary">{title1}</h1><h1 className="text-white">{title2}</h1></div>
+    </div>
   );
 };
 

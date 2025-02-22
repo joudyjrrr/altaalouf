@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { logo, kr, fr, uk, iraq, pl } from "../../../public/images";
+import { logo, kr, fr, uk, iraq } from "../../../public/images";
 import { Button } from "../ui/button";
 import { routing } from "../../i18n/routing";
 import {
@@ -22,7 +22,7 @@ const Lang = [
   { flag: fr, lang: "fr", title: "Fr" },
   { flag: uk, lang: "en", title: "En" },
   { flag: iraq, lang: "ar", title: "Ar" },
-  { flag: pl, lang: "po", title: "Pol" },
+  // { flag: pl, lang: "po", title: "Pol" },
 ];
 const menuVariants = {
   open: {

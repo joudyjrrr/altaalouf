@@ -11,14 +11,14 @@
 
 body {
   padding: 0 0;
-  background:  linear-gradient(90deg, #0F2147 34.01%, rgba(15, 33, 71, 0) 100%);
+  background: white;
  
 
   /* background: linear-gradient(to bottom, #040614 50%, #0f2147 50%); */
   font-family: "Ah Moharram Bold", sans-serif;
 }
 
-@layer base {
+@layer base { 
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -151,9 +151,32 @@ div[data-radix-popper-content-wrapper=""] {
   color: white;
   border: 1.2px solid transparent;
 }
+.button-border-transparent {
+  position: relative;
+  padding: 10px;
+  border-radius: 12px;
+}
+.button-border-transparent::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.2px;
+  border-radius: 50px; 
+  background: linear-gradient(90deg, #084398, #00befd);
+  -webkit-mask:     
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  
+}
 .star {
   
   background-image: radial-gradient(circle at top right, rgba(0, 192, 255, 0.8), transparent 30%), radial-gradient(circle at bottom right, rgba(0, 192, 255, 0.8), transparent 30%), rgba(15, 33, 71, 1);
 
 }
 /* background: linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%); */
+.curved-section {
+  position: relative;
+  clip-path: ellipse(100% 100% at 50% 0%);
+}

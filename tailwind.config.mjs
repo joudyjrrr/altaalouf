@@ -64,7 +64,16 @@ export default {
         border_gradiant: " linear-gradient(90deg, #084398, #00befd)",
         star_background:
           "url('/images/star2.png')",
-        card_bakgound:"linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)"
+          star_background2:
+          "url('/images/start.jpg')",
+        card_bakgound:"linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
+        team_gradiat:"linear-gradient(360deg, rgba(0,0,0,0.002) 0%, rgba(15,29,62,1) 35%)",
+        team_card:"url('/images/team-back.png')",
+        award_back:"url('/images/award-back.png')",
+        awarc_card_back:"linear-gradient(269deg, rgba(7, 23, 55, 0.04) 12.89%, #0BBDF5 99.15%)"
+        
+
+
       },
       fontFamily: {
         moharram: ["Ah Moharram Bold", "sans-serif"],
@@ -78,4 +87,4 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 };
-// linear-gradient(60deg, rgba(15,33,71,0.5) 88%, rgba(0,192,255,1) 100%)
+
