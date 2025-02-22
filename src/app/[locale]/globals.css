@@ -11,8 +11,7 @@
 
 body {
   padding: 0 0;
-  background:  linear-gradient(90deg, #0F2147 34.01%, rgba(15, 33, 71, 0) 100%);
- 
+  background: linear-gradient(90deg, #0f2147 34.01%, rgba(15, 33, 71, 0) 100%);
 
   /* background: linear-gradient(to bottom, #040614 50%, #0f2147 50%); */
   font-family: "Ah Moharram Bold", sans-serif;
@@ -82,21 +81,59 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.custom-shadow {
+  box-shadow: 0px 0px 50px rgba(58, 59, 59, 0.8);
+}
+
 
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 229px !important;
 }
+
+.swiper-button-prev  {
+  background: linear-gradient(180deg, #084398 20%, #00BEFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+  font-weight: 800;
+
+}
+.swiper-button-next {
+  background: linear-gradient(180deg, #00BEFD 20%, #084398  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+  font-weight: 800;
+}
+
+
 .swiper-pagination {
-  position: initial !important;
+  position: absolute !important;
 }
 .swiper-pagination-bullet {
-  background-color: white !important;
+ 
+  border: 4px solid #fff !important;
+
+  padding: 6px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: white !important;
+  /* background-color: blue !important; */
+  box-shadow: 0px 0px 0px 1.8px #5F739F;
+
+background: linear-gradient(90deg, #084398 0%, #00BEFD 100%) !important;
 }
+
+.swiper-wrapper {
+  /* width: 400px !important;
+  overflow: hidden; */
+}
+
+
+
 
 div[data-radix-popper-content-wrapper=""] {
   /* position: relative !important; */
@@ -152,8 +189,16 @@ div[data-radix-popper-content-wrapper=""] {
   border: 1.2px solid transparent;
 }
 .star {
-  
-  background-image: radial-gradient(circle at top right, rgba(0, 192, 255, 0.8), transparent 30%), radial-gradient(circle at bottom right, rgba(0, 192, 255, 0.8), transparent 30%), rgba(15, 33, 71, 1);
-
+  background-image: radial-gradient(
+      circle at top right,
+      rgba(0, 192, 255, 0.8),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 192, 255, 0.8),
+      transparent 30%
+    ),
+    rgba(15, 33, 71, 1);
 }
 /* background: linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%); */

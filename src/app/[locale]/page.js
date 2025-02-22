@@ -1,5 +1,6 @@
 "use client";
 import Banner from "@/components/Layout/Banner";
+import RealAccountTypes from "@/components/Layout/RealAccountTypes";
 import Header from "@/components/Layout/Header";
 import Title from "@/components/Layout/Title";
 import { Button } from "@/components/ui/button";
@@ -48,7 +49,8 @@ export default function Home() {
   return (
     <div className="w-full overflow-x-hidden">
       <div className="w-full h-full bg-[#3040614]">
-        <Banner />
+      <Banner />
+       { /*
         <div className="w-full bg-[#0D0D2B] pb-3">
           <Swiper
             modules={[Autoplay]}
@@ -91,8 +93,10 @@ export default function Home() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
+        <RealAccountTypes/>
       </div>
+
     </div>
   );
 }

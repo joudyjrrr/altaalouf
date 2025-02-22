@@ -62,10 +62,12 @@ export default {
         header_gradiant:
           "linear-gradient(180deg, #08142E 34.01%, rgba(8, 20, 46, 0) 100%)",
         border_gradiant: " linear-gradient(90deg, #084398, #00befd)",
-        star_background:
-          "url('/images/star2.png')",
-        card_bakgound:"linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)"
+        star_background: "url('/images/star2.png')",
+        card_bakgound:
+          "linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
+        card_Bg: "url('/images/cardBg.png')",
       },
+    
       fontFamily: {
         moharram: ["Ah Moharram Bold", "sans-serif"],
       },

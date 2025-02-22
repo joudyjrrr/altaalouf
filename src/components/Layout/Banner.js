@@ -62,7 +62,7 @@ const Banner = () => {
               </p>
             </div>
             <div className="flex gap-4 items-center">
-              <Button className="bg-main_button">
+              <Button className="bg-main_button  transition-all duration-800">
                 Open Real Account
                 <FaCaretRight />
               </Button>

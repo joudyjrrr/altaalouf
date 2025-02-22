@@ -41,9 +41,14 @@ import Ethereum from "./Ethereum.svg"
 import Bitocin from "./Bitocin.svg"
 import shiba from "./shiba-inu-shib-logo 1.svg"
 
+import arrowIcon from "./arrowIcon.svg"
+import syrcleGlass from "./syrcleGlass.svg"
+
 
 
 export {
+  syrcleGlass,
+  arrowIcon,
   pl,
   BNB,
   banner,
