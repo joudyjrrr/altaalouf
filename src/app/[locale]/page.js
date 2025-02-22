@@ -1,5 +1,7 @@
 "use client";
 import Banner from "@/components/Layout/Banner";
+import RealAccountTypes from "@/components/Layout/RealAccountTypes";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import useLanguageDirection from "@/i18n/useLanguageDirection";
   
@@ -16,7 +18,11 @@ export default function Home() {
         <Banner />
         <TeamSection />
       <AwardSection/>
+      <Banner />
+      
+        <RealAccountTypes/>
       </div>
+
     </div>
   );
 }

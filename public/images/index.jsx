@@ -24,6 +24,7 @@ import award4 from "./award4.png";
 export {
   BNB,
   award1,
+  pl,
   award2,
   award3,
   award4,
