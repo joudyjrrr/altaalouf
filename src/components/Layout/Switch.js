@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button } from '../ui/button'
 
-const Switch = () => {
+const Switch = ({}) => {
     return (
         <div className='flex button-border-transparent  my-8 w-[300px]'>
-            <Button className="bg-main_button rounded-[50px] !p-4 w-full text-lg cursor-pointer">
+            <Button className="bg-main_button rounded-[50px] !p-4 w-full text-2xl font-bold cursor-pointer">
                 MT5
             </Button>
-            <Button className="bg-transparent rounded-[50px] !p-4 w-full text-lg cursor-pointer">
+            <Button className="bg-transparent rounded-[50px] !p-4 w-full text-2xl font-bold cursor-pointer text-[#0F2147]">
                 cTrader
             </Button>
         </div>

@@ -92,9 +92,7 @@ const RealAccountTypes = () => {
     <div className=" flex-col ps-[50px] pt-8 w-[350px] bg-transparent relative z-1">
        
         <div className=" text-white bg-gray-950">dsfasdf</div>
-        <p className="leading-[50px] text-[26px] font-semibold pt-5 text-[#030613]">
-        INZO offer several types of accounts that are suitable for different trading environments.
-        </p>
+      
       </div>
     
       <div className="w-[70%] ">

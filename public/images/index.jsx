@@ -20,10 +20,16 @@ import award1 from "./award1.png";
 import award2 from "./award2.png";
 import award3 from "./award3.png";
 import award4 from "./award4.png";
-import arrowIcon from "./arrowIcon.svg"
-import syrcleGlass from "./syrcleGlass.svg"
+import arrowIcon from "./arrowIcon.svg";
+import arrowLeft from "./arrowLeft.svg";
+import arrowRight from "./arrowRight.svg";
+import cardLogo from "./cardLogo.svg";
+import syrcleGlass from "./syrcleGlass.svg";
 
 export {
+  cardLogo,
+  arrowRight,
+  arrowLeft,
   BNB,
   award1,
   arrowIcon,
