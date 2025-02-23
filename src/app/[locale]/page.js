@@ -27,8 +27,9 @@ export default function Home() {
         <LicenseSection />
 
         <WhyInzo />
-        {/* <RealAccountTypes/> */}
+        <RealAccountTypes/>
       </div>
+
     </div>
   );
 }
