@@ -18,8 +18,8 @@ const Title = ({
         alt="inzo"
       />
       <div className="absolute top-[55px] flex gap-2 text-5xl font-bold">
-        <h1 className={`text-${title1Color}`}>{title1}</h1>
-        <h1 className={`text-${title2Color}`}>{title2}</h1>
+        <h1 className={`text-secondary ${title1Color &&` text-${title1Color}`}`}>{title1}</h1>
+        <h1 className={`text-primary ${title2Color &&` text-${title2Color}`}`}>{title2}</h1>
       </div>
     </div>
   );

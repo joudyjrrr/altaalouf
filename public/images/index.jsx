@@ -43,10 +43,16 @@ import License5 from "./License5.png";
 import why1 from "./why1.png";
 import why2 from "./why2.png";
 import why3 from "./why3.png";
+import arrowLeft from "./arrowLeft.svg";
+import arrowRight from "./arrowRight.svg";
+import cardLogo from "./cardLogo.svg";
 
 export {
   BNB,
   Straight3,
+  arrowLeft,
+  arrowRight,
+  cardLogo,
   why1,
   why2,
   why3,

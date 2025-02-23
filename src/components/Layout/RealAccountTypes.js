@@ -5,24 +5,28 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import {
+  FaChevronRight,
   FaCaretRight,
-  FaFacebookF,
-  FaInstagram,
-  FaTelegramPlane,
-  FaYoutube,
+  FaArrowLeft,
+  FaArrowRight,
+  FaChevronLeft,
 } from "react-icons/fa";
-import {arrowIcon, syrcleGlass} from "../../../public/images";
-
-import { FaArrowLeft, FaArrowRight, FaXTwitter } from "react-icons/fa6";
+import {
+  arrowRight,
+  arrowLeft,
+  arrowIcon,
+  cardLogo,
+} from "../../../public/images";
+import Title from "./Title";
+import Switch from "./Switch";
 
 const cryptoData = [
   {
-    0: "Standard",
-    1: [
+    title: "Standard",
+    features: [
       "Spread From 0.8 Pip",
       "STP Execution",
       "Leverage Up to 1:500",
@@ -35,36 +39,22 @@ const cryptoData = [
     ],
   },
   {
-    0: "Standard",
-    1: [
+    title: "INZO Vip",
+    features: [
       "Spread From 0.8 Pip",
       "STP Execution",
-      "Leverage Up to 1:500",
+      "Leverage Up to 1:50",
       "Minimum Lot size 0.01",
       "Access to Automated Trading",
-      "Minimum Deposit $100",
-      "Zero Commission $0.0",
-      "Swap-Free Islamic Account",
-      "30% Deposit Bonus",
+      "Minimum Deposit $50,000",
+      "Commission $4 per 1 Lot",
+      "More than 400 instruments",
+      "No Bonus on Deposit",
     ],
   },
   {
-    0: "Standard",
-    1: [
-      "Spread From 0.8 Pip",
-      "STP Execution",
-      "Leverage Up to 1:500",
-      "Minimum Lot size 0.01",
-      "Access to Automated Trading",
-      "Minimum Deposit $100",
-      "Zero Commission $0.0",
-      "Swap-Free Islamic Account",
-      "30% Deposit Bonus",
-    ],
-  },
-  {
-    0: "Standard",
-    1: [
+    title: "Zero",
+    features: [
       "Spread From 0.8 Pip",
       "STP Execution",
       "Leverage Up to 1:500",
@@ -80,58 +70,107 @@ const cryptoData = [
 
 const RealAccountTypes = () => {
   const swiperRef = useRef(null);
+
   return (
-    <div className="w-full bg-[#fff] pt-[100px] h-screen flex gap-[50px] relative -z-2">
-    <Image
-      src={syrcleGlass}
-      alt="icon"
-      width={190}
-      height={190}
-      className="me-4 absolute -z-3 -top-[100px]"
-    />  
-    <div className=" flex-col ps-[50px] pt-8 w-[350px] bg-transparent relative z-1">
-       
-        <div className=" text-white bg-gray-950">dsfasdf</div>
-      
-      </div>
-    
-      <div className="w-[70%] ">
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination]}
-          spaceBetween={10}
-          slidesPerView={2}
-          autoplay={{ delay: 3000 }}
-          navigation
-          pagination
-         ref={swiperRef}
-          className="!p-8"
-        >
-          {cryptoData.map((crypto, index) => (
-            <SwiperSlide key={index}>
-              
-                <div className="p-6 bg-card_Bg bg-cover bg-center h-[450px] w-[350px] custom-shadow
-                 rounded-xl text-white flex flex-col items-center">
+    <div className="bg-white ps-12">
+      <Title
+        title1={`Real Accounts`}
+        title2={`Types`}
+        title1Color={"secondary"}
+        title2Color={"primary"}
+      />
+      <div className="w-full  flex  relative mt-7">
+        {/* Custom Pagination Container */}
+        <div className="flex-col gap-4 ">
+          <Switch />
+          <p className="leading-[40px] md:w-[360px] text-[24px] font-semibold pt-5 text-[#030613]">
+            INZO offer several types of accounts that are suitable for different
+            trading environments.
+          </p>
+          <div className="flex  items-center justify-between gap-x-5  pt-20 w-[200px]">
+            <button
+              onClick={() => swiperRef.current?.slidePrev()}
+              className="transform "
+            >
+              <Image
+                src={arrowLeft}
+                alt="icon"
+                width={22}
+                height={22}
+                className="me-4  "
+              />
+            </button>
+
+            <div
+              className=" transform 
+           z-10 text-black bg-white h-fit w-fit mx-auto flex justify-center"
+              id="custom-pagination"
+            ></div>
+
+            <button
+              onClick={() => swiperRef.current?.slideNext()}
+              className="  transition"
+            >
+              <Image
+                src={arrowRight}
+                alt="icon"
+                width={22}
+                height={22}
+                className="me-4  "
+              />
+            </button>
+          </div>
+        </div>
+
+        {/* Swiper Container */}
+        <div className="w-[75%] ms-22">
+          <Swiper
+            ref={swiperRef}
+            modules={[Autoplay, Pagination]}
+            spaceBetween={10}
+            slidesPerView={2}
+            autoplay={{ delay: 3000 }}
+            pagination={{
+              el: "#custom-pagination",
+              clickable: true,
+            }}
+            className="!p-8"
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+          >
+            {cryptoData.map((crypto, index) => (
+              <SwiperSlide key={index}>
+                <div
+                  className="p-6 bg-card_Bg bg-cover bg-center h-[450px] w-[350px] custom-shadow
+                 rounded-xl text-white flex flex-col items-center"
+                >
                   <div className="w-full flex gap-4">
                     <div className="w-full flex flex-col ps-5">
-                      <h3 className="text-[41px] font-bold ">
-                        {crypto[0]}
-                      </h3>
-                      <div className="mt-3">
-                      {crypto[1].map((item, index) => (
-                        <p
-                          key={index}
-                          className="text-[16.5px] font-medium mt-[.4rem] flex items-center "
-                        >
+                      <div className="flex justify-between overflow-visible max-h-[50px]">
+                        <h3 className="text-[41px] font-bold ">
+                          {crypto.title}
+                        </h3>
                         <Image
-                        src={arrowIcon}
-                        alt="icon"
-                        width={12}
-                        height={12}
-                        className="me-4"
-                      />   
-                      {item}
-                        </p>
-                      ))}
+                          src={cardLogo}
+                          alt="icon"
+                          className="w-[97px] h-[97px] relative bottom-[15px]"
+                        />
+                      </div>
+                      <div className="mt-3">
+                        {crypto.features.map((item, index) => (
+                          <p
+                            key={index}
+                            className="text-[16.5px] font-medium mt-[.4rem] flex items-center "
+                          >
+                            <Image
+                              src={arrowIcon}
+                              alt="icon"
+                              width={12}
+                              height={12}
+                              className="me-4"
+                            />
+                            {item}
+                          </p>
+                        ))}
                       </div>
                       <Button className="button-border hover:bg-main_button  p-[21px_18px] max-w-[235px] m-auto mt-4">
                         Open Demo Account <FaCaretRight />
@@ -139,10 +178,10 @@ const RealAccountTypes = () => {
                     </div>
                   </div>
                 </div>
-           
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
