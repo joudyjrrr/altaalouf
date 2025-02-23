@@ -23,11 +23,10 @@ export default function Home() {
         <TeamSection />
 
         <AwardSection />
+        <RealAccountTypes/>
         <StraightSection />
         <LicenseSection />
-
         <WhyInzo />
-        <RealAccountTypes/>
       </div>
 
     </div>
