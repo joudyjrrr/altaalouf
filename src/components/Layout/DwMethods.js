@@ -7,19 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import { FaChevronRight } from "react-icons/fa";
-import {
-  western,
-  voucherry,
-  visa,
-  transferByEx,
-  tether,
-  pmony,
-  payeer,
-  masterCard,
-  bitcoine,
-  ethereum,
-} from "../../../public/images";
+
 import Title from "./Title";
 import Switch from "./Switch";
 

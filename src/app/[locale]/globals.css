@@ -282,7 +282,7 @@ div[data-radix-popper-content-wrapper=""] {
   clip-path: ellipse(100% 100% at 50% 120%);
 }
 .License.swiper-pagination-horizontal {
-  top: 52px  !important;
+  top: 12px  !important;
 }
 .mask-gradient {
   background: #121FCF;
@@ -292,5 +292,5 @@ div[data-radix-popper-content-wrapper=""] {
   
 }
 .Why.swiper-pagination-horizontal {
-  top: 52px  !important;
+  top: 12px  !important;
 }

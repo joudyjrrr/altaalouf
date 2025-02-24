@@ -65,7 +65,7 @@ import company7 from "./copmany7.png";
 import company8 from "./copmany8.png";
 import ParthnerImg from "./ParthnerImg.png";
 
-import cardLogo from "./cardLogo.svg";
+
 
 import ethereum from "./ethereum.png";
 import bitcoine from "./bitcoine.png";
@@ -109,8 +109,8 @@ export {
   masterCard,
   bitcoine,
   ethereum,
-  BNB,
-  Straight3,
+
+
   arrowLeft,
   arrowRight,
   cardLogo,
