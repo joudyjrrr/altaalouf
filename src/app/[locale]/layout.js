@@ -10,7 +10,6 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import localFont from "next/font/local";
 import Header from '@/components/Layout/Header';
-import Footer from '@/components/Layout/Footer';
 import "./globals.css";
 export const metadata = {
   title: "Inzo",

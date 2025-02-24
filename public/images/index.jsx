@@ -1,26 +1,3 @@
-import asia from "./asia.png";
-import bit from "./bit.png";
-import bank from "./bank.png";
-import perfect from "./perfect.png";
-import payeer from "./payeer.png";
-import p2p from "./p2p.png";
-import visaMaster from "./visa-master.png";
-import tether from "./tether.png";
-import voucherry from "./voucherry.png";
-
-import downloadApps from "./download-apps.png";
-import downloadwindows from "./download-windows.png";
-import downloadmac from "./download-mac.png";
-import googleplay from "./google-play.png";
-import appstore from "./app-store.png";
-
-import contact1 from "./contact-us-1.webp";
-import contact2 from "./contact-us-2.webp";
-import contact3 from "./contact-us-3.webp";
-import social1 from "./Instagram_logo_2016.svg.webp";
-import social2 from "./youtube.svg";
-import social3 from "./twitter.svg";
-import social4 from "./facebook.svg";
 import logo from "./inzo-logo.png";
 import kr from "./kr-flag.webp";
 import fr from "./fr-flag.webp";
@@ -28,58 +5,131 @@ import uk from "./uk-flag.webp";
 import iraq from "./iraq-flag2.webp";
 import pl from "./pl-flag.webp";
 
-import account1 from "./انزو-في-اي-بي.png";
-import account2 from "./زيرو.png";
-import account3 from "./ستاندارد.png";
-import account4 from "./كريبتو.png";
-
-
-import banner from "./banner.png"
-import star from "./start.jpg"
-import BNB from "./BNB.svg"
-import Ethereum from "./Ethereum.svg"
-import Bitocin from "./Bitocin.svg"
-import shiba from "./shiba-inu-shib-logo 1.svg"
-
+import banner from "./banner.png";
+import star from "./start.jpg";
+import BNB from "./BNB.svg";
+import Ethereum from "./Ethereum.svg";
+import Bitocin from "./Bitocin.svg";
+import shiba from "./shiba-inu-shib-logo 1.svg";
+import Inzo from "./INZO.svg";
+import team1 from "./team1.png";
+import team2 from "./team2.png";
+import team3 from "./team3.png";
+import team4 from "./team4.png";
+import award1 from "./award1.png";
+import award2 from "./award2.png";
+import award3 from "./award3.png";
+import award4 from "./award4.png";
+import arrowIcon from "./arrowIcon.svg";
+import syrcleGlass from "./syrcleGlass.svg";
+import Explore from "./Explore.svg";
+import mobileInzo from "./mobileInzo.png";
+import arrwos from "./arrwos.svg";
+import android from "./android.png";
+import ios from "./ios.png";
+import mac from "./mac.png";
+import windows from "./windows.png";
+import gift from "./gift.png";
+import square_left from "./square_left.png";
+import square_rigtht from "./square_rigtht.png";
+import Straight2 from "./Straight2.png";
+import Straight1 from "./Straight1.png";
+import Straight3 from "./Straight3.png";
+import License1 from "./License1.png";
+import License2 from "./License2.png";
+import License3 from "./License3.png";
+import License4 from "./License4.png";
+import License5 from "./License5.png";
+import why1 from "./why1.png";
+import why2 from "./why2.png";
+import why3 from "./why3.png";
+import arrowLeft from "./arrowLeft.svg";
+import arrowRight from "./arrowRight.svg";
+import cardLogo from "./cardLogo.svg";
+import location_back from "./location_back.png";
+import location1 from "./location1.png";
+import location2 from "./lovation2.png";
+import location3 from "./location3.png";
+import Testimonials from "./Testimonials.png";
+import Testimonials1 from "./Testimonials1.png";
+import gold_star from "./gold_star.png";
+import coma from "./coma.png";
+import halfCircule from "./halfCircule.png";
+import company1 from "./company1.png";
+import company2 from "./copmany2.png";
+import company3 from "./copmany3.png";
+import company4 from "./copmany4.png";
+import company5 from "./copmany5.png";
+import company6 from "./copmany6.png";
+import company7 from "./copmany7.png";
+import company8 from "./copmany8.png";
+import ParthnerImg from "./ParthnerImg.png";
 
 
 export {
-  pl,
   BNB,
+  gold_star,
+  ParthnerImg,
+  company1,
+  company2,
+  company3,
+  company4,
+  company5,
+  company6,
+  company7,
+  company8,
+  halfCircule,
+  coma,
+  Testimonials1,
+  Straight3,
+  location3,
+  Testimonials,
+  location1,
+  location2,
+  location_back,
+  arrowLeft,
+  arrowRight,
+  cardLogo,
+  why1,
+  why2,
+  why3,
+  License1,
+  License2,
+  License3,
+  License4,
+  License5,
+  Straight2,
+  Straight1,
+  square_rigtht,
+  square_left,
+  gift,
+  Explore,
+  mobileInzo,
+  arrwos,
+  android,
+  mac,
+  ios,
+  windows,
+  award1,
+  arrowIcon,
+  syrcleGlass,
+  pl,
+  award2,
+  award3,
+  award4,
+  team1,
+  team2,
+  team3,
+  team4,
+  Inzo,
   banner,
   Bitocin,
   shiba,
   Ethereum,
   star,
-  account1,
-  account2,
-  account3,
-  account4,
   iraq,
   kr,
   fr,
   uk,
-  why1,  logo,
-  social1,
-  social2,
-  social3,
-  social4,
-  contact1,
-  contact2,
-  contact3,
- 
-  asia,
-  bit,
-  bank,
-  perfect,
-  payeer,
-  p2p,
-  visaMaster,
-  tether,
-  voucherry,
-  downloadApps,
-  downloadwindows,
-  downloadmac,
-  googleplay,
-  appstore,
+  logo,
 };

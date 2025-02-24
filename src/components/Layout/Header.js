@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { logo, kr, fr, uk, iraq, pl } from "../../../public/images";
+import { logo, kr, fr, uk, iraq } from "../../../public/images";
 import { Button } from "../ui/button";
 import { routing } from "../../i18n/routing";
 import {
@@ -22,7 +22,7 @@ const Lang = [
   { flag: fr, lang: "fr", title: "Fr" },
   { flag: uk, lang: "en", title: "En" },
   { flag: iraq, lang: "ar", title: "Ar" },
-  { flag: pl, lang: "po", title: "Pol" },
+  // { flag: pl, lang: "po", title: "Pol" },
 ];
 const menuVariants = {
   open: {
@@ -86,7 +86,7 @@ const Header = () => {
   const t = useTranslations()
   return (
     <div
-      className={`w-full    px-16 pt-4 fixed top-0 end-0 z-[1000] ${
+      className={`w-full    px-16 pt-4 fixed top-0 end-0 z-[3000] ${
         openMenu ? "bg-star_background pb-10" : "h-[80px] bg-header_gradiant"
       }`}
     >
