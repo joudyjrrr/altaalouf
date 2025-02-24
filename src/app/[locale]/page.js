@@ -16,6 +16,7 @@ import WhyInzo from "@/components/Layout/WhyInzo";
 import RepresentativeSection from "@/components/Layout/RepresentativeSection";
 import CompanyGlobalSection from "@/components/Layout/CompanyGlobalSection";
 import FinancialReport from "@/components/Layout/FinancialReport";
+import DwMethods from "@/components/Layout/DwMethods";
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
@@ -29,6 +30,7 @@ export default function Home() {
         <StraightSection />
         <LicenseSection />
         <WhyInzo />
+        <DwMethods />
         <RepresentativeSection/>
         <CompanyGlobalSection/>
         <FinancialReport/>

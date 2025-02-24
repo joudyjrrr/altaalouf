@@ -65,6 +65,18 @@ import company7 from "./copmany7.png";
 import company8 from "./copmany8.png";
 import ParthnerImg from "./ParthnerImg.png";
 
+import cardLogo from "./cardLogo.svg";
+
+import ethereum from "./ethereum.png";
+import bitcoine from "./bitcoine.png";
+import masterCard from "./masterCard.png";
+import payeer from "./payeer.png";
+import pmony from "./pmony.png";
+import tether from "./tether.png";
+import transferByEx from "./transferByEx.png";
+import visa from "./visa.png";
+import voucherry from "./voucherry.png";
+import western from "./western.png";
 
 export {
   BNB,
@@ -87,6 +99,18 @@ export {
   location1,
   location2,
   location_back,
+  western,
+  voucherry,
+  visa,
+  transferByEx,
+  tether,
+  pmony,
+  payeer,
+  masterCard,
+  bitcoine,
+  ethereum,
+  BNB,
+  Straight3,
   arrowLeft,
   arrowRight,
   cardLogo,

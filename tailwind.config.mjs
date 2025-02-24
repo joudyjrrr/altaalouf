@@ -91,9 +91,10 @@ export default {
         location_back: "url('/images/location_back.png')",
         Testimonial_back: "linear-gradient(174.71deg, rgba(8, 20, 46, 0) 6.18%, rgba(0, 192, 255, 0.628674) 79.61%, #00C0FF 119.12%)",
         company_global:"linear-gradient(0deg, rgba(15,33,71,1) 0%, rgba(15,33,71,0) 100%)",
-        // company_global:"linear-gradient(190deg, rgba(8, 20, 46, 0) 6.18%, #0F2147 79.61%, #0f2147c7 119.12%)",
-
         company1: "url('/images/company1.png')",
+        Representative_card_bg: "url('/images/Representative_card_bg.png')",
+        DwMethods_Bg: "url('/images/DwMethods.png')",
+        DwIcons_Bg: "url('/images/DwIcons.png')",
       },
 
       fontFamily: {

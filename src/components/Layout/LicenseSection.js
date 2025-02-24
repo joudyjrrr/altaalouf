@@ -19,7 +19,6 @@ const LicenseSection = () => {
           <Title title1={`License`} title2={`Certificate`} />
         </div>
       </div>
-
       {/* السلايدر */}
       <div className="w-full h-full  relative px-24">
         <Swiper
