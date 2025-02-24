@@ -43,11 +43,33 @@ import License5 from "./License5.png";
 import why1 from "./why1.png";
 import why2 from "./why2.png";
 import why3 from "./why3.png";
+
 import arrowLeft from "./arrowLeft.svg";
 import arrowRight from "./arrowRight.svg";
 import cardLogo from "./cardLogo.svg";
 
+import ethereum from "./ethereum.png";
+import bitcoine from "./bitcoine.png";
+import masterCard from "./masterCard.png";
+import payeer from "./payeer.png";
+import pmony from "./pmony.png";
+import tether from "./tether.png";
+import transferByEx from "./transferByEx.png";
+import visa from "./visa.png";
+import voucherry from "./voucherry.png";
+import western from "./western.png";
+
 export {
+  western,
+  voucherry,
+  visa,
+  transferByEx,
+  tether,
+  pmony,
+  payeer,
+  masterCard,
+  bitcoine,
+  ethereum,
   BNB,
   Straight3,
   arrowLeft,

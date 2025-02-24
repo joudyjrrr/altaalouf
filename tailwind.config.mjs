@@ -21,7 +21,7 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "#0a1f44", 
+          DEFAULT: "#0a1f44",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -89,6 +89,8 @@ export default {
         card_why: "url('/images/card-Back_why.png')",
         MultiStarBottom: "url('/images/MultiStarBottom.png')",
         Representative_card_bg: "url('/images/Representative_card_bg.png')",
+        DwMethods_Bg: "url('/images/DwMethods.png')",
+        DwIcons_Bg: "url('/images/DwIcons.png')",
       },
 
       fontFamily: {

@@ -13,20 +13,26 @@ import Image from "next/image";
 import StraightSection from "@/components/Layout/StraightSection";
 import LicenseSection from "@/components/Layout/LicenseSection";
 import WhyInzo from "@/components/Layout/WhyInzo";
+import DwMethods from "@/components/Layout/DwMethods";
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
   return (
     <div className="w-full overflow-x-hidden">
       <div className="w-full h-full bg-[#3040614]">
-        <Banner />
+    { /*   <Banner />
         <TeamSection />
 
         <AwardSection />
         <RealAccountTypes/>
-        <StraightSection />
-        <LicenseSection />
+        <StraightSection /> 
+          <LicenseSection />
         <WhyInzo />
+        */}
+      
+        <DwMethods />
+
+        
       </div>
 
     </div>
