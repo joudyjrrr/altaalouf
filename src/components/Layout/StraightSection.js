@@ -36,12 +36,12 @@ const StraightSection = () => {
           </h3>
         </div>
         <div className=" w-full h-full flex justify-center   relative">
-          <Image className="" src={Straight2} alt="" />
+          <Image  className="rtl:rotate-180" src={Straight2} alt="" />
           <Image
-            className="absolute top-[10%] start-[10%]"
+            className="absolute  top-[10%] start-[10%]"
             src={Straight1}
             alt=""
-            width={500}
+            width={480}
           />
         </div>
       </div>

@@ -17,6 +17,7 @@ import RepresentativeSection from "@/components/Layout/RepresentativeSection";
 import CompanyGlobalSection from "@/components/Layout/CompanyGlobalSection";
 import FinancialReport from "@/components/Layout/FinancialReport";
 import DwMethods from "@/components/Layout/DwMethods";
+import Footer from "@/components/Layout/Footer";
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
@@ -34,6 +35,7 @@ export default function Home() {
         <RepresentativeSection/>
         <CompanyGlobalSection/>
         <FinancialReport/>
+        <Footer/>
       </div>
 
     </div>

@@ -95,6 +95,12 @@ export default {
         Representative_card_bg: "url('/images/Representative_card_bg.png')",
         DwMethods_Bg: "url('/images/DwMethods.png')",
         DwIcons_Bg: "url('/images/DwIcons.png')",
+        stars_white: "url('/images/stars_white.png')",
+        Footer_bg: "url('/images/Footer_bg.png')",
+        Footer_Gr: "linear-gradient(360deg, rgba(15, 33, 71, 0) 0%, #0F2147 100%);",
+        Footer_Gr2: "linear-gradient(178.99deg, rgba(1, 8, 28, 0.05) 5.01%, rgba(237, 242, 248, 0.02) 23.88%, rgba(237, 242, 248, 0.08) 109.65%);",
+        Footer_Gr3: " linear-gradient(0deg, #030613 0%, rgba(3, 6, 19, 0) 100%)",
+
       },
 
       fontFamily: {

@@ -77,11 +77,23 @@ import transferByEx from "./transferByEx.png";
 import visa from "./visa.png";
 import voucherry from "./voucherry.png";
 import western from "./western.png";
+import Get_In_Touch from "./Get In Touch.png";
+import envlope from "./envlope.png";
+import massege from "./massege.png";
+import telephone from "./telephone.png";
+import arrwos_footer from "./arrwos_footer.png";
+import footer_img from "./footer-img.png";
 
 export {
   BNB,
   gold_star,
+  footer_img,
   ParthnerImg,
+  Get_In_Touch,
+  massege,
+  telephone,
+  arrwos_footer,
+  envlope,
   company1,
   company2,
   company3,

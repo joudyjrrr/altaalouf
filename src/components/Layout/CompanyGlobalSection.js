@@ -101,7 +101,7 @@ const CompanyGlobalSection = () => {
               View More
             </Button>
           </div>
-          <Image src={ParthnerImg} alt="" className="pt-8 " />
+          <Image src={ParthnerImg} alt="" className="pt-8 h-[550px]"/>
         </div>
       </div>
       {/* <div className="flex flex-col items-center bg-[#0a1c35] text-white p-4 rounded-xl w-40">

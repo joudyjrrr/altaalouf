@@ -7,7 +7,7 @@ const VerticalSotial = () => {
     <div className=" w-full  flex justify-end pe-16">
 
     <div className="flex flex-col gap-4 justify-center items-center">
-      <div className="w-[2px] h-[150px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary"> </div>
+      <div className="w-[2px] h-[110px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary"> </div>
       <Button className="button-border rounded-full h-10 w-10">
         <FaXTwitter />
       </Button>
@@ -23,7 +23,7 @@ const VerticalSotial = () => {
       <Button className="button-border rounded-full h-10 w-10">
         <FaYoutube />
       </Button>
-      <div className="w-[2px] h-[150px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary"> </div>
+      <div className="w-[2px] h-[110px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary"> </div>
     </div>
   
   </div>

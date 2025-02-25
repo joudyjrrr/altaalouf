@@ -33,18 +33,18 @@ const AwardSection = () => {
                 <div className="relative w-full bg-transparent flex justify-center items-center text-center pt-8">
                     <Image src={Explore} width={200} height={50} className="" alt="inzo" />
                     <div className="absolute top-[55px] flex gap-2 text-5xl font-bold">  <h1 className="text-white">{`Our`}</h1><h1 className="text-secondary">{`Trading Platforms`}</h1></div>
-                    <div className='absolute top-[100px] end-[25%]'>
+                    {/* <div className='absolute top-[100px] end-[25%]'>
                         <Image src={arrwos} width={200} height={50} className="" alt="inzo" />
-                    </div>
+                    </div> */}
                 </div>
-                <div className='flex px-[15rem] pt-10 justify-between'>
+                <div className='flex px-32 pt-10 justify-between'>
                     <Image src={mobileInzo} width={500} height={50} className="" alt="inzo" />
                     <div className='flex flex-col items-center  pt-[8rem]'>
                         <div className='flex flex-col text-center gap-1 text-white text-2xl font-medium'>
                             <h1>Download our app</h1>
                             <h1>for all type of your devices.</h1>
                         </div>
-                        <Switch />
+                        <Switch className2={`!text-white`}/>
                         <div className="relative w-[350px] h-[300px]">
                             <div className="absolute top-4 left-[40%] flex flex-col items-center justify-center w-28 h-28">
                                 <Image src={android} alt='' />

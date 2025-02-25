@@ -9,7 +9,7 @@ import BannerSwiper from './BannerSwiper'
 const TeamSection = () => {
     const ImageArray = [team1, team2, team3, team4]
     return (
-        <div className='bg-white w-full h-[120vh] relative curved-section '>
+        <div className='bg-white w-full  relative curved-section '>
           <div className='bg-star_background2 w-full h-full bg-center bg-cover pb-8'>
             <div className='bg-team_gradiat text-center text-white mb-4'>
                 <BannerSwiper/>

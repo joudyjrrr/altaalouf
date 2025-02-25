@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -22,6 +22,7 @@ import {
 } from "../../../public/images";
 import Title from "./Title";
 import Switch from "./Switch";
+import useLanguageDirection from "@/i18n/useLanguageDirection";
 
 const cryptoData = [
   {
@@ -70,7 +71,13 @@ const cryptoData = [
 
 const RealAccountTypes = () => {
   const swiperRef = useRef(null);
-
+  const dir = typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
+  const [swiperKey, setSwiperKey] = useState(0);
+  useLanguageDirection();
+  useEffect(() => {
+    setSwiperKey((prevKey) => prevKey + 1);
+  }, [dir]);
+  useLanguageDirection();
   return (
     <div className="bg-white ps-12">
       <Title
@@ -97,7 +104,7 @@ const RealAccountTypes = () => {
                 alt="icon"
                 width={22}
                 height={22}
-                className="me-4  "
+                className="me-4  rtl:rotate-180"
               />
             </button>
 
@@ -116,7 +123,7 @@ const RealAccountTypes = () => {
                 alt="icon"
                 width={22}
                 height={22}
-                className="me-4  "
+                className="me-4  rtl:rotate-180"
               />
             </button>
           </div>
@@ -125,6 +132,7 @@ const RealAccountTypes = () => {
         {/* Swiper Container */}
         <div className="w-[75%] ms-22">
           <Swiper
+           key={swiperKey} 
             ref={swiperRef}
             modules={[Autoplay, Pagination]}
             spaceBetween={10}
@@ -134,11 +142,12 @@ const RealAccountTypes = () => {
               el: "#custom-pagination",
               clickable: true,
             }}
+            dir={dir}
             className="!p-8"
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {cryptoData.map((crypto, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide  dir={dir}  key={index}>
                 <div
                   className="p-6 bg-card_Bg bg-cover bg-center h-[450px] w-[350px] custom-shadow
                  rounded-xl text-white flex flex-col items-center"
