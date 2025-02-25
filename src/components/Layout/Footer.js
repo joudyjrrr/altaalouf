@@ -52,64 +52,6 @@ const links = [
     ],
   },
 ];
-const infoTexts = [
-  {
-    title: "Authorization",
-    content:
-      "INZO broker is authorised by the MWALI INTERNATIONAL SERVICES AUTHORITY with licence number T2023182 as an INTERNATIONAL BROKERAGE.",
-  },
-  {
-    title: "Registered Office",
-    content: "Bonovo Road, Fomboni Island of Mohéli, Comoros Union.",
-  },
-  {
-    title: "Place of Issue",
-    content: "Fomboni, Island of Mohéli, Comoros Union.",
-  },
-  {
-    title: "INZO Group",
-    content:
-      "The inzo.co domain is exclusively operated by INZO Broker under the Comoros entity. Other entities in our group include: INZO Group LTD (Registration No. 8434986-1), authorized and regulated by the Financial Services Authority (the 'FSA', license no. SD163).",
-  },
-  {
-    title: "Registered Address (Seychelles)",
-    content: "IMAD Complex, Office 6, situated at Ile Du Port, Seychelles.",
-  },
-  {
-    title: "Official Domain",
-    content:
-      "The official domain operated by INZO Group LTD Seychelles is inzo.store, which is exclusively linked to its Seychelles operations.",
-  },
-  {
-    title: "INZO L.L.C.",
-    content:
-      "INZO L.L.C. incorporated by the Financial Services Authority (SVG) as a limited liability company with registration number 967 LLC 2021.",
-  },
-  {
-    title: "Registered Address (Saint Vincent)",
-    content:
-      "Suite 305, Griffith Corporate Centre, Beachmont, Kingstown, St. Vincent and the Grenadines.",
-  },
-  {
-    title: "INZO LLC",
-    content: "INZO LLC is registered in the Saint Vincent and the Grenadines.",
-  },
-  {
-    title: "Transparency Note",
-    content:
-      "References to the Seychelles entity in the footer are included for transparency, reflecting the broader group structure and are not intended to imply any onboarding of clients through the inzo.co domain by INZO Seychelles.",
-  },
-  {
-    title: "Cyprus Address",
-    content:
-      "59 Agios Athanasios Avenue, D.VRACHIMIS BUILDING, 4102 Agios Athanasios, Limassol, Cyprus.",
-  },
-  {
-    title: "Risk Warning",
-    content:
-      "Trading Forex and CFDs carries significant risks to your invested capital. Please read and ensure you fully understand our Risk Disclosure.",
-  },
-];
 
 const Footer = () => {
   return (
