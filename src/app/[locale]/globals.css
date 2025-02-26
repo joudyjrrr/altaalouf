@@ -297,3 +297,15 @@ div[data-radix-popper-content-wrapper=""] {
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 8px !important;
 }
+
+.trend_clip{
+  clip-path:ellipse(75% 50% at 50% 50%) ;
+}
+@media (max-width:768px) {
+  .trend_clip{
+    clip-path:ellipse(155% 50% at 50% 50%) !important ;
+  }
+  .curved-section {
+    clip-path: ellipse(150% 100% at 50% 0%);
+  } 
+}

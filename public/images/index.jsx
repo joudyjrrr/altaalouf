@@ -83,10 +83,13 @@ import massege from "./massege.png";
 import telephone from "./telephone.png";
 import arrwos_footer from "./arrwos_footer.png";
 import footer_img from "./footer-img.png";
+import Apps from "./Apps.png";
+
 
 export {
   BNB,
   gold_star,
+  Apps,
   footer_img,
   ParthnerImg,
   Get_In_Touch,

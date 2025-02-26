@@ -18,7 +18,7 @@ const data = [
   {
     img: why2,
     title: "Instruments Diversity ",
-    desc: "Trade over 400 Global Instruments from FX, Metals Shares, and Indices",
+   desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021"
   },
   {
     img: why3,
@@ -55,7 +55,7 @@ const WhyInzo = () => {
           title2Color={'!text-primary'}
         />
       </div>
-      <div className="flex w-full justify-center flex-col items-center text-lg mt-8">
+      <div className="flex w-full justify-center flex-col items-center text-lg max-md:text-sm text-center mt-8">
         <p>
           It’s simple. We value trust, transparency and a high level of
           professionalism above all, offering our clients the
@@ -66,7 +66,7 @@ const WhyInzo = () => {
         key={swiperKey} 
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView={1}
         autoplay={{ delay: 5000 }}
         pagination={{
           el: ".custom-pagination2",
@@ -75,15 +75,21 @@ const WhyInzo = () => {
         dir={dir}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="!p-8"
+        breakpoints={{
+          320: { slidesPerView: 1 }, 
+          500: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
       >
         {data.map((d, index) => (
-          <SwiperSlide key={index}   dir={dir}>
+          <SwiperSlide key={index}   dir={dir} >
             <div className="bg-card_why py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
               <div className="flex gap-2 items-center text-white">
                 <Image src={d.img} alt="" width={50} height={50} />
-                <h1 className=" mask-gradient text-2xl font-semibold">{d.title}</h1>
+                <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
               </div>
-              <p className="text-white text-lg">{d.desc}</p>
+              <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
             </div>
           </SwiperSlide>
         ))}
@@ -98,7 +104,7 @@ const WhyInzo = () => {
             alt="icon"
             width={22}
             height={22}
-            className="me-4  rtl:rotate-180"
+            className="mx-8  rtl:rotate-180"
           />
         </button>
 
@@ -113,7 +119,7 @@ const WhyInzo = () => {
             alt="icon"
             width={22}
             height={22}
-            className="me-4  rtl:rotate-180"
+         className="mx-8  rtl:rotate-180"
           />
         </button>
       </div>

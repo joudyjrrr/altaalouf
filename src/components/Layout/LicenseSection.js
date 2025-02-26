@@ -12,6 +12,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/navigation";
+
 import useLanguageDirection from "@/i18n/useLanguageDirection";
 
 const LicenseSection = () => {
@@ -31,22 +33,22 @@ const LicenseSection = () => {
         </div>
       </div>
 
-      <div className="w-full h-full relative px-24">
+      <div className="w-full h-full relative px-24 max-md:px-4">
         <Swiper
-          key={swiperKey} // إعادة بناء السلايدر عند تغيير `dir`
-          modules={[Autoplay, Pagination, Navigation]}
-          spaceBetween={10}
-          slidesPerView={1}
-          autoplay={{ delay: 5000, reverseDirection: dir === "rtl" }}
-          pagination={{ el: ".custom-pagination", clickable: true }}
-          dir={dir}
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
-          className="!p-8"
+         key={swiperKey}
+         modules={[Autoplay, Pagination, Navigation]}
+         spaceBetween={10}
+         slidesPerView={1} // تأكد أن هذا الإعداد ثابت دائمًا
+         autoplay={{ delay: 5000, reverseDirection: dir === "rtl" }}
+         pagination={{ el: ".custom-pagination", clickable: true }}
+         dir={dir}
+         onSwiper={(swiper) => (swiperRef.current = swiper)}
+         className="!p-8 max-md:!p-2"
         >
           {[...Array(2)].map((_, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-License_Bg2 relative flex items-center p-1 gap-8 my-3 border-b border-r rounded-xl border-[#00C0FF]">
-                <div className="relative h-full">
+              <div className="bg-License_Bg2 bg-no-repeat h-full relative flex items-center p-1 gap-8 my-3 rounded-xl">
+                <div className="relative h-full flex items-start">
                   <Image
                     src={License3}
                     alt=""
@@ -61,8 +63,8 @@ const LicenseSection = () => {
                     className="absolute top-[25%] start-0"
                   />
                 </div>
-                <div className="flex flex-col text-white py-8 gap-4 w-full">
-                  <div className="flex flex-col text-lg gap-2 font-semibold">
+                <div className="flex flex-col text-white py-8 max-md:py-2 gap-4 w-full">
+                  <div className="flex flex-col text-lg gap-2 font-semibold max-md:text-sm max-sm:!text-xs">
                     <h1>
                       SAINT VINCENT AND THE GRENADINES LIMITED LIABILITY
                       COMPANIES ACT,
@@ -72,7 +74,7 @@ const LicenseSection = () => {
                       GRENADINES, 2009
                     </h1>
                   </div>
-                  <div className="flex flex-col text-lg gap-2">
+                  <div className="flex flex-col text-lg gap-2 max-md:text-sm max-sm:!text-xs">
                     <p>
                       (Section 12 (5)) Certificate of Formation INZO LLC (NAME
                       OF LIMITED LIABILITY COMPANY) 967 LLC 2021 (LIMITED
@@ -87,7 +89,7 @@ const LicenseSection = () => {
                       LIABILITY COMPANIES
                     </p>
                   </div>
-                  <div className="flex flex-col text-lg gap-2 font-semibold">
+                  <div className="flex flex-col text-lg gap-2 font-semibold max-md:text-sm max-sm:!text-xs">
                     <h1>6th April, 2021 (Date of Formation)</h1>
                     <h1>REGISTRAR LIMITED LIABILITY COMPANIES</h1>
                   </div>

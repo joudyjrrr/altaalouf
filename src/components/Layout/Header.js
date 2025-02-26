@@ -9,7 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { IoIosArrowDown } from "react-icons/io";
 import { RiMenu2Line } from "react-icons/ri";
 import { Link } from "@/i18n/routing";
@@ -28,12 +28,12 @@ const menuVariants = {
   open: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: 'easeOut' },
+    transition: { duration: 0.5, ease: "easeOut" },
   },
   closed: {
     opacity: 0,
     y: -50,
-    transition: { duration: 0.5, ease: 'easeIn' },
+    transition: { duration: 0.5, ease: "easeIn" },
   },
 };
 
@@ -79,14 +79,24 @@ const LINKS = [
       { title: "contactUs", link: "/accounts-types" },
     ],
   },
+  {
+    title: "company",
+    link: "/",
+    subLinks: [
+      { title: "aboutUs", link: "/h" },
+      { title: "termsAndConditions", link: "/accounts-types" },
+      { title: "contactUs", link: "/accounts-types" },
+    ],
+  },
+  
 ];
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const t = useTranslations()
+  const t = useTranslations();
   return (
     <div
-      className={`w-full    px-16 pt-4 fixed top-0 end-0 z-[3000] ${
+      className={`w-full    px-16 pt-4 fixed top-0 end-0 z-[3000] max-md:px-4 ${
         openMenu ? "bg-star_background pb-10" : "h-[80px] bg-header_gradiant"
       }`}
     >
@@ -96,13 +106,13 @@ const Header = () => {
           height={80}
           src={logo}
           alt="Logo"
-          className="max-w-[211px] max-sm:max-w-[110px]"
+          className="max-w-[211px] max-md:max-w-[150px]"
         />
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <Button className="button-border">Copy Portal</Button>
-            <Button className="button-border">Become a Merchant</Button>
-            <Button className="button-border">Customer Portal</Button>
+            <div className="max-md:hidden">
+              <Buttons />
+            </div>
 
             <LanguageSwitcher />
             <button onClick={() => setOpenMenu((prev) => !prev)}>
@@ -116,40 +126,55 @@ const Header = () => {
         </div>
       </div>
       {openMenu && (
-           <motion.div
-           initial="closed"
-           animate={openMenu ? 'open' : 'closed'}
-           variants={menuVariants}
-           className="w-full mt-8 flex justify-between"
-           
-         >
-           <div className="grid grid-cols-2 w-full  justify-start items-start text-white">
-             {LINKS.map((li, index) => (
-               <div key={index} className="flex flex-col gap-3 w-fit">
-                 <Link href={li.link} className="text-white text-3xl font- w-fit">
-                   {t(li.title)}
-                 </Link>
-                 <span className="h-[1.2px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary"></span>
-               </div>
-             ))}
-           </div>
-           <VerticalSotial/>
-         </motion.div>
+        <motion.div
+          initial="closed"
+          animate={openMenu ? "open" : "closed"}
+          variants={menuVariants}
+          className="w-full mt-8 flex flex-col"
+        >
+          
+          <div   className="w-full mt-8 flex justify-between max-md:flex-col ">
+            <div className="grid grid-cols-2  w-full h-fit gap-12 max-md:gap-4  justify-start items-start text-white">
+              {LINKS.map((li, index) => (
+                <div key={index} className="flex flex-col gap-3 !w-fit !h-fit">
+                  <Link
+                    href={li.link}
+                    className="text-white text-3xl max-md:text-lg font- w-fit h-fit"
+                  >
+                    {t(li.title)}
+                  </Link>
+                  <span className="h-[1.2px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary"></span>
+                </div>
+              ))}
+            </div>
+         
+            <div className="hidden max-md:block text-white my-4 mx-auto">
+              <Buttons/>
+            </div>
+            <VerticalSotial />
+          </div>
+         
+        </motion.div>
       )}
     </div>
   );
 };
 
 export default Header;
-
+const Buttons = () => {
+  return (
+    <div className="flex gap-4 max-md:flex-col w-fit">
+      <Button className="button-border">Copy Portal</Button>
+      <Button className="button-border">Become a Merchant</Button>
+      <Button className="button-border">Customer Portal</Button>
+    </div>
+  );
+};
 const LanguageSwitcher = ({ className }) => {
   const router = useRouter();
   const pathname = usePathname();
   const pathSegments = pathname.split("/").filter(Boolean);
-
-  // استخراج اللغة الحالية من الـ URL
   const currentLang = Lang.find((l) => l.lang === pathSegments[0]) || iraq;
-
   const changeLanguage = (lang) => {
     pathSegments[0] = lang;
     router.replace(`/${pathSegments.join("/")}`);

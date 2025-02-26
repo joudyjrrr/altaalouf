@@ -52,7 +52,7 @@ const CompanyGlobalSection = () => {
           title2={`Global Presence`}
           title2Color={`!text-primary`}
         />
-        <div className="mt-32 grid grid-cols-4 gap-6 px-16">
+        <div className="mt-32 grid grid-cols-4 gap-6 px-16 max-md:grid-cols-2 max-sm:grid-cols-1">
           {data.map((d , idx) => (
             <div key={idx} className="bg-company_global relative  h-[250px] !rounded-lg">
               {" "}
@@ -77,15 +77,15 @@ const CompanyGlobalSection = () => {
           ))}
         </div>
       </div>
-      <div className="w-full h-screen bg-star_background p-8">
-        <div className="flex w-full justify-between px-16">
-          <div className="flex flex-col gap-8 text-white w-full justify-start pt-36 items-start text-start">
+      <div className="w-full  bg-star_background p-8">
+        <div className="flex w-full justify-between px-16 max-md:flex-col max-md:px-8 ">
+          <div className="flex flex-col gap-8 text-white w-full justify-start pt-36 max-md:pt-8 items-start text-start">
             <Title
               title1={`Meeet Our`}
               title2={`Parthners`}
               className="!justify-start"
             />
-            <div className="flex flex-col gap-1 mt-12  text-white text-xl ">
+            <div className="flex flex-col gap-1 mt-12  text-white text-xl max-md:text-lg">
               <p>
                 Discover our trusted partner, committed to innovation,
                 collaboration,
@@ -101,7 +101,7 @@ const CompanyGlobalSection = () => {
               View More
             </Button>
           </div>
-          <Image src={ParthnerImg} alt="" className="pt-8 h-[550px]"/>
+          <Image src={ParthnerImg} alt="" className="pt-8 h-[550px] max-md:!h-[300px] max-md:!w-[300px] max-md:mx-auto"/>
         </div>
       </div>
       {/* <div className="flex flex-col items-center bg-[#0a1c35] text-white p-4 rounded-xl w-40">

@@ -61,36 +61,36 @@ const Footer = () => {
           <Image src={Get_In_Touch} width={350} height={50} alt="inzo" />
         </div>
         <div className="w-full flex justify-center  ">
-          <div className="bg-Footer_Gr2 flex px-8 py-4 rounded-xl">
-            <div className="flex flex-col gap-2 pe-4 border-e border-secondary">
+          <div className="bg-Footer_Gr2 grid grid-cols-3 max-sm:grid-cols-2 px-8 py-4 rounded-xl max-md:px-4">
+            <div className="flex flex-col gap-2 pe-4 max-md:!pe-8 border-e border-secondary">
               <h1 className="text-secondary text-lg font-semibold">Call Us</h1>
-              <div className="flex gap-2 items-center text-white">
+              <div className="flex gap-1 items-center text-white">
                 <Image src={telephone} width={35} alt="inzo" />
-                <p className="text-white">+97145429310</p>
+                <p className="text-white max-md:text-sm">+97145429310</p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-2 px-4 border-e border-secondary">
+            <div className="flex flex-col gap-2 px-4 max-md:!pe-8   border-e border-secondary max-sm:!border-none">
               <h1 className="text-secondary text-lg font-semibold">Email Us</h1>
               <div className="flex gap-2 items-center">
-                <Image src={envlope} width={30} alt="inzo" />
-                <p className="text-white">support@inzo.co</p>
+                <Image src={envlope} width={25} alt="inzo" />
+                <p className="text-white  max-md:text-sm">support@inzo.co</p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-2 ps-4 ">
+            <div className="flex flex-col gap-2 ps-4 mx-auto max-sm:mt-4 max-sm:col-span-2 ">
               <h1 className="text-secondary text-lg font-semibold">
                 Chat with Us
               </h1>
               <div className="flex gap-2 items-center ">
                 <Image src={massege} width={35} alt="inzo" />
-                <p className="text-white">24/6 Live Chat Support</p>
+                <p className="text-white ax-md:text-sm">24/6 Live Chat Support</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-5 gap-4 px-8 w-full h-full mt-8 justify-between bg-Footer_Gr3">
-          <Image src={logo} width={200} alt="inzo" />
+        <div className="grid grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 px-8 w-full h-full mt-8 justify-between bg-Footer_Gr3">
+          <Image src={logo} width={200} alt="inzo" className="max-sm:hidden" />
           {links.map((li, idx) => (
             <div key={idx} className="flex flex-col gap-4">
               <h1 className="text-white text-xl font-semibold">{li.title}</h1>
@@ -104,7 +104,7 @@ const Footer = () => {
                       alt="inzo"
                       className="rtl:rotate-180"
                     />{" "}
-                    <Link href={item.url}>{item.name}</Link>
+                    <Link className="max-sm:text-sm" href={item.url}>{item.name}</Link>
                   </div>
                 ))}
               </div>
@@ -250,7 +250,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-secondary p-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between max-md:flex-col max-md:gap-4 ">
             <p className="text-white">2025 © Copyright INZO All rights reserved.</p>
             <div className="flex gap-4">
               {" "}

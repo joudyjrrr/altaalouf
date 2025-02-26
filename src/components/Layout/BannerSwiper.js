@@ -43,11 +43,13 @@ const BannerSwiper = () => {
     <div className="w-full  pb-3">
     <Swiper
       modules={[Autoplay]}
-      spaceBetween={20}
-      slidesPerView={3}
+      spaceBetween={10} // تقليل المسافة بين الشرائح
+      slidesPerView={1} // جعل الافتراضي شريحة واحدة
       autoplay={{ delay: 3000 }}
       breakpoints={{
-        640: { slidesPerView: 2 },
+        320: { slidesPerView: 1 }, // دعم الشاشات الصغيرة جدًا
+        500: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
         1280: { slidesPerView: 4 },
       }}

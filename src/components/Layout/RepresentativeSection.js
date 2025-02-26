@@ -66,7 +66,7 @@ const RepresentativeSection = () => {
   }, [dir]);
   useLanguageDirection();
   return (
-    <div className="bg-[#030613] h-full Testimonials    ">
+    <div className="bg-[#030613] h-full Testimonials  ">
       <div className="w-full h-full">
         <Title
           title1={`Representative`}
@@ -77,14 +77,20 @@ const RepresentativeSection = () => {
           key={swiperKey}
           modules={[Autoplay]}
           spaceBetween={10}
-          slidesPerView={3}
+          slidesPerView={1}
           autoplay={{ delay: 5000 }}
           dir={dir}
           className="!p-8 mt-12"
+          breakpoints={{
+            320: { slidesPerView: 1 },  
+            500: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+          }}
         >
           {data.map((d, index) => (
             <SwiperSlide dir={dir} key={index}>
-              <div className="bg-location_back rounded-xl gap-8 h-[500px] bg-no-repeat bg-center flex justify-start p-8 flex-col items-center">
+              <div className="bg-location_back rounded-xl gap-8 h-[500px] bg-no-repeat bg-center flex justify-start p-8 max-md:pt-20 flex-col items-center">
                 <Image src={d.img} alt="" height={300} />
                 <h1 className="text-2xl font-semibold text-white ">
                   {d.title}
@@ -94,7 +100,7 @@ const RepresentativeSection = () => {
           ))}
         </Swiper>
       </div>
-      <div className="flex justify-between w-full items-center pe-16 h-[200px]">
+      <div className="flex justify-between w-full items-center pe-16 h-[200px] max-md:!pe-0 max-md:!px-2 ">
         <div
           className={`relative w-full bg-transparent flex justify-center items-center text-center pt-8 `}
         >
@@ -105,7 +111,7 @@ const RepresentativeSection = () => {
             className="image-mask"
             alt="inzo"
           />
-          <div className="absolute top-[45px] flex gap-2 text-5xl font-bold">
+          <div className="absolute top-[45px] flex gap-2 text-5xl max-md:!text-[14px] font-bold">
             <h1 className={`text-secondary`}>{`What  People Are`}</h1>
             <h1 className={`text-white`}>{`Saying`}</h1>
           </div>
@@ -117,7 +123,7 @@ const RepresentativeSection = () => {
         </div>
       </div>
       <div className="relative ">
-        <div className=" flex justify-center items-center gap-32 mt-6 absolute end-0 bottom-[10%] z-[2000]">
+        <div className=" flex justify-center items-center gap-32 mt-12 absolute end-0 bottom-[10%] max-md:!bottom-0 z-[2000]">
           <button
             onClick={() => swiperRef.current?.slidePrev()}
             className="relative z-[2000]"
@@ -159,24 +165,25 @@ const RepresentativeSection = () => {
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           dir={dir}
           spaceBetween={40}
-          slidesPerView={"auto"}
-          autoplay={{ delay: 5000 }}
-          breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 10 },
-            768: { slidesPerView: 1.3, spaceBetween: 20 },
-            1024: { slidesPerView: 1.7, spaceBetween: 30 },
+          slidesPerView={1}
+          autoplay={{ delay: 5000 }} breakpoints={{
+            320: { slidesPerView: 1 },  
+            500: { slidesPerView: 1 },
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 1.7, spaceBetween: 30 }
           }}
-          className="!p-8 mt-12"
+        
+          className="p-8 mt-10 max-md:p-4"
         >
           {dataTestimonials.map((d, index) => (
-            <SwiperSlide dir={dir} key={index} className="!w-[65%] ">
+            <SwiperSlide dir={dir} key={index} className="w-[65%] max-md:w-full">
               <div className="bg-Testimonial_back rounded-xl">
                 <div className="bg-award_back gap-8 bg-no-repeat flex flex-col bg-center p-8">
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between items-center ">
                     <div className="flex gap-8">
-                      <Image src={d.img} alt="" />
+                      <Image src={d.img} alt="" className="max-md:w-[100px]"/>
                       <div className="flex flex-col text-white justify-center">
-                        <h1 className="text-3xl font-semibold">
+                        <h1 className="text-3xl font-semibold max-md:text-sm">
                           Hashim Al-Sakkal
                         </h1>
                         <div className="flex gap-1">
@@ -192,13 +199,13 @@ const RepresentativeSection = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-secondary text-xl font-medium">
+                    <p className="text-secondary text-xl font-medium max-md:text-sm">
                       2021-05-05
                     </p>
                   </div>
                   <div className="flex items-start gap-8">
                     <Image src={coma} alt="" width={80} height={80} />
-                    <div className="flex flex-col gap-1 text-white text-xl">
+                    <div className="flex flex-col gap-1 text-white text-xl max-md:!text-[15px]">
                       <p>
                         From my experience with INZO, I've opened more than one
                       </p>
