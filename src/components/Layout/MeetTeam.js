@@ -53,6 +53,9 @@ const MeetTeam = () => {
             </div>
           </div>
         ))}
+        <Button className="button-border px-5 py-6 font-semibold text-[18px]">
+          Meet The Whole Team
+        </Button>
       </div>
 
       {/* 

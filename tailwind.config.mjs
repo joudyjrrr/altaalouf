@@ -91,7 +91,7 @@ export default {
         Representative_card_bg: "url('/images/Representative_card_bg.png')",
         DwMethods_Bg: "url('/images/DwMethods.png')",
         DwIcons_Bg: "url('/images/DwIcons.png')",
-        darkStar_Bg: "url('/images/darkStarBg2.png')",
+       
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
         teamCard_Bg: "url('/images/teamCardBg.svg')",
       },
