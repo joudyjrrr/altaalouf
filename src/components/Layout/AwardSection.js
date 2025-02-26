@@ -128,9 +128,9 @@ const AwardSection = () => {
             </div>
             <div className="bg-social_gradiant rounded-t-xl p-4">
               <div className="flex justify-between ">
-                <h1 className="text-secondary  text-5xl font-semibold">
+                <h1 className="text-secondary text-5xl font-semibold">
                   30 <span>%</span>
-                </h1>
+                 </h1>
                 <Image src={gift} alt="" width={60} className="" />
               </div>
               <h1 className="text-2xl mb-2">Deposit Bonus</h1>
