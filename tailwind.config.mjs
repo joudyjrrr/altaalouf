@@ -101,6 +101,9 @@ export default {
         Footer_Gr2: "linear-gradient(178.99deg, rgba(1, 8, 28, 0.05) 5.01%, rgba(237, 242, 248, 0.02) 23.88%, rgba(237, 242, 248, 0.08) 109.65%);",
         Footer_Gr3: " linear-gradient(0deg, #030613 0%, rgba(3, 6, 19, 0) 100%)",
 
+       
+        teamStars_Bg: "url('/images/teamStars_Bg.png')",
+        teamCard_Bg: "url('/images/teamCardBg.svg')",
       },
 
       fontFamily: {

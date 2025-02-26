@@ -18,13 +18,15 @@ import CompanyGlobalSection from "@/components/Layout/CompanyGlobalSection";
 import FinancialReport from "@/components/Layout/FinancialReport";
 import DwMethods from "@/components/Layout/DwMethods";
 import Footer from "@/components/Layout/Footer";
+import MeetTeam from "@/components/Layout/MeetTeam";
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="w-full bg-[#3040614]">
-        <Banner />
+
+      <div className="w-full h-full bg-[#3040614]">
+       <Banner />
         <TeamSection />
         <AwardSection />
         <RealAccountTypes/>
@@ -35,9 +37,13 @@ export default function Home() {
         <RepresentativeSection/>
         <CompanyGlobalSection/>
         <FinancialReport/>
+        <MeetTeam />
         <Footer/>
-      </div>
+       
 
+       
+      </div>
     </div>
+
   );
 }

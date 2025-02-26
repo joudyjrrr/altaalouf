@@ -86,6 +86,13 @@ import footer_img from "./footer-img.png";
 import Apps from "./Apps.png";
 
 
+import mTeem1 from "./mTeem(1).png";
+import mTeem2 from "./mTeem(2).png";
+import mTeem3 from "./mTeem(3).png";
+import mTeem4 from "./mTeem(4).png";
+import mTeem5 from "./mTeem(5).png";
+import arrow from "./teamCaredArrow.svg";
+
 export {
   BNB,
   gold_star,
@@ -114,6 +121,12 @@ export {
   location1,
   location2,
   location_back,
+  arrow,
+  mTeem1,
+  mTeem2,
+  mTeem3,
+  mTeem4,
+  mTeem5,
   western,
   voucherry,
   visa,
