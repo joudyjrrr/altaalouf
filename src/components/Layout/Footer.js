@@ -248,7 +248,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-ؤؤؤ
+
         <div className="border-t border-secondary p-4">
           <div className="flex items-center justify-between max-md:flex-col max-md:gap-4 ">
             <p className="text-white">2025 © Copyright INZO All rights reserved.</p>
