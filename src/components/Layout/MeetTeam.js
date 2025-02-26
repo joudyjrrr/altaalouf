@@ -30,7 +30,7 @@ const MeetTeam = () => {
         title1Color={"white"}
         title2Color={"secondary"}
       />
-      <div className=" w-full pt-16 mx-auto justify-center flex gap-4 flex-wrap">
+      <div className=" w-full pt-16 mx-auto justify-center grid grid-cols-5 px-8 gap-4 flex-wrap">
         {imgData.map((image, index) => (
           <div
             key={index}
