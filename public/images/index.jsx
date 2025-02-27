@@ -65,8 +65,6 @@ import company7 from "./copmany7.png";
 import company8 from "./copmany8.png";
 import ParthnerImg from "./ParthnerImg.png";
 
-
-
 import ethereum from "./ethereum.png";
 import bitcoine from "./bitcoine.png";
 import masterCard from "./masterCard.png";
@@ -85,16 +83,25 @@ import arrwos_footer from "./arrwos_footer.png";
 import footer_img from "./footer-img.png";
 import Apps from "./Apps.png";
 
-
 import mTeem1 from "./mTeem(1).png";
 import mTeem2 from "./mTeem(2).png";
 import mTeem3 from "./mTeem(3).png";
 import mTeem4 from "./mTeem(4).png";
 import mTeem5 from "./mTeem(5).png";
 import arrow from "./teamCaredArrow.svg";
+import about1 from "./about1.png";
+import about2 from "./about2.png";
+import about3 from "./about3.png";
+import about4 from "./about4.png";
+import about5 from "./about5.png";
 
 export {
   BNB,
+  about1,
+  about2,
+  about3,
+  about4,
+  about5,
   gold_star,
   Apps,
   footer_img,
@@ -137,8 +144,6 @@ export {
   masterCard,
   bitcoine,
   ethereum,
-
-
   arrowLeft,
   arrowRight,
   cardLogo,

@@ -17,8 +17,9 @@ import RepresentativeSection from "@/components/Layout/RepresentativeSection";
 import CompanyGlobalSection from "@/components/Layout/CompanyGlobalSection";
 import FinancialReport from "@/components/Layout/FinancialReport";
 import DwMethods from "@/components/Layout/DwMethods";
-import Footer from "@/components/Layout/Footer";
+
 import MeetTeam from "@/components/Layout/MeetTeam";
+import ExploreSection from "@/components/Layout/ExploreSection";
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
@@ -28,7 +29,7 @@ export default function Home() {
       <div className="w-full h-full bg-[#3040614]">
        <Banner />
         <TeamSection />
-        <AwardSection />
+        <AwardSection isExplore={true}/>
         <RealAccountTypes/>
         <StraightSection />
         <LicenseSection />
@@ -37,11 +38,7 @@ export default function Home() {
         <RepresentativeSection/>
         <CompanyGlobalSection/>
         <FinancialReport/>
-        <MeetTeam />
-        <Footer/>
-       
-
-       
+        <MeetTeam />   
       </div>
     </div>
 
