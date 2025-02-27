@@ -7,13 +7,30 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Button } from "../ui/button";
 import Image from "next/image";
-
+import {
+  western,
+  voucherry,
+  visa,
+  transferByEx,
+  tether,
+  pmony,
+  payeer,
+  masterCard,
+  bitcoine,
+  ethereum,
+} from "../../../public/images";
 import Title from "./Title";
 import Switch from "./Switch";
-
+let payArr = [
+  [tether, western, "md:mb-20", "md:ms-10"],
+  [payeer, ethereum, "md:mt-16", "md:mt-10"],
+  [transferByEx, voucherry, "", " md:mt-5 md:mb-5 md:me-5 md:-translate-x-7"],
+  [visa, pmony, "md:mt-8", "md:mt-6 md:me-5 md:-translate-x-14"],
+  [bitcoine, masterCard, "md:mb-24", "md:mt-3 md:-translate-x-10"],
+];
 const RealAccountTypes = () => {
   return (
-    <div className=" pt-12 bg-DwMethods_Bg h-screen ">
+    <div className=" pt-12 bg-DwMethods_Bg h-fit md:h-screen ">
       <Title
         title1={`Deposit & Withdrawal`}
         title2={`Methods`}
@@ -21,70 +38,27 @@ const RealAccountTypes = () => {
         title2Color={"white"}
       />
 
-      <div className="relative w-[70%] h-[70%] bg-DwIcons_Bg bg-contain bg-no-repeat mt-10 mx-auto">
-        {/* 
-        <div
-          className="absolute bottom-5 right-[20%] flex
-          flex-col items-center justify-center w-28 h-28 "
-        >
-          <Image src={bitcoine} alt="" />
+      <div className="relative w-[85%] md:w-[80%] h-[90%] md:h-[70%] bg-contain bg-no-repeat mt-10 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-6 md:ps-14">
+          {payArr.map(([img1, img2, containerClass, img2Class], index) => (
+            <div
+              key={index}
+              className={`flex md:flex-col justify-around md:justify-center ${containerClass}`}
+            >
+              <Image
+                src={img1}
+                alt=""
+                className={` 
+                   hover:shadow-[0_0_15px_1px_#00BEFE] w-32 h-32  hover:scale-105 transition-all duration-500 rounded-full `}
+              />
+              <Image
+                src={img2}
+                alt=""
+                className={`w-32 h-32 rounded-full hover:shadow-[0_0_15px_1px_#00BEFE] hover:scale-105 transition-all duration-500 ${img2Class}`}
+              />
+            </div>
+          ))}
         </div>
-
-        <div
-          className="absolute bottom-12 left-[30%] flex
-flex-col items-center justify-center w-28 h-28 "
-        >
-          <Image src={masterCard} alt="" />
-        </div>
-        <div
-          className="absolute top-4 left-[40%] flex flex-col items-center
-       justify-center w-28 h-28"
-        >
-          <Image src={western} alt="" />
-        </div>
-        <div
-          className="absolute top-[25%] right-[-10px] flex flex-col
-       items-center justify-center w-28 h-28 "
-        >
-          <Image src={voucherry} alt="" />
-        </div>
-        <div
-          className="absolute bottom-[7rem] left-
-      [1rem] flex flex-col items-center justify-center w-28 h-28 "
-        >
-          <Image src={transferByEx} alt="" />
-        </div>
-        <div
-          className="absolute bottom-12 right-[30%] flex
-       flex-col items-center justify-center w-28 h-28 "
-        >
-          <Image src={tether} alt="" />
-        </div>
-        <div
-          className="absolute bottom-12 right-[30%] flex
-     flex-col items-center justify-center w-28 h-28 "
-        >
-          <Image src={pmony} alt="" />
-        </div>
-        <div
-          className="absolute bottom-12 top-[50%] flex
-   flex-col items-center justify-center w-28 h-28 "
-        >
-          <Image src={payeer} alt="" />
-        </div>
-        <div
-          className="absolute bottom-12 right-[90%] flex
- flex-col items-center justify-center w-28 h-28 "
-        >
-          <Image src={ethereum} alt="" />
-        </div>
-        <div
-          className="absolute bottom-12 top-[30%] flex
-flex-col items-center justify-center w-28 h-28 "
-        >
-          <Image src={visa} alt="" />
-        </div> 
-        */}
       </div>
     </div>
   );
