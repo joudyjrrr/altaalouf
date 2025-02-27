@@ -71,7 +71,8 @@ const cryptoData = [
 
 const RealAccountTypes = () => {
   const swiperRef = useRef(null);
-  const dir = typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
+  const dir =
+    typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
   const [swiperKey, setSwiperKey] = useState(0);
   useLanguageDirection();
   useEffect(() => {
@@ -79,22 +80,23 @@ const RealAccountTypes = () => {
   }, [dir]);
   useLanguageDirection();
   return (
-    <div className="bg-white ps-12">
+    <div className="bg-white md:ps-12 md:px-3">
       <Title
         title1={`Real Accounts`}
         title2={`Types`}
-        title1Color={'text-secondary'}
-        title2Color={'!text-primary'}
+        title1Color={"text-secondary"}
+        title2Color={"!text-primary"}
       />
-      <div className="w-full  flex  relative mt-7">
+      <div className="w-full  flex flex-col md:flex-row relative mt-7">
         {/* Custom Pagination Container */}
-        <div className="flex-col gap-4 ">
+        <div className="flex flex-col md:gap-4 items-center justify-center ">
           <Switch />
-          <p className="leading-[40px] md:w-[360px] text-[24px] font-semibold pt-5 text-[#030613]">
+          <p className="text-center md:text-start md:leading-[40px] md:w-[360px] text-[1.2rem] md:text-[24px] font-semibold md:pt-5 text-[#030613]">
             INZO offer several types of accounts that are suitable for different
             trading environments.
           </p>
-          <div className="flex  items-center justify-between gap-x-5  pt-20 w-[200px]">
+
+          <div className="flex  items-center justify-between gap-x-5 pt-4  md:pt-20 w-[200px]">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="transform "
@@ -130,32 +132,40 @@ const RealAccountTypes = () => {
         </div>
 
         {/* Swiper Container */}
-        <div className="w-[75%] ms-22">
+        <div className="w-[1000px] md:w-[75%] md:ms-22 mt-[20px] md:mt-0">
           <Swiper
-           key={swiperKey} 
+            key={swiperKey}
             ref={swiperRef}
             modules={[Autoplay, Pagination]}
             spaceBetween={10}
-            slidesPerView={2}
+            slidesPerView={1}
             autoplay={{ delay: 3000 }}
             pagination={{
               el: "#custom-pagination",
               clickable: true,
             }}
+            breakpoints={{
+              320: { slidesPerView: 1 }, // دعم الشاشات الصغيرة جدًا
+              500: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 2 },
+              1280: { slidesPerView: 2 },
+            }}
             dir={dir}
-            className="!p-8"
+            className="!p-7 md:!p-8 "
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {cryptoData.map((crypto, index) => (
-              <SwiperSlide  dir={dir}  key={index}>
+              <SwiperSlide dir={dir} key={index}>
                 <div
-                  className="p-6 bg-card_Bg bg-cover bg-center h-[450px] w-[350px] custom-shadow
+                  className="p-6 bg-card_Bg bg-cover bg-center w-[275px]
+                   md:h-[450px] md:w-[350px] custom-shadow
                  rounded-xl text-white flex flex-col items-center"
                 >
                   <div className="w-full flex gap-4">
                     <div className="w-full flex flex-col ps-5">
                       <div className="flex justify-between overflow-visible max-h-[50px]">
-                        <h3 className="text-[41px] font-bold ">
+                        <h3 className="text-md md:text-[41px] font-bold ">
                           {crypto.title}
                         </h3>
                         <Image
@@ -168,7 +178,7 @@ const RealAccountTypes = () => {
                         {crypto.features.map((item, index) => (
                           <p
                             key={index}
-                            className="text-[16.5px] font-medium mt-[.4rem] flex items-center "
+                            className="md:text-[16.5px] font-medium md:mt-[.4rem] flex items-center "
                           >
                             <Image
                               src={arrowIcon}

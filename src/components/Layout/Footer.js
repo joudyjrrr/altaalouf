@@ -55,9 +55,9 @@ const links = [
 
 const Footer = () => {
   return (
-    <div className="w-full h-full">
-      <div className="bg-Footer_bg w-full  bg-center bg-cover">
-        <div className="w-full flex justify-center bg-Footer_Gr p-4 pb-0">
+    <div className="w-full h-full ">
+      <div className="bg-Footer_bg w-full  bg-center bg-cover ">
+        <div className="w-full flex justify-center bg-Footer_Gr p-4 pt-8 pb-0">
           <Image src={Get_In_Touch} width={350} height={50} alt="inzo" />
         </div>
         <div className="w-full flex justify-center  ">
@@ -84,7 +84,9 @@ const Footer = () => {
               </h1>
               <div className="flex gap-2 items-center ">
                 <Image src={massege} width={35} alt="inzo" />
-                <p className="text-white ax-md:text-sm">24/6 Live Chat Support</p>
+                <p className="text-white ax-md:text-sm">
+                  24/6 Live Chat Support
+                </p>
               </div>
             </div>
           </div>
@@ -104,7 +106,9 @@ const Footer = () => {
                       alt="inzo"
                       className="rtl:rotate-180"
                     />{" "}
-                    <Link className="max-sm:text-sm" href={item.url}>{item.name}</Link>
+                    <Link className="max-sm:text-sm" href={item.url}>
+                      {item.name}
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -251,7 +255,9 @@ const Footer = () => {
 
         <div className="border-t border-secondary p-4">
           <div className="flex items-center justify-between max-md:flex-col max-md:gap-4 ">
-            <p className="text-white">2025 © Copyright INZO All rights reserved.</p>
+            <p className="text-white">
+              2025 © Copyright INZO All rights reserved.
+            </p>
             <div className="flex gap-4">
               {" "}
               <Button className="button-border rounded-full h-8 w-8">

@@ -65,8 +65,6 @@ import company7 from "./copmany7.png";
 import company8 from "./copmany8.png";
 import ParthnerImg from "./ParthnerImg.png";
 
-
-
 import ethereum from "./ethereum.png";
 import bitcoine from "./bitcoine.png";
 import masterCard from "./masterCard.png";
@@ -84,7 +82,6 @@ import telephone from "./telephone.png";
 import arrwos_footer from "./arrwos_footer.png";
 import footer_img from "./footer-img.png";
 import Apps from "./Apps.png";
-
 
 import mTeem1 from "./mTeem(1).png";
 import mTeem2 from "./mTeem(2).png";
@@ -137,8 +134,6 @@ export {
   masterCard,
   bitcoine,
   ethereum,
-
-
   arrowLeft,
   arrowRight,
   cardLogo,
