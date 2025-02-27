@@ -133,10 +133,10 @@ background: linear-gradient(90deg, #084398 0%, #00BEFD 100%) !important;
   overflow: hidden; */
 }
 
-.image-mask {
+/* .image-mask {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
+} */
 
 
 div[data-radix-popper-content-wrapper=""] {
@@ -231,7 +231,7 @@ div[data-radix-popper-content-wrapper=""] {
   clip-path: ellipse(100% 100% at 50% 120%);
 }
 .License.swiper-pagination-horizontal {
-  top: 52px  !important;
+  top: 15px  !important;
 }
 .mask-gradient {
   background: #121FCF;
@@ -241,5 +241,72 @@ div[data-radix-popper-content-wrapper=""] {
   
 }
 .Why.swiper-pagination-horizontal {
-  top: 52px  !important;
+  top: 10px  !important;
 }
+
+/* .Testimonials.swiper-pagination-bullets.swiper-pagination-horizontal{
+  top: 10px   !important;
+} */
+
+.button-border-transparent::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.2px;
+  border-radius: 50px; 
+  background: linear-gradient(90deg, #084398, #00befd);
+  -webkit-mask:     
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  
+}
+.star {
+  background-image: radial-gradient(
+      circle at top right,
+      rgba(0, 192, 255, 0.8),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 192, 255, 0.8),
+      transparent 30%
+    ),
+    rgba(15, 33, 71, 1);
+}
+.curved-section {
+  clip-path: ellipse(100% 100% at 50% 0%);
+} 
+.curved-section-2 {
+  clip-path: ellipse(100% 100% at 50% 120%);
+}
+.License.swiper-pagination-horizontal {
+  top: 12px  !important;
+}
+.mask-gradient {
+  background: #121FCF;
+  background:  linear-gradient(180deg, #084398 0%, #00BEFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.Why.swiper-pagination-horizontal {
+  top: 12px  !important;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 8px !important;
+}
+
+.trend_clip{
+  clip-path:ellipse(75% 50% at 50% 50%) ;
+}
+@media (max-width:768px) {
+  .trend_clip{
+    clip-path:ellipse(155% 50% at 50% 50%) !important ;
+  }
+  .curved-section {
+    clip-path: ellipse(150% 100% at 50% 0%);
+  } 
+}
+

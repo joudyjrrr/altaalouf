@@ -11,18 +11,17 @@ const Banner = () => {
   const t = useTranslations();
   return (
     <div className="w-full pt-4 bg-banner h-[100vh]  bg-cover bg-center bg-no-repeat   z-[100]">
-      <div className="flex justify-between relative w-full  mt-[70px]">
-        <div className="w-full flex justify-start text-white pt-20  px-16 max-lg:px-4 max-xs:!pb-32">
+      <div className="flex justify-between relative w-full  mt-[70px] max-md:flex-col max-md:gap-8">
+        <div className="w-full flex justify-start max-md:justify-center text-white pt-20  px-16 ">
           <div className="flex flex-col gap-4 ">
-            <h1 className="text-7xl font-extrabold">Trade Like a </h1>
-            <h1 className="text-7xl font-extrabold text-secondary">Legend</h1>
+            <h1 className="text-7xl font-extrabold max-md:text-5xl">Trade Like a </h1>
+            <h1 className="text-7xl font-extrabold text-secondary max-md:!text-5xl">Legend</h1>
             <div>
-              <p className="text-2xl">
+              <p className="text-2xl max-md:text-lg">
                 Trade over 400 Global Instruments from FX,
               </p>
-              <p className="text-2xl">
-                {" "}
-                Metals Shares, and Indices with{" "}
+              <p className="text-2xl max-md:text-lg">
+                Metals Shares, and Indices with
                 <span className="font-semibold">INZO</span>.
               </p>
             </div>

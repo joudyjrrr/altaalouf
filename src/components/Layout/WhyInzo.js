@@ -1,12 +1,13 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Title from "./Title";
-import { why1, why2, why3 } from "../../../public/images";
+import { why1, why2, why3, arrowLeft, arrowRight } from "../../../public/images";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"
 import Image from "next/image";
+import useLanguageDirection from "@/i18n/useLanguageDirection";
 
 const data = [
   {
@@ -17,7 +18,7 @@ const data = [
   {
     img: why2,
     title: "Instruments Diversity ",
-    desc: "Trade over 400 Global Instruments from FX, Metals Shares, and Indices",
+   desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021"
   },
   {
     img: why3,
@@ -36,17 +37,25 @@ const data = [
   },
 ];
 const WhyInzo = () => {
-      const swiperRef = useRef(null);
+  const swiperRef = useRef(null);
+  const dir = typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
+  const [swiperKey, setSwiperKey] = useState(0);
+  useLanguageDirection();
+  useEffect(() => {
+    setSwiperKey((prevKey) => prevKey + 1);
+  }, [dir]);
+  useLanguageDirection();
   return (
     <div className="pb-8">
       <div className=" bg-MultiStarTop bg-no-repeat  bg-top w-full h-full">
         <Title
           title1={`Why choose`}
           title2={`INZO?`}
-          classNameTitle2="!text-primary"
+          title1Color={'text-secondary'}
+          title2Color={'!text-primary'}
         />
       </div>
-      <div className="flex w-full justify-center flex-col items-center text-lg mt-8">
+      <div className="flex w-full justify-center flex-col items-center text-lg max-md:text-sm text-center mt-8">
         <p>
           It’s simple. We value trust, transparency and a high level of
           professionalism above all, offering our clients the
@@ -54,25 +63,33 @@ const WhyInzo = () => {
         <p> right tools to enhance their trading journey.</p>
       </div>
       <Swiper
+        key={swiperKey} 
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView={1}
         autoplay={{ delay: 5000 }}
         pagination={{
           el: ".custom-pagination2",
           clickable: true,
         }}
+        dir={dir}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="!p-8"
+        breakpoints={{
+          320: { slidesPerView: 1 }, 
+          500: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
       >
         {data.map((d, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index}   dir={dir} >
             <div className="bg-card_why py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
               <div className="flex gap-2 items-center text-white">
-                <Image src={d.img} alt="" width={50} height={50}/>
-                <h1 className=" mask-gradient text-2xl font-semibold">{d.title}</h1>
+                <Image src={d.img} alt="" width={50} height={50} />
+                <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
               </div>
-              <p className="text-white text-lg">{d.desc}</p>
+              <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
             </div>
           </SwiperSlide>
         ))}
@@ -82,19 +99,31 @@ const WhyInzo = () => {
           onClick={() => swiperRef.current?.slidePrev()}
           className="relative z-[2000]"
         >
-          <h1 className="text-[80px] font-bold mask-gradient">{`<`}</h1>
+          <Image
+            src={arrowLeft}
+            alt="icon"
+            width={22}
+            height={22}
+            className="mx-8  rtl:rotate-180"
+          />
         </button>
 
-        <div className="custom-pagination2  Why flex justify-center gap-2 absolute !top-[70px] !end-[47%]"></div>
+        <div className="custom-pagination2  Why flex justify-center gap-2 absolute !top-[70px] !end-[47%] rtl:!end-0"></div>
 
         <button
           onClick={() => swiperRef.current?.slideNext()}
           className="relative z-[2000]"
         >
-          <h1 className="text-[80px] font-bold mask-gradient">{`>`}</h1>
+          <Image
+            src={arrowRight}
+            alt="icon"
+            width={22}
+            height={22}
+         className="mx-8  rtl:rotate-180"
+          />
         </button>
       </div>
-      
+
     </div>
   );
 };

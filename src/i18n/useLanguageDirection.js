@@ -8,6 +8,7 @@ const useLanguageDirection = () => {
 
   useEffect(() => {
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    localStorage.setItem("dir",document.documentElement.dir = lang === "ar" ? "rtl" : "ltr")
   }, [lang]);
 };
 

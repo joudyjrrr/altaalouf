@@ -88,7 +88,28 @@ export default {
         MultiStarTop: "url('/images/MultiStarTop.png')",
         card_why: "url('/images/card-Back_why.png')",
         MultiStarBottom: "url('/images/MultiStarBottom.png')",
+        location_back: "url('/images/location_back.png')",
+        Testimonial_back: "linear-gradient(174.71deg, rgba(8, 20, 46, 0) 6.18%, rgba(0, 192, 255, 0.628674) 79.61%, #00C0FF 119.12%)",
+        company_global:"linear-gradient(0deg, rgba(15,33,71,1) 0%, rgba(15,33,71,0) 100%)",
+        company1: "url('/images/company1.png')",
         Representative_card_bg: "url('/images/Representative_card_bg.png')",
+        DwMethods_Bg: "url('/images/DwMethods.png')",
+        DwIcons_Bg: "url('/images/DwIcons.png')",
+        stars_white: "url('/images/stars_white.png')",
+        Footer_bg: "url('/images/Footer_bg.png')",
+        Footer_Gr: "linear-gradient(360deg, rgba(15, 33, 71, 0) 0%, #0F2147 100%);",
+        Footer_Gr2: "linear-gradient(178.99deg, rgba(1, 8, 28, 0.05) 5.01%, rgba(237, 242, 248, 0.02) 23.88%, rgba(237, 242, 248, 0.08) 109.65%);",
+        Footer_Gr3: " linear-gradient(0deg, #030613 0%, rgba(3, 6, 19, 0) 100%)",
+        Footer_bg: "url('/images/Footer_bg.png')",
+       
+        teamStars_Bg: "url('/images/teamStars_Bg.png')",
+        aboutBanner: "url('/images/aboutBanner.png')",
+        about_Gr: "linear-gradient(0deg, #0f214785  52.46%, #0f21476b  100%)",
+        about_Gr_Card: "linear-gradient(0deg, #084196 0%, #0575C1 61.01%)",
+        about_Gr_Card2: "linear-gradient(90deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
+        about_Gr_Card3: "linear-gradient(180deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
+
+
       },
 
       fontFamily: {

@@ -13,22 +13,34 @@ import Image from "next/image";
 import StraightSection from "@/components/Layout/StraightSection";
 import LicenseSection from "@/components/Layout/LicenseSection";
 import WhyInzo from "@/components/Layout/WhyInzo";
+import RepresentativeSection from "@/components/Layout/RepresentativeSection";
+import CompanyGlobalSection from "@/components/Layout/CompanyGlobalSection";
+import FinancialReport from "@/components/Layout/FinancialReport";
+import DwMethods from "@/components/Layout/DwMethods";
+
+import MeetTeam from "@/components/Layout/MeetTeam";
+import ExploreSection from "@/components/Layout/ExploreSection";
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="w-full h-full bg-[#3040614]">
-        <Banner />
-        <TeamSection />
 
-        <AwardSection />
+      <div className="w-full h-full bg-[#3040614]">
+       <Banner />
+        <TeamSection />
+        <AwardSection isExplore={true}/>
         <RealAccountTypes/>
         <StraightSection />
         <LicenseSection />
         <WhyInzo />
+        <DwMethods />
+        <RepresentativeSection/>
+        <CompanyGlobalSection/>
+        <FinancialReport/>
+        <MeetTeam />   
       </div>
-
     </div>
+
   );
 }

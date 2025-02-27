@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import Image from "next/image";
 import { Ethereum, BNB, Bitocin, shiba } from "../../../public/images"
+import useLanguageDirection from '@/i18n/useLanguageDirection';
 const cryptoData = [
     {
       name: "Bitcoin (BTC)",
@@ -34,26 +35,31 @@ const cryptoData = [
       icon: Ethereum,
     },
   ];
-  
+ 
 const BannerSwiper = () => {
+  const dir = localStorage.getItem("dir") || "ltr"
+  useLanguageDirection();
   return (
     <div className="w-full  pb-3">
     <Swiper
       modules={[Autoplay]}
-      spaceBetween={20}
-      slidesPerView={3}
+      spaceBetween={10} // تقليل المسافة بين الشرائح
+      slidesPerView={1} // جعل الافتراضي شريحة واحدة
       autoplay={{ delay: 3000 }}
       breakpoints={{
-        640: { slidesPerView: 2 },
+        320: { slidesPerView: 1 }, // دعم الشاشات الصغيرة جدًا
+        500: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
         1280: { slidesPerView: 4 },
       }}
+      dir={dir}
       className="px-6"
     >
       {cryptoData.map((crypto, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide   dir={dir} key={index}>
           <div className="button-border  rounded-xl">
-            <div className="p-6 bg-card_bakgound  rounded-xl text-white flex flex-col items-center">
+            <div className="p-6 bg-card_bakgound text-start  rounded-xl text-white flex flex-col items-center">
               <div className="w-full flex gap-4">
                 <Image
                   src={crypto.icon}

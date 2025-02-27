@@ -46,10 +46,104 @@ import why3 from "./why3.png";
 import arrowLeft from "./arrowLeft.svg";
 import arrowRight from "./arrowRight.svg";
 import cardLogo from "./cardLogo.svg";
+import location_back from "./location_back.png";
+import location1 from "./location1.png";
+import location2 from "./lovation2.png";
+import location3 from "./location3.png";
+import Testimonials from "./Testimonials.png";
+import Testimonials1 from "./Testimonials1.png";
+import gold_star from "./gold_star.png";
+import coma from "./coma.png";
+import halfCircule from "./halfCircule.png";
+import company1 from "./company1.png";
+import company2 from "./copmany2.png";
+import company3 from "./copmany3.png";
+import company4 from "./copmany4.png";
+import company5 from "./copmany5.png";
+import company6 from "./copmany6.png";
+import company7 from "./copmany7.png";
+import company8 from "./copmany8.png";
+import ParthnerImg from "./ParthnerImg.png";
+
+import ethereum from "./ethereum.png";
+import bitcoine from "./bitcoine.png";
+import masterCard from "./masterCard.png";
+import payeer from "./payeer.png";
+import pmony from "./pmony.png";
+import tether from "./tether.png";
+import transferByEx from "./transferByEx.png";
+import visa from "./visa.png";
+import voucherry from "./voucherry.png";
+import western from "./western.png";
+import Get_In_Touch from "./Get In Touch.png";
+import envlope from "./envlope.png";
+import massege from "./massege.png";
+import telephone from "./telephone.png";
+import arrwos_footer from "./arrwos_footer.png";
+import footer_img from "./footer-img.png";
+import Apps from "./Apps.png";
+
+import mTeem1 from "./mTeem(1).png";
+import mTeem2 from "./mTeem(2).png";
+import mTeem3 from "./mTeem(3).png";
+import mTeem4 from "./mTeem(4).png";
+import mTeem5 from "./mTeem(5).png";
+import arrow from "./teamCaredArrow.svg";
+import about1 from "./about1.png";
+import about2 from "./about2.png";
+import about3 from "./about3.png";
+import about4 from "./about4.png";
+import about5 from "./about5.png";
 
 export {
   BNB,
+  about1,
+  about2,
+  about3,
+  about4,
+  about5,
+  gold_star,
+  Apps,
+  footer_img,
+  ParthnerImg,
+  Get_In_Touch,
+  massege,
+  telephone,
+  arrwos_footer,
+  envlope,
+  company1,
+  company2,
+  company3,
+  company4,
+  company5,
+  company6,
+  company7,
+  company8,
+  halfCircule,
+  coma,
+  Testimonials1,
   Straight3,
+  location3,
+  Testimonials,
+  location1,
+  location2,
+  location_back,
+  arrow,
+  mTeem1,
+  mTeem2,
+  mTeem3,
+  mTeem4,
+  mTeem5,
+  western,
+  voucherry,
+  visa,
+  transferByEx,
+  tether,
+  pmony,
+  payeer,
+  masterCard,
+  bitcoine,
+  ethereum,
   arrowLeft,
   arrowRight,
   cardLogo,
