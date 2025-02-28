@@ -309,4 +309,45 @@ div[data-radix-popper-content-wrapper=""] {
     clip-path: ellipse(150% 100% at 50% 0%);
   } 
 }
+.tutorial .swiper-slide-active{
+  position: relative;
+  padding: 1px;
+  border-radius: 12px;
+}
 
+.tutorial .swiper-slide-active::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.2px;
+  border-radius: 10px; 
+  background: linear-gradient(90deg, #084398, #00befd);
+  -webkit-mask:     
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+}
+.tutorial .swiper-slide-next::before  {
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 10000000000;
+
+}
+.tutorial .swiper-slide-prev  {
+
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 10000000000;
+  top: 0;
+  }
+ /* .tutorial .swiper-slide::before {
+  position: relative;   
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 10000000000;
+  top: 0;
+  } */

@@ -28,7 +28,7 @@ let payArr = [
   [visa, pmony, "md:mt-8", "md:mt-6 md:me-5 md:-translate-x-14"],
   [bitcoine, masterCard, "md:mb-24", "md:mt-3 md:-translate-x-10"],
 ];
-const RealAccountTypes = () => {
+const DwMethods = () => {
   return (
     <div className=" pt-12 bg-DwMethods_Bg h-fit md:h-screen ">
       <Title
@@ -64,4 +64,4 @@ const RealAccountTypes = () => {
   );
 };
 
-export default RealAccountTypes;
+export default DwMethods;
