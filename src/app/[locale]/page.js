@@ -29,12 +29,14 @@ export default function Home() {
       <div className="w-full h-full bg-[#3040614]">
        <Banner />
         <TeamSection />
-        <AwardSection isExplore={true}/>
         <RealAccountTypes/>
+        <AwardSection isExplore={true}/>
+ 
         <StraightSection />
         <LicenseSection />
-        <WhyInzo />
         <DwMethods />
+        <WhyInzo />
+       
         <RepresentativeSection/>
         <CompanyGlobalSection/>
         <FinancialReport/>
