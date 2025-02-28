@@ -37,7 +37,7 @@ const cryptoData = [
   ];
  
 const BannerSwiper = () => {
-  const dir = localStorage.getItem("dir") || "ltr"
+  const dir = typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
   useLanguageDirection();
   return (
     <div className="w-full  pb-3">
