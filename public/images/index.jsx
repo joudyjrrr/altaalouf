@@ -89,9 +89,25 @@ import mTeem3 from "./mTeem(3).png";
 import mTeem4 from "./mTeem(4).png";
 import mTeem5 from "./mTeem(5).png";
 import arrow from "./teamCaredArrow.svg";
+<<<<<<< HEAD
 
 export {
   BNB,
+=======
+import about1 from "./about1.png";
+import about2 from "./about2.png";
+import about3 from "./about3.png";
+import about4 from "./about4.png";
+import about5 from "./about5.png";
+
+export {
+  BNB,
+  about1,
+  about2,
+  about3,
+  about4,
+  about5,
+>>>>>>> 8ebdc52a07dadd82e90c9a0d50f5af098cb5c3c1
   gold_star,
   Apps,
   footer_img,
