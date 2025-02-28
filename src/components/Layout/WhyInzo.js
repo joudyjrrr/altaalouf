@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef, useState } from "react";
 import Title from "./Title";
 import { why1, why2, why3, arrowLeft, arrowRight } from "../../../public/images";
@@ -38,8 +39,14 @@ const data = [
 ];
 const WhyInzo = () => {
   const swiperRef = useRef(null);
-  const dir = typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
+  const [dir, setDir] = useState("ltr");
   const [swiperKey, setSwiperKey] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setDir(localStorage.getItem("dir") || "ltr");
+    }
+  }, []);
+  
   useLanguageDirection();
   useEffect(() => {
     setSwiperKey((prevKey) => prevKey + 1);

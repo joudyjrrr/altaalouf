@@ -71,8 +71,14 @@ const cryptoData = [
 
 const RealAccountTypes = () => {
   const swiperRef = useRef(null);
-  const dir =
-    typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
+  const [dir, setDir] = useState("ltr");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setDir(localStorage.getItem("dir") || "ltr");
+    }
+  }, []);
+
   const [swiperKey, setSwiperKey] = useState(0);
   useLanguageDirection();
   useEffect(() => {

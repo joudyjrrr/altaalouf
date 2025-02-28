@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useEffect, useState } from "react";
 import Title from "./Title";
 import {
@@ -18,8 +19,14 @@ import useLanguageDirection from "@/i18n/useLanguageDirection";
 
 const LicenseSection = () => {
   const swiperRef = useRef(null);
-  const dir = typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
+  const [dir, setDir] = useState("ltr");
   const [swiperKey, setSwiperKey] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setDir(localStorage.getItem("dir") || "ltr");
+    }
+  }, []);
+
   useLanguageDirection();
   useEffect(() => {
     setSwiperKey((prevKey) => prevKey + 1);

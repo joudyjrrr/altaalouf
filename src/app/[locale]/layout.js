@@ -20,8 +20,9 @@ export const metadata = {
 const myFont = localFont({ src: "./../../../public/font/Tajawal Regular.ttf" });
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params
 }) {
+  const { locale } = await params;
   if (!routing.locales.includes(locale)) {
     notFound();
   }

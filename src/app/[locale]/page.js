@@ -19,10 +19,11 @@ import FinancialReport from "@/components/Layout/FinancialReport";
 import DwMethods from "@/components/Layout/DwMethods";
 
 import MeetTeam from "@/components/Layout/MeetTeam";
-import ExploreSection from "@/components/Layout/ExploreSection";
+
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
+  
   return (
     <div className="w-full overflow-x-hidden">
 
