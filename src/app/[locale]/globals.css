@@ -12,13 +12,12 @@
 body {
   padding: 0 0;
   background: white;
- 
 
   /* background: linear-gradient(to bottom, #040614 50%, #0f2147 50%); */
   font-family: "Ah Moharram Bold", sans-serif;
 }
 
-@layer base { 
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -86,36 +85,32 @@ body {
   box-shadow: 0px 0px 50px rgba(58, 59, 59, 0.8);
 }
 
-
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 229px !important;
 }
 
-.swiper-button-prev  {
-  background: linear-gradient(180deg, #084398 20%, #00BEFD 100%);
+.swiper-button-prev {
+  background: linear-gradient(180deg, #084398 20%, #00befd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; 
+  color: transparent;
   font-weight: 800;
-
 }
 .swiper-button-next {
-  background: linear-gradient(180deg, #00BEFD 20%, #084398  100%);
+  background: linear-gradient(180deg, #00befd 20%, #084398 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; 
+  color: transparent;
   font-weight: 800;
 }
-
 
 .swiper-pagination {
   position: absolute !important;
 }
 .swiper-pagination-bullet {
- 
   border: 4px solid #fff !important;
 
   padding: 6px !important;
@@ -123,9 +118,9 @@ body {
 
 .swiper-pagination-bullet-active {
   /* background-color: blue !important; */
-  box-shadow: 0px 0px 0px 1.8px #5F739F;
+  box-shadow: 0px 0px 0px 1.8px #5f739f;
 
-background: linear-gradient(90deg, #084398 0%, #00BEFD 100%) !important;
+  background: linear-gradient(90deg, #084398 0%, #00befd 100%) !important;
 }
 
 .swiper-wrapper {
@@ -133,11 +128,14 @@ background: linear-gradient(90deg, #084398 0%, #00BEFD 100%) !important;
   overflow: hidden; */
 }
 
-/* .image-mask {
+.image-mask {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-} */
-
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+}
 
 div[data-radix-popper-content-wrapper=""] {
   /* position: relative !important; */
@@ -192,24 +190,43 @@ div[data-radix-popper-content-wrapper=""] {
   color: white;
   border: 1.2px solid transparent;
 }
-.button-border-transparent {
+.button-border-input {
+  background: linear-gradient(#04061399, #04061399) padding-box,
+    linear-gradient(90deg, #084398, #00befd) border-box;
+  color: white;
+  border: 1.2px solid transparent;
+}
+.button-border-transparent {  
   position: relative;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 5px;
+} 
+.input-border {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #084398, #00befd) !important;
+  padding: 1.2px;
+  border-radius: 10px;
 }
-.button-border-transparent::before{
+.ReactFlagsSelect-module_selectBtn__19wW7{
+border: none !important;
+padding: 0 !important;
+
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7::after{
+  border:none !important;
+}
+.button-border-transparent::before {
   content: "";
   position: absolute;
   inset: 0;
   padding: 1.2px;
-  border-radius: 50px; 
+  border-radius: 50px;
   background: linear-gradient(90deg, #084398, #00befd);
-  -webkit-mask:     
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  
 }
 .star {
   background-image: radial-gradient(
@@ -226,42 +243,28 @@ div[data-radix-popper-content-wrapper=""] {
 }
 .curved-section {
   clip-path: ellipse(100% 100% at 50% 0%);
-} 
+}
 .curved-section-2 {
   clip-path: ellipse(100% 100% at 50% 120%);
 }
 .License.swiper-pagination-horizontal {
-  top: 15px  !important;
+  top: 15px !important;
 }
 .mask-gradient {
-  background: #121FCF;
-  background:  linear-gradient(180deg, #084398 0%, #00BEFD 100%);
+  background: #121fcf;
+  background: linear-gradient(180deg, #084398 0%, #00befd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
 .Why.swiper-pagination-horizontal {
-  top: 10px  !important;
+  top: 10px !important;
 }
 
 /* .Testimonials.swiper-pagination-bullets.swiper-pagination-horizontal{
   top: 10px   !important;
 } */
 
-.button-border-transparent::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 1.2px;
-  border-radius: 50px; 
-  background: linear-gradient(90deg, #084398, #00befd);
-  -webkit-mask:     
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  
-}
+
 .star {
   background-image: radial-gradient(
       circle at top right,
@@ -277,36 +280,82 @@ div[data-radix-popper-content-wrapper=""] {
 }
 .curved-section {
   clip-path: ellipse(100% 100% at 50% 0%);
-} 
+}
 .curved-section-2 {
   clip-path: ellipse(100% 100% at 50% 120%);
 }
 .License.swiper-pagination-horizontal {
-  top: 12px  !important;
+  top: 12px !important;
 }
 .mask-gradient {
-  background: #121FCF;
-  background:  linear-gradient(180deg, #084398 0%, #00BEFD 100%);
+  background: #121fcf;
+  background: linear-gradient(180deg, #084398 0%, #00befd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
 .Why.swiper-pagination-horizontal {
-  top: 12px  !important;
+  top: 12px !important;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 8px !important;
 }
 
-.trend_clip{
-  clip-path:ellipse(75% 50% at 50% 50%) ;
+.trend_clip {
+  clip-path: ellipse(75% 50% at 50% 50%);
 }
-@media (max-width:768px) {
-  .trend_clip{
-    clip-path:ellipse(155% 50% at 50% 50%) !important ;
+@media (max-width: 768px) {
+  .trend_clip {
+    clip-path: ellipse(155% 50% at 50% 50%) !important ;
   }
   .curved-section {
     clip-path: ellipse(150% 100% at 50% 0%);
-  } 
+  }
+}
+.tutorial .swiper-slide-active {
+  position: relative;
+  padding: 1px;
+  border-radius: 12px;
+  transform: scale(1); /* الكارت في المنتصف بالحجم الطبيعي */
+}
+.tutorial .swiper-slide-active .next-prev {
+  display: none;
+}
+.tutorial .swiper-slide-active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.2px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #084398, #00befd);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.tutorial .swiper-slide-next .next-prev {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  z-index: 10000000000;
+  top: 0;
+}
+.tutorial .swiper-slide-prev .next-prev {
+  display: block;
+  background: rgba(0, 0, 0, 0.4) !important;
+  z-index: 10000000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* transform: scale(10%); */
+}
+.tutorial .swiper-slide-next {
 }
 
+.tutorial .swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.85); 
+}
+.react-datepicker-wrapper{
+  width: 100% !important;
+}

@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef, useState } from "react";
 import Title from "./Title";
 import { why1, why2, why3, arrowLeft, arrowRight } from "../../../public/images";
@@ -38,8 +39,14 @@ const data = [
 ];
 const WhyInzo = () => {
   const swiperRef = useRef(null);
-  const dir = typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
+  const [dir, setDir] = useState("ltr");
   const [swiperKey, setSwiperKey] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setDir(localStorage.getItem("dir") || "ltr");
+    }
+  }, []);
+  
   useLanguageDirection();
   useEffect(() => {
     setSwiperKey((prevKey) => prevKey + 1);
@@ -84,13 +91,13 @@ const WhyInzo = () => {
       >
         {data.map((d, index) => (
           <SwiperSlide key={index}   dir={dir} >
-            <div className="bg-card_why py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
-              <div className="flex gap-2 items-center text-white">
-                <Image src={d.img} alt="" width={50} height={50} />
-                <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
+              <div className="bg-card_why py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
+                <div className="flex gap-2 items-center text-white">
+                  <Image src={d.img} alt="" width={50} height={50} />
+                  <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
+                </div>
+                <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
               </div>
-              <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
-            </div>
           </SwiperSlide>
         ))}
       </Swiper>

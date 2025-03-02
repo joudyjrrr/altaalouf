@@ -19,22 +19,25 @@ import FinancialReport from "@/components/Layout/FinancialReport";
 import DwMethods from "@/components/Layout/DwMethods";
 
 import MeetTeam from "@/components/Layout/MeetTeam";
-import ExploreSection from "@/components/Layout/ExploreSection";
+
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
+  
   return (
     <div className="w-full overflow-x-hidden">
 
       <div className="w-full h-full bg-[#3040614]">
        <Banner />
         <TeamSection />
-        <AwardSection isExplore={true}/>
         <RealAccountTypes/>
+        <AwardSection isExplore={true}/>
+ 
         <StraightSection />
         <LicenseSection />
-        <WhyInzo />
         <DwMethods />
+        <WhyInzo />
+       
         <RepresentativeSection/>
         <CompanyGlobalSection/>
         <FinancialReport/>

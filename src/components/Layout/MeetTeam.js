@@ -21,7 +21,10 @@ let imgData = [
 
 const MeetTeam = () => {
   return (
-    <div className="relative pt-12 bg-gradient-to-b  from-[#050B1B] to-[#0F2147]   bg-no-repeat h-screen ">
+    <div
+      className="relative pb-12 bg-gradient-to-b  from-[#050B1B] to-[#0F2147] 
+      bg-no-repeat h-[auto] flex flex-col items-center justify-center"
+    >
       <div className="absolute top-0 left-0 right-0 bg-teamStars_Bg h-[50%]"></div>
 
       <Title
@@ -30,12 +33,12 @@ const MeetTeam = () => {
         title1Color={"white"}
         title2Color={"secondary"}
       />
-      <div className=" w-full pt-16 mx-auto justify-center grid grid-cols-5 px-8 gap-4 flex-wrap">
+      <div className=" w-full pt-16 mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center">
         {imgData.map((image, index) => (
           <div
             key={index}
-            className={`h-[320px] w-[245px] ${
-              index % 2 === 0 ? "mb-14" : " mt-14"
+            className={`h-[320px] w-[235px]  mx-auto ${
+              index % 2 === 0 ? "md:mb-14" : " md:mt-14"
             } relative `}
           >
             <Image src={image.img} alt="" className="w-full h-full" />
@@ -53,11 +56,11 @@ const MeetTeam = () => {
             </div>
           </div>
         ))}
-        <Button className="button-border px-5 py-6 font-semibold text-[18px]">
-          Meet The Whole Team
-        </Button>
       </div>
 
+      <Button className="button-border px-5 py-6 font-semibold text-[18px] mx-auto mt-5">
+        Meet The Whole Team
+      </Button>
       {/* 
         <div className="relative w-[70%] h-[100%]
          bg-DwIcons_Bg bg-contain bg-no-repeat mt-10 mx-auto">     

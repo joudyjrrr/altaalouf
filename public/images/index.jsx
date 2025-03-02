@@ -95,10 +95,23 @@ import about3 from "./about3.png";
 import about4 from "./about4.png";
 import about5 from "./about5.png";
 
+import tutorial from "./tutorial.png";
+import real_account_bg from "./real_account_bg.jpg";
+import real_account from "./real_account.png";
+import flag from "./flag.png";
+import freq_aps from "./freq_aps.png";
+import plus from "./plus.png";
+
 export {
   BNB,
   about1,
+  freq_aps,
+  plus,
+  flag,
+  real_account_bg,
+  real_account,
   about2,
+  tutorial,
   about3,
   about4,
   about5,

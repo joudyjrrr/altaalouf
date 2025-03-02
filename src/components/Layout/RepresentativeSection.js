@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef, useState } from "react";
 import Title from "./Title";
 import {
@@ -57,9 +58,14 @@ const dataTestimonials = [
 ];
 const RepresentativeSection = () => {
   const swiperRef = useRef(null);
-  const dir =
-    typeof window !== "undefined" ? localStorage.getItem("dir") : "ltr";
+  const [dir, setDir] = useState("ltr");
   const [swiperKey, setSwiperKey] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setDir(localStorage.getItem("dir") || "ltr");
+    }
+  }, []);
+
   useLanguageDirection();
   useEffect(() => {
     setSwiperKey((prevKey) => prevKey + 1);
@@ -123,38 +129,7 @@ const RepresentativeSection = () => {
         </div>
       </div>
       <div className="relative ">
-        <div className=" flex justify-center items-center gap-32 mt-12 absolute end-0 bottom-[10%] max-md:!bottom-0 z-[2000]">
-          <button
-            onClick={() => swiperRef.current?.slidePrev()}
-            className="relative z-[2000]"
-          >
-            <Image
-              src={arrowLeft}
-              alt="icon"
-              width={22}
-              height={22}
-              className="me-4 rtl:rotate-180 "
-            />
-          </button>
-          <div
-            style={{
-              top: "10px !important",
-            }}
-            className="custom-pagination3   flex justify-center gap-2 !top-0 absolute z-[1000000000000]"
-          ></div>
-          <button
-            onClick={() => swiperRef.current?.slideNext()}
-            className="relative z-[2000]"
-          >
-            <Image
-              src={arrowRight}
-              alt="icon"
-              width={22}
-              height={22}
-              className="me-4  rtl:rotate-180"
-            />
-          </button>
-        </div>
+            
         <Swiper
           key={swiperKey}
           modules={[Autoplay, Pagination, Navigation]}
