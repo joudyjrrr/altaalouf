@@ -7,6 +7,7 @@ const Title = ({
   className = "",
   title1Color,
   title2Color,
+  classNameImg,
   img
 }) => {
   return (
@@ -15,7 +16,7 @@ const Title = ({
         src={img ? img : Inzo}
         width={150}
         height={50}
-        // className="image-mask"
+        className={`image-mask ${classNameImg}`}
         alt="inzo"
       />
       <div className="absolute top-[55px] max-sm:!top-[75px] flex gap-2 text-5xl max-md:text-4xl  max-sm:!text-2xl  font-bold">  

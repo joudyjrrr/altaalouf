@@ -11,6 +11,7 @@ import Image from "next/image";
 import WhyInzo from "@/components/Layout/WhyInzo";
 import LicenseSection from "@/components/Layout/LicenseSection";
 import AwardSection from "@/components/Layout/AwardSection";
+import Title from "@/components/Layout/Title";
 
 const data1 = [
   {
@@ -48,10 +49,8 @@ const page = () => {
       <div className="w-full pt-4 bg-aboutBanner h-screen  bg-cover bg-center bg-no-repeat  z-[100]">
         <div className="w-full  bg-about_Gr h-full flex justify-center items-end max-sm:items-center  pb-8">
           <div className="flex flex-col gap-2 text-center w-full ">
-            <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-              <h1 className={`text-secondary `}>{`About`}</h1>
-              <h1 className={`text-white `}>{`the company`}</h1>
-            </div>
+  
+            <Title title1={`About`} title2={`the company`}/>
             <div className="flex flex-col gap-2 text-white text-lg max-md:text-sm">
               <p>
                 INZO is a leading global broker providing trading services. .
@@ -128,7 +127,6 @@ const page = () => {
             providing them with the best solutions. Starting with the lowest
             spreads in the Middle East, for which it received an award at the
             <span className="text-secondary font-semibold">
-              {" "}
               Mumbai Expo 2023
             </span>
             , and moving on to offering multiple deposit and withdrawal methods

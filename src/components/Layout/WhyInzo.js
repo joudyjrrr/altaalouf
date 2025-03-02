@@ -91,13 +91,13 @@ const WhyInzo = () => {
       >
         {data.map((d, index) => (
           <SwiperSlide key={index}   dir={dir} >
-            <div className="bg-card_why py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
-              <div className="flex gap-2 items-center text-white">
-                <Image src={d.img} alt="" width={50} height={50} />
-                <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
+              <div className="bg-card_why py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
+                <div className="flex gap-2 items-center text-white">
+                  <Image src={d.img} alt="" width={50} height={50} />
+                  <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
+                </div>
+                <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
               </div>
-              <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
-            </div>
           </SwiperSlide>
         ))}
       </Swiper>

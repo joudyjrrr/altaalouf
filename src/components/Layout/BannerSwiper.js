@@ -44,7 +44,7 @@ const BannerSwiper = () => {
     if (typeof window !== "undefined") {
       setDir(localStorage.getItem("dir") || "ltr");
     }
-  }, []);
+  }, []); 
 
   useLanguageDirection();
   return (
