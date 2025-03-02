@@ -11,11 +11,7 @@ const FinancialReport = () => {
     { value: 30, textValue: "K", text: "Monthly Active Client" },
   ];
   return (
-<<<<<<< HEAD
-    <div className="bg-stars_white bg-[#0f2147]  w-full pb-12 mb-12  ">
-=======
     <div className="bg-stars_white bg-[#0f2147]  w-full pb-12   ">
->>>>>>> 8ebdc52a07dadd82e90c9a0d50f5af098cb5c3c1
       <div className="bg-stars_white bg-center bg-no-repeat bg-cover h-full">
         <Title title1={`Financial`} title2={`Report`} />
         <div className="mt-16 grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 px-32 py-8 justify-center mx-auto">

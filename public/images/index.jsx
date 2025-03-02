@@ -4,7 +4,6 @@ import fr from "./fr-flag.webp";
 import uk from "./uk-flag.webp";
 import iraq from "./iraq-flag2.webp";
 import pl from "./pl-flag.webp";
-
 import banner from "./banner.png";
 import star from "./start.jpg";
 import BNB from "./BNB.svg";
@@ -28,7 +27,7 @@ import arrwos from "./arrwos.svg";
 import android from "./android.png";
 import ios from "./ios.png";
 import mac from "./mac.png";
-import windows from "./windows.png";
+import windows from "./windows.png";            
 import gift from "./gift.png";
 import square_left from "./square_left.png";
 import square_rigtht from "./square_rigtht.png";
@@ -89,11 +88,7 @@ import mTeem3 from "./mTeem(3).png";
 import mTeem4 from "./mTeem(4).png";
 import mTeem5 from "./mTeem(5).png";
 import arrow from "./teamCaredArrow.svg";
-<<<<<<< HEAD
 
-export {
-  BNB,
-=======
 import about1 from "./about1.png";
 import about2 from "./about2.png";
 import about3 from "./about3.png";
@@ -107,7 +102,6 @@ export {
   about3,
   about4,
   about5,
->>>>>>> 8ebdc52a07dadd82e90c9a0d50f5af098cb5c3c1
   gold_star,
   Apps,
   footer_img,
