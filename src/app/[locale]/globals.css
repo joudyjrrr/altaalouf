@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("/public/font/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   padding: 0 0;
   background: white;
@@ -196,11 +203,11 @@ div[data-radix-popper-content-wrapper=""] {
   color: white;
   border: 1.2px solid transparent;
 }
-.button-border-transparent {  
+.button-border-transparent {
   position: relative;
   padding: 10px;
   border-radius: 5px;
-} 
+}
 .input-border {
   width: 100%;
   height: 100%;
@@ -208,14 +215,13 @@ div[data-radix-popper-content-wrapper=""] {
   padding: 1.2px;
   border-radius: 10px;
 }
-.ReactFlagsSelect-module_selectBtn__19wW7{
-border: none !important;
-padding: 0 !important;
-
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  border: none !important;
+  padding: 0 !important;
 }
 
-.ReactFlagsSelect-module_selectBtn__19wW7::after{
-  border:none !important;
+.ReactFlagsSelect-module_selectBtn__19wW7::after {
+  border: none !important;
 }
 .button-border-transparent::before {
   content: "";
@@ -263,7 +269,6 @@ padding: 0 !important;
 /* .Testimonials.swiper-pagination-bullets.swiper-pagination-horizontal{
   top: 10px   !important;
 } */
-
 
 .star {
   background-image: radial-gradient(
@@ -354,8 +359,8 @@ padding: 0 !important;
 }
 
 .tutorial .swiper-slide:not(.swiper-slide-active) {
-  transform: scale(0.85); 
+  transform: scale(0.85);
 }
-.react-datepicker-wrapper{
+.react-datepicker-wrapper {
   width: 100% !important;
 }
