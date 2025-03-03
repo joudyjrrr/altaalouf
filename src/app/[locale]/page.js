@@ -26,9 +26,8 @@ export default function Home() {
   
   return (
     <div className="w-full overflow-x-hidden">
-
       <div className="w-full h-full bg-[#3040614]">
-       <Banner />
+        <Banner />
         <TeamSection />
         <RealAccountTypes/>
         <AwardSection isExplore={true}/>
@@ -44,6 +43,5 @@ export default function Home() {
         <MeetTeam />   
       </div>
     </div>
-
   );
 }

@@ -108,6 +108,8 @@ export default {
         Footer_bg: "url('/images/Footer_bg.png')",
 
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
+        teamCard_Bg: "url('/images/teamCardBg.svg')",
+
         aboutBanner: "url('/images/aboutBanner.png')",
         about_Gr: "linear-gradient(0deg, #0f214785  52.46%, #0f21476b  100%)",
         about_Gr_Card: "linear-gradient(0deg, #084196 0%, #0575C1 61.01%)",
@@ -126,6 +128,8 @@ export default {
         frequantly_bg: "url('/images/frequantly_bg.png')",
         frequantly_card_bg: "url('/images/freq_card_bg.png')",
 
+        ourTeamBg: "url('/images/ourTeamBg.png')",
+        teamPartnerBg: "url('/images/teamPartnerBg.png')",
       },
 
       fontFamily: {
