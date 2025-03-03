@@ -4,7 +4,6 @@ import fr from "./fr-flag.webp";
 import uk from "./uk-flag.webp";
 import iraq from "./iraq-flag2.webp";
 import pl from "./pl-flag.webp";
-
 import banner from "./banner.png";
 import star from "./start.jpg";
 import BNB from "./BNB.svg";
@@ -28,7 +27,7 @@ import arrwos from "./arrwos.svg";
 import android from "./android.png";
 import ios from "./ios.png";
 import mac from "./mac.png";
-import windows from "./windows.png";
+import windows from "./windows.png";            
 import gift from "./gift.png";
 import square_left from "./square_left.png";
 import square_rigtht from "./square_rigtht.png";
@@ -101,11 +100,16 @@ import real_account from "./real_account.png";
 import flag from "./flag.png";
 import freq_aps from "./freq_aps.png";
 import plus from "./plus.png";
+import trend_platform from "./trend-platform-bg.png";
+
+
+
 
 export {
   BNB,
   about1,
   freq_aps,
+  trend_platform,
   plus,
   flag,
   real_account_bg,

@@ -130,12 +130,9 @@ body {
 
 .image-mask {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0)
-  );
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
+
 
 div[data-radix-popper-content-wrapper=""] {
   /* position: relative !important; */
@@ -358,4 +355,7 @@ padding: 0 !important;
 }
 .react-datepicker-wrapper{
   width: 100% !important;
+}
+.curved-section-trend {
+  clip-path: ellipse(100% 100% at 50% 4%)
 }

@@ -15,14 +15,13 @@ import { FaCaretRight } from "react-icons/fa6";
 const page = () => {
   return (
     <div className="w-full  relative h-full">
-      <div className="w-full pt-4  bg-banner  bg-cover bg-center bg-no-repeat z-[100]">
-        <div className="w-full pt-16 bg-tutorial_Gr  h-full flex justify-start items-center gap-4 flex-col">
-          <Title
-            title1={`Open`}
-            title2={`Real Account`}
-            classNameImg={`hidden`}
-          />
-          <div className="bg-primary w-[75%] mt-20 rounded-t-lg    px-16 py-4 mx-auto">
+      <div className="w-full pt-12  bg-ourTeamBg h-screen bg-cover bg-center bg-no-repeat z-[100]">
+        <div className="w-full pt-16   h-full flex justify-start items-center gap-4 flex-col">
+            <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+            <h1 className={`text-secondary `}>{`Open `}</h1>
+            <h1 className={`text-white `}>{`Real Account`}</h1>
+          </div>
+          <div className="bg-primary w-[75%] mt-8 rounded-t-lg    px-16 py-4 mx-auto">
             <div className="grid grid-cols-2 gap-4 w-full">
               <Select label={`Platform Type`} />
               <Select label={`Account Type`} />
