@@ -92,7 +92,7 @@ export default {
         Testimonial_back:
           "linear-gradient(174.71deg, rgba(8, 20, 46, 0) 6.18%, rgba(0, 192, 255, 0.628674) 79.61%, #00C0FF 119.12%)",
         company_global:
-          "linear-gradient(0deg, rgba(15,33,71,1) 0%, rgba(15,33,71,0) 100%)",
+          "linear-gradient(180deg, rgba(15, 33, 71, 0) 0%, #0F2147 63.5%);",
         company1: "url('/images/company1.png')",
         Representative_card_bg: "url('/images/Representative_card_bg.png')",
         DwMethods_Bg: "url('/images/DwMethods.png')",
@@ -105,11 +105,10 @@ export default {
           "linear-gradient(178.99deg, rgba(1, 8, 28, 0.05) 5.01%, rgba(237, 242, 248, 0.02) 23.88%, rgba(237, 242, 248, 0.08) 109.65%);",
         Footer_Gr3:
           " linear-gradient(0deg, #030613 0%, rgba(3, 6, 19, 0) 100%)",
+        
         Footer_bg: "url('/images/Footer_bg.png')",
 
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
-        teamCard_Bg: "url('/images/teamCardBg.svg')",
-
         aboutBanner: "url('/images/aboutBanner.png')",
         about_Gr: "linear-gradient(0deg, #0f214785  52.46%, #0f21476b  100%)",
         about_Gr_Card: "linear-gradient(0deg, #084196 0%, #0575C1 61.01%)",
@@ -121,7 +120,7 @@ export default {
           "linear-gradient(0deg, #0F2147 52.46%, rgba(15, 33, 71, 0.5) 100%);",
         real_account_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0.3) 100%);",
-          frequantly_Gr:
+        frequantly_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0) 100%);",
         contact_Bg: "url('/images/conatct2.png')",
         real_account_bg: "url('/images/real_account_bg.jpg')",
@@ -130,10 +129,17 @@ export default {
 
         ourTeamBg: "url('/images/ourTeamBg.png')",
         teamPartnerBg: "url('/images/teamPartnerBg.png')",
+        trend_platform_bg: "url('/images/trend-platform-bg.png')",
+        trend_platform_Gr: "linear-gradient(180deg, #0F2147 0%, transparent 100%);",
+        trend_platform_Gr2:
+          "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
+          parthner_bg: "url('/images/parthner_bg.png')",
+          location_bg: "url('/images/location_bg.png')",
       },
 
       fontFamily: {
         moharram: ["Ah Moharram Bold", "sans-serif"],
+        sans: ["Open Sans", "sans-serif"],
       },
       screens: {
         xl: "1800px",

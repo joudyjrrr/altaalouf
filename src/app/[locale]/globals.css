@@ -1,13 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
-  font-family: "Ah Moharram Bold";
-  src: url("/public/font//Ah-moharram-bold\ Regular.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("/public/font/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
+
+
 
 body {
   padding: 0 0;
@@ -187,6 +188,11 @@ div[data-radix-popper-content-wrapper=""] {
   color: white;
   border: 1.2px solid transparent;
 }
+.button-border-footer {
+  background: linear-gradient(90deg, #084398, #00befd);
+  height: 1px;
+  width: 100%;
+}
 .button-border-input {
   background: linear-gradient(#04061399, #04061399) padding-box,
     linear-gradient(90deg, #084398, #00befd) border-box;
@@ -197,6 +203,7 @@ div[data-radix-popper-content-wrapper=""] {
   position: relative;
   padding: 10px;
   border-radius: 5px;
+
 } 
 .input-border {
   width: 100%;
@@ -356,3 +363,32 @@ padding: 0 !important;
 .react-datepicker-wrapper{
   width: 100% !important;
 }
+.curved-section-trend {
+  clip-path: ellipse(100% 100% at 50% 4%)
+}
+.swiper-slide-next .testimonial-content {
+  position: relative;
+}
+.swiper-slide-prev .testimonial-content {
+  position: relative;
+}
+
+.swiper-slide-next .testimonial-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #030613 21.27%, rgba(8, 20, 46, 0) 100%);
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 12px;
+}
+.swiper-slide-prev .testimonial-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #030613 21.27%, rgba(8, 20, 46, 0) 100%);
+  z-index: 1000;
+  pointer-events: none; 
+  border-radius: 12px; 
+}
+
