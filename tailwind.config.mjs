@@ -83,7 +83,7 @@ export default {
         License_gradient:
           "linear-gradient(0.56deg, rgba(8, 20, 46, 0) 35.71%, #040C1D 122.86%);",
         License_Bg: "url('/images/License6.png')",
-        License_Bg2: "url('/images/License1.png')",
+        License_Bg2: "linear-gradient(160.75deg, #08142e 24.94%, rgba(10, 41, 90, 0.628674) 72.23%, #168AB0 110.77%);",
         License_Bg3: "url('/images/License3.png')",
         MultiStarTop: "url('/images/MultiStarTop.png')",
         card_why: "url('/images/card-Back_why.png')",
@@ -135,6 +135,8 @@ export default {
           "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
           parthner_bg: "url('/images/parthner_bg.png')",
           location_bg: "url('/images/location_bg.png')",
+          
+
       },
 
       fontFamily: {

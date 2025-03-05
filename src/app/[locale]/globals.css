@@ -252,7 +252,7 @@ padding: 0 !important;
   clip-path: ellipse(100% 100% at 50% 120%);
 }
 .License.swiper-pagination-horizontal {
-  top: 15px !important;
+  top: 60px !important;
 }
 .mask-gradient {
   background: #121fcf;
@@ -288,8 +288,8 @@ padding: 0 !important;
 .curved-section-2 {
   clip-path: ellipse(100% 100% at 50% 120%);
 }
-.License.swiper-pagination-horizontal {
-  top: 12px !important;
+.License .swiper-pagination-horizontal {
+  top: 50px !important;
 }
 .mask-gradient {
   background: #121fcf;
@@ -301,7 +301,7 @@ padding: 0 !important;
   top: 12px !important;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: 8px !important;
+  top: 8px;
 }
 
 .trend_clip {
