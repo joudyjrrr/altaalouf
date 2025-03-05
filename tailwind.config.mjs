@@ -121,7 +121,7 @@ export default {
           "linear-gradient(0deg, #0F2147 52.46%, rgba(15, 33, 71, 0.5) 100%);",
         real_account_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0.3) 100%);",
-          frequantly_Gr:
+        frequantly_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0) 100%);",
         contact_Bg: "url('/images/conatct2.png')",
         real_account_bg: "url('/images/real_account_bg.jpg')",
@@ -130,6 +130,7 @@ export default {
 
         ourTeamBg: "url('/images/ourTeamBg.png')",
         teamPartnerBg: "url('/images/teamPartnerBg.png')",
+        inzoReal_Bg: "url('/images/inzoReal_Bg.png')",
       },
 
       fontFamily: {

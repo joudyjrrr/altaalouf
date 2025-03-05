@@ -84,7 +84,9 @@ body {
 .custom-shadow {
   box-shadow: 0px 0px 50px rgba(58, 59, 59, 0.8);
 }
-
+.darkBg {
+  background: #091630;
+}
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 229px !important;
@@ -130,9 +132,12 @@ body {
 
 .image-mask {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
 }
-
 
 div[data-radix-popper-content-wrapper=""] {
   /* position: relative !important; */
@@ -171,7 +176,12 @@ div[data-radix-popper-content-wrapper=""] {
   height: 100%;
   border-radius: 6px;
 }
-
+.card-border {
+  background: linear-gradient(#0a1f44, #0a1f44) padding-box,
+    linear-gradient(90deg, #00befd, #084398) border-box;
+  color: white;
+  border: 1.5px solid transparent;
+}
 .hover-effect {
   transition: transform 1s ease, opacity 0.8s ease; /* Smooth transition */
   opacity: 0.8; /* Optional: Set initial opacity */
@@ -193,11 +203,11 @@ div[data-radix-popper-content-wrapper=""] {
   color: white;
   border: 1.2px solid transparent;
 }
-.button-border-transparent {  
+.button-border-transparent {
   position: relative;
   padding: 10px;
   border-radius: 5px;
-} 
+}
 .input-border {
   width: 100%;
   height: 100%;
@@ -205,14 +215,13 @@ div[data-radix-popper-content-wrapper=""] {
   padding: 1.2px;
   border-radius: 10px;
 }
-.ReactFlagsSelect-module_selectBtn__19wW7{
-border: none !important;
-padding: 0 !important;
-
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  border: none !important;
+  padding: 0 !important;
 }
 
-.ReactFlagsSelect-module_selectBtn__19wW7::after{
-  border:none !important;
+.ReactFlagsSelect-module_selectBtn__19wW7::after {
+  border: none !important;
 }
 .button-border-transparent::before {
   content: "";
@@ -260,7 +269,6 @@ padding: 0 !important;
 /* .Testimonials.swiper-pagination-bullets.swiper-pagination-horizontal{
   top: 10px   !important;
 } */
-
 
 .star {
   background-image: radial-gradient(
@@ -351,8 +359,8 @@ padding: 0 !important;
 }
 
 .tutorial .swiper-slide:not(.swiper-slide-active) {
-  transform: scale(0.85); 
+  transform: scale(0.85);
 }
-.react-datepicker-wrapper{
+.react-datepicker-wrapper {
   width: 100% !important;
 }

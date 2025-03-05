@@ -6,14 +6,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Button } from "../ui/button";
+import SwiperCard from "./SwiperCard";
 import Image from "next/image";
-import {
-  FaChevronRight,
-  FaCaretRight,
-  FaArrowLeft,
-  FaArrowRight,
-  FaChevronLeft,
-} from "react-icons/fa";
+import { FaCaretRight } from "react-icons/fa";
 import {
   arrowRight,
   arrowLeft,
@@ -137,47 +132,9 @@ const RealAccountTypes = () => {
             className="!p-8"
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {cryptoData.map((crypto, index) => (
+            {cryptoData.map((cardData, index) => (
               <SwiperSlide key={index}>
-                <div
-                  className="p-6 bg-card_Bg bg-cover bg-center h-[450px] w-[350px] custom-shadow
-                 rounded-xl text-white flex flex-col items-center"
-                >
-                  <div className="w-full flex gap-4">
-                    <div className="w-full flex flex-col ps-5">
-                      <div className="flex justify-between overflow-visible max-h-[50px]">
-                        <h3 className="text-[41px] font-bold ">
-                          {crypto.title}
-                        </h3>
-                        <Image
-                          src={cardLogo}
-                          alt="icon"
-                          className="w-[97px] h-[97px] relative bottom-[15px]"
-                        />
-                      </div>
-                      <div className="mt-3">
-                        {crypto.features.map((item, index) => (
-                          <p
-                            key={index}
-                            className="text-[16.5px] font-medium mt-[.4rem] flex items-center "
-                          >
-                            <Image
-                              src={arrowIcon}
-                              alt="icon"
-                              width={12}
-                              height={12}
-                              className="me-4"
-                            />
-                            {item}
-                          </p>
-                        ))}
-                      </div>
-                      <Button className="button-border hover:bg-main_button  p-[21px_18px] max-w-[235px] m-auto mt-4">
-                        Open Demo Account <FaCaretRight />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
+                <SwiperCard cardData={cardData} className="custom-shadow" />
               </SwiperSlide>
             ))}
           </Swiper>
