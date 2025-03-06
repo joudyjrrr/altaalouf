@@ -51,7 +51,7 @@ const AwardSection = ({ isExplore }) => {
       </div>
       {isExplore && (
         <>
-          <div className="pb-6  relative overflow-hidden z-[1000] bg-trend_platform_bg bg-center bg-cover bg-no-repeat   h-full text-white mt-8 max-md:pt-8 ">
+          <div className="pb-6  relative overflow-hidden z-[1000] bg-trend_platform_bg bg-center bg-cover bg-no-repeat   h-full text-white mt-4 max-md:pt-8 ">
             <div className="relative w-full bg-transparent flex justify-center items-center text-center pt-8">
               <Image
                 src={Explore}
