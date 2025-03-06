@@ -69,12 +69,14 @@ export default {
         team_gradiat:
           "linear-gradient(360deg, rgba(0,0,0,0.002) 0%, rgba(15,29,62,1) 35%)",
         team_card: "url('/images/team-back.png')",
+        award_back1: "url('/images/awardBack.png')",
         award_back: "url('/images/award-back.png')",
         awarc_card_back:
           "linear-gradient(269deg, rgba(7, 23, 55, 0.04) 12.89%, #0BBDF5 99.15%)",
         card_bakgound:
           "linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
         card_Bg: "url('/images/cardBg.png')",
+        bannercardBg: "url('/images/bannercardBg.svg')",
         social_gradiant:
           "linear-gradient(306.57deg, #0F2147 11.87%, #17708E 89.47%);",
         Straight_Bg:

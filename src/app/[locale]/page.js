@@ -23,24 +23,25 @@ import MeetTeam from "@/components/Layout/MeetTeam";
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
-  
+
   return (
     <div className="w-full overflow-x-hidden">
       <div className="w-full h-full bg-[#3040614]">
         <Banner />
         <TeamSection />
-        <RealAccountTypes/>
-        <AwardSection isExplore={true}/>
- 
+        <RealAccountTypes />
+
+        <AwardSection isExplore={true} />
+
         <StraightSection />
         <LicenseSection />
         <DwMethods />
         <WhyInzo />
-       
-        <RepresentativeSection/>
-        <CompanyGlobalSection/>
-        <FinancialReport/>
-        <MeetTeam />   
+
+        <RepresentativeSection />
+        <CompanyGlobalSection />
+        <FinancialReport />
+        <MeetTeam />
       </div>
     </div>
   );

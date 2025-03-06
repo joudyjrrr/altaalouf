@@ -76,46 +76,6 @@ const RealAccountTypes = () => {
       />
       <div className="w-full  flex  relative mt-7">
         {/* Custom Pagination Container */}
-        <div className="flex-col gap-4 ">
-          <Switch />
-          <p className="leading-[40px] md:w-[360px] text-[24px] font-semibold pt-5 text-[#030613]">
-            INZO offer several types of accounts that are suitable for different
-            trading environments.
-          </p>
-          <div className="flex  items-center justify-between gap-x-5  pt-20 w-[200px]">
-            <button
-              onClick={() => swiperRef.current?.slidePrev()}
-              className="transform "
-            >
-              <Image
-                src={arrowLeft}
-                alt="icon"
-                width={22}
-                height={22}
-                className="me-4  "
-              />
-            </button>
-
-            <div
-              className=" transform 
-           z-10 text-black bg-white h-fit w-fit mx-auto flex justify-center"
-              id="custom-pagination"
-            ></div>
-
-            <button
-              onClick={() => swiperRef.current?.slideNext()}
-              className="  transition"
-            >
-              <Image
-                src={arrowRight}
-                alt="icon"
-                width={22}
-                height={22}
-                className="me-4  "
-              />
-            </button>
-          </div>
-        </div>
 
         {/* Swiper Container */}
         <div className="w-[75%] ms-22">

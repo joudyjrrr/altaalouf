@@ -137,7 +137,14 @@ body {
     rgba(0, 0, 0, 0)
   );
 }
-
+.button-bg {
+  background-color: #050a18b6 !important;
+  border-radius: 7px !important;
+}
+.button-bg::before {
+  border-radius: inherit !important;
+  border-radius: 7px !important;
+}
 div[data-radix-popper-content-wrapper=""] {
   /* position: relative !important; */
   /* width: 100%; */

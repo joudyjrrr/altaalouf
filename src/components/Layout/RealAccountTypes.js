@@ -15,6 +15,8 @@ import {
   FaChevronLeft,
 } from "react-icons/fa";
 import {
+  syrcleGlass2,
+  syrcleGlass,
   arrowRight,
   arrowLeft,
   arrowIcon,
@@ -86,16 +88,31 @@ const RealAccountTypes = () => {
   }, [dir]);
   useLanguageDirection();
   return (
-    <div className="bg-white md:ps-12 md:px-3">
+    <div className="bg-white md:ps-12 md:px-3 md:mt-20 relative">
+      <Image
+        src={syrcleGlass}
+        alt="icon"
+        width={190}
+        height={190}
+        className="me-4 absolute -z-3 top-[0px] left-0"
+      />{" "}
+      ``
+      <Image
+        src={syrcleGlass2}
+        alt="icon"
+        width={90}
+        height={90}
+        className="me-4 absolute -z-3 -top-[110px]   right-0"
+      />
       <Title
         title1={`Real Accounts`}
         title2={`Types`}
         title1Color={"text-secondary"}
         title2Color={"!text-primary"}
       />
-      <div className="w-full  flex flex-col md:flex-row relative mt-7">
+      <div className="w-full  flex flex-col md:flex-row relative mt-12">
         {/* Custom Pagination Container */}
-        <div className="flex flex-col md:gap-4 items-center justify-center ">
+        <div className="flex flex-col md:gap-4 items-center justify-center md:items-start ">
           <Switch />
           <p className="text-center md:text-start md:leading-[40px] md:w-[360px] text-[1.2rem] md:text-[24px] font-semibold md:pt-5 text-[#030613]">
             INZO offer several types of accounts that are suitable for different
@@ -158,7 +175,7 @@ const RealAccountTypes = () => {
               1280: { slidesPerView: 2 },
             }}
             dir={dir}
-            className="!p-7 md:!p-8 "
+            className="!p-7 md:!p-8  md:!pt-6"
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {cryptoData.map((crypto, index) => (
@@ -166,7 +183,7 @@ const RealAccountTypes = () => {
                 <div
                   className="p-6 bg-card_Bg bg-cover bg-center w-[275px]
                    md:h-[450px] md:w-[350px] custom-shadow
-                 rounded-xl text-white flex flex-col items-center"
+                 rounded-xl text-white flex flex-col items-center md:items-start"
                 >
                   <div className="w-full flex gap-4">
                     <div className="w-full flex flex-col ps-5">

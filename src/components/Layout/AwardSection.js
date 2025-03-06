@@ -28,7 +28,7 @@ const AwardSection = ({ isExplore }) => {
   ];
   return (
     <div
-      className={`bg-gradient-to-b from-[#0F2147]  via-[#0F2147] via-80% to-[#0f2147]  ${
+      className={`bg-award_back1 bg-top bg-no-repeat  ${
         isExplore ? "to-white" : "to-[#0f2147] "
       } relative   mt-16 `}
     >
