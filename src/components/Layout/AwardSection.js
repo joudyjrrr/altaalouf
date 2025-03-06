@@ -49,7 +49,7 @@ const AwardSection = ({ isExplore }) => {
           ))}
         </div>
       </div>
-      ,,,,
+      
       {isExplore && (
         <>
           <div className="pb-6  relative overflow-hidden z-[1000]  bg-trend_platform_bg bg-center bg-cover bg-no-repeat   h-full text-white mt-4 max-md:pt-8 ">
