@@ -72,7 +72,7 @@ const WhyInzo = () => {
       <Swiper
         key={swiperKey} 
         modules={[Autoplay, Pagination, Navigation]}
-        spaceBetween={10}
+        spaceBetween={40}
         slidesPerView={1}
         autoplay={{ delay: 5000 }}
         pagination={{
@@ -83,15 +83,15 @@ const WhyInzo = () => {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="!p-8"
         breakpoints={{
-          320: { slidesPerView: 1 }, 
-          500: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3.3 },
+          500: { slidesPerView: 1  }, 
+          768: { slidesPerView: 1 },
+          1024: { slidesPerView: 2 , spaceBetween:80},
+          1200: { slidesPerView: 3.3  , spaceBetween:80},
         }}
       >
         {data.map((d, index) => (
           <SwiperSlide key={index}   dir={dir} >
-              <div className="bg-card_why w-[400px] py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
+              <div className="bg-card_why w-[400px] mx-4 py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
                 <div className="flex gap-2 items-center text-white">
                   <Image src={d.img} alt="" width={50} height={50} />
                   <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>

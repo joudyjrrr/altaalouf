@@ -103,10 +103,14 @@ import freq_aps from "./freq_aps.png";
 import plus from "./plus.png";
 import trend_platform from "./trend-platform-bg.png";
 import half_circule2 from "./half-circule2.png";
+import copy1 from "./copy1.png";
+import copy2 from "./copy2.png";
 
 export {
   BNB,
   about1,
+  copy2,
+  copy1,
   freq_aps,
   trend_platform,
   half_circule2,

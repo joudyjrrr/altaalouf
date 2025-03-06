@@ -82,7 +82,7 @@ const RepresentativeSection = () => {
         <Swiper
           key={swiperKey}
           modules={[Autoplay]}
-          spaceBetween={10}
+          spaceBetween={30}
           slidesPerView={1}
           autoplay={{ delay: 5000 }}
           dir={dir}
@@ -91,7 +91,7 @@ const RepresentativeSection = () => {
             320: { slidesPerView: 1 },
             500: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 3  , spaceBetween:30},
           }}
         >
           {data.map((d, index) => (
@@ -122,7 +122,7 @@ const RepresentativeSection = () => {
           </div>
         </div>
         <div className="w-full flex justify-end items-center h-full pt-12">
-          <Button className="button-border-transparent  before:!rounded-md  !bg-transparent before:!bg-white !rounded-md text-base !px-12 !py-4">
+          <Button variant={`gradiant`}>
             View More
           </Button>
         </div>
