@@ -8,6 +8,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Open_Sans";
+  src: url("/public/font/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   padding: 0 0;
   background: white;

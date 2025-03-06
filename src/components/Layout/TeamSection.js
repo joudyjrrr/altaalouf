@@ -4,15 +4,13 @@ import { team1, team2, team3, team4 } from "../../../public/images";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Switch from "./Switch";
-import BannerSwiper from "./BannerSwiper";
 
 const TeamSection = () => {
   const ImageArray = [team1, team2, team3, team4];
   return (
-    <div className="bg-white w-full  relative curved-section ">
-      <div className="bg-star_background2 w-full h-full bg-center bg-cover pb-8">
-        <div className="bg-team_gradiat text-center text-white mb-4">
-          <BannerSwiper />
+    <div className="bg-white w-full  relative curved-section">
+      <div className="bg-star_background2 w-full h-full bg-center bg-cover py-12">
+        <div className="bg-gradient-to-b from-[#0F2147] from-45% to-transparent to-200% text-center text-white py-12">
           <Title title1={`Copy Best `} title2={`Traders`} />
           <p className="text-lg mt-10 max-md:text-sm">
             INZO offer several types of accounts that are suitable for different
@@ -35,8 +33,8 @@ const TeamSection = () => {
             </div>
           ))}
         </div>
-        <div className="flex w-full justify-center my-8">
-          <Button className="button-border-transparent rounded-full  mx-auto !py-5 !px-12 !mt-5 button-bg">
+        <div className="flex w-full justify-center">
+          <Button className="button-border !rounded-xl w-fit mx-auto my-8">
             Show More
           </Button>
         </div>
