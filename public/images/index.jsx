@@ -4,7 +4,6 @@ import fr from "./fr-flag.webp";
 import uk from "./uk-flag.webp";
 import iraq from "./iraq-flag2.webp";
 import pl from "./pl-flag.webp";
-
 import banner from "./banner.png";
 import star from "./start.jpg";
 import BNB from "./BNB.svg";
@@ -22,6 +21,7 @@ import award3 from "./award3.png";
 import award4 from "./award4.png";
 import arrowIcon from "./arrowIcon.svg";
 import syrcleGlass from "./syrcleGlass.svg";
+import syrcleGlass2 from "./syrcleGlass2.svg";
 import Explore from "./Explore.svg";
 import mobileInzo from "./mobileInzo.png";
 import arrwos from "./arrwos.svg";
@@ -101,11 +101,15 @@ import real_account from "./real_account.png";
 import flag from "./flag.png";
 import freq_aps from "./freq_aps.png";
 import plus from "./plus.png";
+import trend_platform from "./trend-platform-bg.png";
+import half_circule2 from "./half-circule2.png";
 
 export {
   BNB,
   about1,
   freq_aps,
+  trend_platform,
+  half_circule2,
   plus,
   flag,
   real_account_bg,
@@ -202,4 +206,5 @@ export {
   fr,
   uk,
   logo,
+  syrcleGlass2,
 };

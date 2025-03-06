@@ -17,14 +17,13 @@ const questions = [
 const page = () => {
   return (
     <div className="w-full  relative h-full bg-primary">
-      <div className="w-full pt-4 bg-banner  bg-cover bg-center bg-no-repeat z-[100]">
-        <div className="w-full pt-32 bg-tutorial_Gr  h-full flex justify-start items-center gap-4 flex-col">
-          <Title
-            title1={`Frequently`}
-            title2={`Asked Questions`}
-            classNameImg={`hidden`}
-          />
-          <div className="flex flex-col gap-4 mt-24">
+      <div className="w-full pt-4 bg-ourTeamBg  bg-cover bg-top bg-no-repeat z-[100]">
+        <div className="w-full pt-44   h-full flex justify-start items-center gap-4 flex-col">
+          <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+            <h1 className={`text-secondary `}>{`Frequently `}</h1>
+            <h1 className={`text-white `}>{`Asked Questions`}</h1>
+          </div>
+          <div className="flex flex-col gap-4 mt-8">
             <div className="flex  gap-8 ">
               <Button className="button-border font-medium text-lg !rounded-2xl">
                 Bonus
@@ -53,7 +52,7 @@ const page = () => {
           </div>
         </div>
       </div>
-   
+
       <div className="w-full   bg-frequantly_bg  bg-cover bg-center bg-no-repeat z-[100]">
         <div className="w-full pt-16 pb-32 relative bg-frequantly_Gr  h-full flex justify-start items-center gap-4 flex-col">
           <Image
@@ -63,20 +62,18 @@ const page = () => {
           />
           <div className="grid grid-cols-2 gap-4">
             {questions.map((qu, idx) => (
-              <div key={idx}  className="input-border !rounded-xl">
+              <div key={idx} className="input-border !rounded-xl">
                 <div className="bg-frequantly_card_bg gap-4 bg-center w-full bg-cover rounded-xl items-center flex justify-between p-4">
-                <h1 className="text-white text-xl">{qu}</h1>
-                <Image src={plus} alt="" width={25} height={25}/>
-              </div>
+                  <h1 className="text-white text-xl">{qu}</h1>
+                  <Image src={plus} alt="" width={25} height={25} />
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <DwMethods/>
-      </div>
-    
-
+      <DwMethods />
+    </div>
   );
 };
 

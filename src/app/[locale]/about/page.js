@@ -49,9 +49,12 @@ const page = () => {
       <div className="w-full pt-4 bg-aboutBanner h-screen  bg-cover bg-center bg-no-repeat  z-[100]">
         <div className="w-full  bg-about_Gr h-full flex justify-center items-end max-sm:items-center  pb-8">
           <div className="flex flex-col gap-2 text-center w-full ">
-  
-            <Title title1={`About`} title2={`the company`}/>
-            <div className="flex flex-col gap-2 text-white text-lg max-md:text-sm">
+          <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+            <h1 className={`text-secondary `}>{`About `}</h1>
+            <h1 className={`text-white `}>{`the company`}</h1>
+          </div>
+     
+            <div className="flex flex-col gap-1 pt-4  text-white text-lg max-md:text-sm">
               <p>
                 INZO is a leading global broker providing trading services. .
               </p>
@@ -88,22 +91,7 @@ const page = () => {
               className="bg-about_Gr_Card2 p-8 border max-md:mx-4 border-secondary text-center rounded-md flex text-white justify-center flex-col items-center relative"
             >
               <p className="text-lg pb-4 font-medium max-md:text-sm">
-                {d.text.split("inzo.").map((part, index, array) => (
-                  <>
-                    {part}
-                    {index < array.length - 1 && (
-                      <a
-                        href="https://inzo.co"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-secondary"
-                        key={index}
-                      >
-                        inzo.co
-                      </a>
-                    )}
-                  </>
-                ))}
+                {d.text}
               </p>
 
               <span className="w-[100px] h-[1.2px] bg-[#04061380]"></span>

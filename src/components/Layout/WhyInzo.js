@@ -14,12 +14,12 @@ const data = [
   {
     img: why1,
     title: "Trusted Broker ",
-    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
+    desc: "INZO offer several types of accounts that are suitable for different trading environments",
   },
   {
     img: why2,
     title: "Instruments Diversity ",
-   desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021"
+   desc: "INZO offer several types of accounts that are suitable for different trading environments"
   },
   {
     img: why3,
@@ -62,7 +62,7 @@ const WhyInzo = () => {
           title2Color={'!text-primary'}
         />
       </div>
-      <div className="flex w-full justify-center flex-col items-center text-lg max-md:text-sm text-center mt-8">
+      <div className="flex w-full  justify-center flex-col items-center text-lg max-md:text-sm text-center mt-12">
         <p>
           It’s simple. We value trust, transparency and a high level of
           professionalism above all, offering our clients the
@@ -86,12 +86,12 @@ const WhyInzo = () => {
           320: { slidesPerView: 1 }, 
           500: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          1024: { slidesPerView: 3.3 },
         }}
       >
         {data.map((d, index) => (
           <SwiperSlide key={index}   dir={dir} >
-              <div className="bg-card_why py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
+              <div className="bg-card_why w-[400px] py-8 px-4 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
                 <div className="flex gap-2 items-center text-white">
                   <Image src={d.img} alt="" width={50} height={50} />
                   <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
