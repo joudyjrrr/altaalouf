@@ -21,13 +21,14 @@ import award3 from "./award3.png";
 import award4 from "./award4.png";
 import arrowIcon from "./arrowIcon.svg";
 import syrcleGlass from "./syrcleGlass.svg";
+import syrcleGlass2 from "./syrcleGlass2.svg";
 import Explore from "./Explore.svg";
 import mobileInzo from "./mobileInzo.png";
 import arrwos from "./arrwos.svg";
 import android from "./android.png";
 import ios from "./ios.png";
 import mac from "./mac.png";
-import windows from "./windows.png";            
+import windows from "./windows.png";
 import gift from "./gift.png";
 import square_left from "./square_left.png";
 import square_rigtht from "./square_rigtht.png";
@@ -102,8 +103,6 @@ import freq_aps from "./freq_aps.png";
 import plus from "./plus.png";
 import trend_platform from "./trend-platform-bg.png";
 import half_circule2 from "./half-circule2.png";
-
-
 
 export {
   BNB,
@@ -207,4 +206,5 @@ export {
   fr,
   uk,
   logo,
+  syrcleGlass2,
 };

@@ -1,9 +1,11 @@
 import React from "react";
 import { Button } from "../ui/button";
 
-const Switch = ({ className2 }) => {
+const Switch = ({ className, className2 }) => {
   return (
-    <div className="flex button-border-transparent !p-1 my-4 md:my-8 w-[300px] max-md:!w-[250px]">
+    <div
+      className={`flex button-border-transparent !rounded-[100px] my-4 md:my-8 w-[300px] max-md:!w-[250px]  ${className}`}
+    >
       <Button className="bg-main_button rounded-[50px] !p-4 w-full text-2xl max-md:text-lg font-bold cursor-pointer">
         MT5
       </Button>

@@ -163,35 +163,3 @@ const AwardSection = ({ isExplore }) => {
 
 export default AwardSection;
 
-<div className="w-full flex justify-center pb-6 relative overflow-hidden">
-  {/* تغطية النصف العلوي */}
-  <div className="absolute top-0 end-0 w-full h-1/2 ">
-    <div className="flex gap-4 max-md:gap-1 relative z-10">
-      <div className="bg-social_gradiant rounded-xl p-4  max-md:p-2 ">
-        <div className="flex justify-between ">
-          <h1 className="text-secondary  text-5xl max-md:text-4xl font-semibold">
-            <span>$</span>30
-          </h1>
-          <Image src={gift} alt="" className="w-[60px] max-md:w-[40px]" />
-        </div>
-        <h1 className="text-2xl  max-md:text-lg">Welcome Bonus</h1>
-        <p className="text-lg max-md:text-sm">
-          Open real trading account and get.
-        </p>
-        <p className="max-md:text-xs">$30 welcome bonus</p>
-      </div>
-
-      <div className="bg-social_gradiant rounded-t-xl p-4 max-md:p-1 pb-8">
-        <div className="flex justify-between ">
-          <h1 className="text-secondary  text-5xl max-md:text-4xl font-semibold">
-            30 <span>%</span>
-          </h1>
-          <Image src={gift} alt="" className="w-[60px] max-md:w-[40px]" />
-        </div>
-        <h1 className="text-2xl mb-2 max-md:text-lg">Deposit Bonus</h1>
-        <p className="text-lg max-md:text-sm">Deposit money for 30% bonuses.</p>
-        <p className="max-md:text-xs">on your account</p>
-      </div>
-    </div>
-  </div>
-</div>;
