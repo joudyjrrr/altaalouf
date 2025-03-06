@@ -100,11 +100,16 @@ import real_account from "./real_account.png";
 import flag from "./flag.png";
 import freq_aps from "./freq_aps.png";
 import plus from "./plus.png";
+import trend_platform from "./trend-platform-bg.png";
+import half_circule2 from "./half-circule2.png";
+
 
 export {
   BNB,
   about1,
   freq_aps,
+  trend_platform,
+  half_circule2,
   plus,
   flag,
   real_account_bg,

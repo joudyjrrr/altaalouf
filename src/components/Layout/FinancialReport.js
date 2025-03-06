@@ -5,10 +5,15 @@ import Title from "./Title";
 
 const FinancialReport = () => {
   const data = [
-    { value: 1, textValue: "Million", text: "Monthly Withdrawal" },
-    { value: 50, textValue: "K", text: "MonthlyIB Withdrawal" },
-    { value: 75, textValue: "Billion", text: "Monthly Trading Range" },
-    { value: 30, textValue: "K", text: "Monthly Active Client" },
+    { value: 5, textValue: "Million", text: "Monthly ", text2: "Withdrawal" },
+    { value: 50, textValue: "K", text: "MonthlyIB", text2: "Withdrawal" },
+    {
+      value: 75,
+      textValue: "Billion",
+      text: "Monthly ",
+      text2: "Trading Range",
+    },
+    { value: 30, textValue: "K", text: "Monthly ", text2: "Active Client" },
   ];
   return (
     <div className="bg-stars_white bg-[#0f2147]  w-full pb-12   ">
@@ -20,18 +25,20 @@ const FinancialReport = () => {
               key={idx}
               className="w-full flex flex-col justify-center items-center text-center"
             >
-              <div className="w-[200px] h-[175px] overflow-hidden rounded-xl relative">
+              <div className="w-[200px] h-[200px] overflow-hidden rounded-xl relative">
                 <CircularProgressbar
                   value={d.value}
                   minValue={0}
                   maxValue={100}
-                  strokeWidth={5} // تقليل سمك الخط لجعل الشكل أنيق
+                  strokeWidth={5}
+                  circleRatio={0.85}
                   styles={buildStyles({
-                    pathColor: "#00C0FF",
-                    trailColor: "#fff",
-                    textColor: "#00AEEF",
-                    textSize: "12px",
-                    rotation: 75,
+                    pathColor: "#00A8FF",
+                    trailColor: "#FFFFFF",
+                    strokeLinecap: "round",
+                    textColor: "#00A8FF",
+                    textSize: "18px",
+                    rotation: 0.57,
                   })}
                 />
                 <div
@@ -39,11 +46,21 @@ const FinancialReport = () => {
                     d.textValue === "K" ? "!flex-row" : "!flex-col"
                   }`}
                 >
-                  <span> {d.value}</span>
-                  <span> {d.textValue}</span>
+                  <span className="text-5xl font-bold"> {d.value}</span>
+                  <span
+                    className={`font-bold ${
+                      d.textValue === "K" ? "text-5xl" : "text-3xl"
+                    }`}
+                  >
+                    {" "}
+                    {d.textValue}
+                  </span>
                 </div>
               </div>
-              <h1 className="text-white mt-4 text-lg">{d.text}</h1>
+              <div>
+                <h1 className="text-white mt-4 text-lg font-semibold">{d.text}</h1>
+                <h1 className="text-white  text-lg font-semibold">{d.text2}</h1>
+              </div>
             </div>
           ))}
         </div>

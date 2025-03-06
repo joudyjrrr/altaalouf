@@ -56,26 +56,33 @@ const links = [
 const Footer = () => {
   return (
     <div className="w-full h-full ">
-      <div className="bg-Footer_bg w-full  bg-center bg-cover ">
-        <div className="w-full flex justify-center bg-Footer_Gr p-4 pt-8 pb-0">
-          <Image src={Get_In_Touch} width={350} height={50} alt="inzo" />
+      <div className="bg-Footer_bg w-full relative  bg-center bg-cover ">
+        <div className="absolute inset-0 w-ful h-full  bg-[#030305]/60"></div>
+        <div className="w-full   flex relative z-[100] justify-center bg-Footer_Gr p-4 pt-24 pb-0">
+          <Image src={Get_In_Touch} width={500} height={60} alt="inzo" />
         </div>
         <div className="w-full flex justify-center  ">
-          <div className="bg-Footer_Gr2 grid grid-cols-3 max-sm:grid-cols-2 px-8 py-4 rounded-xl max-md:px-4">
-            <div className="flex flex-col gap-2 pe-4 max-md:!pe-8 border-e border-secondary">
+          <div className="bg-Footer_Gr2 grid grid-cols-3 relative z-[100] max-sm:grid-cols-2 px-8 py-10 rounded-xl max-md:px-4">
+            <div className="flex flex-col relative gap-2  max-md:!pe-8 ">
               <h1 className="text-secondary text-lg font-semibold">Call Us</h1>
               <div className="flex gap-1 items-center text-white">
                 <Image src={telephone} width={35} alt="inzo" />
-                <p className="text-white max-md:text-sm">+97145429310</p>
+                <p className="text-white text-lg font-semibold max-md:text-sm">
+                  +97145429310
+                </p>
               </div>
+              <div className="bg-main_button absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
             </div>
 
-            <div className="flex flex-col gap-2 px-4 max-md:!pe-8   border-e border-secondary max-sm:!border-none">
+            <div className="flex flex-col relative  gap-2 px-4 max-md:!pe-8   max-sm:!border-none">
               <h1 className="text-secondary text-lg font-semibold">Email Us</h1>
               <div className="flex gap-2 items-center">
-                <Image src={envlope} width={25} alt="inzo" />
-                <p className="text-white  max-md:text-sm">support@inzo.co</p>
+                <Image src={envlope} width={30} alt="inzo" />
+                <p className="text-white text-lg font-semibold max-md:text-sm">
+                  support@inzo.co
+                </p>
               </div>
+              <div className="bg-main_button absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
             </div>
 
             <div className="flex flex-col gap-2 ps-4 mx-auto max-sm:mt-4 max-sm:col-span-2 ">
@@ -84,15 +91,20 @@ const Footer = () => {
               </h1>
               <div className="flex gap-2 items-center ">
                 <Image src={massege} width={35} alt="inzo" />
-                <p className="text-white ax-md:text-sm">
+                <p className="text-white font-semibold text-lg max-md:text-sm">
                   24/6 Live Chat Support
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 px-8 w-full h-full mt-8 justify-between bg-Footer_Gr3">
-          <Image src={logo} width={200} alt="inzo" className="max-sm:hidden" />
+        <div className="grid grid-cols-5 relative z-[100] max-md:grid-cols-3 max-sm:grid-cols-2 gap-12 px-16 w-full h-full mt-16 justify-between bg-Footer_Gr3">
+          <Image
+            src={logo}
+            width={278}
+            alt="inzo"
+            className="max-sm:hidden me-8"
+          />
           {links.map((li, idx) => (
             <div key={idx} className="flex flex-col gap-4">
               <h1 className="text-white text-xl font-semibold">{li.title}</h1>
@@ -100,13 +112,13 @@ const Footer = () => {
                 {li.items.map((item, idx2) => (
                   <div key={idx2} className="flex text-white gap-2">
                     <Image
-                      width={15}
-                      height={10}
+                      width={17}
+                      height={15}
                       src={arrwos_footer}
                       alt="inzo"
                       className="rtl:rotate-180"
                     />{" "}
-                    <Link className="max-sm:text-sm" href={item.url}>
+                    <Link className="text-sm" href={item.url}>
                       {item.name}
                     </Link>
                   </div>
@@ -130,7 +142,7 @@ const Footer = () => {
               src={arrwos_footer}
               alt="inzo"
             />{" "}
-            <div className="flex flex-col text-white ">
+            <div className="flex flex-col text-white !text-sm">
               <p>
                 INZO broker is authorised by the MWALI INTERNATIONAL SERVICES
                 AUTHORITY with licence number T2023182 as an INTERNATIONAL
@@ -153,7 +165,7 @@ const Footer = () => {
               src={arrwos_footer}
               alt="inzo"
             />{" "}
-            <div className="flex flex-col text-white">
+            <div className="flex flex-col text-white !text-sm">
               <p>
                 The inzo.co domain is exclusively operated by INZO broker under
                 the Comoros entity. Other entities in our group include: INZO
@@ -174,7 +186,7 @@ const Footer = () => {
               src={arrwos_footer}
               alt="inzo"
             />{" "}
-            <div className="flex flex-col text-white">
+            <div className="flex flex-col text-white !text-sm">
               <p>
                 The official domain operated by INZO Group LTD Seychelles is
                 inzo.store, which is exclusively linked to its Seychelles
@@ -196,7 +208,7 @@ const Footer = () => {
               src={arrwos_footer}
               alt="inzo"
             />{" "}
-            <div className="flex flex-col text-white">
+            <div className="flex flex-col text-white !text-sm">
               <p>
                 INZO LLC is registered in the Saint Vincent and the Grenadines.
               </p>
@@ -210,7 +222,7 @@ const Footer = () => {
               src={arrwos_footer}
               alt="inzo"
             />{" "}
-            <div className="flex flex-col text-white">
+            <div className="flex flex-col text-white !text-sm">
               <p>
                 <span className="font-semibold">Important Note:</span>{" "}
                 References to the Seychelles entity in the footer are included
@@ -228,7 +240,7 @@ const Footer = () => {
               src={arrwos_footer}
               alt="inzo"
             />{" "}
-            <div className="flex flex-col text-white">
+            <div className="flex flex-col text-white !text-sm">
               <p>
                 59 Agios Athanasios Avenue, D.VRACHIMIS BUILDING, 4102 Agios
                 Athanasios, Limassol, Cyprus..
@@ -242,7 +254,7 @@ const Footer = () => {
               src={arrwos_footer}
               alt="inzo"
             />{" "}
-            <div className="flex flex-col text-white">
+            <div className="flex flex-col text-white !text-sm">
               <p>
                 <span className="font-semibold">Risk Warning:</span> Trading
                 Forex and CFDs carries significant risks to your invested
@@ -252,28 +264,27 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="border-t border-secondary p-4">
-          <div className="flex items-center justify-between max-md:flex-col max-md:gap-4 ">
-            <p className="text-white">
+        <div className="mt-4">
+          <div className="button-border-footer"></div>
+          <div className="flex px-8 py-4 items-center justify-between max-md:flex-col max-md:gap-4 ">
+            <p className="text-white text-lg">
               2025 © Copyright INZO All rights reserved.
             </p>
-            <div className="flex gap-4">
-              {" "}
-              <Button className="button-border rounded-full h-8 w-8">
-                <FaXTwitter />
+            <div className="flex gap-2">
+              <Button className="button-border-transparent p-4 bg-transparent rounded-full h-10 w-10">
+                <FaXTwitter className="text-lg" />
               </Button>
-              <Button className="button-border rounded-full h-8 w-8">
-                <FaFacebookF />
+              <Button className="button-border-transparent bg-transparent rounded-full h10- w-10">
+                <FaFacebookF className="text-lg" />
               </Button>
-              <Button className="button-border rounded-full h-8 w-8">
-                <FaInstagram />
+              <Button className="button-border-transparent bg-transparent rounded-full h-10 w-10">
+                <FaInstagram className="text-lg" />
               </Button>
-              <Button className="button-border rounded-full h-8 w-8">
-                <FaTelegramPlane />
+              <Button className="button-border-transparent bg-transparent rounded-full h-10 w-10">
+                <FaTelegramPlane className="text-lg" />
               </Button>
-              <Button className="button-border rounded-full h-8 w-8">
-                <FaYoutube />
+              <Button className="button-border-transparent bg-transparent rounded-full h-10 w-10">
+                <FaYoutube className="text-lg" />
               </Button>
             </div>
           </div>

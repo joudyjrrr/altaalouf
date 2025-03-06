@@ -143,7 +143,7 @@ const RealAccountTypes = () => {
             key={swiperKey}
             ref={swiperRef}
             modules={[Autoplay, Pagination]}
-            spaceBetween={10}
+            spaceBetween={1}
             slidesPerView={1}
             autoplay={{ delay: 3000 }}
             pagination={{
