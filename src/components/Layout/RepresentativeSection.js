@@ -187,14 +187,14 @@ const RepresentativeSection = () => {
               key={index}
               className="max-md:w-full testimonial-slide"
             >
-              <div className="bg-Testimonial_back rounded-xl testimonial-content">
-                <div className="bg-award_back gap-8 bg-no-repeat flex flex-col bg-center p-8 relative z-10">
+              <div className=" rounded-xl testimonial-content ">
+                <div className="bg-testemoneaialsCardBg bg-cover bg-center  pb-24 gap-8  rounded-xl bg-no-repeat flex flex-col  p-8 relative z-10">
                   <div className="flex justify-between items-center">
-                    <div className="flex gap-8">
+                    <div className="flex gap-8 ps-12">
                       <Image
                         src={d.img}
                         alt=""
-                        className="max-md:w-[100px] w-[180px] h-[180px] relative z-[100]"
+                        className="max-md:w-[100px] w-[120px] h-[120px] relative z-[100]"
                       />
                       <div className="flex flex-col text-white justify-center">
                         <h1 className="text-3xl font-semibold max-md:text-sm">
@@ -217,8 +217,8 @@ const RepresentativeSection = () => {
                       2021-05-05
                     </p>
                   </div>
-                  <div className="flex items-start gap-8">
-                    <Image src={coma} alt="" width={80} height={80} />
+                  <div className="flex items-start gap-8 w-full  ps-32">
+                  
                     <div className="flex flex-col gap-1 text-white text-xl max-md:!text-xl">
                       <p>
                         From my experience with INZO, I've opened more than one

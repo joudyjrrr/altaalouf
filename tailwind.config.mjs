@@ -135,7 +135,10 @@ export default {
           "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
           parthner_bg: "url('/images/parthner_bg.png')",
           location_bg: "url('/images/location_bg.png')",
-          
+          awardBack: "url('/images/awardBack.png')",
+          awardBG3: "url('/images/awardBG3.png')",
+          starTopBot: "url('/images/starTopBot.png')",
+          testemoneaialsCardBg: "url('/images/testemoneaialsCardBg.png')",
 
       },
 

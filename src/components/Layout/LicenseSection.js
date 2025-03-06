@@ -33,14 +33,9 @@ const LicenseSection = () => {
   }, [dir]);
 
   return (
-    <div className="bg-[#08142efc]">
-      <div className=" bg-License_gradient py-8">
-        <div className=" bg-License_Bg h-full bg-top bg-no-repeat">
-          <Title title1={`License`} title2={`Certificate`} />
-        </div>
-      </div>
-
-      <div className="w-full h-full relative px-24 max-md:px-4">
+    <div className="bg-starTopBot bg-center bg-cover">
+      <Title title1={`License`} title2={`Certificate`} />
+      <div className="w-full h-full relative px-24 max-md:px-4 mt-12">
         <Swiper
           key={swiperKey}
           modules={[Autoplay, Pagination, Navigation]}
@@ -121,7 +116,7 @@ const LicenseSection = () => {
         </Swiper>
       </div>
 
-      <div className="bg-License_Bg py-12 flex justify-center items-center gap-36 mt-6 relative z-[2000]">
+      <div className="py-12 flex justify-center items-center gap-36 mt-6 relative z-[2000]">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="relative z-[2000]"
