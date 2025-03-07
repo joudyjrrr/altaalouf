@@ -160,6 +160,7 @@ const RepresentativeSection = () => {
             />
           </button>
         </div>
+
         <Swiper
           key={swiperKey}
           modules={[Autoplay, Pagination, Navigation]}
@@ -188,7 +189,11 @@ const RepresentativeSection = () => {
               className="max-md:w-full testimonial-slide"
             >
               <div className=" rounded-xl testimonial-content ">
-                <div className="bg-testemoneaialsCardBg bg-cover bg-center  pb-24 gap-8  rounded-xl bg-no-repeat flex flex-col  p-8 relative z-10">
+                <div
+                  className="bg-testemoneaialsCardBg bg-cover bg-center
+                  pb-24 gap-8  rounded-xl bg-no-repeat flex flex-col
+                    p-8 relative z-10"
+                >
                   <div className="flex justify-between items-center">
                     <div className="flex gap-8 ps-12">
                       <Image
@@ -218,7 +223,6 @@ const RepresentativeSection = () => {
                     </p>
                   </div>
                   <div className="flex items-start gap-8 w-full  ps-32">
-                  
                     <div className="flex flex-col gap-1 text-white text-xl max-md:!text-xl">
                       <p>
                         From my experience with INZO, I've opened more than one
