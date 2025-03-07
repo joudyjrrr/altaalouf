@@ -105,11 +105,10 @@ export default {
           "linear-gradient(178.99deg, rgba(1, 8, 28, 0.05) 5.01%, rgba(237, 242, 248, 0.02) 23.88%, rgba(237, 242, 248, 0.08) 109.65%);",
         Footer_Gr3:
           " linear-gradient(0deg, #030613 0%, rgba(3, 6, 19, 0) 100%)",
+        
         Footer_bg: "url('/images/Footer_bg.png')",
 
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
-        teamCard_Bg: "url('/images/teamCardBg.svg')",
-
         aboutBanner: "url('/images/aboutBanner.png')",
         about_Gr: "linear-gradient(0deg, #0f214785  52.46%, #0f21476b  100%)",
         about_Gr_Card: "linear-gradient(0deg, #084196 0%, #0575C1 61.01%)",
@@ -121,7 +120,7 @@ export default {
           "linear-gradient(0deg, #0F2147 52.46%, rgba(15, 33, 71, 0.5) 100%);",
         real_account_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0.3) 100%);",
-          frequantly_Gr:
+        frequantly_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0) 100%);",
         contact_Bg: "url('/images/conatct2.png')",
         real_account_bg: "url('/images/real_account_bg.jpg')",
@@ -133,19 +132,17 @@ export default {
         trend_platform_bg: "url('/images/trend-platform-bg.png')",
         trend_platform_Gr: "linear-gradient(180deg, #0F2147 0%, transparent 100%);",
         trend_platform_Gr2:
-        "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
+          "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
       },
 
       fontFamily: {
         moharram: ["Ah Moharram Bold", "sans-serif"],
+        sans: ["Open Sans", "sans-serif"],
       },
       screens: {
         xl: "1800px",
         lg: "1400px",
         xs: "500px",
-      },
-      boxShadow: {
-        glow: "0px 30px 50px rgba(255, 255, 255, 0.4)", // ظل أبيض شفاف من الأسفل فقط
       },
     },
   },

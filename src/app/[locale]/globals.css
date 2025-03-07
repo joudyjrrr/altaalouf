@@ -1,13 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
-  font-family: "Ah Moharram Bold";
-  src: url("/public/font//Ah-moharram-bold\ Regular.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("/public/font/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
+
+
 
 body {
   padding: 0 0;
@@ -187,6 +188,11 @@ div[data-radix-popper-content-wrapper=""] {
   color: white;
   border: 1.2px solid transparent;
 }
+.button-border-footer {
+  background: linear-gradient(90deg, #084398, #00befd);
+  height: 1px;
+  width: 100%;
+}
 .button-border-input {
   background: linear-gradient(#04061399, #04061399) padding-box,
     linear-gradient(90deg, #084398, #00befd) border-box;
@@ -197,6 +203,7 @@ div[data-radix-popper-content-wrapper=""] {
   position: relative;
   padding: 10px;
   border-radius: 5px;
+
 } 
 .input-border {
   width: 100%;
