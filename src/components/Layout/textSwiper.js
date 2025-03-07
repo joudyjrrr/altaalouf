@@ -6,14 +6,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Button } from "../ui/button";
+import SwiperCard from "./SwiperCard";
 import Image from "next/image";
-import {
-  FaChevronRight,
-  FaCaretRight,
-  FaArrowLeft,
-  FaArrowRight,
-  FaChevronLeft,
-} from "react-icons/fa";
+import { FaCaretRight } from "react-icons/fa";
 import {
   arrowRight,
   arrowLeft,
@@ -81,46 +76,6 @@ const RealAccountTypes = () => {
       />
       <div className="w-full  flex  relative mt-7">
         {/* Custom Pagination Container */}
-        <div className="flex-col gap-4 ">
-          <Switch />
-          <p className="leading-[40px] md:w-[360px] text-[24px] font-semibold pt-5 text-[#030613]">
-            INZO offer several types of accounts that are suitable for different
-            trading environments.
-          </p>
-          <div className="flex  items-center justify-between gap-x-5  pt-20 w-[200px]">
-            <button
-              onClick={() => swiperRef.current?.slidePrev()}
-              className="transform "
-            >
-              <Image
-                src={arrowLeft}
-                alt="icon"
-                width={22}
-                height={22}
-                className="me-4  "
-              />
-            </button>
-
-            <div
-              className=" transform 
-           z-10 text-black bg-white h-fit w-fit mx-auto flex justify-center"
-              id="custom-pagination"
-            ></div>
-
-            <button
-              onClick={() => swiperRef.current?.slideNext()}
-              className="  transition"
-            >
-              <Image
-                src={arrowRight}
-                alt="icon"
-                width={22}
-                height={22}
-                className="me-4  "
-              />
-            </button>
-          </div>
-        </div>
 
         {/* Swiper Container */}
         <div className="w-[75%] ms-22">
@@ -137,47 +92,9 @@ const RealAccountTypes = () => {
             className="!p-8"
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {cryptoData.map((crypto, index) => (
+            {cryptoData.map((cardData, index) => (
               <SwiperSlide key={index}>
-                <div
-                  className="p-6 bg-card_Bg bg-cover bg-center h-[450px] w-[350px] custom-shadow
-                 rounded-xl text-white flex flex-col items-center"
-                >
-                  <div className="w-full flex gap-4">
-                    <div className="w-full flex flex-col ps-5">
-                      <div className="flex justify-between overflow-visible max-h-[50px]">
-                        <h3 className="text-[41px] font-bold ">
-                          {crypto.title}
-                        </h3>
-                        <Image
-                          src={cardLogo}
-                          alt="icon"
-                          className="w-[97px] h-[97px] relative bottom-[15px]"
-                        />
-                      </div>
-                      <div className="mt-3">
-                        {crypto.features.map((item, index) => (
-                          <p
-                            key={index}
-                            className="text-[16.5px] font-medium mt-[.4rem] flex items-center "
-                          >
-                            <Image
-                              src={arrowIcon}
-                              alt="icon"
-                              width={12}
-                              height={12}
-                              className="me-4"
-                            />
-                            {item}
-                          </p>
-                        ))}
-                      </div>
-                      <Button className="button-border hover:bg-main_button  p-[21px_18px] max-w-[235px] m-auto mt-4">
-                        Open Demo Account <FaCaretRight />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
+                <SwiperCard cardData={cardData} className="custom-shadow" />
               </SwiperSlide>
             ))}
           </Swiper>

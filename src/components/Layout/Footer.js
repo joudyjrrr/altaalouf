@@ -56,17 +56,20 @@ const links = [
 const Footer = () => {
   return (
     <div className="w-full h-full ">
-      <div className="bg-Footer_bg w-full  bg-center bg-cover ">
-        <div className="w-full flex justify-center bg-Footer_Gr p-4 pt-8 pb-0">
+      <div className="bg-Footer_bg w-full relative  bg-center bg-cover ">
+        <div className="absolute inset-0 w-ful h-full  bg-[#030305]/60"></div>
+        <div className="w-full   flex relative z-[100] justify-center bg-Footer_Gr p-4 pt-24 pb-0">
           <Image src={Get_In_Touch} width={500} height={60} alt="inzo" />
         </div>
         <div className="w-full flex justify-center  ">
-          <div className="bg-Footer_Gr2 grid grid-cols-3 max-sm:grid-cols-2 px-8 py-10 rounded-xl max-md:px-4">
+          <div className="bg-Footer_Gr2 grid grid-cols-3 relative z-[100] max-sm:grid-cols-2 px-8 py-10 rounded-xl max-md:px-4">
             <div className="flex flex-col relative gap-2  max-md:!pe-8 ">
               <h1 className="text-secondary text-lg font-semibold">Call Us</h1>
               <div className="flex gap-1 items-center text-white">
                 <Image src={telephone} width={35} alt="inzo" />
-                <p className="text-white text-lg font-semibold max-md:text-sm">+97145429310</p>
+                <p className="text-white text-lg font-semibold max-md:text-sm">
+                  +97145429310
+                </p>
               </div>
               <div className="bg-main_button absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
             </div>
@@ -75,7 +78,9 @@ const Footer = () => {
               <h1 className="text-secondary text-lg font-semibold">Email Us</h1>
               <div className="flex gap-2 items-center">
                 <Image src={envlope} width={30} alt="inzo" />
-                <p className="text-white text-lg font-semibold max-md:text-sm">support@inzo.co</p>
+                <p className="text-white text-lg font-semibold max-md:text-sm">
+                  support@inzo.co
+                </p>
               </div>
               <div className="bg-main_button absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
             </div>
@@ -93,8 +98,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-2 gap-12 px-16 w-full h-full mt-16 justify-between bg-Footer_Gr3">
-          <Image src={logo} width={278} alt="inzo" className="max-sm:hidden me-8" />
+        <div className="grid grid-cols-5 relative z-[100] max-md:grid-cols-3 max-sm:grid-cols-2 gap-12 px-16 w-full h-full mt-16 justify-between bg-Footer_Gr3">
+          <Image
+            src={logo}
+            width={278}
+            alt="inzo"
+            className="max-sm:hidden me-8"
+          />
           {links.map((li, idx) => (
             <div key={idx} className="flex flex-col gap-4">
               <h1 className="text-white text-xl font-semibold">{li.title}</h1>
@@ -262,19 +272,19 @@ const Footer = () => {
             </p>
             <div className="flex gap-2">
               <Button className="button-border-transparent p-4 bg-transparent rounded-full h-10 w-10">
-                <FaXTwitter className="text-lg"/>
+                <FaXTwitter className="text-lg" />
               </Button>
               <Button className="button-border-transparent bg-transparent rounded-full h10- w-10">
-                <FaFacebookF className="text-lg"/> 
+                <FaFacebookF className="text-lg" />
               </Button>
               <Button className="button-border-transparent bg-transparent rounded-full h-10 w-10">
-                <FaInstagram className="text-lg"/>
+                <FaInstagram className="text-lg" />
               </Button>
               <Button className="button-border-transparent bg-transparent rounded-full h-10 w-10">
-                <FaTelegramPlane className="text-lg"/>
+                <FaTelegramPlane className="text-lg" />
               </Button>
               <Button className="button-border-transparent bg-transparent rounded-full h-10 w-10">
-                <FaYoutube className="text-lg"/>
+                <FaYoutube className="text-lg" />
               </Button>
             </div>
           </div>

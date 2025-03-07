@@ -69,12 +69,14 @@ export default {
         team_gradiat:
           "linear-gradient(360deg, rgba(0,0,0,0.002) 0%, rgba(15,29,62,1) 35%)",
         team_card: "url('/images/team-back.png')",
+        award_back1: "url('/images/awardBack.png')",
         award_back: "url('/images/award-back.png')",
         awarc_card_back:
           "linear-gradient(269deg, rgba(7, 23, 55, 0.04) 12.89%, #0BBDF5 99.15%)",
         card_bakgound:
           "linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
         card_Bg: "url('/images/cardBg.png')",
+        bannercardBg: "url('/images/bannercardBg.svg')",
         social_gradiant:
           "linear-gradient(306.57deg, #0F2147 11.87%, #17708E 89.47%);",
         Straight_Bg:
@@ -83,7 +85,8 @@ export default {
         License_gradient:
           "linear-gradient(0.56deg, rgba(8, 20, 46, 0) 35.71%, #040C1D 122.86%);",
         License_Bg: "url('/images/License6.png')",
-        License_Bg2: "url('/images/License1.png')",
+        License_Bg2:
+          "linear-gradient(160.75deg, #08142e 24.94%, rgba(10, 41, 90, 0.628674) 72.23%, #168AB0 110.77%);",
         License_Bg3: "url('/images/License3.png')",
         MultiStarTop: "url('/images/MultiStarTop.png')",
         card_why: "url('/images/card-Back_why.png')",
@@ -92,7 +95,7 @@ export default {
         Testimonial_back:
           "linear-gradient(174.71deg, rgba(8, 20, 46, 0) 6.18%, rgba(0, 192, 255, 0.628674) 79.61%, #00C0FF 119.12%)",
         company_global:
-          "linear-gradient(0deg, rgba(15,33,71,1) 0%, rgba(15,33,71,0) 100%)",
+          "linear-gradient(180deg, rgba(15, 33, 71, 0) 0%, #0F2147 63.5%);",
         company1: "url('/images/company1.png')",
         Representative_card_bg: "url('/images/Representative_card_bg.png')",
         DwMethods_Bg: "url('/images/DwMethods.png')",
@@ -105,7 +108,7 @@ export default {
           "linear-gradient(178.99deg, rgba(1, 8, 28, 0.05) 5.01%, rgba(237, 242, 248, 0.02) 23.88%, rgba(237, 242, 248, 0.08) 109.65%);",
         Footer_Gr3:
           " linear-gradient(0deg, #030613 0%, rgba(3, 6, 19, 0) 100%)",
-        
+
         Footer_bg: "url('/images/Footer_bg.png')",
 
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
@@ -129,10 +132,25 @@ export default {
 
         ourTeamBg: "url('/images/ourTeamBg.png')",
         teamPartnerBg: "url('/images/teamPartnerBg.png')",
+        inzoReal_Bg: "url('/images/inzoReal_Bg.png')",
+
         trend_platform_bg: "url('/images/trend-platform-bg.png')",
-        trend_platform_Gr: "linear-gradient(180deg, #0F2147 0%, transparent 100%);",
+        trend_platform_Gr:
+          "linear-gradient(180deg, #0F2147 0%, transparent 100%);",
         trend_platform_Gr2:
           "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
+
+        awardBack: "url('/images/awardBack.png')",
+        awardBG3: "url('/images/awardBG3.png')",
+        starTopBot: "url('/images/starTopBot.png')",
+        testemoneaialsCardBg: "url('/images/testemoneaialsCardBg.png')",
+
+        parthner_bg: "url('/images/parthner_bg.png')",
+        location_bg: "url('/images/location_bg.png')",
+        whayChozBg: "url('/images/whayChozBg.png')",
+        award_card1: "url('/images/award_card1.png')",
+
+
       },
 
       fontFamily: {

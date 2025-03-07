@@ -1,11 +1,10 @@
 "use client";
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Button } from "../ui/button";
+
 import Image from "next/image";
 import {
   western,
@@ -20,7 +19,7 @@ import {
   ethereum,
 } from "../../../public/images";
 import Title from "./Title";
-import Switch from "./Switch";
+
 let payArr = [
   [tether, western, "md:mb-20", "md:ms-10"],
   [payeer, ethereum, "md:mt-16", "md:mt-10"],
@@ -30,7 +29,9 @@ let payArr = [
 ];
 const DwMethods = () => {
   return (
-    <div className=" pt-12 bg-DwMethods_Bg h-fit md:h-screen ">
+
+    
+    <div className=" pt-12 bg-DwMethods_Bg bg-center h-fit md:h-screen ">
       <Title
         title1={`Deposit & Withdrawal`}
         title2={`Methods`}
@@ -54,7 +55,7 @@ const DwMethods = () => {
               <Image
                 src={img2}
                 alt=""
-                className={`w-32 h-32 rounded-full hover:shadow-[0_0_15px_1px_#00BEFE] hover:scale-105 transition-all duration-500 ${img2Class}`}
+                className={`w-32 h-32 mt-8 rounded-full hover:shadow-[0_0_15px_1px_#00BEFE] hover:scale-105 transition-all duration-500 ${img2Class}`}
               />
             </div>
           ))}

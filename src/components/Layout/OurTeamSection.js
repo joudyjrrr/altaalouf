@@ -3,7 +3,7 @@ import { arrow } from "../../../public/images";
 import Link from "next/link";
 const OurTeamSection = ({ imgData, showButton }) => {
   return (
-    <div className="  w-full pt-10 mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center">
+    <div className="  w-full pt-24 mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center">
       {imgData.map((image, index) => (
         <div
           key={index}
@@ -23,10 +23,10 @@ const OurTeamSection = ({ imgData, showButton }) => {
               </div>
             </Link>
           )}
-          <div className="absolute bottom-[5px] left-[0px] h-[45px] font-bold text-[22px] text-white">
+          <div className="absolute bottom-[5px] left-[0px] h-[45px] font-bold text-lg text-white">
             {image.name}
           </div>
-          <div className="absolute bottom-[0px] left-[0px] text-[17px] text-white">
+          <div className="absolute bottom-[0px] left-[0px] text-sm text-white">
             {image.role}
           </div>
         </div>
