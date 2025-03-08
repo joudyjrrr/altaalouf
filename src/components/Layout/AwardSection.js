@@ -18,31 +18,31 @@ const AwardSection = ({ isExplore }) => {
     {
       title: "Lowest Spread Broker in the Middle East ",
       img: award_card2,
-      className:"absolute w-[155px] top-[100px] h-[200px]  end-[28%]"
+      className:"absolute w-[100px] top-[40px] h-[200px]  end-[28%]"
     },
-    { title: "Best STP Broker in the Middle East", img: award_card3, className:"absolute top-[100px] h-[200px] w-[130px]  end-[30%]"},
-    { title: " The Fastest Growing Broker in the Middle East ", img: award_card4  ,  className:"absolute top-[100px] h-[200px] w-[230px]  end-[15%]"},
-    { title: " Top 100 Most Truste Financial Institution in the Middle East", img: award_card5,  className:"absolute top-[100px] h-[200px]  w-[55px] end-[40%]" },
+    { title: "Best STP Broker in the Middle East", img: award_card3, className:"absolute top-[40px] h-[200px] w-[100px]  end-[30%]"},
+    { title: " The Fastest Growing Broker in the Middle East ", img: award_card4  ,  className:"absolute top-[40px] h-[200px] w-[160px]  end-[18%]"},
+    { title: " Top 100 Most Truste Financial Institution ", img: award_card5,  className:"absolute top-[40px] h-[200px]  w-[55px] end-[40%]" },
   ];
   return (
     <div
-      className={`bg-award_back1 bg-top bg-no-repeat  ${isExplore ? "to-white" : "to-[#0f2147] "
+      className={`bg-award_back1 bg-top bg-no-repeat   ${isExplore ? "to-white" : "to-[#0f2147] "
         } relative   mt-16 `}
     >
       <div className="bg-award_back h-full">
         <Title title1={`Legendary`} title2={`Awards`} />
 
-        <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 mt-24 p-4">
+        <div className="grid grid-cols-4 pb-16 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-24 p-4 px-32">
           {cards.map((d, idx) => (
             <div
               key={idx}
-              className=" flex flex-col h-[465px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
+              className=" flex flex-col h-[395px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
             >
               <div className=" h-full  bg-top bg-no-repeat  rounded-[30px] w-full  relative overflow-hidden">
                 <Image
                   src={award_card1}
                   alt=""
-                  className="w-full  mix-blend-luminosity h-[350px]"
+                  className="w-full  mix-blend-luminosity h-[280px]"
                 />
                 <Image
                   src={d.img}
@@ -53,7 +53,6 @@ const AwardSection = ({ isExplore }) => {
                 />
               </div>
 
-              {/* العنوان */}
               <div className=" absolute bottom-0 bg-awarc_card_back py-8 text-center rounded-b-[30px]">
                 <h1 className="text-white text-xl font-semibold">{d.title}</h1>
               </div>
