@@ -83,28 +83,29 @@ const RepresentativeSection = () => {
           key={swiperKey}
           modules={[Autoplay]}
           spaceBetween={30}
-          slidesPerView={1}
+          slidesPerView={3.3}
           autoplay={{ delay: 5000 }}
+      
           dir={dir}
           className="!p-8 mt-12"
           breakpoints={{
             320: { slidesPerView: 1 },
             500: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3  , spaceBetween:30},
+            1024: { slidesPerView: 3.3, spaceBetween: 30 },
           }}
         >
           {data.map((d, index) => (
-            <SwiperSlide dir={dir} key={index}>
-              <div className="bg-location_back rounded-xl gap-12 h-[526px] bg-no-repeat bg-center flex justify-start p-8 max-md:pt-20 flex-col items-center">
+            <SwiperSlide dir={dir} key={index} >
+              <div className={`bg-location_back location-content rounded-xl gap-12 h-[526px] bg-no-repeat bg-center flex justify-start p-8 max-md:pt-20 flex-col items-center`}>
                 <Image src={d.img} alt="" height={230} />
-                <h1 className="text-2xl font-semibold text-white ">
-                  {d.title}
-                </h1>
+                <h1 className="text-2xl font-semibold text-white">{d.title}</h1>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+
+
       </div>
       <div className="flex justify-between w-full items-center pe-16 h-[200px] max-md:!pe-0 max-md:!px-2 ">
         <div
@@ -178,7 +179,6 @@ const RepresentativeSection = () => {
             768: { slidesPerView: 1 },
             1024: { slidesPerView: 1.4, spaceBetween: 30 },
           }}
-          loop
           className="p-8 mt-10 max-md:p-4 mb-12 "
         >
           {dataTestimonials.map((d, index) => (
@@ -218,7 +218,7 @@ const RepresentativeSection = () => {
                     </p>
                   </div>
                   <div className="flex items-start gap-8 w-full  ps-32">
-                  
+
                     <div className="flex flex-col gap-1 text-white text-xl max-md:!text-xl">
                       <p>
                         From my experience with INZO, I've opened more than one
