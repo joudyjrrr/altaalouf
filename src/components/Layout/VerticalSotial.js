@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 const VerticalSotial = ({ isMobile }) => {
   return (
     <div className=" w-full  flex justify-end pe-16">
-      <div className="flex flex-col gap-4 justify-center items-center max-md:mx-auto max-md:flex-row">
+      <div className="flex flex-col gap-4 justify-center items-center max-md:mx-auto max-md:hidden">
         <div
           className={`w-[2px] h-[110px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary max-md:hidden`}
         >
