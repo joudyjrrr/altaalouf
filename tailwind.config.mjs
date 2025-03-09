@@ -147,6 +147,26 @@ export default {
 
         parthner_bg: "url('/images/parthner_bg.png')",
         location_bg: "url('/images/location_bg.png')",
+        whayChozBg: "url('/images/whayChozBg.png')",
+        award_card1: "url('/images/award_card1.png')",
+
+        ourTeamBg: "url('/images/ourTeamBg.png')",
+        teamPartnerBg: "url('/images/teamPartnerBg.png')",
+        inzoReal_Bg: "url('/images/inzoReal_Bg.png')",
+
+        trend_platform_bg: "url('/images/trend-platform-bg.png')",
+        trend_platform_Gr:
+          "linear-gradient(180deg, #0F2147 0%, transparent 100%);",
+        trend_platform_Gr2:
+          "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
+
+        awardBack: "url('/images/awardBack.png')",
+        awardBG3: "url('/images/awardBG3.png')",
+        starTopBot: "url('/images/starTopBot.png')",
+        testemoneaialsCardBg: "url('/images/testemoneaialsCardBg.png')",
+
+        parthner_bg: "url('/images/parthner_bg.png')",
+        location_bg: "url('/images/location_bg.png')",
       },
 
       fontFamily: {

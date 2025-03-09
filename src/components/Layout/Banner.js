@@ -22,26 +22,24 @@ const Banner = () => {
             ></div>
           </div>
           <div className="flex justify-between relative w-full mt-[70px] max-md:flex-col max-md:gap-8">
-            <div className="w-full flex justify-start max-md:justify-center text-white pt-20  px-16 max-sm:px-8 ">
-              <div className="flex flex-col gap-8 max-sm:justify-center max-sm:items-center">
-                <div className="flex flex-col gap-4 max-sm:justify-center max-sm:items-center">
-                  <h1 className="text-[4rem] leading-[0.6] -mb-2 ml-1 max-md:text-5xl  max-sm:text-3xl font-extrabold ">
-                    Trade Like A{" "}
-                  </h1>
-                  <h1 className="text-[5.7rem] leading-[1] text-secondary max-md:text-5xl font-extrabold  max-sm:text-6xl ">
-                    Legend
-                  </h1>
-                </div>
-                <div className="flex flex-col gap-1 max-sm:justify-center max-sm:items-center">
-                  <p className="text-2xl max-md:text-lg  max-sm:text-sm ">
+            <div className="w-full flex justify-start max-md:justify-center text-white pt-20  px-16 ">
+              <div className="flex flex-col gap-4 ">
+                <h1 className="text-[4rem] leading-[0.6] font-[600] -mb-2 ml-1 max-md:text-5xl">
+                  Trade Like A{" "}
+                </h1>
+                <h1 className="text-[5.7rem] leading-[1] font-bold text-secondary max-md:!text-[5xl]">
+                  Legend
+                </h1>
+                <div>
+                  <p className="text-2xl max-md:text-lg">
                     Trade over 400 Global Instruments from FX,
                   </p>
-                  <p className="text-2xl max-md:text-lg max-sm:text-sm">
+                  <p className="text-2xl max-md:text-lg">
                     Metals Shares, and Indices with
                     <span className="font-semibold">INZO</span>.
                   </p>
                 </div>
-                <div className="flex gap-4 items-center max-sm:flex-col max-sm:mt-8">
+                <div className="flex gap-4 items-center">
                   <Button className="bg-main_button  transition-all duration-800">
                     Open Real Account
                     <FaCaretRight />

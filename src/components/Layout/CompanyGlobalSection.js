@@ -97,8 +97,8 @@ const CompanyGlobalSection = () => {
         </div>
       </div>
       <div className="w-full  bg-parthner_bg p-8">
-        <div className="flex w-full justify-between px-8 pe-24 max-md:flex-col max-md:px-8 ">
-          <div className="flex flex-col gap-8 text-white w-full justify-start pt-24 max-md:pt-8 items-start text-start">
+        <div className="flex w-full justify-center gap-56 px-8 pe-24 max-md:flex-col max-md:px-8 ">
+          <div className="flex flex-col gap-8 text-white  justify-start pt-24 max-md:pt-8 items-start text-start">
             <Title
               title1={`Meeet Our`}
               title2={`Parthners`}
@@ -110,9 +110,8 @@ const CompanyGlobalSection = () => {
                 collaboration,
               </p>
               <p>
-                {" "}
                 and excellence, working with us to deliver exceptional solutions
-                and.
+                
               </p>
               <p> create lasting value for our clients and communities</p>
             </div>

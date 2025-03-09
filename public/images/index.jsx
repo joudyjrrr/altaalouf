@@ -15,17 +15,12 @@ import team1 from "./team1.png";
 import team2 from "./team2.png";
 import team3 from "./team3.png";
 import team4 from "./team4.png";
-import award1 from "./award1.png";
-import award2 from "./award2.png";
-import award3 from "./award3.png";
-import award4 from "./award4.png";
 import arrowIcon from "./arrowIcon.svg";
 import syrcleGlass from "./syrcleGlass.svg";
 import syrcleGlass2 from "./syrcleGlass2.svg";
 import Explore from "./Explore.svg";
 import mobileInzo from "./mobileInzo.png";
 import arrwos from "./arrwos.svg";
-import android from "./android.png";
 import ios from "./ios.png";
 import mac from "./mac.png";
 import windows from "./windows.png";
@@ -105,10 +100,20 @@ import trend_platform from "./trend-platform-bg.png";
 import half_circule2 from "./half-circule2.png";
 import copy1 from "./copy1.png";
 import copy2 from "./copy2.png";
+import award_card1 from "./award_card1.png";
+import award_card2 from "./award_card2.png";
+import award_card3 from "./award_card3.png";
+import award_card4 from "./award_card4.png";
+import award_card5 from "./award_card5.png";
 
 export {
   BNB,
   about1,
+  award_card1,
+  award_card2,
+  award_card3,
+  award_card4,
+  award_card5,
   copy2,
   copy1,
   freq_aps,
@@ -184,17 +189,12 @@ export {
   Explore,
   mobileInzo,
   arrwos,
-  android,
   mac,
   ios,
   windows,
-  award1,
   arrowIcon,
   syrcleGlass,
   pl,
-  award2,
-  award3,
-  award4,
   team1,
   team2,
   team3,

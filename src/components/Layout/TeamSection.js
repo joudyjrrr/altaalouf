@@ -19,7 +19,7 @@ const TeamSection = () => {
         </div>
         <div className="flex justify-between px-32 pb-16">
           <div className="flex flex-col gap-4 justify-center items-center text-center">
-            <Image src={copy1} />
+            <Image src={copy1} alt=""/>
             <div className="flex flex-col gap-1">
               <h1 className="text-white text-4xl font-extrabold">
                 Download our App Now
@@ -35,7 +35,7 @@ const TeamSection = () => {
         >
         </div>
           <div className="flex flex-col gap-4 justify-center items-center text-center">
-            <Image src={copy2} />
+            <Image src={copy2} alt=""/>
             <div className="flex flex-col gap-1">
               <h1 className="text-white text-4xl font-extrabold">
                 Download our App Now
