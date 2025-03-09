@@ -21,6 +21,8 @@ import {
   arrowLeft,
   arrowIcon,
   cardLogo,
+  cardLogo1,
+  cardLogo2,
 } from "../../../public/images";
 import Title from "./Title";
 import Switch from "./Switch";
@@ -29,6 +31,7 @@ import useLanguageDirection from "@/i18n/useLanguageDirection";
 const cryptoData = [
   {
     title: "Standard",
+    logo: cardLogo,
     features: [
       "Spread From 0.8 Pip",
       "STP Execution",
@@ -43,6 +46,7 @@ const cryptoData = [
   },
   {
     title: "INZO Vip",
+    logo: cardLogo1,
     features: [
       "Spread From 0.8 Pip",
       "STP Execution",
@@ -57,6 +61,7 @@ const cryptoData = [
   },
   {
     title: "Zero",
+    logo: cardLogo2,
     features: [
       "Spread From 0.8 Pip",
       "STP Execution",
@@ -112,14 +117,14 @@ const RealAccountTypes = () => {
       />
       <div className="w-full  flex flex-col md:flex-row relative mt-12">
         {/* Custom Pagination Container */}
-        <div className="flex flex-col md:gap-4 items-center justify-center md:items-start ">
+        <div className="flex flex-col md:gap-4 items-center justify-center md:items-start md:justify-start ">
           <Switch />
           <p className="text-center md:text-start md:leading-[40px] md:w-[360px] text-[1.2rem] md:text-[24px] font-semibold md:pt-5 text-[#030613]">
             INZO offer several types of accounts that are suitable for different
             trading environments.
           </p>
 
-          <div className="flex  items-center justify-between gap-x-5 pt-4  md:pt-20 w-[200px]">
+          <div className="flex  items-center justify-between gap-x-5 pt-4  md:pt-12 w-[200px]">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="transform "
@@ -175,7 +180,7 @@ const RealAccountTypes = () => {
               1280: { slidesPerView: 2 },
             }}
             dir={dir}
-            className="!p-7 md:!p-8  md:!pt-6"
+            className="!p-7 md:!p-8  md:!pt-6 realAcc-slide"
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {cryptoData.map((crypto, index) => (
@@ -183,7 +188,7 @@ const RealAccountTypes = () => {
                 <div
                   className="p-6 bg-card_Bg bg-cover bg-center w-[275px]
                    md:h-[450px] md:w-[350px] custom-shadow
-                 rounded-xl text-white flex flex-col items-center md:items-start"
+                 rounded-xl text-white flex flex-col items-center md:items-start "
                 >
                   <div className="w-full flex gap-4">
                     <div className="w-full flex flex-col ps-5">
@@ -192,7 +197,7 @@ const RealAccountTypes = () => {
                           {crypto.title}
                         </h3>
                         <Image
-                          src={cardLogo}
+                          src={crypto.logo}
                           alt="icon"
                           className="w-[97px] h-[97px] relative bottom-[15px]"
                         />

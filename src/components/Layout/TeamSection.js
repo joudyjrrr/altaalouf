@@ -19,32 +19,29 @@ const TeamSection = () => {
         </div>
         <div className="flex justify-between px-32 pb-16">
           <div className="flex flex-col gap-4 justify-center items-center text-center">
-            <Image src={copy1} alt=""/>
+            <Image src={copy1} alt="" />
             <div className="flex flex-col gap-1">
               <h1 className="text-white text-4xl font-extrabold">
                 Download our App Now
               </h1>
               <h1 className="text-secondary text-5xl font-extrabold">MT5</h1>
             </div>
-            <Button variant={`gradiant`}>
-              Invest
-            </Button>
+            <Button variant={`gradiant`}>Invest</Button>
           </div>
           <div
-          className={`w-[2px] h-[350px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary max-md:hidden`}
-        >
-        </div>
+            className={`w-[2px] h-[350px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary max-md:hidden`}
+          ></div>
           <div className="flex flex-col gap-4 justify-center items-center text-center">
-            <Image src={copy2} alt=""/>
+            <Image src={copy2} alt="" />
             <div className="flex flex-col gap-1">
               <h1 className="text-white text-4xl font-extrabold">
                 Download our App Now
               </h1>
-              <h1 className="text-secondary text-5xl font-extrabold">cTrader</h1>
+              <h1 className="text-secondary text-5xl font-extrabold">
+                cTrader
+              </h1>
             </div>
-            <Button variant={`gradiant`}>
-              Invest
-            </Button>
+            <Button variant={`gradiant`}>Invest</Button>
           </div>
         </div>
       </div>

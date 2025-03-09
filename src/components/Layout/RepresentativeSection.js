@@ -161,6 +161,7 @@ const RepresentativeSection = () => {
             />
           </button>
         </div>
+
         <Swiper
           key={swiperKey}
           modules={[Autoplay, Pagination, Navigation]}

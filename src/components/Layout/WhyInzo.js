@@ -1,12 +1,18 @@
-"use client"
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import Title from "./Title";
-import { why1, why2, why3, arrowLeft, arrowRight } from "../../../public/images";
+import {
+  why1,
+  why2,
+  why3,
+  arrowLeft,
+  arrowRight,
+} from "../../../public/images";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination"
+import "swiper/css/pagination";
 import Image from "next/image";
 import useLanguageDirection from "@/i18n/useLanguageDirection";
 
@@ -46,7 +52,6 @@ const WhyInzo = () => {
       setDir(localStorage.getItem("dir") || "ltr");
     }
   }, []);
-
   useLanguageDirection();
   useEffect(() => {
     setSwiperKey((prevKey) => prevKey + 1);
@@ -58,11 +63,9 @@ const WhyInzo = () => {
         <Title
           title1={`Why choose`}
           title2={`INZO?`}
-          title1Color={'text-secondary'}
-          title2Color={'!text-primary'}
-
+          title1Color={"text-secondary"}
+          title2Color={"!text-primary"}
         />
-
       </div>
       <div className="flex w-full  justify-center flex-col items-center text-lg max-md:text-sm text-center mt-16">
         <p>
@@ -89,7 +92,6 @@ const WhyInzo = () => {
           768: { slidesPerView: 1 },
           1024: { slidesPerView: 2, spaceBetween: 30 },
           1270: { slidesPerView: 3.3, spaceBetween: 100 },
-          
         }}
       >
         {data.map((d, index) => (
@@ -102,7 +104,7 @@ const WhyInzo = () => {
               <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
             </div>
           </SwiperSlide>
-        ))} 
+        ))}
       </Swiper>
       <div className="pt-16  flex justify-center items-center gap-32 mt-6 relative z-[2000]">
         <button
@@ -133,7 +135,6 @@ const WhyInzo = () => {
           />
         </button>
       </div>
-
     </div>
   );
 };
