@@ -116,9 +116,7 @@ const CompanyGlobalSection = () => {
               </p>
               <p> create lasting value for our clients and communities</p>
             </div>
-            <Button className="button-border-transparent  before:!rounded-md  !bg-transparent before:!bg-white !rounded-md text-base !px-12 !py-4">
-              See More
-            </Button>
+            <Button variant={`gradiant`}>See More</Button>
           </div>
           <Image
             src={ParthnerImg}

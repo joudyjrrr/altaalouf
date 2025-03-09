@@ -100,8 +100,8 @@ const RealAccountTypes = () => {
         width={190}
         height={190}
         className="me-4 absolute -z-3 top-[0px] left-0"
-      />
-
+      />{" "}
+      ``
       <Image
         src={syrcleGlass2}
         alt="icon"
@@ -180,7 +180,7 @@ const RealAccountTypes = () => {
               1280: { slidesPerView: 2 },
             }}
             dir={dir}
-            className="!p-7 md:!p-8  md:!pt-6 realAcc-slide"
+            className="!p-7 md:!p-8  md:!pt-6"
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {cryptoData.map((crypto, index) => (
@@ -188,7 +188,7 @@ const RealAccountTypes = () => {
                 <div
                   className="p-6 bg-card_Bg bg-cover bg-center w-[275px]
                    md:h-[450px] md:w-[350px] custom-shadow
-                 rounded-xl text-white flex flex-col items-center md:items-start "
+                 rounded-xl text-white flex flex-col items-center md:items-start"
                 >
                   <div className="w-full flex gap-4">
                     <div className="w-full flex flex-col ps-5">

@@ -147,6 +147,8 @@ export default {
 
         parthner_bg: "url('/images/parthner_bg.png')",
         location_bg: "url('/images/location_bg.png')",
+        whayChozBg: "url('/images/whayChozBg.png')",
+        award_card1: "url('/images/award_card1.png')",
       },
 
       fontFamily: {

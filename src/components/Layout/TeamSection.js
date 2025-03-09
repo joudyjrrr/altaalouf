@@ -1,6 +1,13 @@
 import React from "react";
 import Title from "./Title";
-import { team1, team2, team3, team4 } from "../../../public/images";
+import {
+  copy1,
+  copy2,
+  team1,
+  team2,
+  team3,
+  team4,
+} from "../../../public/images";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Switch from "./Switch";
@@ -17,26 +24,32 @@ const TeamSection = () => {
             trading environments.
           </p>
         </div>
-        <div className="flex w-full justify-center">
-          <Switch className2={`!text-white`} />
-        </div>
-        <div className="grid grid-cols-4 gap-4 px-8 max-md:grid-cols-2">
-          {ImageArray.map((img, index) => (
-            <div key={index} className="button-border rounded-xl">
-              <div className="bg-team_card rounded-xl h-[300px] text-white bg-no-repeat bg-center bg-cover flex gap-2 flex-col p-4 justify-center items-center text-center">
-                <Image src={img} alt="" width={150} height={150} />
-                <p>Total Profit</p>
-                <p className="text-3xl font-bold ">
-                  <span>$</span>11.4760{" "}
-                </p>
-              </div>
+        <div className="flex justify-between px-32 pb-16">
+          <div className="flex flex-col gap-4 justify-center items-center text-center">
+            <Image src={copy1} alt="" />
+            <div className="flex flex-col gap-1">
+              <h1 className="text-white text-4xl font-extrabold">
+                Download our App Now
+              </h1>
+              <h1 className="text-secondary text-5xl font-extrabold">MT5</h1>
             </div>
-          ))}
-        </div>
-        <div className="flex w-full justify-center">
-          <Button className="button-border !rounded-xl w-fit mx-auto my-8">
-            Show More
-          </Button>
+            <Button variant={`gradiant`}>Invest</Button>
+          </div>
+          <div
+            className={`w-[2px] h-[350px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary max-md:hidden`}
+          ></div>
+          <div className="flex flex-col gap-4 justify-center items-center text-center">
+            <Image src={copy2} alt="" />
+            <div className="flex flex-col gap-1">
+              <h1 className="text-white text-4xl font-extrabold">
+                Download our App Now
+              </h1>
+              <h1 className="text-secondary text-5xl font-extrabold">
+                cTrader
+              </h1>
+            </div>
+            <Button variant={`gradiant`}>Invest</Button>
+          </div>
         </div>
       </div>
     </div>

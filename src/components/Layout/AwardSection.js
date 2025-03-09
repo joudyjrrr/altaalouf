@@ -1,10 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
 import {
-  award1,
-  award2,
-  award3,
-  award4,
   Explore,
   Apps,
   mobileInzo,
@@ -12,6 +8,11 @@ import {
   square_left,
   square_rigtht,
   arrwos,
+  award_card1,
+  award_card2,
+  award_card3,
+  award_card4,
+  award_card5,
 } from "../../../public/images";
 import Image from "next/image";
 import Title from "./Title";
@@ -19,12 +20,25 @@ import Switch from "./Switch";
 const AwardSection = ({ isExplore }) => {
   const cards = [
     {
-      title: "Top 100 Most Truste Financial Institution in the Middle East",
-      img: award1,
+      title: "Lowest Spread Broker in the Middle East ",
+      img: award_card2,
+      className: "absolute w-[155px] top-[100px] h-[200px]  end-[28%]",
     },
-    { title: "The Fastest Growing Broker in the Middle East", img: award2 },
-    { title: "Best STP Broker in the Middle East", img: award3 },
-    { title: "Lowest Spread Broker in the Middle East", img: award4 },
+    {
+      title: "Best STP Broker in the Middle East",
+      img: award_card3,
+      className: "absolute top-[100px] h-[200px] w-[130px]  end-[30%]",
+    },
+    {
+      title: " The Fastest Growing Broker in the Middle East ",
+      img: award_card4,
+      className: "absolute top-[100px] h-[200px] w-[230px]  end-[15%]",
+    },
+    {
+      title: " Top 100 Most Truste Financial Institution in the Middle East",
+      img: award_card5,
+      className: "absolute top-[100px] h-[200px]  w-[55px] end-[40%]",
+    },
   ];
   return (
     <div
@@ -39,19 +53,35 @@ const AwardSection = ({ isExplore }) => {
           {cards.map((d, idx) => (
             <div
               key={idx}
-              className="flex flex-col justify-center items-center relative "
+              className=" flex flex-col h-[465px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
             >
-              <Image src={d.img} alt="" className="w-full h-full " />
-              <div className="bg-awarc_card_back py-8 text-center absolute rounded-b-xl bottom-[1px] h-[28%] end-[-3px] w-full z-[10000]">
-                <h1 className="text-white text-xl  font-semibold">{d.title}</h1>
+              <div className=" h-full  bg-top bg-no-repeat  rounded-[30px] w-full  relative overflow-hidden">
+                <Image
+                  src={award_card1}
+                  alt=""
+                  className="w-full  mix-blend-luminosity h-[350px]"
+                />
+                <Image
+                  src={d.img}
+                  alt=""
+                  height={200}
+                  width={d.width}
+                  className={d.className}
+                />
+              </div>
+
+              {/* العنوان */}
+              <div className=" absolute bottom-0 bg-awarc_card_back py-8 text-center rounded-b-[30px]">
+                <h1 className="text-white text-xl font-semibold">{d.title}</h1>
               </div>
             </div>
           ))}
         </div>
       </div>
+
       {isExplore && (
         <>
-          <div className="pb-6  relative overflow-hidden z-[1000] bg-trend_platform_bg bg-center bg-cover bg-no-repeat   h-full text-white mt-8 max-md:pt-8 ">
+          <div className="pb-6  relative overflow-hidden z-[1000]  bg-trend_platform_bg bg-center bg-cover bg-no-repeat   h-full text-white mt-4 max-md:pt-8 ">
             <div className="relative w-full bg-transparent flex justify-center items-center text-center pt-8">
               <Image
                 src={Explore}
