@@ -103,17 +103,16 @@ body {
 .darkBg {
   background: #091630;
 }
-<<<<<<< HEAD
-
+.realAcc-slide .bg-cover {
+  transition: all 0.25s linear;
+}
 .realAcc-slide .swiper-slide-active .bg-cover {
-  box-shadow: 0px 0px 35px rgba(70, 73, 73, 0.6);
+  box-shadow: 0px 0px 35px rgba(70, 73, 73, 0.8);
+}
+.realAcc-slide .swiper-slide-prev .bg-cover {
+  filter: invert(30%);
 }
 
-=======
-.darkBg {
-  background: #091630;
-}
->>>>>>> 2571ef94216f8c230283797b70e5cb9f9b90653c
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 229px !important;
@@ -302,14 +301,7 @@ div[data-radix-popper-content-wrapper=""] {
   background: linear-gradient(180deg, #084398 0%, #00befd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-<<<<<<< HEAD
 }
-.Why.swiper-pagination-horizontal {
-  top: 10px !important;
-=======
->>>>>>> 2571ef94216f8c230283797b70e5cb9f9b90653c
-}
-
 
 /* .Testimonials.swiper-pagination-bullets.swiper-pagination-horizontal{
   top: 10px   !important;
@@ -344,11 +336,7 @@ div[data-radix-popper-content-wrapper=""] {
   -webkit-text-fill-color: transparent;
 }
 .Why.swiper-pagination-horizontal {
-<<<<<<< HEAD
-  top: 12px !important;
-=======
   top: 70px !important;
->>>>>>> 2571ef94216f8c230283797b70e5cb9f9b90653c
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: 8px;
@@ -442,9 +430,5 @@ div[data-radix-popper-content-wrapper=""] {
   pointer-events: none;
   border-radius: 12px;
 }
-<<<<<<< HEAD
-=======
-.award_card1{
-    
+.award_card1 {
 }
->>>>>>> 2571ef94216f8c230283797b70e5cb9f9b90653c
