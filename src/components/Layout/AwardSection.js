@@ -8,7 +8,11 @@ import {
   square_left,
   square_rigtht,
   arrwos,
-  award_card1, award_card2, award_card3, award_card4, award_card5
+  award_card1,
+  award_card2,
+  award_card3,
+  award_card4,
+  award_card5,
 } from "../../../public/images";
 import Image from "next/image";
 import Title from "./Title";
@@ -18,16 +22,29 @@ const AwardSection = ({ isExplore }) => {
     {
       title: "Lowest Spread Broker in the Middle East ",
       img: award_card2,
-      className:"absolute w-[100px] top-[40px] h-[200px]  end-[28%]"
+      className: "absolute w-1/2 top-[15%] h-[70%]  end-[28%]",
     },
-    { title: "Best STP Broker in the Middle East", img: award_card3, className:"absolute top-[40px] h-[200px] w-[100px]  end-[30%]"},
-    { title: " The Fastest Growing Broker in the Middle East ", img: award_card4  ,  className:"absolute top-[40px] h-[200px] w-[160px]  end-[18%]"},
-    { title: " Top 100 Most Truste Financial Institution ", img: award_card5,  className:"absolute top-[40px] h-[200px]  w-[55px] end-[40%]" },
+    {
+      title: "Best STP Broker in the Middle East",
+      img: award_card3,
+      className: "absolute top-[15%] h-[70%] w-1/2  end-[25%]",
+    },
+    {
+      title: " The Fastest Growing Broker in the Middle  ",
+      img: award_card4,
+      className: "absolute top-[15%] h-[70%] w-[65%]  end-[18%]",
+    },
+    {
+      title: " Top 100 Most Truste Financial Institution ",
+      img: award_card5,
+      className: "absolute top-[20%] h-[70%]  w-1/4 end-[40%]",
+    },
   ];
   return (
     <div
-      className={`bg-award_back1 bg-top bg-no-repeat   ${isExplore ? "to-white" : "to-[#0f2147] "
-        } relative   mt-16 `}
+      className={`bg-award_back1 bg-top bg-no-repeat   ${
+        isExplore ? "to-white" : "to-[#0f2147] "
+      } relative   mt-16 `}
     >
       <div className="bg-award_back h-full">
         <Title title1={`Legendary`} title2={`Awards`} />
@@ -38,11 +55,11 @@ const AwardSection = ({ isExplore }) => {
               key={idx}
               className=" flex flex-col h-[395px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
             >
-              <div className=" h-full  bg-top bg-no-repeat  rounded-[30px] w-full  relative overflow-hidden">
+              <div className=" h-full  rounded-t-[30px] w-full  relative overflow-hidden">
                 <Image
                   src={award_card1}
                   alt=""
-                  className="w-full  mix-blend-luminosity h-[280px]"
+                  className="w-full  mix-blend-luminosity object-cover h-[280px]"
                 />
                 <Image
                   src={d.img}
@@ -53,11 +70,10 @@ const AwardSection = ({ isExplore }) => {
                 />
               </div>
 
-              <div className=" absolute bottom-0 bg-awarc_card_back py-8 text-center rounded-b-[30px]">
-                <h1 className="text-white text-xl font-semibold">{d.title}</h1>
+              <div className="  bg-awarc_card_back py-8 text-center rounded-b-[30px]">
+                <h1 className="text-white text-lg font-semibold">{d.title}</h1>
               </div>
             </div>
-
           ))}
         </div>
       </div>
@@ -103,11 +119,9 @@ const AwardSection = ({ isExplore }) => {
                 </div>
                 <Switch className2={`!text-white`} />
                 <Image
-                  src={Explore}
-                  width={300}
-                  height={50}
-                  className=""
-                  alt="inzo"
+                  src={Apps}
+                  alt=""
+                  className="w-[400px] max-md:max-w-[300px] max-mdw-[300px] my-4"
                 />
               </div>
             </div>
@@ -132,37 +146,6 @@ const AwardSection = ({ isExplore }) => {
                   </p>
                   <p className=" max-md:text-xs">$30 welcome bonus</p>
                 </div>
-                <div className="absolute top-[110px] end-[35%]">
-                  <Image
-                    src={arrwos}
-                    width={200}
-                    height={50}
-                    className=""
-                    alt="inzo"
-                  />
-                </div>
-              </div>
-              <div className="flex px-32 pt-10 justify-center gap-16 max-md:flex-col">
-                <Image
-                  src={mobileInzo}
-                  width={550}
-                  height={50}
-                  className="max-md:hidden"
-                  alt="inzo"
-                />
-                <div className="flex flex-col items-center gap-4  pt-[8rem] max-md:pt-0">
-                  <div className="flex flex-col text-center gap-1 text-white text-2xl  max-md:text-sm font-semibold">
-                    <h1>Download our app</h1>
-                    <h1>for all type of your devices.</h1>
-                  </div>
-                  <Switch className2={`!text-white`} />
-                  <Image
-                    src={Apps}
-                    alt=""
-                    className="w-[400px] max-md:max-w-[300px] max-mdw-[300px] my-4"
-                  />
-                </div>
-              </div>
 
                 <div className="bg-social_gradiant rounded-xl p-4 max-md:p-1 pb-8">
                   <div className="flex justify-between ">
@@ -175,9 +158,17 @@ const AwardSection = ({ isExplore }) => {
                       className="w-[60px] max-md:w-[40px]"
                     />
                   </div>
+                  <h1 className="text-2xl mb-2 max-md:text-lg">
+                    Deposit Bonus
+                  </h1>
+                  <p className="text-lg max-md:text-sm">
+                    Deposit money for 30% bonuses.
+                  </p>
+                  <p className=" max-md:text-xs">on your account</p>
                 </div>
               </div>
             </div>
+          </div>
           <div className="flex justify-between absolute bottom-[-70px] w-full">
             <Image
               src={square_left}
@@ -196,6 +187,7 @@ const AwardSection = ({ isExplore }) => {
           </div>
         </>
       )}
+
     </div>
   );
 };

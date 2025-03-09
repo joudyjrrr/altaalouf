@@ -46,6 +46,7 @@ const WhyInzo = () => {
       setDir(localStorage.getItem("dir") || "ltr");
     }
   }, []);
+
   useLanguageDirection();
   useEffect(() => {
     setSwiperKey((prevKey) => prevKey + 1);
@@ -73,7 +74,7 @@ const WhyInzo = () => {
       <Swiper
         key={swiperKey}
         modules={[Autoplay, Pagination, Navigation]}
-        spaceBetween={40}
+        spaceBetween={10}
         slidesPerView={1}
         autoplay={{ delay: 5000 }}
         pagination={{
@@ -98,6 +99,8 @@ const WhyInzo = () => {
                 <Image src={d.img} alt="" width={65} height={65} />
                 <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
               </div>
+              <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
+            </div>
           </SwiperSlide>
         ))} 
       </Swiper>
