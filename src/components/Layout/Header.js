@@ -88,17 +88,19 @@ const LINKS = [
       { title: "contactUs", link: "/accounts-types" },
     ],
   },
-  
 ];
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const t = useTranslations();
+  const [isVisible, setIsVisible] = useState(false);
   return (
     <div
-      className={`w-full    px-16 pt-4 fixed top-0 end-0 z-[3000] max-md:px-4 ${
+      onMouseEnter={() => setIsVisible(true)}
+      onMouseLeave={() => setIsVisible(false)}
+      className={`w-full transition-all duration-100 ease-in-out    px-16 pt-4 fixed top-0 end-0 z-[3000] max-md:px-4 ${
         openMenu ? "bg-star_background pb-10" : "h-[80px] bg-header_gradiant"
-      }`}
+      }    ${isVisible ? "opacity-100" : "opacity-0"} `}
     >
       <div className="w-full flex justify-between items-center h-full">
         <Image
@@ -132,8 +134,7 @@ const Header = () => {
           variants={menuVariants}
           className="w-full mt-8 flex flex-col"
         >
-          
-          <div   className="w-full mt-8 flex justify-between max-md:flex-col ">
+          <div className="w-full mt-8 flex justify-between max-md:flex-col ">
             <div className="grid grid-cols-2  w-full h-fit gap-12 max-md:gap-4  justify-start items-start text-white">
               {LINKS.map((li, index) => (
                 <div key={index} className="flex flex-col gap-3 !w-fit !h-fit">
@@ -147,13 +148,12 @@ const Header = () => {
                 </div>
               ))}
             </div>
-         
+
             <div className="hidden max-md:block text-white my-4 mx-auto">
-              <Buttons/>
+              <Buttons />
             </div>
             <VerticalSotial />
           </div>
-         
         </motion.div>
       )}
     </div>

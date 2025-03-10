@@ -20,25 +20,27 @@ import Switch from "./Switch";
 const AwardSection = ({ isExplore }) => {
   const cards = [
     {
-      title: "Lowest Spread Broker in the Middle East ",
-      img: award_card2,
-      className: "absolute w-1/2 top-[15%] h-[70%]  end-[28%]",
-    },
-    {
-      title: "Best STP Broker in the Middle East",
-      img: award_card3,
-      className: "absolute top-[15%] h-[70%] w-1/2  end-[25%]",
+      title: " Top 100 Most Trusted Financial Institutionsin  in the Middle East ",
+      img: award_card5,
+      className: "  w-[20%] h-[220px] mt-6 ",
     },
     {
       title: " The Fastest Growing Broker in the Middle  ",
       img: award_card4,
-      className: "absolute top-[15%] h-[70%] w-[65%]  end-[18%]",
+      className: "  w-[65%] h-[170px] mt-16 pt-4 ",
+    },
+   
+    {
+      title: "Best STP Broker in the Middle East",
+      img: award_card3,
+      className: " w-[40%] h-[180px] mt-12",
     },
     {
-      title: " Top 100 Most Truste Financial Institution ",
-      img: award_card5,
-      className: "absolute top-[20%] h-[70%]  w-1/4 end-[40%]",
+      title: "Lowest Spread Broker in the Middle East ",
+      img: award_card2,
+      className: " w-1/2 h-[200px] mt-8 ",
     },
+   
   ];
   return (
     <div
@@ -49,28 +51,23 @@ const AwardSection = ({ isExplore }) => {
       <div className="bg-award_back h-full">
         <Title title1={`Legendary`} title2={`Awards`} />
 
-        <div className="grid grid-cols-4 pb-16 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-24 p-4 px-32">
+        <div className="grid grid-cols-4 pb-16 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-24 p-4 px-24">
           {cards.map((d, idx) => (
             <div
               key={idx}
-              className=" flex flex-col h-[395px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
+              className=" flex flex-col h-[370px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
             >
-              <div className=" h-full  rounded-t-[30px] w-full  relative overflow-hidden">
-                <Image
-                  src={award_card1}
-                  alt=""
-                  className="w-full  mix-blend-luminosity object-cover h-[280px]"
-                />
+              <div className="relative h-full w-full rounded-t-[30px] overflow-hidden">
+                <div className="absolute inset-0 bg-award_card1 bg-center bg-cover mix-blend-luminosity"></div>
                 <Image
                   src={d.img}
                   alt=""
-                  height={200}
-                  width={d.width}
-                  className={d.className}
+                 
+                  className={`relative z-10  mx-auto ${d.className}`}
                 />
               </div>
 
-              <div className="  bg-awarc_card_back py-8 text-center rounded-b-[30px]">
+              <div className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${d.img === award_card5 && '!py-1'}`}>
                 <h1 className="text-white text-lg font-semibold">{d.title}</h1>
               </div>
             </div>
@@ -187,7 +184,6 @@ const AwardSection = ({ isExplore }) => {
           </div>
         </>
       )}
-
     </div>
   );
 };

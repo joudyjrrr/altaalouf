@@ -74,6 +74,21 @@ const cryptoData = [
       "30% Deposit Bonus",
     ],
   },
+  {
+    title: "Zero",
+    logo: cardLogo2,
+    features: [
+      "Spread From 0.8 Pip",
+      "STP Execution",
+      "Leverage Up to 1:500",
+      "Minimum Lot size 0.01",
+      "Access to Automated Trading",
+      "Minimum Deposit $100",
+      "Zero Commission $0.0",
+      "Swap-Free Islamic Account",
+      "30% Deposit Bonus",
+    ],
+  },
 ];
 
 const RealAccountTypes = () => {
@@ -165,9 +180,9 @@ const RealAccountTypes = () => {
             key={swiperKey}
             ref={swiperRef}
             modules={[Autoplay, Pagination]}
-            spaceBetween={1}
+            spaceBetween={75}
             slidesPerView={1}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 7000 }}
             pagination={{
               el: "#custom-pagination",
               clickable: true,
@@ -177,7 +192,7 @@ const RealAccountTypes = () => {
               500: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 2 },
-              1280: { slidesPerView: 2 },
+              1280: { slidesPerView: 2.6 },
             }}
             dir={dir}
             className="!p-7 md:!p-8  md:!pt-6 realAcc-slide"

@@ -96,8 +96,8 @@ const RepresentativeSection = () => {
           }}
         >
           {data.map((d, index) => (
-            <SwiperSlide dir={dir} key={index} >
-              <div className={`bg-location_back location-content rounded-xl gap-12 h-[526px] bg-no-repeat bg-center flex justify-start p-8 max-md:pt-20 flex-col items-center`}>
+            <SwiperSlide dir={dir} key={index}  className="location-content">
+              <div className={`bg-location_back  rounded-xl gap-12 h-[526px] bg-no-repeat bg-center flex justify-start p-8 max-md:pt-20 flex-col items-center`}>
                 <Image src={d.img} alt="" height={230} />
                 <h1 className="text-2xl font-semibold text-white">{d.title}</h1>
               </div>
