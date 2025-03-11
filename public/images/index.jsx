@@ -43,6 +43,9 @@ import arrowRight from "./arrowRight.svg";
 import cardLogo from "./cardLogo.svg";
 import cardLogo1 from "./cardLogo1.svg";
 import cardLogo2 from "./cardLogo2.svg";
+import cardLogo3 from "./cardLogo3.svg";
+import cardLogo4 from "./cardLogo4.svg";
+import cardLogo5 from "./cardLogo5.svg";
 import location_back from "./location_back.png";
 import location1 from "./location1.png";
 import location2 from "./lovation2.png";
@@ -177,6 +180,9 @@ export {
   cardLogo,
   cardLogo1,
   cardLogo2,
+  cardLogo3,
+  cardLogo4,
+  cardLogo5,
   why1,
   why2,
   why3,
