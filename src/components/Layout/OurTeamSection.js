@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { arrow } from "../../../public/images";
 import Link from "next/link";
-const OurTeamSection = ({ imgData, showButton }) => {
+const OurTeamSection = ({ imgData, showButton , className}) => {
   return (
-    <div className="  w-full pt-24 mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center">
+    <div className={`  w-full pt-24 mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center ${className} `}>
       {imgData.map((image, index) => (
         <div
           key={index}
