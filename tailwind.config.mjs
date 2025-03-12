@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -167,6 +168,8 @@ export default {
 
         parthner_bg: "url('/images/parthner_bg.png')",
         location_bg: "url('/images/location_bg.png')",
+
+        terms_Bg: "url('/images/terms&co_Bg.png')",
       },
 
       fontFamily: {

@@ -66,3 +66,5 @@ const TeamMemberPage = ({ params }) => {
 };
 
 export default TeamMemberPage;
+
+
