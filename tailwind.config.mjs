@@ -113,10 +113,10 @@ export default {
 
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
         aboutBanner: "url('/images/aboutBanner.png')",
-        about_Gr: "linear-gradient(0deg, #0f214785  52.46%, #0f21476b  100%)",
-        about_Gr_Card: "linear-gradient(0deg, #084196 0%, #0575C1 61.01%)",
+        about_Gr: "linear-gradient(0deg, #0F2147 5%, rgba(15, 33, 71, 0) 100%);",
+        about_Gr_Card: "linear-gradient(0deg, #084196 0%, #0575C1 59.64%, #00C0FF 143.83%);",
         about_Gr_Card2:
-          "linear-gradient(90deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
+          "linear-gradient(0deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
         about_Gr_Card3:
           "linear-gradient(180deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
         tutorial_Gr:

@@ -45,8 +45,8 @@ const AwardSection = ({ isExplore }) => {
   return (
     <div
       className={`bg-award_back1 bg-top bg-no-repeat   ${
-        isExplore ? "to-white" : "to-[#0f2147] "
-      } relative   mt-16 `}
+        isExplore ? "to-white mt-16" : "to-[#0f2147]"
+      } relative    `}
     >
       <div className="bg-award_back h-full">
         <Title title1={`Legendary`} title2={`Awards`} />
