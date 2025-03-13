@@ -28,7 +28,7 @@ const Page = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="w-full pt-36 bg-ourTeamBg h-screen bg-cover bg-center bg-no-repeat z-[100]">
+      <div className="w-full pt-32 bg-ourTeamBg  bg-cover bg-center bg-no-repeat z-[100]">
         <div className="w-full pt-32  text-center h-full flex justify-center items-center gap-8 flex-col">
           <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
             <h1 className={`text-secondary `}>{`Forex `}</h1>
@@ -46,14 +46,19 @@ const Page = () => {
             </p>
             <p>networking, benefiting from knowledge.</p>
           </div>
-          <Image src={tutorial} alt="" className="w-[800px]" />
+
+          <div className="relative flex justify-center pb-24">
+            <div className="absolute w-[90%] top-[230px] h-[50%] opacity-80 blur-[384px] bg-toutorial_gr_img"></div>
+            <Image src={tutorial} alt="" className="w-[800px] relative z-[100]" />
+          </div>
         </div>
       </div>
 
-      <div className="bg-gradient-to-b tutorial from-[#0F2147] via-[#0F2147] via-80% to-[#0f2147] relative">
-        <div className="bg-award_back h-full py-24">
+      <div className="bg-gradient-to-b tutorial from-[#0F2147] via-[#0F2147] via-100% to-[#0f2147] relative">
+        <div className="bg-award_back h-full py-24 relative">
+          <div className="absolute w-full h-[35%] bg-primary end-0 bottom-0"></div>
           <div className="w-full flex justify-center relative px-24">
-            <div className=" flex justify-between items-center px-12  w-full absolute end-0 top-[30%] max-md:!bottom-0 z-[2000]">
+            <div className=" flex justify-between items-center px-32  w-full absolute end-0 top-[30%] max-md:!bottom-0 z-[2000]">
               <button
                 onClick={() => swiperRef.current?.slidePrev()}
                 className="relative z-[2000]"
@@ -82,24 +87,30 @@ const Page = () => {
             <Swiper
               key={swiperKey}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              modules={[Autoplay, Pagination]}
-              spaceBetween={20}
-              slidesPerView="auto"
-              autoplay={{ delay: 3000 }}
+              modules={[Pagination]}
+              spaceBetween={1}
+              slidesPerView={"auto"}
+              autoplay={{ delay: 7000 }}
               centeredSlides={true}
-              loop={true}
-              dir={dir}
+              initialSlide={1}
               breakpoints={{
                 320: { slidesPerView: 1 },
                 768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
               }}
-              className="w-[98%] max-w-[1200px]"
+              className="!w-[75%] !mx-0 !px-0"
             >
               {[...Array(6)].map((_, index) => (
-                <SwiperSlide key={index} className="!w-fit relative">
+                <SwiperSlide
+                  key={index}
+                  className="relative !w-[300px] !h-[200px]"
+                >
                   <div className="next-prev"></div>
-                  <Image src={tutorial} alt="" className="w-[400px] z-[-1]" />
+                  <Image
+                    src={tutorial}
+                    alt=""
+                    className="!w-full !h-full z-[-1]"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>

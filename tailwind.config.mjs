@@ -113,14 +113,19 @@ export default {
 
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
         aboutBanner: "url('/images/aboutBanner.png')",
-        about_Gr: "linear-gradient(0deg, #0F2147 5%, rgba(15, 33, 71, 0) 100%);",
-        about_Gr_Card: "linear-gradient(0deg, #084196 0%, #0575C1 59.64%, #00C0FF 143.83%);",
+        about_Gr:
+          "linear-gradient(0deg, #0F2147 5%, rgba(15, 33, 71, 0) 100%);",
+
+        about_Gr_Card:
+          "linear-gradient(0deg, #084196 0%, #0575C1 59.64%, #00C0FF 143.83%);",
         about_Gr_Card2:
           "linear-gradient(0deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
         about_Gr_Card3:
           "linear-gradient(180deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
         tutorial_Gr:
           "linear-gradient(0deg, #0F2147 52.46%, rgba(15, 33, 71, 0.5) 100%);",
+        toutorial_gr_img: "linear-gradient(0deg, #007399 0%, #00C0FF 100%);",
+        toutorial_gr_swiper: "linear-gradient(0deg, rgba(15, 33, 71, 0) 0%, #0F2147 100%);",
         real_account_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0.3) 100%);",
         frequantly_Gr:
