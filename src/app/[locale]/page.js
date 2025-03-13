@@ -1,15 +1,12 @@
 "use client";
 import Banner from "@/components/Layout/Banner";
 import RealAccountTypes from "@/components/Layout/RealAccountTypes";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import useLanguageDirection from "@/i18n/useLanguageDirection";
 
 import TeamSection from "@/components/Layout/TeamSection";
-import Title from "@/components/Layout/Title";
 import AwardSection from "@/components/Layout/AwardSection";
 
-import Image from "next/image";
 import StraightSection from "@/components/Layout/StraightSection";
 import LicenseSection from "@/components/Layout/LicenseSection";
 import WhyInzo from "@/components/Layout/WhyInzo";
@@ -46,7 +43,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
-

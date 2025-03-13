@@ -111,6 +111,8 @@ import award_card3 from "./award_card3.png";
 import award_card4 from "./award_card4.png";
 import award_card5 from "./award_card5.png";
 
+import pdIcon from "./pdIcon.svg";
+
 export {
   BNB,
   about1,
@@ -221,4 +223,5 @@ export {
   uk,
   logo,
   syrcleGlass2,
+  pdIcon,
 };
