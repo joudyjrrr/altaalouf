@@ -226,6 +226,14 @@ div[data-radix-popper-content-wrapper=""] {
     rgba(8, 20, 46, 0) 78.79%
   );
 }
+.bg-custom-gradient {
+  background-image: linear-gradient(
+    160deg,
+    #0b1731 60%,
+
+    #1654b0 125%
+  );
+}
 
 .card-border::before,
 .min-card-border::before {
@@ -259,6 +267,12 @@ div[data-radix-popper-content-wrapper=""] {
 
 .button-border {
   background: linear-gradient(#0a1f44, #0a1f44) padding-box,
+    linear-gradient(90deg, #084398, #00befd) border-box;
+  color: white;
+  border: 1.2px solid transparent;
+}
+.button-border2 {
+  background: linear-gradient(#09132d, #09132d) padding-box,
     linear-gradient(90deg, #084398, #00befd) border-box;
   color: white;
   border: 1.2px solid transparent;

@@ -113,6 +113,11 @@ import award_card5 from "./award_card5.png";
 
 import pdIcon from "./pdIcon.svg";
 
+import agent from "./agent.png";
+import agent1 from "./agent1.svg";
+import agent2 from "./agent2.svg";
+import agent3 from "./agent3.svg";
+
 export {
   BNB,
   about1,
@@ -224,4 +229,8 @@ export {
   logo,
   syrcleGlass2,
   pdIcon,
+  agent,
+  agent1,
+  agent2,
+  agent3,
 };

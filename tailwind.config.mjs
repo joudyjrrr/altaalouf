@@ -126,7 +126,8 @@ export default {
         tutorial_Gr:
           "linear-gradient(0deg, #0F2147 52.46%, rgba(15, 33, 71, 0.5) 100%);",
         toutorial_gr_img: "linear-gradient(0deg, #007399 0%, #00C0FF 100%);",
-        toutorial_gr_swiper: "linear-gradient(0deg, rgba(15, 33, 71, 0) 0%, #0F2147 100%);",
+        toutorial_gr_swiper:
+          "linear-gradient(0deg, rgba(15, 33, 71, 0) 0%, #0F2147 100%);",
         real_account_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0.3) 100%);",
         frequantly_Gr:
@@ -175,6 +176,8 @@ export default {
         location_bg: "url('/images/location_bg.png')",
 
         terms_Bg: "url('/images/terms&co_Bg.png')",
+
+        agent_Bg: "url('/images/agent_Bg.png')",
       },
 
       fontFamily: {
