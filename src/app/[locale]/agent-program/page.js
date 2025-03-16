@@ -98,12 +98,12 @@ const page = () => {
             <div className="grid grid-cols-[repeat(3,minmax(0,400px))] place-content-center gap-y-5  ">
               {termData.map((item, index) => (
                 <div
-                  className={`flex flex-col items-center justify-center w-[380px]
-                 h-[270px] text-white  mx-auto p-5 pt-8 pb-0 rounded-3xl 
+                  className={`flex flex-col items-center justify-start w-[380px]
+                 h-[260px] text-white  mx-auto p-5 pt-8 pb-0 rounded-3xl 
                   border border-[#00C0FF]  relative bg-custom-gradient text-center`}
                   key={index}
                 >
-                  <div className=" mt-5">
+                  <div className=" mt-12">
                     <p className="text-2xl font-bold ">{item.title}</p>
                     <p className="text-[1.2rem] px-3 pt-2">{item.desc}</p>
                   </div>
