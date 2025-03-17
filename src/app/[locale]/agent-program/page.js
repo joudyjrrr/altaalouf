@@ -7,11 +7,7 @@ import Image from "next/image";
 import { agent, agent1, agent2, agent3 } from "../../../../public/images";
 import { Button } from "@/components/ui/button";
 import Title from "@/components/Layout/Title";
-import FinancialReport from "@/components/Layout/FinancialReport";
 import FinancialReportSection from "@/components/Layout/FinancialReportSection";
-
-// import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-// import "react-circular-progressbar/dist/styles.css";
 
 const termData = [
   {
