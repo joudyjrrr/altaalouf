@@ -118,6 +118,11 @@ import agent1 from "./agent1.svg";
 import agent2 from "./agent2.svg";
 import agent3 from "./agent3.svg";
 
+import partner1 from "./partner1.svg";
+import partner2 from "./partner2.svg";
+import partner3 from "./partner3.svg";
+import partner4 from "./partner4.svg";
+
 export {
   BNB,
   about1,
@@ -233,4 +238,8 @@ export {
   agent1,
   agent2,
   agent3,
+  partner4,
+  partner3,
+  partner2,
+  partner1,
 };

@@ -174,6 +174,9 @@ export default {
         terms_Bg: "url('/images/terms&co_Bg.png')",
 
         agent_Bg: "url('/images/agent_Bg.png')",
+
+        successPartners_Bg: "url('/images/successPartners_Bg.png')",
+        successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
       },
 
       fontFamily: {
