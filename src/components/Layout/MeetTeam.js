@@ -1,7 +1,7 @@
 import { Button } from "../ui/button";
+import Link from "next/link";
 import Image from "next/image";
 import OurTeamSection from "./OurTeamSection";
-import Link from "next/link";
 import { mTeem1, mTeem2, mTeem3, mTeem4, mTeem5 } from "../../../public/images";
 import Title from "./Title";
 

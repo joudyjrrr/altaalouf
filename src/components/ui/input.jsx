@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
 import * as React from "react";
 
-const Input = ({ className, label, type,placeholder, ...props }, ref) => {
+const Input = ({ className, label, type,placeholder,classNameParent, ...props }, ref) => {
   return (
-    <div className="flex text-start text-white w-full  flex-col gap-2">
+    <div className={`flex text-start text-white w-fit  flex-col gap-2 ${classNameParent}`}>
       <span className="text-lg ">{label}</span>
       <div className="input-border">
         <input
