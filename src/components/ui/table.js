@@ -40,19 +40,24 @@ const Table = ({
           },
           className: "tableWrapper",
         },
-
+        header:{
+      style:{
+        borderRadius:"0px"
+      }
+        },
         headCells: {
           style: {
             color: "#00C0FF",
             fontWeight: "500",
             fontSize: "17px",
             display: "flex",
-            justifyContent: "center",
-            paddingInline: "5px",
+            justifyContent: "start",
+            paddingInline: "10px",
             width: "fit-content",
             background: "#10253F",
             border: "none",
             textWrap: "wrap",
+            textAlign:"start"
           },
         },
         rows: {
@@ -66,11 +71,12 @@ const Table = ({
             fontWeight: "400",
             fontSize: "12px",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "start",
             padding: "3px",
             background: "#061534",
             border: "none",
             textWrap: "wrap",
+            textAlign:"start"
           },
         },
       }}

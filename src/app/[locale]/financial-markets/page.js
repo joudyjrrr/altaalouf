@@ -21,15 +21,15 @@ const tabs2 = [
   { title: "Crypto", value: "Crypto" },
   { title: "Energy", value: "Energy" },
 ];
-const cols = [
-  {
-    name: "Instrument Name",
-    selector: (row) => (
-      <span>
-        {row.name}
-      </span>
-    ),
-  },
+  const cols = [
+    {
+      name: "Instrument Name",
+      selector: (row) => (
+        <span>
+          {row.name}
+        </span>
+      ),
+    },
   {
     name: "Nominal Value of contract size",
     selector: (row) => (

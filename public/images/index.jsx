@@ -122,9 +122,15 @@ import partner1 from "./partner1.svg";
 import partner2 from "./partner2.svg";
 import partner3 from "./partner3.svg";
 import partner4 from "./partner4.svg";
+import qusation from "./qusation.svg";
+import US from "./US 1.png";
+
+
 
 export {
   BNB,
+  US,
+  qusation,
   about1,
   award_card1,
   award_card2,
