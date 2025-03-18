@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -113,14 +114,20 @@ export default {
 
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
         aboutBanner: "url('/images/aboutBanner.png')",
-        about_Gr: "linear-gradient(0deg, #0f214785  52.46%, #0f21476b  100%)",
-        about_Gr_Card: "linear-gradient(0deg, #084196 0%, #0575C1 61.01%)",
+        about_Gr:
+          "linear-gradient(0deg, #0F2147 5%, rgba(15, 33, 71, 0) 100%);",
+
+        about_Gr_Card:
+          "linear-gradient(0deg, #084196 0%, #0575C1 59.64%, #00C0FF 143.83%);",
         about_Gr_Card2:
-          "linear-gradient(90deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
+          "linear-gradient(0deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
         about_Gr_Card3:
           "linear-gradient(180deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
         tutorial_Gr:
           "linear-gradient(0deg, #0F2147 52.46%, rgba(15, 33, 71, 0.5) 100%);",
+        toutorial_gr_img: "linear-gradient(0deg, #007399 0%, #00C0FF 100%);",
+        toutorial_gr_swiper:
+          "linear-gradient(0deg, rgba(15, 33, 71, 0) 0%, #0F2147 100%);",
         real_account_Gr:
           "linear-gradient(180deg, #0F2147 1%, rgba(15, 33, 71, 0.3) 100%);",
         frequantly_Gr:
@@ -135,11 +142,7 @@ export default {
         inzoReal_Bg: "url('/images/inzoReal_Bg.png')",
 
         trend_platform_bg: "url('/images/trend-platform-bg.png')",
-        trend_platform_Gr:
-          "linear-gradient(180deg, #0F2147 0%, transparent 100%);",
-        trend_platform_Gr2:
-          "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
-
+   
         awardBack: "url('/images/awardBack.png')",
         awardBG3: "url('/images/awardBG3.png')",
         starTopBot: "url('/images/starTopBot.png')",
@@ -156,7 +159,7 @@ export default {
 
         trend_platform_bg: "url('/images/trend-platform-bg.png')",
         trend_platform_Gr:
-          "linear-gradient(180deg, #0F2147 0%, transparent 100%);",
+          "linear-gradient(180deg, #0F2147 15%, transparent 100%);",
         trend_platform_Gr2:
           "linear-gradient(0deg, #0F2147 0%, transparent 100%);",
 
@@ -167,6 +170,13 @@ export default {
 
         parthner_bg: "url('/images/parthner_bg.png')",
         location_bg: "url('/images/location_bg.png')",
+
+        terms_Bg: "url('/images/terms&co_Bg.png')",
+
+        agent_Bg: "url('/images/agent_Bg.png')",
+
+        successPartners_Bg: "url('/images/successPartners_Bg.png')",
+        successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
       },
 
       fontFamily: {

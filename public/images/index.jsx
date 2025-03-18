@@ -43,6 +43,9 @@ import arrowRight from "./arrowRight.svg";
 import cardLogo from "./cardLogo.svg";
 import cardLogo1 from "./cardLogo1.svg";
 import cardLogo2 from "./cardLogo2.svg";
+import cardLogo3 from "./cardLogo3.svg";
+import cardLogo4 from "./cardLogo4.svg";
+import cardLogo5 from "./cardLogo5.svg";
 import location_back from "./location_back.png";
 import location1 from "./location1.png";
 import location2 from "./lovation2.png";
@@ -108,8 +111,26 @@ import award_card3 from "./award_card3.png";
 import award_card4 from "./award_card4.png";
 import award_card5 from "./award_card5.png";
 
+import pdIcon from "./pdIcon.svg";
+
+import agent from "./agent.png";
+import agent1 from "./agent1.svg";
+import agent2 from "./agent2.svg";
+import agent3 from "./agent3.svg";
+
+import partner1 from "./partner1.svg";
+import partner2 from "./partner2.svg";
+import partner3 from "./partner3.svg";
+import partner4 from "./partner4.svg";
+import qusation from "./qusation.svg";
+import US from "./US 1.png";
+import circule_arrwos from "./circule-arrwos.svg";
+
 export {
   BNB,
+  circule_arrwos,
+  US,
+  qusation,
   about1,
   award_card1,
   award_card2,
@@ -177,6 +198,9 @@ export {
   cardLogo,
   cardLogo1,
   cardLogo2,
+  cardLogo3,
+  cardLogo4,
+  cardLogo5,
   why1,
   why2,
   why3,
@@ -215,4 +239,13 @@ export {
   uk,
   logo,
   syrcleGlass2,
+  pdIcon,
+  agent,
+  agent1,
+  agent2,
+  agent3,
+  partner4,
+  partner3,
+  partner2,
+  partner1,
 };

@@ -7,18 +7,18 @@ import { FaCaretRight } from "react-icons/fa6";
 
 const page = () => {
   return (
-    <div className="w-full h-full">
-      <div className="w-full pt-4  bg-ourTeamBg  bg-cover bg-center bg-no-repeat z-[100]">
-        <div className="w-full pt-36   text-center h-full flex justify-start items-center gap-4 flex-col">
+    <div className="w-full h-full bg-primary">
+      <div className="w-full pt-44  bg-ourTeamBg  bg-contain bg-top bg-no-repeat z-[100]">
+        <div className="w-full  relative  text-center h-full flex justify-start items-center gap-4 flex-col">
           <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
             <h1 className={`text-secondary `}>{`Contact `}</h1>
             <h1 className={`text-white `}>{`Us`}</h1>
           </div>
-
-          <div className="bg-primary w-fit h-fit  mt-4  mb-[100px]">
-            <div className="bg-contact_Bg bg-center bg-cover py-10  px-24   rounded-lg shadow-lg">
+            <div className="absolute w-[80%] z-10 top-[300px] h-[20%] opacity-80 blur-[384px] bg-toutorial_gr_img"></div>
+          <div className="bg-primary relative z-[100] w-fit mx-auto h-full mb-[100px]">
+            <div className="bg-contact_Bg bg-no-repeat  relative z-[100]  bg-center bg-cover  pt-12 pb-56 px-32   rounded-lg shadow-lg">
               <div className="flex flex-col gap-2 ">
-                <h1 className="text-secondary font-semibold text-2xl">
+                <h1 className="text-secondary font-extrabold text-2xl">
                   Contact Us for Assistance or Inquiries
                 </h1>
                 <p className="text-white text-xl">
@@ -26,7 +26,7 @@ const page = () => {
                   soon as possible.
                 </p>
               </div>
-              <div className="flex flex-col gap-4 mt-8 px-8">
+              <div className="flex flex-col gap-12 mt-8 px-8">
                 <Input label={`Full Name`} placeholder={`Enter name`} />
                 <Input label={`Email Id `} placeholder={`Enter email id`} />
                 <Textarea label={`Massage`} placeholder={`Enter massage`} />

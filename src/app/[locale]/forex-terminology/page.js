@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 import { freq_aps, plus } from "../../../../public/images";
-import DwMethods from "@/components/Layout/DwMethods";
+
 const questions = [
     "What are Spreads?",
     "What is a Currency Pair?",
