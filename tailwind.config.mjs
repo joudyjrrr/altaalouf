@@ -177,6 +177,8 @@ export default {
 
         successPartners_Bg: "url('/images/successPartners_Bg.png')",
         successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
+        caluclatour_bg:
+        "linear-gradient(0deg, transparent 50%, #0F2147 63.5%);",
       },
 
       fontFamily: {

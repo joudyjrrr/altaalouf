@@ -110,6 +110,7 @@ import award_card2 from "./award_card2.png";
 import award_card3 from "./award_card3.png";
 import award_card4 from "./award_card4.png";
 import award_card5 from "./award_card5.png";
+import Polygon from "./Polygon 4.png";
 
 import pdIcon from "./pdIcon.svg";
 
@@ -248,4 +249,5 @@ export {
   partner3,
   partner2,
   partner1,
+  Polygon,
 };
