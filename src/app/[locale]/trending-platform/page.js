@@ -12,14 +12,14 @@ const faqItems = [
 const page = () => {
   return (
     <div className="w-full h-full bg-primary pb-20 relative">
-    <div className="w-full pt-36 bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
+      <div className="w-full pt-[17rem] bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
         <div className="w-full    bg-trend_platform_Gr2 h-full">
           <div className="w-full    text-center h-full flex justify-start items-center gap-2 flex-col">
             <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-              <h1 className={`text-secondary `}>{`Trading `}</h1>
-              <h1 className={`text-white `}>{`Platforms`}</h1>
+              <h1 className={`text-secondary font-extrabold`}>{`Trading `}</h1>
+              <h1 className={`text-white font-extrabold`}>{`Platforms`}</h1>
             </div>
-            <p className="text-xl text-white">
+            <p className="text-2xl text-white mt-4">
               Download our app for all type of your devices.
             </p>
             <Switch className2={`!text-white`} />
@@ -27,30 +27,31 @@ const page = () => {
         </div>
       </div>
       <div className="bg-trend_platform_bg  relative z-[1000] w-full   bg-cover bg-top bg-no-repeat  ">
-        <div className="    bg-trend_platform_Gr h-full relative z-[1000]  w-full  bg-cover bg-top bg-no-repeat">
-          <div className="flex flex-col w-full justify-center items-center">
-        
-            <div className="flex px-16  gap-8 justify-between max-md:flex-col">
+        <div className=" h-full relative z-[1000]  w-full  bg-cover bg-top bg-no-repeat">
+          <div className="absolute w-full h-[75%] bg-trend_platform_Gr top-0 start-0 z-[10]"></div>
+          <div className="flex flex-col relative z-[10] w-full justify-center items-center">
+
+            <div className="flex px-16   items-center gap-8 justify-between max-md:flex-col">
               <Image
                 src={mobileInzo}
                 width={600}
-                height={50}
+                height={600}
                 className="max-md:hidden"
                 alt="inzo"
               />
-              <div className=" pt-36 max-md:pt-0">
+              <div className=" pt-36 max-md:pt-0 ">
                 <Image
                   src={Apps}
                   alt=""
-                  className="w-[400px] max-md:max-w-[300px] max-mdw-[300px] my-4"
+                  className="w-[450px] max-md:max-w-[300px] max-mdw-[300px] my-4"
                 />
               </div>
             </div>
-            <div className="w-full flex justify-center pt-8 ">
-              <div className="flex gap-4 max-md:gap-1">
+            <div className="w-full flex justify-center ">
+              <div className="flex gap-6 pt-32 max-md:gap-1">
                 <div className="bg-social_gradiant rounded-xl p-4  max-md:p-2 ">
                   <div className="flex justify-between ">
-                    <h1 className="text-secondary  text-5xl max-md:text-4xl font-semibold">
+                    <h1 className="text-secondary  text-5xl max-md:text-4xl font-bold">
                       {" "}
                       <span>$</span>30
                     </h1>
@@ -73,8 +74,8 @@ const page = () => {
 
                 <div className="bg-social_gradiant rounded-t-xl p-4 max-md:p-1 pb-8">
                   <div className="flex justify-between ">
-                    <h1 className="text-secondary  text-5xl max-md:text-4xl font-semibold">
-                      30 <span>%</span>
+                    <h1 className="text-secondary  text-5xl max-md:text-4xl font-bold">
+                      30<span>%</span>
                     </h1>
                     <Image
                       src={gift}
@@ -94,17 +95,16 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[-10px] start-0 z-[0] -translate-x-1/2 w-[300px] h-[50px] bg-secondary opacity-20 blur-2xl rounded-full"></div>
-        <div className="absolute bottom-[-10px] start-1/4 z-[-1] -translate-x-1/2 w-[300px] h-[50px] bg-secondary opacity-20 blur-2xl rounded-full"></div>
-        <div className="absolute bottom-[-10px] start-1/2 z-[-1] -translate-x-1/2 w-[300px] h-[50px] bg-secondary opacity-20 blur-2xl rounded-full"></div>
-        <div className="absolute bottom-[-10px] end-[-200px] z-[-1] -translate-x-1/2 w-[400px] h-[50px] bg-secondary opacity-20 blur-2xl rounded-full"></div>
+
       </div>
-      <div className="w-full  mt-24 mb-8   text-center h-full flex justify-start items-center gap-2 flex-col">
+      <div className="absolute w-full z-[10]  start-0 top-[71%] h-[100px] opacity-80 blur-[384px] bg-toutorial_gr_img"></div>
+
+      <div className="w-full  mt-24    text-center h-full flex justify-start items-center gap-2 flex-col">
         <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-          <h1 className={`text-secondary `}>{`About `}</h1>
-          <h1 className={`text-white `}>{`Meta Trader (MT5)`}</h1>
+          <h1 className={`text-secondary font-extrabold`}>{`About `}</h1>
+          <h1 className={`text-white font-extrabold`}>{`Meta Trader (MT5)`}</h1>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-8 w-full px-32">
+        <div className="grid grid-cols-2 gap-8 mt-8 w-full px-32">
           {faqItems.map((qu, idx) => (
             <div key={idx} className="input-border !rounded-xl">
               <div className="bg-frequantly_card_bg gap-4 bg-center w-full bg-cover rounded-xl items-center flex justify-between p-4">

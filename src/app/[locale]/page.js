@@ -27,14 +27,11 @@ export default function Home() {
         <Banner />
         <TeamSection />
         <RealAccountTypes />
-
         <AwardSection isExplore={true} />
-
         <StraightSection />
         <LicenseSection />
         <DwMethods />
         <WhyInzo />
-
         <RepresentativeSection />
         <CompanyGlobalSection />
         <FinancialReport />

@@ -2,11 +2,11 @@ import React from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { flag } from "../../../public/images"
 import Image from 'next/image'
-const Select = ({ label, placeholder, className }) => {
+const Select = ({ label, placeholder, className  , icon}) => {
     return (
         <div className="flex flex-col gap-2 w-full">
-            <label className="text-white text-lg">
-                {label}
+            <label className="text-white text-start text-lg flex gap-2">
+                {label}{icon && <Image src={icon} alt=''/>}
             </label>
             <div className="input-border relative !p-[1.2px]">
                 <IoIosArrowDown className='text-secondary text-lg absolute top-4 end-4 cursor-pointer' />
