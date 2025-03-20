@@ -50,11 +50,11 @@ const page = () => {
               </Button>
             </div>
           </div>
-          <div className="bg-[#0C1B3C] w-[90%] rounded-md mx-auto h-[200px]  flex justify-center items-center text-center">
-            <h1 className="text-[#FFFFFF] opacity-50 text-7xl font-bold">
-              $ 00.00
-            </h1>
-          </div>
+            <div className="bg-[#0C1B3C] w-[90%] rounded-md mx-auto h-[200px]  flex justify-center items-center text-center">
+              <h1 className="text-[#FFFFFF] opacity-50 text-7xl font-bold">
+                $ 00.00
+              </h1>
+            </div>
           <MainCurrencies />
         </div>
       </div>

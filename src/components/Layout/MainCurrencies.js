@@ -42,15 +42,15 @@ const data = [
 ];
 const MainCurrencies = () => {
   return (
-    <div className="bg-[#061534] w-full   mt-16 rounded-md flex flex-col gap-4 text-start">
-    <h1 className="text-white text-2xl p-6">Main Currencies</h1>
-    <Table
-      table={{
-        columns: cols,
-        data: data,
-      }}
-    />
-  </div>
+      <div className="bg-[#061534] w-full   mt-16 rounded-md flex flex-col gap-4 text-start">
+      <h1 className="text-white text-2xl p-6">Main Currencies</h1>
+      <Table
+        table={{
+          columns: cols,
+          data: data,
+        }}
+      />
+    </div>
   )
 }
 

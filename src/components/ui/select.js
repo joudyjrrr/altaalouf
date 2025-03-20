@@ -16,12 +16,13 @@ const Select = ({ label, placeholder, className, icon }) => {
           <Image
             src={Polygon}
             alt=""
-            className=" absolute top-[1.5rem] end-[0.5rem] cursor-pointer"
+            width={9}
+            className=" absolute top-[1.1rem] end-[0.5rem] cursor-pointer"
           />
         ) : (
           <IoIosArrowDown className="text-secondary text-lg absolute top-4 end-4 cursor-pointer" />
         )}
-        <select className="w-full px-6 ps-1 text-sm py-3 placeholder:!text-white placeholder:text-base !text-white  !rounded-[10px] z-[1000]  !bg-[#040613e0]     appearance-none">
+        <select className={`w-full  px-4 py-3 placeholder:!text-white placeholder:text-base !text-white  !rounded-[10px] z-[1000]  !bg-[#040613e0]     appearance-none ${placeholder && '!px-6 !ps-1 !text-sm !py-2'}`}>
           <option
             className={` ${placeholder ? "!text-white" : "text-[#6D83B6]"}`}
           >

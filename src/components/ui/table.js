@@ -49,15 +49,16 @@ const Table = ({
           style: {
             color: "#00C0FF",
             fontWeight: "500",
-            fontSize: "17px",
+            fontSize: "15px",
             display: "flex",
-            justifyContent: "start",
+            justifyContent: "center",
             paddingInline: "10px",
             width: "fit-content",
             background: "#10253F",
             border: "none",
             textWrap: "wrap",
-            textAlign:"start"
+            textAlign:"center",
+            opacity:"0.9"
           },
         },
         rows: {
@@ -71,12 +72,12 @@ const Table = ({
             fontWeight: "400",
             fontSize: "12px",
             display: "flex",
-            justifyContent: "start",
+            justifyContent: "center",
             padding: "3px",
             background: "#061534",
             border: "none",
             textWrap: "wrap",
-            textAlign:"start"
+            textAlign:"center   "
           },
         },
       }}

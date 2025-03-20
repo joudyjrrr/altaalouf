@@ -124,12 +124,15 @@ import partner2 from "./partner2.svg";
 import partner3 from "./partner3.svg";
 import partner4 from "./partner4.svg";
 import qusation from "./qusation.svg";
+import close from "./close.svg";
+
 import US from "./US 1.png";
 import circule_arrwos from "./circule-arrwos.svg";
 
 export {
   BNB,
   circule_arrwos,
+  close,
   US,
   qusation,
   about1,
