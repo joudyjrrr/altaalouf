@@ -275,6 +275,18 @@ div[data-radix-popper-content-wrapper=""] {
 .card-border::before {
   background: linear-gradient(144.97deg, #00befe96 20.05%, #084196d2 78.84%);
 }
+.md-card-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.3px;
+  border-radius: 22px;
+  background: linear-gradient(90deg, #084398 0%, #00befd 93.18%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
 
 .min-card-border::before {
   background: linear-gradient(97.25deg, #074da0 2.05%, #00befd 99.23%);
@@ -507,10 +519,19 @@ div[data-radix-popper-content-wrapper=""] {
 .dePlWP:not(:last-of-type) {
   border-bottom: 1px solid #355089 !important;
 }
-.duWzVD{
+.duWzVD {
   text-wrap: wrap !important;
   padding: 2px !important;
 }
-.izzals{
+.izzals {
   border-radius: 0px !important ;
+}
+
+.custom-gradient2 {
+  background: linear-gradient(
+    0deg,
+    #084196 0%,
+    #0575c1 59.64%,
+    #00c0ff 143.83%
+  );
 }

@@ -126,6 +126,8 @@ import qusation from "./qusation.svg";
 import US from "./US 1.png";
 import circule_arrwos from "./circule-arrwos.svg";
 
+import eduOveImg from "./eduOveImg.png";
+
 export {
   BNB,
   circule_arrwos,
@@ -248,4 +250,5 @@ export {
   partner3,
   partner2,
   partner1,
+  eduOveImg,
 };

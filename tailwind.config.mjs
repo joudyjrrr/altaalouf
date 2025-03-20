@@ -142,7 +142,7 @@ export default {
         inzoReal_Bg: "url('/images/inzoReal_Bg.png')",
 
         trend_platform_bg: "url('/images/trend-platform-bg.png')",
-   
+
         awardBack: "url('/images/awardBack.png')",
         awardBG3: "url('/images/awardBG3.png')",
         starTopBot: "url('/images/starTopBot.png')",
@@ -177,6 +177,8 @@ export default {
 
         successPartners_Bg: "url('/images/successPartners_Bg.png')",
         successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
+
+        EduOver_Bg: "url('/images/EduOver_Bg.png')",
       },
 
       fontFamily: {
