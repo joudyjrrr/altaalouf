@@ -535,3 +535,6 @@ div[data-radix-popper-content-wrapper=""] {
     #00c0ff 143.83%
   );
 }
+.swiper-pagination-bullet {
+  border-radius: 100%;
+}

@@ -12,6 +12,7 @@ import WhyInzo from "@/components/Layout/WhyInzo";
 import LicenseSection from "@/components/Layout/LicenseSection";
 import AwardSection from "@/components/Layout/AwardSection";
 import Title from "@/components/Layout/Title";
+import ImportNote from "@/components/Layout/ImportNote";
 
 const data1 = [
   {
@@ -145,45 +146,7 @@ const page = () => {
         </div>
       </div>
       <AwardSection isExplore={false} />
-      <div className="bg-[#030613] to-white  relative">
-        <div className="bg-award_back h-full p-12 max-md:p-2">
-          <div className="bg-about_Gr_Card3  relative w-full flex max-md:flex-col  rounded-lg border border-secondary">
-            <div className=" h-full flex items-start">
-              <Image
-                src={about4}
-                alt=""
-                className="rtl:rotate-180 absolute top-0 start-[0%]   w-[300px] h-full  max-md:w-[150px] max-md:h-[150px]"
-              />
-              <Image
-                src={about5}
-                alt=""
-                className=" w-[155px] h-[150px] mx-10 mt-10 max-md:w-[100px]  max-md:h-[100px]"
-              />
-            </div>
-            <div className="flex flex-col gap-2 py-8 justify-center max-md:!px-2">
-              <h2 className="text-secondary font-bold text-2xl max-md:text-lg ">
-                Important Note
-              </h2>
-              <p className="text-white text-lg max-md:text-sm leading-9">
-                References to the Seychelles entity in the footer are included
-                for transparency, reflecting the broader group <br /> structure
-                and are not intended to imply any onboarding of clients through
-                the
-                <span className="text-secondary font-bold"> inzo.co</span> domain by INZO Seychelles.
-                <br /> <span className="font-semibold">Address</span>: 59 Agios
-                Athanasios Avenue, D.VRACHIMIS BUILDING, 4102 Agios Athanasios,
-                Limassol, Cyprus. <br />
-              </p>
-              <p className="text-white text-lg max-md:text-sm">
-                <span className="font-semibold"> Risk Warning:</span> Trading
-                Forex and CFDs carries significant risks to your invested
-                capital. Please read and ensure <br /> you fully understand our
-                Risk Disclosure
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ImportNote />
       <LicenseSection />
     </div>
   );
