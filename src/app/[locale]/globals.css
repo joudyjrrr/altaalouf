@@ -538,3 +538,7 @@ div[data-radix-popper-content-wrapper=""] {
 .swiper-pagination-bullet {
   border-radius: 100%;
 }
+.custm-grid2 {
+  background: linear-gradient(173deg, #08142e 25%, #0a295a 60%, #1654b0 100%),
+    #0f1b34; /* Solid fill below the gradient */
+}

@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { FaCaretRight } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import ImportNote from "@/components/Layout/ImportNote";
+import LicenseSection from "@/components/Layout/LicenseSection";
 
 const page = () => {
   return (
@@ -30,9 +32,9 @@ const page = () => {
           </div>
         </div>
 
-        <div className="relative h-fit bg-[#62729400]">
+        <div className="relative h-fit ">
           <div className="relative z-10 mt-10 flex items-center ms-10 pe-10">
-            <div className="md:w-[700px] h-full flex flex-col ps-5 pe-24 justify-center gap-8 text-white">
+            <div className="md:w-[700px] h-full flex flex-col ps-14 pe-14 justify-center gap-8 text-white">
               <h3 className="font-bold text-2xl text-[#038BD3] mb-1">
                 Getting Started
               </h3>
@@ -50,19 +52,19 @@ const page = () => {
                 See More
               </Button>
             </div>
-            <div className="md:w-[500px] md:h-[450px] mt-1">
+            <div className="md:w-[500px] md:h-[450px] mt-1 ms-8">
               <Image src={eduOveImg} className="h-full w-full" alt="inzo" />
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-12 items-center">
+        <div className="flex flex-col gap-12 items-center relative py-24 ">
           <div className="flex justify-center items-center gap-12">
             <div className="flex flex-col items-center justify-start w-[40%] h-[300px] text-white p-5 pb-0 rounded-3xl border-transparent relative md-card-border custom-gradient2 text-center">
               <div className="mt-6">
                 <h3 className="text-xl font-bold relative">
                   Advantages of Forex
-                  <span className="absolute -bottom-5 left-[180px] w-[200px] h-[2px] bg-[#08469A]"></span>
+                  <span className="absolute -bottom-5 left-[150px] w-[200px] h-[2px] bg-[#08469A]"></span>
                 </h3>
                 <p className="text-[1.3rem] px-10 pt-10">
                   Learn about the many benefits of trading the forex market and
@@ -75,7 +77,7 @@ const page = () => {
               <div className="mt-6">
                 <h3 className="text-xl font-bold relative">
                   Advantages of CFDs
-                  <span className="absolute -bottom-5 left-[180px] w-[200px] h-[2px] bg-[#08469A]"></span>
+                  <span className="absolute -bottom-5 left-[150px] w-[200px] h-[2px] bg-[#08469A]"></span>
                 </h3>
                 <p className="text-[1.3rem] px-10 pt-10">
                   Learn about the many benefits of trading Index CFDs and
@@ -94,7 +96,7 @@ const page = () => {
             <div className="mt-6">
               <h3 className="text-xl font-bold relative">
                 Video Tutorials
-                <span className="absolute -bottom-5 left-[510px] w-[200px] h-[2px] bg-[#08469A]"></span>
+                <span className="absolute -bottom-5 left-[440px] w-[200px] h-[2px] bg-[#08469A]"></span>
               </h3>
               <p className="text-[1.3rem] px-20 pt-10">
                 Watch some of our educational videos to help you get started in
@@ -105,15 +107,17 @@ const page = () => {
               </p>
               <Button
                 variant="gradiant"
-                className="!bg-[#04061380] max-w-[175px] mt-6"
+                className="!bg-[#04061380] max-w-[175px] mt-6 relative z-30"
               >
                 See More
               </Button>
             </div>
           </div>
+          <div className="absolute bottom-0 left-0 right-0 bg-teamStars_Bg  bg-no-repeat  bg-center h-[10%]"></div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 bg-teamStars_Bg  bg-no-repeat  bg-center h-[10%]"></div>
+        <ImportNote />
+        <LicenseSection />
       </div>
     </>
   );
