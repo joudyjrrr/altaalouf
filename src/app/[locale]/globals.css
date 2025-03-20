@@ -514,3 +514,6 @@ div[data-radix-popper-content-wrapper=""] {
 .izzals{
   border-radius: 0px !important ;
 }
+.swiper-pagination-bullet{
+ border-radius: 100%;
+}

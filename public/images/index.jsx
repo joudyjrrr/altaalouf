@@ -128,10 +128,13 @@ import close from "./close.svg";
 
 import US from "./US 1.png";
 import circule_arrwos from "./circule-arrwos.svg";
+import sock_market_trading from "./sock-market-trading.png";
+
 
 export {
   BNB,
   circule_arrwos,
+  sock_market_trading,
   close,
   US,
   qusation,

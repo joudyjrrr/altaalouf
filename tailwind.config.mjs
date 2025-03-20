@@ -179,6 +179,7 @@ export default {
         successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
         caluclatour_bg:
         "linear-gradient(0deg, transparent 50%, #0F2147 63.5%);",
+        Education_Bg: "url('/images/education-review.png')",
       },
 
       fontFamily: {
