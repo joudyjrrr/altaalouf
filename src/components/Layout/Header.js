@@ -1,6 +1,10 @@
 "use client";
 import Image from "next/image";
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React, { useState, useEffect } from "react";
+>>>>>>> 22c31697b7d3aa433d0214d8710a33daa8ec0f73
 import { logo, kr, fr, uk, iraq } from "../../../public/images";
 import { Button } from "../ui/button";
 import { routing } from "../../i18n/routing";
@@ -94,13 +98,33 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const t = useTranslations();
   const [isVisible, setIsVisible] = useState(false);
+<<<<<<< HEAD
+=======
+  const [isNearTop, setIsNearTop] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsNearTop(scrollTop < 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+>>>>>>> 22c31697b7d3aa433d0214d8710a33daa8ec0f73
   return (
     <div
       onMouseEnter={() => setIsVisible(true)}
       onMouseLeave={() => setIsVisible(false)}
       className={`w-full transition-all duration-100 ease-in-out    px-16 pt-4 fixed top-0 end-0 z-[3000] max-md:px-4 ${
         openMenu ? "bg-star_background pb-10" : "h-[80px] bg-header_gradiant"
+<<<<<<< HEAD
       }    ${isVisible ? "opacity-100" : "opacity-0"} `}
+=======
+      }    ${isVisible || isNearTop ? "opacity-100" : "opacity-0"} `}
+>>>>>>> 22c31697b7d3aa433d0214d8710a33daa8ec0f73
     >
       <div className="w-full flex justify-between items-center h-full">
         <Image

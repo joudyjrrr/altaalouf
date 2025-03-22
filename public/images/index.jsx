@@ -130,6 +130,7 @@ import US from "./US 1.png";
 import circule_arrwos from "./circule-arrwos.svg";
 import sock_market_trading from "./sock-market-trading.png";
 
+import eduOveImg from "./eduOveImg.png";
 
 export {
   BNB,
@@ -255,5 +256,6 @@ export {
   partner3,
   partner2,
   partner1,
+  eduOveImg,
   Polygon,
 };
