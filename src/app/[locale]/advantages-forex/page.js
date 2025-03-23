@@ -69,7 +69,7 @@ const page = () => {
           </div>
           <h2 className="text-white text-xl">
             The Forex market is the world’s largest financial market and is open
-            24 hours a day, 5 days a week. Trade Forex whenever it suits you.
+            24 hours a day, 5 days a week. Trade Forex<br/>whenever it suits you.
           </h2>
           <Button className="bg-main_button  transition-all duration-800">
             Trade Forex
@@ -78,7 +78,7 @@ const page = () => {
         </div>
       </div>
       <div className="text-center w-full px-16 pt-8">
-        <h1 className="text-[#038BD3] text-3xl font-bold leading-10">
+        <h1 className="text-[#038BD3] text-2xl font-bold leading-10">
           Margin foreign exchange is a contract between two parties agreeing to
           exchange the <br /> difference in the value of a currency between the
           time at which the position is <br /> opened and the time at which it
@@ -86,7 +86,7 @@ const page = () => {
         </h1>
       </div>
       <div className="text-center w-full px-4 pt-8">
-        <h1 className="text-white text-[22px]  leading-10">
+        <h1 className="text-white text-[18px]  leading-10">
           The main advantage of foreign exchange (Forex) is that is open around
           the clock 24 hours a day 5 days a week, enabling <br /> traders to buy
           and sell from Sunday night to Friday night and access leverage in
@@ -104,10 +104,10 @@ const page = () => {
             key={ind}
             className="bg-about_Gr_Card w-full  p-8 text-center rounded-[20px] flex text-white flex-col gap-4 items-center justify-center"
           >
-            <h1 className="text-2xl  font-bold border-b-[1.5px] pb-3 border-[#08469A]">
+            <h1 className="text-xl  font-bold border-b-[1.5px] pb-3 border-[#08469A]">
               {cr.title}
             </h1>
-            <p className="text-lg">{cr.description}</p>
+            <p className="">{cr.description}</p>
           </div>
         ))}
       </div>

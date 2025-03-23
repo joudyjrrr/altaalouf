@@ -75,7 +75,7 @@ export default {
         awarc_card_back:
           "linear-gradient(269deg, rgba(7, 23, 55, 0.04) 12.89%, #0BBDF5 99.15%)",
         card_bakgound:
-          "linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
+          "linear-gradient(101.76deg, card_Bg#1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
         card_Bg: "url('/images/cardBg.png')",
         bannercardBg: "url('/images/bannercardBg.svg')",
         social_gradiant:
@@ -122,7 +122,8 @@ export default {
         about_Gr_Card2:
           "linear-gradient(0deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
         about_Gr_Card3:
-          "linear-gradient(180deg, rgba(8, 20, 46, 0.5) 24.42%, rgba(10, 41, 90, 0.628674) 63.78%, #1654B0 110.77%);",
+          "linear-gradient(135deg, #08142E 14%, #0A295A 45%, #1654B0 100%), #0F1B34;",
+
         tutorial_Gr:
           "linear-gradient(0deg, #0F2147 52.46%, rgba(15, 33, 71, 0.5) 100%);",
         toutorial_gr_img: "linear-gradient(0deg, #007399 0%, #00C0FF 100%);",
@@ -142,7 +143,6 @@ export default {
         inzoReal_Bg: "url('/images/inzoReal_Bg.png')",
 
         trend_platform_bg: "url('/images/trend-platform-bg.png')",
-   
         awardBack: "url('/images/awardBack.png')",
         awardBG3: "url('/images/awardBG3.png')",
         starTopBot: "url('/images/starTopBot.png')",
@@ -179,6 +179,7 @@ export default {
         successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
         caluclatour_bg:
         "linear-gradient(0deg, transparent 50%, #0F2147 63.5%);",
+        EduOver_Bg: "url('/images/EduOver_Bg.png')",
         Education_Bg: "url('/images/education-review.png')",
       },
 
