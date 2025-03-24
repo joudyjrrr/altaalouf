@@ -28,6 +28,7 @@ const MeetOurPartnersSection = () => {
         </div>
         <Image
           src={ParthnerImg}
+          placeholder="blur"
           alt=""
           className="pt-8 h-[450px] w-[450px] max-md:!h-[300px] max-md:!w-[300px] max-md:mx-auto"
         />

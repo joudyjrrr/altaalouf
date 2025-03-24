@@ -6,7 +6,6 @@ import { Button } from "../ui/button";
 import Switch from "./Switch";
 
 const TeamSection = () => {
-  const ImageArray = [team1, team2, team3, team4];
   return (
     <div className="bg-white w-full  relative curved-section">
       <div className="bg-star_background2 w-full h-full bg-center bg-cover py-12">
@@ -19,7 +18,7 @@ const TeamSection = () => {
         </div>
         <div className="flex justify-between px-32 pb-16">
           <div className="flex flex-col gap-4 justify-center items-center text-center">
-            <Image src={copy1} alt="" />
+            <Image src={copy1} alt="" placeholder="blur"/>
             <div className="flex flex-col gap-1">
               <h1 className="text-white text-4xl font-extrabold">
                 Download our App Now
@@ -32,7 +31,7 @@ const TeamSection = () => {
             className={`w-[2px] h-[350px] rounded-t rounded-xl bg-gradient-to-b from-primary to-secondary max-md:hidden`}
           ></div>
           <div className="flex flex-col gap-4 justify-center items-center text-center">
-            <Image src={copy2} alt="" />
+            <Image src={copy2} alt="" placeholder="blur"/>
             <div className="flex flex-col gap-1">
               <h1 className="text-white text-4xl font-extrabold">
                 Download our App Now

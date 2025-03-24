@@ -111,6 +111,7 @@ const RealAccountTypes = () => {
     <div className="bg-white md:ps-12 md:px-3 md:mt-20 relative">
       <Image
         src={syrcleGlass}
+
         alt="icon"
         width={190}
         height={190}

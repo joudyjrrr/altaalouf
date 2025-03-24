@@ -60,6 +60,7 @@ const AwardSection = ({ isExplore }) => {
               <div className="relative h-full w-full rounded-t-[30px] overflow-hidden">
                 <div className="absolute inset-0 bg-award_card1 bg-center bg-cover mix-blend-luminosity"></div>
                 <Image
+                placeholder="blur"
                   src={d.img}
                   alt=""
                  
@@ -104,6 +105,7 @@ const AwardSection = ({ isExplore }) => {
             <div className="flex px-32 pt-10 justify-center gap-16 max-md:flex-col">
               <Image
                 src={mobileInzo}
+                placeholder="blur"
                 width={550}
                 height={50}
                 className="max-md:hidden"
@@ -117,6 +119,7 @@ const AwardSection = ({ isExplore }) => {
                 <Switch className2={`!text-white`} />
                 <Image
                   src={Apps}
+                  placeholder="blur"
                   alt=""
                   className="w-[400px] max-md:max-w-[300px] max-mdw-[300px] my-4"
                 />

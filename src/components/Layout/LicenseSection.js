@@ -60,6 +60,7 @@ const LicenseSection = () => {
                   <div className="relative h-full flex items-start">
                     <Image
                       src={License3}
+                      
                       alt=""
                       width={150}
                       className="h-full rtl:rotate-180"
@@ -67,6 +68,7 @@ const LicenseSection = () => {
                     <Image
                       src={License4}
                       alt=""
+                      placeholder="blur"
                       width={120}
                       height={300}
                       className="absolute top-[25%] start-0"
