@@ -22,7 +22,7 @@ let imgData = [
 const page = () => {
   return (
     <div className="w-full h-full bg-[#0F2147] pb-20">
-      <div className="w-full pt-36 bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
+      <div className="w-full pt-36   bg-cover bg-top bg-no-repeat  z-[100]">
         <div className="w-full pt-36  h-full flex flex-col justify-center items-end max-sm:items-center  pb-8">
           <div className="flex flex-col gap-2 text-center w-full ">
             <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">

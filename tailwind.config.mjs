@@ -155,6 +155,7 @@ export default {
 
         ourTeamBg: "url('/images/ourTeamBg.png')",
         teamPartnerBg: "url('/images/teamPartnerBg.png')",
+        teamPartBg: "url('/images/teamSvg.svg')",
         inzoReal_Bg: "url('/images/inzoReal_Bg.png')",
 
         trend_platform_bg: "url('/images/trend-platform-bg.png')",
@@ -178,7 +179,7 @@ export default {
         successPartners_Bg: "url('/images/successPartners_Bg.png')",
         successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
         caluclatour_bg:
-        "linear-gradient(0deg, transparent 50%, #0F2147 63.5%);",
+          "linear-gradient(0deg, transparent 50%, #0F2147 63.5%);",
         EduOver_Bg: "url('/images/EduOver_Bg.png')",
         Education_Bg: "url('/images/education-review.png')",
       },

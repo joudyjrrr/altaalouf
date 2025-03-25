@@ -132,6 +132,8 @@ import sock_market_trading from "./sock-market-trading.png";
 
 import eduOveImg from "./eduOveImg.png";
 
+import teamSvg from "./teamSvg.svg";
+
 export {
   BNB,
   circule_arrwos,
@@ -258,4 +260,5 @@ export {
   partner1,
   eduOveImg,
   Polygon,
+  teamSvg,
 };

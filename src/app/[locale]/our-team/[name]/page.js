@@ -7,6 +7,7 @@ import {
   mTeem3,
   mTeem4,
   mTeem5,
+  teamSvg,
 } from "../../../../../public/images";
 
 let imgData = [
@@ -37,7 +38,11 @@ const TeamMemberPage = ({ params }) => {
           </div>
         </div>
       </div>
-      <div className="w-full pt-1 md:h-[110vh] bg-teamPartnerBg  bg-cover bg-top bg-no-repeat pb-5">
+      <div className="w-full pt-1 md:h-[110vh] bg-teamPartnerBg  bg-cover bg-top bg-no-repeat pb-5 relative">
+        <div className="absolute top-10 left-0 right-0  bg-no-repeat  bg-center mx-auto w-[78%] h-[50%]">
+          <Image src={teamSvg} alt="" className="w-full h-full" />
+        </div>
+
         <div className=" md:-translate-y-40  ">
           <div
             className={`h-[320px] w-[235px]  mx-auto 
@@ -66,5 +71,3 @@ const TeamMemberPage = ({ params }) => {
 };
 
 export default TeamMemberPage;
-
-
