@@ -47,21 +47,23 @@ const data2 = [
 const page = () => {
   return (
     <div className="w-full h-full">
-      <div className="w-full  bg-aboutBanner h-screen  bg-cover bg-center bg-no-repeat  z-[100]">
-        <div className="w-full  bg-about_Gr h-full flex justify-center items-end max-sm:items-center  pb-8">
-          <div className="flex flex-col gap-2 text-center w-full ">
-            <div className="flex gap-2 text-5xl font-extrabold max-md:text-3xl  text-center justify-center">
-              <h1 className={`text-secondary `}>{`About `}</h1>
-              <h1 className={`text-white `}>{`the company`}</h1>
-            </div>
-            <div className="flex flex-col gap-1 pt-8  text-white text-xl max-md:text-sm">
-              <p>
-                INZO is a leading global broker providing trading services. .
-              </p>
-              <p>
-                It is licensed by multiple global authorities to offer the
-                highest levels of security and privacy for all traders
-              </p>
+      <div className=" bg-optimizer_aboutBanner  h-screen  bg-cover bg-center bg-no-repeat">
+        <div className="w-full  bg-aboutBanner h-screen  bg-cover bg-center bg-no-repeat  z-[100]">
+          <div className="w-full  bg-about_Gr h-full flex justify-center items-end max-sm:items-center  pb-8">
+            <div className="flex flex-col gap-2 text-center w-full ">
+              <div className="flex gap-2 text-5xl font-extrabold max-md:text-3xl  text-center justify-center">
+                <h1 className={`text-secondary `}>{`About `}</h1>
+                <h1 className={`text-white `}>{`the company`}</h1>
+              </div>
+              <div className="flex flex-col gap-1 pt-8  text-white text-xl max-md:text-sm">
+                <p>
+                  INZO is a leading global broker providing trading services. .
+                </p>
+                <p>
+                  It is licensed by multiple global authorities to offer the
+                  highest levels of security and privacy for all traders
+                </p>
+              </div>
             </div>
           </div>
         </div>

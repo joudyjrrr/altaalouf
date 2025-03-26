@@ -19,7 +19,7 @@ const OurTeamSection = ({ imgData, showButton , className}) => {
                 right-[1px] w-[60px] h-[50px] rounded-br-[1.15rem] rounded-tl-[1.3rem]
               text-black bg-secondary cursor-pointer flex items-center justify-center "
               >
-                <Image src={arrow} alt="" className="w-[25px] h-[15px]" />
+                <Image src={arrow} alt="" className="w-[20px] h-[15px]" />
               </div>
             </Link>
           )}

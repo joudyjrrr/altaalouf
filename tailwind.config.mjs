@@ -59,12 +59,31 @@ export default {
       },
       backgroundImage: {
         banner: "url('/images/banner.png')",
+        optimizer_banner: "url('/images/jpeg-optimizer_banner.png')",
+
         main_button: "linear-gradient(90deg, #084196 0%, #00C0FF 100%)",
         header_gradiant:
           "linear-gradient(180deg, #08142E 34.01%, rgba(8, 20, 46, 0) 100%)",
         border_gradiant: " linear-gradient(90deg, #084398, #00befd)",
         star_background: "url('/images/star2.png')",
         star_background2: "url('/images/start.jpg')",
+        optimizer_start: "url('/images/jpeg-optimizer_start.jpg')",
+        optimizer_trend_platform_bg:
+          "url('/images/jpeg-optimizer_trend-platform-bg.png')",
+        optimizer_parthner_bg: "url('/images/jpeg-optimizer_parthner_bg.png')",
+        optimizer_Footer_bg: "url('/images/jpeg-optimizer_Footer_bg.png')",
+        optimizer_aboutBanner: "url('/images/jpeg-optimizer_aboutBanner.png')",
+        optimizer_education_review:
+          "url('/images/jpeg-optimizer_education-review.png')",
+        optimizer_ourTeamBg:
+          "url('/images/jpeg-optimizer_ourTeamBg.png')",
+        optimizer_frequantly_bg:
+          "url('/images/jpeg-optimizer_frequantly_bg.png')",
+        optimizer_successPartners_Bg:
+          "url('/images/jpeg-optimizer_successPartners_Bg.png')",
+          optimizer_contact:
+          "url('/images/jpeg-optimizer_contact.png')",
+
         card_bakgound:
           "linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
         team_gradiat:
@@ -178,7 +197,7 @@ export default {
         successPartners_Bg: "url('/images/successPartners_Bg.png')",
         successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
         caluclatour_bg:
-        "linear-gradient(0deg, transparent 50%, #0F2147 63.5%);",
+          "linear-gradient(0deg, transparent 50%, #0F2147 63.5%);",
         EduOver_Bg: "url('/images/EduOver_Bg.png')",
         Education_Bg: "url('/images/education-review.png')",
       },

@@ -61,20 +61,24 @@ const cards = [
 const page = () => {
   return (
     <div className="w-full h-full bg-primary">
-      <div className="w-full pt-56 pb-24  bg-Education_Bg  bg-cover bg-center bg-no-repeat z-[100]">
-        <div className="w-full  relative  text-center h-full flex justify-start items-center gap-8 flex-col">
-          <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-            <h1 className={`text-secondary `}>{`Advantages   `}</h1>
-            <h1 className={`text-white `}>{` of Forex`}</h1>
+      <div className="bg-optimizer_education_review  bg-cover bg-center bg-no-repeat">
+        <div className="w-full pt-56 pb-24  bg-Education_Bg  bg-cover bg-center bg-no-repeat z-[100]">
+          <div className="w-full  relative  text-center h-full flex justify-start items-center gap-8 flex-col">
+            <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+              <h1 className={`text-secondary `}>{`Advantages   `}</h1>
+              <h1 className={`text-white `}>{` of Forex`}</h1>
+            </div>
+            <h2 className="text-white text-xl">
+              The Forex market is the world’s largest financial market and is
+              open 24 hours a day, 5 days a week. Trade Forex
+              <br />
+              whenever it suits you.
+            </h2>
+            <Button className="bg-main_button  transition-all duration-800">
+              Trade Forex
+              <FaCaretRight />
+            </Button>
           </div>
-          <h2 className="text-white text-xl">
-            The Forex market is the world’s largest financial market and is open
-            24 hours a day, 5 days a week. Trade Forex<br/>whenever it suits you.
-          </h2>
-          <Button className="bg-main_button  transition-all duration-800">
-            Trade Forex
-            <FaCaretRight />
-          </Button>
         </div>
       </div>
       <div className="text-center w-full px-16 pt-8">
@@ -111,8 +115,8 @@ const page = () => {
           </div>
         ))}
       </div>
-      <ImportNote/>
-        <LicenseSection />
+      <ImportNote />
+      <LicenseSection />
     </div>
   );
 };

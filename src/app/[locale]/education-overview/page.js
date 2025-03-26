@@ -13,21 +13,23 @@ const page = () => {
   return (
     <>
       <div className="w-full h-full bg-[#0F2147] pb-20">
-        <div className="w-full  bg-EduOver_Bg   bg-cover bg-center bg-no-repeat  z-[100]">
-          <div className="w-full   h-[100vh] flex flex-col justify-center items-end max-sm:items-center  pb-0">
-            <div className="flex flex-col gap-5 text-center w-full pt-[10rem]">
-              <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-                <h1 className={`text-secondary `}>{`Education `}</h1>
-                <h1 className={`text-white `}>{`Overview`}</h1>
+        <div className="w-full  bg-optimizer_education_review   bg-cover bg-top bg-no-repeat  ">
+          <div className="w-full  bg-EduOver_Bg   bg-cover bg-center bg-no-repeat  z-[100]">
+            <div className="w-full   h-[100vh] flex flex-col justify-center items-end max-sm:items-center  pb-0">
+              <div className="flex flex-col gap-5 text-center w-full pt-[10rem]">
+                <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+                  <h1 className={`text-secondary `}>{`Education `}</h1>
+                  <h1 className={`text-white `}>{`Overview`}</h1>
+                </div>
+                <p className="text-2xl text-white mt-4">
+                  Experience  fast execution, tight spreads and unrestricted
+                  trading conditions on the award-winning MetaTrader 4 platform.{" "}
+                </p>
+                <Button className="  bg-main_button  max-w-[150px] mx-auto mt-2">
+                  Start Trading
+                  <FaCaretRight />
+                </Button>
               </div>
-              <p className="text-2xl text-white mt-4">
-                Experience  fast execution, tight spreads and unrestricted
-                trading conditions on the award-winning MetaTrader 4 platform.{" "}
-              </p>
-              <Button className="  bg-main_button  max-w-[150px] mx-auto mt-2">
-                Start Trading
-                <FaCaretRight />
-              </Button>
             </div>
           </div>
         </div>

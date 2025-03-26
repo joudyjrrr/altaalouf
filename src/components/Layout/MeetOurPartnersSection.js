@@ -6,7 +6,8 @@ import { Button } from "../ui/button";
 
 const MeetOurPartnersSection = () => {
   return (
-    <div className="w-full  bg-parthner_bg p-8">
+   <div className="bg-optimizer_parthner_bg">
+     <div className="w-full  bg-parthner_bg p-8">
       <div className="flex w-full justify-center gap-56 px-8 pe-24 max-md:flex-col max-md:px-8 ">
         <div className="flex flex-col gap-8 text-white  justify-start pt-24 max-md:pt-8 items-start text-start">
           <Title
@@ -34,6 +35,7 @@ const MeetOurPartnersSection = () => {
         />
       </div>
     </div>
+   </div>
   );
 };
 

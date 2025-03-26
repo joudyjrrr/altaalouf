@@ -110,19 +110,21 @@ const page = () => {
   return (
     <>
       <div className="w-full h-full bg-[#0F2147] pb-20">
-        <div className="w-full pt-[15rem] bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
-          <div className="w-full   h-full flex flex-col justify-center items-end max-sm:items-center  pb-8">
-            <div className="flex flex-col gap-2 text-center w-full ">
-              <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-                <h1 className={`text-secondary `}>{`INZO Real`}</h1>
-                <h1 className={`text-white `}>{`Accounts Types`}</h1>
-              </div>
-              <div className="flex flex-col gap-2 text-white justify-center items-center text-[28px] ">
-                <p>
-                  INZO offer several types of accounts that are suitable for
-                  different trading environments
-                </p>
-                <Switch className={"darkBg"} className2={"text-white"} />
+      <div className="w-full  bg-optimizer_ourTeamBg   bg-cover bg-top bg-no-repeat  "> 
+          <div className="w-full pt-[15rem] bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
+            <div className="w-full   h-full flex flex-col justify-center items-end max-sm:items-center  pb-8">
+              <div className="flex flex-col gap-2 text-center w-full ">
+                <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+                  <h1 className={`text-secondary `}>{`INZO Real`}</h1>
+                  <h1 className={`text-white `}>{`Accounts Types`}</h1>
+                </div>
+                <div className="flex flex-col gap-2 text-white justify-center items-center text-[28px] ">
+                  <p>
+                    INZO offer several types of accounts that are suitable for
+                    different trading environments
+                  </p>
+                  <Switch className={"darkBg"} className2={"text-white"} />
+                </div>
               </div>
             </div>
           </div>

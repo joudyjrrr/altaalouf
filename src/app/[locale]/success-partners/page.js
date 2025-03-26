@@ -54,51 +54,53 @@ const page = () => {
   return (
     <>
       <div className="w-full h-full bg-[#0F2147] pb-20">
-        <div className="w-full min-h-[100vh]  bg-successPartners_Bg   bg-cover bg-top bg-no-repeat   z-[100]">
-          <div
-            className="flex flex-col gap-2 text-white justify-end 
+      <div className="w-full  bg-optimizer_successPartners_Bg   bg-cover bg-top bg-no-repeat  "> 
+          <div className="w-full min-h-[100vh]  bg-successPartners_Bg   bg-cover bg-top bg-no-repeat   z-[100]">
+            <div
+              className="flex flex-col gap-2 text-white justify-end 
               items-center text-[22px] px-[5rem]  h-[350px]"
-          >
-            <Title
-              title1={`Success `}
-              title2={`Partners`}
-              classNameImg="hidden"
-              className="pb-0 !pt-20"
-            />
-            <p className="pt-10">
-              What the partner offers comes from their own ideas and trading
-              experience.
-            </p>
-            <p>
-              The company is not responsible for the accuracy of their trading
-              advice.
-            </p>
-          </div>
+            >
+              <Title
+                title1={`Success `}
+                title2={`Partners`}
+                classNameImg="hidden"
+                className="pb-0 !pt-20"
+              />
+              <p className="pt-10">
+                What the partner offers comes from their own ideas and trading
+                experience.
+              </p>
+              <p>
+                The company is not responsible for the accuracy of their trading
+                advice.
+              </p>
+            </div>
 
-          <div className="mx-auto flex flex-col items-center  relative z-10 md:translate-y-52">
-            <div className="grid grid-cols-[repeat(4,minmax(0,400px))] place-content-center gap-y-5  ">
-              {termData.map((item, index) => (
-                <div
-                  className={`flex flex-col items-center justify-start w-[300px]
+            <div className="mx-auto flex flex-col items-center  relative z-10 md:translate-y-52">
+              <div className="grid grid-cols-[repeat(4,minmax(0,400px))] place-content-center gap-y-5  ">
+                {termData.map((item, index) => (
+                  <div
+                    className={`flex flex-col items-center justify-start w-[300px]
                        h-[215px] text-white  mx-auto p-5 pt-8 pb-0 rounded-2xl
                         border  relative min-card-border text-center border-transparent ${
                           index == 0 && "-translate-y-11"
                         } ${index == 3 && "-translate-y-11"} `}
-                  key={index}
-                >
-                  <div className=" mt-3">
-                    <p className="text-xl font-bold ">{item.title}</p>
-                    <p className="text-[1rem] px-6 pt-4">{item.desc}</p>
+                    key={index}
+                  >
+                    <div className=" mt-3">
+                      <p className="text-xl font-bold ">{item.title}</p>
+                      <p className="text-[1rem] px-6 pt-4">{item.desc}</p>
+                    </div>
+                    <Image
+                      src={item.img}
+                      width={90}
+                      height={90}
+                      className="absolute -top-16 left-[35%]"
+                      alt="inzo"
+                    />
                   </div>
-                  <Image
-                    src={item.img}
-                    width={90}
-                    height={90}
-                    className="absolute -top-16 left-[35%]"
-                    alt="inzo"
-                  />
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

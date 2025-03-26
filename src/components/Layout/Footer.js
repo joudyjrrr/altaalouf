@@ -56,76 +56,78 @@ const links = [
 const Footer = () => {
   return (
     <div className="w-full h-full ">
-      <div className="bg-Footer_bg w-full relative  bg-center bg-cover ">
-        <div className="absolute inset-0 w-ful h-full  bg-[#030305]/60"></div>
-        <div className="w-full   flex relative z-[100] justify-center bg-Footer_Gr p-4 pt-24 pb-0">
-          <Image src={Get_In_Touch} width={500} height={60} alt="inzo" />
-        </div>
-        <div className="w-full flex justify-center  ">
-          <div className="bg-Footer_Gr2 grid grid-cols-3 relative z-[100] max-sm:grid-cols-2 px-8 py-10 rounded-xl max-md:px-4">
-            <div className="flex flex-col relative gap-2  max-md:!pe-8 ">
-              <h1 className="text-secondary text-lg font-semibold">Call Us</h1>
-              <div className="flex gap-1 items-center text-white">
-                <Image src={telephone} width={35} alt="inzo" />
-                <p className="text-white text-lg font-semibold max-md:text-sm">
-                  +97145429310
-                </p>
+        <div className="bg-optimizer_Footer_bg w-full relative  bg-center bg-cover ">
+        <div className="bg-Footer_bg w-full relative  bg-center bg-cover ">
+          <div className="absolute inset-0 w-ful h-full  bg-[#030305]/60"></div>
+          <div className="w-full   flex relative z-[100] justify-center bg-Footer_Gr p-4 pt-24 pb-0">
+            <Image src={Get_In_Touch} width={500} height={60} alt="inzo" />
+          </div>
+          <div className="w-full flex justify-center  ">
+            <div className="bg-Footer_Gr2 grid grid-cols-3 relative z-[100] max-sm:grid-cols-2 px-8 py-10 rounded-xl max-md:px-4">
+              <div className="flex flex-col relative gap-2  max-md:!pe-8 ">
+                <h1 className="text-secondary text-lg font-semibold">Call Us</h1>
+                <div className="flex gap-1 items-center text-white">
+                  <Image src={telephone} width={35} alt="inzo" />
+                  <p className="text-white text-lg font-semibold max-md:text-sm">
+                    +97145429310
+                  </p>
+                </div>
+                <div className="bg-main_button absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
               </div>
-              <div className="bg-main_button absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
-            </div>
 
-            <div className="flex flex-col relative  gap-2 px-4 max-md:!pe-8   max-sm:!border-none">
-              <h1 className="text-secondary text-lg font-semibold">Email Us</h1>
-              <div className="flex gap-2 items-center">
-                <Image src={envlope} width={30} alt="inzo" />
-                <p className="text-white text-lg font-semibold max-md:text-sm">
-                  support@inzo.co
-                </p>
+              <div className="flex flex-col relative  gap-2 px-4 max-md:!pe-8   max-sm:!border-none">
+                <h1 className="text-secondary text-lg font-semibold">Email Us</h1>
+                <div className="flex gap-2 items-center">
+                  <Image src={envlope} width={30} alt="inzo" />
+                  <p className="text-white text-lg font-semibold max-md:text-sm">
+                    support@inzo.co
+                  </p>
+                </div>
+                <div className="bg-main_button absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
               </div>
-              <div className="bg-main_button absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
-            </div>
 
-            <div className="flex flex-col gap-2 ps-4 mx-auto max-sm:mt-4 max-sm:col-span-2 ">
-              <h1 className="text-secondary text-lg font-semibold">
-                Chat with Us
-              </h1>
-              <div className="flex gap-2 items-center ">
-                <Image src={massege} width={35} alt="inzo" />
-                <p className="text-white font-semibold text-lg max-md:text-sm">
-                  24/6 Live Chat Support
-                </p>
+              <div className="flex flex-col gap-2 ps-4 mx-auto max-sm:mt-4 max-sm:col-span-2 ">
+                <h1 className="text-secondary text-lg font-semibold">
+                  Chat with Us
+                </h1>
+                <div className="flex gap-2 items-center ">
+                  <Image src={massege} width={35} alt="inzo" />
+                  <p className="text-white font-semibold text-lg max-md:text-sm">
+                    24/6 Live Chat Support
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-5 relative z-[100] max-md:grid-cols-3 max-sm:grid-cols-2 gap-12 px-16 w-full h-full mt-16 justify-between bg-Footer_Gr3">
-          <Image
-            src={logo}
-            width={278}
-            alt="inzo"
-            className="max-sm:hidden me-8"
-          />
-          {links.map((li, idx) => (
-            <div key={idx} className="flex flex-col gap-4">
-              <h1 className="text-white text-xl font-semibold">{li.title}</h1>
-              <div className="flex flex-col gap-2">
-                {li.items.map((item, idx2) => (
-                  <div key={idx2} className="flex text-white gap-2">
-                    <Image
-                      width={17}
-                      height={15}
-                      src={arrwos_footer}
-                      alt="inzo"
-                      className="rtl:rotate-180"
-                    />{" "}
-                    <Link className="text-sm" href={item.url}>
-                      {item.name}
-                    </Link>
-                  </div>
-                ))}
+          <div className="grid grid-cols-5 relative z-[100] max-md:grid-cols-3 max-sm:grid-cols-2 gap-12 px-16 w-full h-full mt-16 justify-between bg-Footer_Gr3">
+            <Image
+              src={logo}
+              width={278}
+              alt="inzo"
+              className="max-sm:hidden me-8"
+            />
+            {links.map((li, idx) => (
+              <div key={idx} className="flex flex-col gap-4">
+                <h1 className="text-white text-xl font-semibold">{li.title}</h1>
+                <div className="flex flex-col gap-2">
+                  {li.items.map((item, idx2) => (
+                    <div key={idx2} className="flex text-white gap-2">
+                      <Image
+                        width={17}
+                        height={15}
+                        src={arrwos_footer}
+                        alt="inzo"
+                        className="rtl:rotate-180"
+                      />{" "}
+                      <Link className="text-sm" href={item.url}>
+                        {item.name}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       <div className="w-full bg-[#020512]   relative z-[100] pt-8">
