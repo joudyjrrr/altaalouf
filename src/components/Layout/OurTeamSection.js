@@ -11,7 +11,7 @@ const OurTeamSection = ({ imgData, showButton , className}) => {
             index % 2 === 0 ? "md:mb-14" : " md:mt-14"
           } relative `}
         >
-          <Image  placeholder="blur" src={image.img} alt="" className="w-full h-full" />
+          <Image  src={image.img} alt="" className="w-full h-full" />
           {showButton && (
             <Link href={`/our-team/${image.name}`}>
               <div

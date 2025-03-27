@@ -70,7 +70,6 @@ const CompanyGlobalSection = () => {
             >
               <Image
                 width={300}
-                placeholder="blur"
                 height={300}
                 src={d.background}
                 alt=""

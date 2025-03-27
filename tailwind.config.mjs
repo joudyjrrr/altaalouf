@@ -75,21 +75,21 @@ export default {
         optimizer_aboutBanner: "url('/images/jpeg-optimizer_aboutBanner.png')",
         optimizer_education_review:
           "url('/images/jpeg-optimizer_education-review.png')",
-        optimizer_ourTeamBg:
-          "url('/images/jpeg-optimizer_ourTeamBg.png')",
+        optimizer_ourTeamBg: "url('/images/jpeg-optimizer_ourTeamBg.png')",
         optimizer_frequantly_bg:
           "url('/images/jpeg-optimizer_frequantly_bg.png')",
         optimizer_successPartners_Bg:
           "url('/images/jpeg-optimizer_successPartners_Bg.png')",
-          optimizer_contact:
-          "url('/images/jpeg-optimizer_contact.png')",
-
+        optimizer_contact: "url('/images/jpeg-optimizer_contact.png')",
+        optimizer_trend_platform:
+          "url('/images/jpeg-optimizer_trend-platform.png')",
         card_bakgound:
           "linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
         team_gradiat:
           "linear-gradient(360deg, rgba(0,0,0,0.002) 0%, rgba(15,29,62,1) 35%)",
         team_card: "url('/images/team-back.png')",
         award_back1: "url('/images/awardBack.png')",
+        optimizer_awardBack: "url('/images/jpeg-optimizer_awardBack.png')",
         award_back: "url('/images/award-back.png')",
         awarc_card_back:
           "linear-gradient(269deg, rgba(7, 23, 55, 0.04) 12.89%, #0BBDF5 99.15%)",

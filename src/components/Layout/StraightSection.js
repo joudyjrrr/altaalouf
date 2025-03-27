@@ -41,13 +41,11 @@ const StraightSection = () => {
             height={400}
             className="rtl:rotate-180 absolute  top-0 end-0"
             src={Straight2}
-            // placeholder="blur"
             alt=""
           />
           <Image
             className="relative z-[100] mt-16"
             src={Straight1}
-            placeholder="blur"
             alt=""
             width={550}
             height={400}

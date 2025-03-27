@@ -68,7 +68,6 @@ const LicenseSection = () => {
                     <Image
                       src={License4}
                       alt=""
-                      placeholder="blur"
                       width={120}
                       height={300}
                       className="absolute top-[25%] start-0"

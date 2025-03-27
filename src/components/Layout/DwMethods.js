@@ -47,7 +47,6 @@ const DwMethods = () => {
               className={`flex md:flex-col justify-around md:justify-center ${containerClass}`}
             >
               <Image
-              placeholder="blur"
                 src={img1}
                 alt=""
                 className={` 
@@ -55,7 +54,7 @@ const DwMethods = () => {
               />
               <Image
                 src={img2}
-                placeholder="blur"
+
                 alt=""
                 className={`w-32 h-32 mt-8 rounded-full hover:shadow-[0_0_15px_1px_#00BEFE] hover:scale-105 transition-all duration-500 ${img2Class}`}
               />

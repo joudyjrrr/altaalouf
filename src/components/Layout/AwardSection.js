@@ -20,7 +20,8 @@ import Switch from "./Switch";
 const AwardSection = ({ isExplore }) => {
   const cards = [
     {
-      title: " Top 100 Most Trusted Financial Institutionsin  in the Middle East ",
+      title:
+        " Top 100 Most Trusted Financial Institutionsin  in the Middle East ",
       img: award_card5,
       className: "  w-[20%] h-[220px] mt-6 ",
     },
@@ -40,45 +41,47 @@ const AwardSection = ({ isExplore }) => {
       img: award_card2,
       className: " w-1/2 h-[200px] mt-8 ",
     },
-
   ];
   return (
-    <div
-      className={`bg-award_back1 bg-top bg-no-repeat   ${isExplore ? "to-white mt-16" : "to-[#0f2147]"
-        } relative    `}
-    >
-      <div className="bg-award_back h-full">
-        <Title title1={`Legendary`} title2={`Awards`} />
+    <div className="bg-optimizer_awardBack   bg-top bg-no-repeat to-white     relative">
+      <div
+        className={`bg-award_back1 bg-top bg-no-repeat to-white mt-16    relative    `}
+      >
+        <div className="bg-award_back h-full">
+          <Title title1={`Legendary`} title2={`Awards`} />
 
-        <div className="grid grid-cols-4 pb-16 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-24 p-4 px-24">
-          {cards.map((d, idx) => (
-            <div
-              key={idx}
-              className=" flex flex-col h-[370px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
-            >
-              <div className="relative h-full w-full rounded-t-[30px] overflow-hidden">
-                <div className="absolute inset-0 bg-award_card1 bg-center bg-cover mix-blend-luminosity"></div>
-                <Image
-                  placeholder="blur"
-                  src={d.img}
-                  alt=""
+          <div className="grid grid-cols-4 pb-16 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-24 p-4 px-24">
+            {cards.map((d, idx) => (
+              <div
+                key={idx}
+                className=" flex flex-col h-[370px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
+              >
+                <div className="relative h-full w-full rounded-t-[30px] overflow-hidden">
+                  <div className="absolute inset-0 bg-award_card1 bg-center bg-cover mix-blend-luminosity"></div>
+                  <Image
+                    src={d.img}
+                    alt=""
+                    className={`relative z-10  mx-auto ${d.className}`}
+                  />
+                </div>
 
-                  className={`relative z-10  mx-auto ${d.className}`}
-                />
+                <div
+                  className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${
+                    d.img === award_card5 && "!py-1"
+                  }`}
+                >
+                  <h1 className="text-white text-lg font-semibold">
+                    {d.title}
+                  </h1>
+                </div>
               </div>
-
-              <div className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${d.img === award_card5 && '!py-1'}`}>
-                <h1 className="text-white text-lg font-semibold">{d.title}</h1>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
 
-      {isExplore && (
-        <>
-          
-            <div className="pb-6  relative overflow-hidden z-[1000]  bg-trend_platform_bg bg-center bg-cover bg-no-repeat   h-full text-white mt-4 max-md:pt-8 ">
+        {isExplore && (
+          <>
+            <div className="  relative overflow-hidden z-[1000] pb-3 bg-trend_platform_bg bg-center bg-cover bg-no-repeat   h-full text-white mt-16 max-md:pt-8 ">
               <div className="relative w-full bg-transparent flex justify-center items-center text-center pt-8">
                 <Image
                   src={Explore}
@@ -105,7 +108,6 @@ const AwardSection = ({ isExplore }) => {
               <div className="flex px-32 pt-10 justify-center gap-16 max-md:flex-col">
                 <Image
                   src={mobileInzo}
-                  placeholder="blur"
                   width={550}
                   height={50}
                   className="max-md:hidden"
@@ -119,7 +121,6 @@ const AwardSection = ({ isExplore }) => {
                   <Switch className2={`!text-white`} />
                   <Image
                     src={Apps}
-                    placeholder="blur"
                     alt=""
                     className="w-[400px] max-md:max-w-[300px] max-mdw-[300px] my-4"
                   />
@@ -169,25 +170,26 @@ const AwardSection = ({ isExplore }) => {
                 </div>
               </div>
             </div>
-          
-          <div className="flex justify-between absolute bottom-[-70px] w-full">
-            <Image
-              src={square_left}
-              width={400}
-              height={400}
-              className=""
-              alt="inzo"
-            />
-            <Image
-              src={square_rigtht}
-              width={400}
-              height={400}
-              className=""
-              alt="inzo"
-            />
-          </div>
-        </>
-      )}
+
+            <div className="flex justify-between absolute bottom-[-70px] w-full">
+              <Image
+                src={square_left}
+                width={400}
+                height={400}
+                className=""
+                alt="inzo"
+              />
+              <Image
+                src={square_rigtht}
+                width={400}
+                height={400}
+                className=""
+                alt="inzo"
+              />
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 };

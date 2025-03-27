@@ -98,7 +98,7 @@ const WhyInzo = () => {
           <SwiperSlide key={index} dir={dir} className="w-[400px]">
             <div className="bg-card_why w-[400px] mx-4 py-8 ps-8 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
               <div className="flex gap-4 items-center text-white">
-                <Image placeholder="blur" src={d.img} alt="" width={65} height={65} />
+                <Image  src={d.img} alt="" width={65} height={65} />
                 <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
               </div>
               <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
