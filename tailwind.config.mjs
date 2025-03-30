@@ -58,6 +58,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
+        banner: "url('/images/banner.png')",
+        optimizer_banner: "url('/images/jpeg-optimizer_banner.png')",
+
         banner: "url('/images/banner.png') ",
         mobBanner:
           "linear-gradient(79.49deg, rgba(5, 27, 115, 0) 25.15%, rgba(4, 22, 88, 0.54) 60.1%, rgba(3, 13, 34, 0.7) 89.5%),url('/images/banner.png') ",
@@ -67,17 +70,34 @@ export default {
         border_gradiant: " linear-gradient(90deg, #084398, #00befd)",
         star_background: "url('/images/star2.png')",
         star_background2: "url('/images/start.jpg')",
+        optimizer_start: "url('/images/jpeg-optimizer_start.jpg')",
+        optimizer_trend_platform_bg:
+          "url('/images/jpeg-optimizer_trend-platform-bg.png')",
+        optimizer_parthner_bg: "url('/images/jpeg-optimizer_parthner_bg.png')",
+        optimizer_Footer_bg: "url('/images/jpeg-optimizer_Footer_bg.png')",
+        optimizer_aboutBanner: "url('/images/jpeg-optimizer_aboutBanner.png')",
+        optimizer_education_review:
+          "url('/images/jpeg-optimizer_education-review.png')",
+        optimizer_ourTeamBg: "url('/images/jpeg-optimizer_ourTeamBg.png')",
+        optimizer_frequantly_bg:
+          "url('/images/jpeg-optimizer_frequantly_bg.png')",
+        optimizer_successPartners_Bg:
+          "url('/images/jpeg-optimizer_successPartners_Bg.png')",
+        optimizer_contact: "url('/images/jpeg-optimizer_contact.png')",
+        optimizer_trend_platform:
+          "url('/images/jpeg-optimizer_trend-platform.png')",
         card_bakgound:
           "linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
         team_gradiat:
           "linear-gradient(360deg, rgba(0,0,0,0.002) 0%, rgba(15,29,62,1) 35%)",
         team_card: "url('/images/team-back.png')",
         award_back1: "url('/images/awardBack.png')",
+        optimizer_awardBack: "url('/images/jpeg-optimizer_awardBack.png')",
         award_back: "url('/images/award-back.png')",
         awarc_card_back:
           "linear-gradient(269deg, rgba(7, 23, 55, 0.04) 12.89%, #0BBDF5 99.15%)",
         card_bakgound:
-          "linear-gradient(101.76deg, #1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
+          "linear-gradient(101.76deg, card_Bg#1654B0 5.98%, rgba(10, 41, 90, 0.628674) 45.75%, rgba(8, 20, 46, 0) 71.79%)",
         card_Bg: "url('/images/cardBg.png')",
         bannercardBg: "url('/images/bannercardBg.svg')",
         social_gradiant:
@@ -95,6 +115,9 @@ export default {
         card_why: "url('/images/card-Back_why.png')",
         MultiStarBottom: "url('/images/MultiStarBottom.png')",
         location_back: "url('/images/location_back.png')",
+        start_location: "url('/images/start_location.png')",
+
+
         Testimonial_back:
           "linear-gradient(174.71deg, rgba(8, 20, 46, 0) 6.18%, rgba(0, 192, 255, 0.628674) 79.61%, #00C0FF 119.12%)",
         company_global:
@@ -117,6 +140,8 @@ export default {
 
         teamStars_Bg: "url('/images/teamStars_Bg.png')",
         aboutBanner: "url('/images/aboutBanner.png')",
+        about_mobile: "url('/images/about-mobile.png')",
+
         about_Gr:
           "linear-gradient(0deg, #0F2147 5%, rgba(15, 33, 71, 0) 100%);",
 
@@ -185,6 +210,8 @@ export default {
           "linear-gradient(0deg, transparent 50%, #0F2147 63.5%);",
         EduOver_Bg: "url('/images/EduOver_Bg.png')",
         Education_Bg: "url('/images/education-review.png')",
+        award_title_Bg: "linear-gradient(270deg, #0165FC 0%, #00C0FF 100%);",
+
       },
 
       fontFamily: {

@@ -16,12 +16,18 @@ const FinancialReport = () => {
     { value: 30, textValue: "K", text: "Monthly ", text2: "Active Client" },
   ];
   return (
-    <div className="bg-stars_white bg-[#0f2147]  w-full pb-12   ">
-      <div className="bg-stars_white bg-center bg-no-repeat bg-cover h-full">
-        <Title title1={`Financial`} title2={`Report`} />
-        <FinancialReportSection data={data} />
+    <>
+      <div className="bg-stars_white block max-sm:hidden bg-[#0f2147]  w-full pb-12   ">
+        <div className="bg-stars_white  bg-center bg-no-repeat bg-cover h-full">
+          <Title title1={`Financial`} title2={`Report`} />
+          <FinancialReportSection data={data} />
+        </div>
       </div>
-    </div>
+      <div className=" max-sm:block hidden bg-[#0f2147]  w-full pb-12   ">
+      <Title title1={`Financial`} title2={`Report`} />
+          <FinancialReportSection data={data} />
+      </div>
+    </>
   );
 };
 

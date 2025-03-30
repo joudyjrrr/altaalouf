@@ -62,7 +62,7 @@ const BannerSwiper = () => {
           1280: { slidesPerView: 4 },
         }}
         dir={dir}
-        //className="bg-gradient-to-t from-[#0F2147] from-70% to-transparent to-100% "
+      //className="bg-gradient-to-t from-[#0F2147] from-70% to-transparent to-100% "
       >
         {cryptoData.map((crypto, index) => (
           <SwiperSlide dir={dir} key={index}>

@@ -13,7 +13,6 @@ import { Button } from "../ui/button";
 import Switch from "./Switch";
 
 const TeamSection = () => {
-  const ImageArray = [team1, team2, team3, team4];
   return (
     <div className="bg-white w-full  relative curved-section">
       <div className="bg-star_background2 w-full h-full bg-center bg-cover py-12">

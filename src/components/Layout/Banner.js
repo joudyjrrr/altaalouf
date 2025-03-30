@@ -9,7 +9,8 @@ import BannerSwiper from "./BannerSwiper";
 const Banner = () => {
   const t = useTranslations();
   return (
-    <div
+   <div className="bg-cover bg-center bg-no-repeat bg-optimizer_banner">
+     <div
       className="w-full pt-4 h-[110vh] z-[100] relative overflow-visible bg-mobBanner md:bg-banner 
     bg-cover bg-center bg-no-repeat"
     >
@@ -82,6 +83,7 @@ const Banner = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

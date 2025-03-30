@@ -25,31 +25,36 @@ const Page = () => {
   }, []);
 
   useLanguageDirection();
-
   return (
     <div className="w-full h-full">
-      <div className="w-full pt-32 bg-ourTeamBg  bg-cover bg-center bg-no-repeat z-[100]">
-        <div className="w-full pt-32  text-center h-full flex justify-center items-center gap-8 flex-col">
-          <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-            <h1 className={`text-secondary `}>{`Forex `}</h1>
-            <h1 className={`text-white `}>{`Tutorials`}</h1>
-          </div>
+      <div className="w-full  bg-optimizer_ourTeamBg   bg-cover bg-top bg-no-repeat  ">
+        <div className="w-full pt-32 bg-ourTeamBg  bg-cover bg-center bg-no-repeat z-[100]">
+          <div className="w-full pt-32  text-center h-full flex justify-center items-center gap-8 flex-col">
+            <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+              <h1 className={`text-secondary `}>{`Forex `}</h1>
+              <h1 className={`text-white `}>{`Tutorials`}</h1>
+            </div>
 
-          <div className="flex flex-col gap-1  text-white text-lg">
-            <p>
-              Join and trade through social networking, benefiting from the
-              knowledge of trading experts to easily
-            </p>
-            <p>
-              copy the best traders from around the world and achieve your
-              goals! Join and trade through social
-            </p>
-            <p>networking, benefiting from knowledge.</p>
-          </div>
+            <div className="flex flex-col gap-1  text-white text-lg">
+              <p>
+                Join and trade through social networking, benefiting from the
+                knowledge of trading experts to easily
+              </p>
+              <p>
+                copy the best traders from around the world and achieve your
+                goals! Join and trade through social
+              </p>
+              <p>networking, benefiting from knowledge.</p>
+            </div>
 
-          <div className="relative flex justify-center pb-24">
-            <div className="absolute w-[90%] top-[230px] h-[50%] opacity-80 blur-[384px] bg-toutorial_gr_img"></div>
-            <Image src={tutorial} alt="" className="w-[800px] relative z-[100]" />
+            <div className="relative flex justify-center pb-24">
+              <div className="absolute w-[90%] top-[230px] h-[50%] opacity-80 blur-[384px] bg-toutorial_gr_img"></div>
+              <Image
+                src={tutorial}
+                alt=""
+                className="w-[800px] relative z-[100]"
+              />
+            </div>
           </div>
         </div>
       </div>

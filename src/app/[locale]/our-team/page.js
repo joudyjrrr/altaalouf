@@ -36,8 +36,8 @@ const page = () => {
               </p>
               <p>dedication to achieve exceptional results.</p>
             </div>
+            <OurTeamSection imgData={imgData} showButton={true} />
           </div>
-          <OurTeamSection imgData={imgData} showButton={true} />
         </div>
       </div>
       <OurTeamSection imgData={imgData} showButton={true} />

@@ -21,19 +21,21 @@ let imgData = [
 const TeamMemberPage = ({ params }) => {
   return (
     <div className="w-full h-full bg-[#0F2147] pb-20">
-      <div className="w-full pt-20  bg-ourTeamBg md:h-[100vh]  bg-cover bg-top bg-no-repeat  z-[100]">
-        <div className="w-full   h-full flex  justify-center items-center max-sm:items-center  pb-8">
-          <div className="flex flex-col gap-2 text-center w-full ">
-            <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-              <h1 className={`text-secondary `}>{`Our`}</h1>
-              <h1 className={`text-white `}>{`Team`}</h1>
-            </div>
-            <div className="flex flex-col gap-2 text-white text-lg max-md:text-sm">
-              <p>
-                Meet the passionate individuals driving our mission forward,
-                blending expertise, creativity, and
-              </p>
-              <p>dedication to achieve exceptional results.</p>
+      <div className="w-full  bg-optimizer_ourTeamBg   bg-cover bg-top bg-no-repeat  "> 
+        <div className="w-full pt-20  bg-ourTeamBg md:h-[100vh]  bg-cover bg-top bg-no-repeat  z-[100]">
+          <div className="w-full   h-full flex  justify-center items-center max-sm:items-center  pb-8">
+            <div className="flex flex-col gap-2 text-center w-full ">
+              <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+                <h1 className={`text-secondary `}>{`Our`}</h1>
+                <h1 className={`text-white `}>{`Team`}</h1>
+              </div>
+              <div className="flex flex-col gap-2 text-white text-lg max-md:text-sm">
+                <p>
+                  Meet the passionate individuals driving our mission forward,
+                  blending expertise, creativity, and
+                </p>
+                <p>dedication to achieve exceptional results.</p>
+              </div>
             </div>
           </div>
         </div>

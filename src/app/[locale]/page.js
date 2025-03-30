@@ -16,6 +16,7 @@ import FinancialReport from "@/components/Layout/FinancialReport";
 import DwMethods from "@/components/Layout/DwMethods";
 
 import MeetTeam from "@/components/Layout/MeetTeam";
+import { useEffect } from "react";
 
 export default function Home() {
   const t = useTranslations();

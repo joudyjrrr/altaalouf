@@ -16,12 +16,10 @@ const Title = ({
     >
       <Image
         src={img ? img : Inzo}
-        width={140}
-        height={50}
-        className={`image-mask ${classNameImg}`}
+        className={`image-mask w-[140px] h-[50px] max-sm:w-[100px] max-sm:h-[35px] ${classNameImg}`}
         alt="inzo"
       />
-      <div className="absolute top-[65px] max-sm:!top-[65px] flex gap-2 text-5xl max-md:text-4xl  max-sm:!text-2xl  font-bold">
+      <div className="absolute top-[65px] max-sm:!top-[55px] flex gap-2 text-5xl max-md:text-4xl  max-sm:!text-2xl  font-bold">
         <h1 className={`text-secondary font-extrabold   ${title1Color}`}>
           {title1}
         </h1>

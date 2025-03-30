@@ -1,4 +1,6 @@
-import React from "react";
+
+"use client"
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import {
   Explore,
@@ -17,6 +19,14 @@ import {
 import Image from "next/image";
 import Title from "./Title";
 import Switch from "./Switch";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import useLanguageDirection from "@/i18n/useLanguageDirection";
+
 const AwardSection = ({ isExplore }) => {
   const cards = [
     {
@@ -26,7 +36,7 @@ const AwardSection = ({ isExplore }) => {
       className: "  w-[20%] h-[220px] mt-6 ",
     },
     {
-      title: " The Fastest Growing Broker in the Middle  ",
+      title: " The Fastest Growing Broker in the Middle ",
       img: award_card4,
       className: "  w-[65%] h-[170px] mt-16 pt-4 ",
     },
@@ -42,40 +52,51 @@ const AwardSection = ({ isExplore }) => {
       className: " w-1/2 h-[200px] mt-8 ",
     },
   ];
+  const [dir, setDir] = useState("ltr");
+  const [swiperKey, setSwiperKey] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setDir(localStorage.getItem("dir") || "ltr");
+    }
+  }, []);
+  useLanguageDirection();
+  useEffect(() => {
+    setSwiperKey((prevKey) => prevKey + 1);
+  }, [dir]);
   return (
     <div
-      className={`bg-award_back1 bg-top bg-no-repeat   ${
-        isExplore ? "to-white mt-16" : "to-[#0f2147]"
-      } relative    `}
+      className={`bg-award_back1  max-sm:pt-16 bg-top bg-no-repeat to-white mt-16    relative    `}
     >
+      <div className="bg-award_title_Bg absolute opacity-80 blur-[87px] top-0 end-[45%]"></div>
       <div className="bg-award_back h-full">
         <Title title1={`Legendary`} title2={`Awards`} />
 
-        <div className="grid grid-cols-4 pb-16 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-24 p-4 px-24">
+        <div className="grid max-sm:hidden grid-cols-4 pb-16 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-24 p-4 px-24">
           {cards.map((d, idx) => (
-            <div
-              key={idx}
-              className=" flex flex-col h-[370px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
-            >
-              <div className="relative h-full w-full rounded-t-[30px] overflow-hidden">
-                <div className="absolute inset-0 bg-award_card1 bg-center bg-cover mix-blend-luminosity"></div>
-                <Image
-                  src={d.img}
-                  alt=""
-                  className={`relative z-10  mx-auto ${d.className}`}
-                />
-              </div>
-
-              <div
-                className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${
-                  d.img === award_card5 && "!py-1"
-                }`}
-              >
-                <h1 className="text-white text-lg font-semibold">{d.title}</h1>
-              </div>
+            <div key={idx}>
+              <Card d={d} />
             </div>
           ))}
         </div>
+        <Swiper
+          key={swiperKey}
+          modules={[Autoplay]}
+          pagination={{
+            el: ".custom-pagination3",
+            clickable: true,
+          }}
+          dir={dir}
+          spaceBetween={10}
+          slidesPerView={1.4}
+          autoplay={{ delay: 15000 }}
+          className="p-8 mt-16 ms-4 max-md:p-4 mb-12 !hidden max-md:!block"
+        >
+          {cards.map((d, index) => (
+            <SwiperSlide key={index} className={`${index === 0 && 'ms-4'} me-8`}>
+              <Card d={d} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       {isExplore && (
@@ -190,3 +211,33 @@ const AwardSection = ({ isExplore }) => {
 };
 
 export default AwardSection;
+
+
+
+
+const Card = ({ d, idx }) => {
+  return (
+    <div
+      key={idx}
+      className=" flex flex-col h-[370px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
+    >
+      <div className="relative h-full w-full rounded-t-[30px] overflow-hidden ">
+        <div className="absolute inset-0 bg-award_card1 bg-center bg-cover mix-blend-luminosity"></div>
+        <Image
+          src={d.img}
+          alt=""
+          className={`relative z-10  mx-auto ${d.className}`}
+        />
+      </div>
+
+      <div
+        className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${d.img === award_card5 && "!py-1"
+          }`}
+      >
+        <h1 className="text-white text-lg font-semibold">
+          {d.title}
+        </h1>
+      </div>
+    </div>
+  )
+}

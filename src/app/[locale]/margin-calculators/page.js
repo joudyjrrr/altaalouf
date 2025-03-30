@@ -7,13 +7,14 @@ import Table from "@/components/ui/table";
 
 const page = () => {
   const cols = [
-
     {
       name: "Instrument",
       selector: (row) => (
         <div className="flex items-center px-4 ">
           <Image src={close} alt="" width={15} height={15} />
-          <span className="bg-[#1A2A48] p-1 rounded-lg mx-2">{row.sub_name}</span>{" "}
+          <span className="bg-[#1A2A48] p-1 rounded-lg mx-2">
+            {row.sub_name}
+          </span>{" "}
         </div>
       ),
     },
@@ -40,30 +41,30 @@ const page = () => {
       rate: "0.6275",
       size: 1,
       value: "$0.6275",
-      margin: "$35.738"
-
+      margin: "$35.738",
     },
     {
       sub_name: "AUDUSD",
       rate: "0.6275",
       size: 1,
       value: "$0.6275",
-      margin: "$125.738"
-
+      margin: "$125.738",
     },
   ];
   return (
     <div className="bg-[#0c1E44]">
-      <div className="w-full pt-[16rem] pb-10 bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
-        <div className="w-full text-center text-white flex flex-col justify-center items-center">
-          <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
-            <h1 className={`text-secondary font-extrabold`}>{`Margin   `}</h1>
-            <h1 className={`text-white font-extrabold`}>{`Calculators`}</h1>
+       <div className="w-full  bg-optimizer_ourTeamBg   bg-cover bg-top bg-no-repeat  "> 
+        <div className="w-full pt-[16rem] pb-10 bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
+          <div className="w-full text-center text-white flex flex-col justify-center items-center">
+            <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
+              <h1 className={`text-secondary font-extrabold`}>{`Margin   `}</h1>
+              <h1 className={`text-white font-extrabold`}>{`Calculators`}</h1>
+            </div>
+            <p className="mt-4">
+              Calculate potential gains, set precise profit targets, and manage
+              losses before trading.
+            </p>
           </div>
-          <p className="mt-4">
-            Calculate potential gains, set precise profit targets, and manage
-            losses before trading.
-          </p>
         </div>
       </div>
       <div className="w-full h-full bg-caluclatour_bg ">

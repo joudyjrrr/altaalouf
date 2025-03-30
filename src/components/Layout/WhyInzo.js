@@ -20,27 +20,27 @@ const data = [
   {
     img: why1,
     title: "Trusted Broker ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments",
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
   {
     img: why2,
     title: "Instruments Diversity ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments"
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
   {
     img: why3,
     title: "Accounts Types ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments",
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
   {
     img: why3,
     title: "Accounts Types ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments",
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
   {
     img: why3,
     title: "Accounts Types ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments",
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
 ];
 const WhyInzo = () => {
@@ -79,7 +79,7 @@ const WhyInzo = () => {
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={10}
         slidesPerView={1}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 15000 }}
         pagination={{
           el: ".custom-pagination2",
           clickable: true,
@@ -88,20 +88,26 @@ const WhyInzo = () => {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="!p-8 mt-8 "
         breakpoints={{
-          500: { slidesPerView: 1 },
-          768: { slidesPerView: 1 },
+          500: { slidesPerView: 1.5 },
+          768: { slidesPerView: 2 },
           1024: { slidesPerView: 2, spaceBetween: 30 },
           1270: { slidesPerView: 3.3, spaceBetween: 100 },
         }}
       >
         {data.map((d, index) => (
-          <SwiperSlide key={index} dir={dir} className="w-[400px]">
-            <div className="bg-card_why w-[400px] mx-4 py-8 ps-8 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
+          <SwiperSlide
+            key={index}
+            dir={dir}
+            className="!w-[400px] max-sm:!w-[280px]"
+          >
+            <div className="bg-card_why  py-8 ps-8  max-sm:!ps-6 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
               <div className="flex gap-4 items-center text-white">
-                <Image src={d.img} alt="" width={65} height={65} />
-                <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
+                <Image src={d.img} alt="" width={65} height={65} className="w-[65px] h-[65px] max-sm:w-[50px] max-sm:h-[50px]"/>
+                <h1 className=" mask-gradient text-2xl max-md:!text-[16px] font-semibold">
+                  {d.title}
+                </h1>
               </div>
-              <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
+              <p className="text-white text-lg   max-sm:text-sm">{d.desc}</p>
             </div>
           </SwiperSlide>
         ))}
@@ -114,8 +120,8 @@ const WhyInzo = () => {
           <Image
             src={arrowLeft}
             alt="icon"
-            width={22}
-            height={22}
+            width={20}
+            height={20}
             className="mx-8  rtl:rotate-180"
           />
         </button>
@@ -129,8 +135,8 @@ const WhyInzo = () => {
           <Image
             src={arrowRight}
             alt="icon"
-            width={22}
-            height={22}
+            width={20}
+            height={20}
             className="mx-8  rtl:rotate-180"
           />
         </button>

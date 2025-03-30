@@ -15,35 +15,41 @@ import { FaCaretRight } from "react-icons/fa6";
 const page = () => {
   return (
     <div className="w-full  relative h-full">
-      <div className="w-full pt-28  bg-ourTeamBg h-screen bg-cover bg-center bg-no-repeat z-[100]">
-        <div className="w-full pt-16 z-[100] relative h-full flex justify-start items-center gap-4 flex-col">
-          <div className="flex gap-2 text-5xl  z-[100]  relative max-md:text-3xl font-semibold text-center justify-center">
-            <h1 className={`text-secondary font-extrabold`}>{`Open `}</h1>
-            <h1 className={`text-white font-extrabold`}>{`Real Account`}</h1>
-          </div>
+      <div className="w-full  bg-optimizer_ourTeamBg   bg-cover bg-top bg-no-repeat  ">
+        <div className="w-full pt-28  bg-ourTeamBg h-screen bg-cover bg-center bg-no-repeat z-[100]">
+          <div className="w-full pt-16 z-[100] relative h-full flex justify-start items-center gap-4 flex-col">
+            <div className="flex gap-2 text-5xl  z-[100]  relative max-md:text-3xl font-semibold text-center justify-center">
+              <h1 className={`text-secondary font-extrabold`}>{`Open `}</h1>
+              <h1 className={`text-white font-extrabold`}>{`Real Account`}</h1>
+            </div>
 
-          <div className="absolute w-1/2 z-[10]  start-[25%] top-[27%] h-[200px] opacity-90 blur-[384px] bg-toutorial_gr_img"></div>
-          {/* <div className="absolute w-full z-[10]  start-[25%] bottom-0 opacity-60 h-[20%]  blur-[384px] bg-toutorial_gr_img"></div> */}
-          <div className="bg-primary  w-[75%] relative z-[100]  mt-12 rounded-t-lg    px-16 py-4 mx-auto">
-            <div className="grid grid-cols-2 gap-4 w-full">
-              <Select label={`Platform Type`} />
-              <Select label={`Account Type`} />
-              <Input label={`Full Name`} placeholder={`Enter name`} />
-              <Input label={`Surname`} placeholder={`Enter surname`} />
-              <Input label={`Email Id `} placeholder={`Enter email id`} />
-              <Input
-                label={`Password `}
-                placeholder={`Enter password`}
-                type={`password`}
-              />
-              <Input
-                label={`Confirm Password `}
-                placeholder={`Enter password`}
-                type={`password`}
-              />
-              <div className="flex h-fit  items-end gap-2">
-                <SelectPhoneNumber />
-                <Input label={``} className={``} placeholder={`Enter phone number `} />
+            <div className="absolute w-1/2 z-[10]  start-[25%] top-[27%] h-[200px] opacity-90 blur-[384px] bg-toutorial_gr_img"></div>
+            {/* <div className="absolute w-full z-[10]  start-[25%] bottom-0 opacity-60 h-[20%]  blur-[384px] bg-toutorial_gr_img"></div> */}
+            <div className="bg-primary  w-[75%] relative z-[100]  mt-12 rounded-t-lg    px-16 py-4 mx-auto">
+              <div className="grid grid-cols-2 gap-4 w-full">
+                <Select label={`Platform Type`} />
+                <Select label={`Account Type`} />
+                <Input label={`Full Name`} placeholder={`Enter name`} />
+                <Input label={`Surname`} placeholder={`Enter surname`} />
+                <Input label={`Email Id `} placeholder={`Enter email id`} />
+                <Input
+                  label={`Password `}
+                  placeholder={`Enter password`}
+                  type={`password`}
+                />
+                <Input
+                  label={`Confirm Password `}
+                  placeholder={`Enter password`}
+                  type={`password`}
+                />
+                <div className="flex h-fit  items-end gap-2">
+                  <SelectPhoneNumber />
+                  <Input
+                    label={``}
+                    className={``}
+                    placeholder={`Enter phone number `}
+                  />
+                </div>
               </div>
             </div>
           </div>
