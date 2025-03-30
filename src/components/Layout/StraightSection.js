@@ -4,7 +4,7 @@ import { Straight1, Straight2 } from "../../../public/images";
 import Title from "./Title";
 const StraightSection = () => {
   return (
-    <div className=" bg-Straight_Bg bg-no-repeat  bg-bottom pb-10">
+    <div className=" bg-Straight_Bg bg-no-repeat  bg-bottom pb-10 max-md:mt-14">
       <Title
         title1={`Straight through`}
         title2={`processing`}
@@ -12,8 +12,8 @@ const StraightSection = () => {
         title2Color={"!text-primary"}
       />
 
-      <div className="flex justify-between gap-16 mt-24 max-md:flex-col">
-        <div className=" w-full h-full flex flex-col ps-10 justify-center gap-8">
+      <div className="flex justify-between gap-16 mt-10 md:mt-24 max-md:flex-col">
+        <div className=" w-full h-full flex flex-col px-6 md:ps-10 justify-center gap-8">
           <h3 className="text-lg max-md:text-lg leading-8">
             It is a system adopted by companies that direct clients’ trades to a
             group of liquidity providers. This system works according to tools

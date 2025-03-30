@@ -9,11 +9,20 @@ import BannerSwiper from "./BannerSwiper";
 const Banner = () => {
   const t = useTranslations();
   return (
-    <div className="w-full pt-4 h-[110vh] z-[100] relative overflow-visible bg-banner bg-cover bg-center bg-no-repeat">
+    <div
+      className="w-full pt-4 h-[110vh] z-[100] relative overflow-visible bg-mobBanner md:bg-banner 
+    bg-cover bg-center bg-no-repeat"
+    >
       <div className="bg-gradient-to-t from-[#0F2147] from-5% to-transparent to-30%">
         <div className="h-[90vh]">
-          <div className="absolute inset-0 w-full flex bg-gradient-to-b from-[#030B1D] from-5% to-transparent to-25%">
-            <div className="w-1/2 h-full bg-gradient-to-br from-[#030B1D] from-20% via-[#051B7300] via-70% to-transparent"></div>
+          <div
+            className="absolute inset-0 w-full flex bg-gradient-to-b
+           from-[#030B1D] from-5% to-transparent to-25%"
+          >
+            <div
+              className="w-1/2 h-full bg-gradient-to-br from-[#030B1D]
+             from-20% via-[#051B7300] via-70% to-transparent"
+            ></div>
             <div
               className="w-1/2 h-full"
               style={{
@@ -21,39 +30,54 @@ const Banner = () => {
               }}
             ></div>
           </div>
-          <div className="flex justify-between relative w-full mt-[70px] max-md:flex-col max-md:gap-8">
-            <div className="w-full flex justify-start max-md:justify-center text-white pt-20  px-16 ">
+          <div
+            className="flex justify-between relative w-full mt-[70px]
+           max-md:flex-col max-md:gap-8"
+          >
+            <div
+              className="w-full flex justify-start max-md:justify-center
+             text-white pt-20 px-5 md:px-16 "
+            >
               <div className="flex flex-col gap-4 ">
-                <h1 className="text-[4rem] leading-[0.6] font-[600] -mb-2 ml-1 max-md:text-5xl">
-                  Trade Like A{" "}
+                <h1
+                  className="text-center md:text-start text-[2.35rem] 
+                md:text-[4rem] leading-[0.6] font-[600]  md:-mb-2 ml-1 md:max-md:text-5xl"
+                >
+                  Trade Like A
                 </h1>
-                <h1 className="text-[5.7rem] leading-[1] font-bold text-secondary max-md:!text-[5xl]">
+                <h1
+                  className="text-center md:text-start 
+                text-[4rem] md:text-[5.7rem] leading-[1] font-bold
+                 text-secondary max-md:!text-[5xl] mt-4 md:mt-0"
+                >
                   Legend
                 </h1>
-                <div>
-                  <p className="text-2xl max-md:text-lg">
+                <div className="mt-7 md:mt-0">
+                  <p className="text-[1.1rem] text-center md:text-start ">
                     Trade over 400 Global Instruments from FX,
                   </p>
-                  <p className="text-2xl max-md:text-lg">
+                  <p className="text-[1.1rem] text-center md:text-start md:max-md:text-lg">
                     Metals Shares, and Indices with
-                    <span className="font-semibold">INZO</span>.
+                    <span className="font-semibold ps-1"> INZO</span>.
                   </p>
                 </div>
-                <div className="flex gap-4 items-center">
-                  <Button className="bg-main_button  transition-all duration-800">
+                <div className="flex-col md:flex-row flex gap-4 items-center mt-5">
+                  <Button className="bg-main_button  transition-all duration-800 max-md:py-7 max-md:px-5 max-md:text-[1rem] max-md:font-medium">
                     Open Real Account
                     <FaCaretRight />
                   </Button>
-                  <Button className="button-border">
+                  <Button className="button-border-transparent2 relative   bg-[#04061396]  hover:bg-[#04061359] max-md:py-7 max-md:px-4 max-md:mt-3 max-md:text-[1rem] max-md:font-medium rounded-md ">
                     Open Demo Account <FaCaretRight />
                   </Button>
                 </div>
               </div>
             </div>
-            <VerticalSotial />
+            <div className="hidden md:block">
+              <VerticalSotial />
+            </div>
           </div>
         </div>
-        <div className="h-[20vh] mb-4">
+        <div className="h-[20vh] mb-4 ">
           <BannerSwiper />
         </div>
       </div>

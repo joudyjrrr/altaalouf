@@ -58,7 +58,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        banner: "url('/images/banner.png')",
+        banner: "url('/images/banner.png') ",
+        mobBanner:
+          "linear-gradient(79.49deg, rgba(5, 27, 115, 0) 25.15%, rgba(4, 22, 88, 0.54) 60.1%, rgba(3, 13, 34, 0.7) 89.5%),url('/images/banner.png') ",
         main_button: "linear-gradient(90deg, #084196 0%, #00C0FF 100%)",
         header_gradiant:
           "linear-gradient(180deg, #08142E 34.01%, rgba(8, 20, 46, 0) 100%)",
@@ -100,6 +102,7 @@ export default {
         company1: "url('/images/company1.png')",
         Representative_card_bg: "url('/images/Representative_card_bg.png')",
         DwMethods_Bg: "url('/images/DwMethods.png')",
+        MobDwMethods_Bg: "url('/images/MobDwMethods.png')",
         DwIcons_Bg: "url('/images/DwIcons.png')",
         stars_white: "url('/images/stars_white.png')",
         Footer_bg: "url('/images/Footer_bg.png')",

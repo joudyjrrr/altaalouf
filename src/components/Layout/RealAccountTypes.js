@@ -116,13 +116,12 @@ const RealAccountTypes = () => {
         height={190}
         className="me-4 absolute -z-3 top-[0px] left-0"
       />{" "}
-      ``
       <Image
         src={syrcleGlass2}
         alt="icon"
         width={90}
         height={90}
-        className="me-4 absolute -z-3 -top-[110px]   right-0"
+        className="md:me-4 absolute -z-3 -top-[30px] md:-top-[110px]   right-0"
       />
       <Title
         title1={`Real Accounts`}
@@ -139,7 +138,7 @@ const RealAccountTypes = () => {
             trading environments.
           </p>
 
-          <div className="flex  items-center justify-between gap-x-5 pt-4  md:pt-12 w-[200px]">
+          <div className="max-md:absolute max-md:-bottom-9 flex   items-center justify-between gap-x-5 pt-4  md:pt-12 w-[200px]">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="transform "
@@ -189,19 +188,19 @@ const RealAccountTypes = () => {
             }}
             breakpoints={{
               320: { slidesPerView: 1 }, // دعم الشاشات الصغيرة جدًا
-              500: { slidesPerView: 1 },
+              500: { slidesPerView: 2 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 2 },
               1280: { slidesPerView: 2.6 },
             }}
             dir={dir}
-            className="!p-7 md:!p-8  md:!pt-6 realAcc-slide"
+            className="!p-5 md:!p-8  md:!pt-6 realAcc-slide max-md:mx-auto"
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {cryptoData.map((crypto, index) => (
               <SwiperSlide dir={dir} key={index}>
                 <div
-                  className="p-6 bg-card_Bg bg-cover bg-center w-[275px]
+                  className="p-5 md:p-6 bg-card_Bg bg-cover bg-center w-[300px]
                    md:h-[450px] md:w-[350px] custom-shadow
                  rounded-xl text-white flex flex-col items-center md:items-start "
                 >

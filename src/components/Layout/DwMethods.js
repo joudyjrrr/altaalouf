@@ -17,6 +17,7 @@ import {
   masterCard,
   bitcoine,
   ethereum,
+  MobDwMethods,
 } from "../../../public/images";
 import Title from "./Title";
 
@@ -29,9 +30,7 @@ let payArr = [
 ];
 const DwMethods = () => {
   return (
-
-    
-    <div className=" pt-12 bg-DwMethods_Bg bg-center h-fit md:h-screen ">
+    <div className="relative pt-12  bg-DwMethods_Bg bg-center h-fit md:h-screen  max-md:pb-8">
       <Title
         title1={`Deposit & Withdrawal`}
         title2={`Methods`}
@@ -40,7 +39,7 @@ const DwMethods = () => {
       />
 
       <div className="relative w-[85%] md:w-[80%] h-[90%] md:h-[70%] bg-contain bg-no-repeat mt-10 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-6 md:ps-14">
+        <div className="hidden  md:grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-6 md:ps-14">
           {payArr.map(([img1, img2, containerClass, img2Class], index) => (
             <div
               key={index}
@@ -61,6 +60,8 @@ const DwMethods = () => {
           ))}
         </div>
       </div>
+      <div className="md:hidden bg-MobDwMethods_Bg bg-contain bg-center bg-no-repeat w-full h-[335px] mx-auto"></div>
+      <div className="md:hidden absolute -bottom-20 left-0 right-0 mx-auto h-[40px] w-[1000px] bg-gradient-to-l from-[#3f9ce9] to-[#00C0FF] blur-[95px] z-30"></div>
     </div>
   );
 };

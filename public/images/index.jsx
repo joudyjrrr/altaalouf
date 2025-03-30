@@ -131,6 +131,7 @@ import circule_arrwos from "./circule-arrwos.svg";
 import sock_market_trading from "./sock-market-trading.png";
 
 import eduOveImg from "./eduOveImg.png";
+import MobDwMethods from "./MobDwMethods.png";
 
 import teamSvg from "./teamSvg.svg";
 
@@ -261,4 +262,5 @@ export {
   eduOveImg,
   Polygon,
   teamSvg,
+  MobDwMethods,
 };

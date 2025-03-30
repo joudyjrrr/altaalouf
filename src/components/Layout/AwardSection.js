@@ -20,7 +20,8 @@ import Switch from "./Switch";
 const AwardSection = ({ isExplore }) => {
   const cards = [
     {
-      title: " Top 100 Most Trusted Financial Institutionsin  in the Middle East ",
+      title:
+        " Top 100 Most Trusted Financial Institutionsin  in the Middle East ",
       img: award_card5,
       className: "  w-[20%] h-[220px] mt-6 ",
     },
@@ -29,7 +30,7 @@ const AwardSection = ({ isExplore }) => {
       img: award_card4,
       className: "  w-[65%] h-[170px] mt-16 pt-4 ",
     },
-   
+
     {
       title: "Best STP Broker in the Middle East",
       img: award_card3,
@@ -40,7 +41,6 @@ const AwardSection = ({ isExplore }) => {
       img: award_card2,
       className: " w-1/2 h-[200px] mt-8 ",
     },
-   
   ];
   return (
     <div
@@ -62,12 +62,15 @@ const AwardSection = ({ isExplore }) => {
                 <Image
                   src={d.img}
                   alt=""
-                 
                   className={`relative z-10  mx-auto ${d.className}`}
                 />
               </div>
 
-              <div className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${d.img === award_card5 && '!py-1'}`}>
+              <div
+                className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${
+                  d.img === award_card5 && "!py-1"
+                }`}
+              >
                 <h1 className="text-white text-lg font-semibold">{d.title}</h1>
               </div>
             </div>
@@ -81,17 +84,14 @@ const AwardSection = ({ isExplore }) => {
             <div className="relative w-full bg-transparent flex justify-center items-center text-center pt-8">
               <Image
                 src={Explore}
-                width={300}
-                height={50}
-                className=""
+                className="w-[200px] h-[50px] md:w-[300px] md:h-[50px]"
                 alt="inzo"
               />
-              <div className="absolute top-[75px] flex gap-2 text-5xl max-md:text-4xl font-bold">
-                {" "}
+              <div className="absolute top-[65px] md:top-[75px] flex gap-2 text-5xl max-md:text-3xl font-bold">
                 <h1 className="text-white">{`Our`}</h1>
                 <h1 className="text-secondary">{`Trading Platforms`}</h1>
               </div>
-              <div className="absolute top-[110px] end-[35%]">
+              <div className="absolute top-[110px] end-[35%] hidden md:block">
                 <Image
                   src={arrwos}
                   width={200}
@@ -101,7 +101,10 @@ const AwardSection = ({ isExplore }) => {
                 />
               </div>
             </div>
-            <div className="flex px-32 pt-10 justify-center gap-16 max-md:flex-col">
+            <div
+              className="flex px-4
+             md:px-32 pt-10 justify-center gap-16 max-md:flex-col"
+            >
               <Image
                 src={mobileInzo}
                 width={550}
@@ -111,8 +114,10 @@ const AwardSection = ({ isExplore }) => {
               />
               <div className="flex flex-col items-center gap-4  pt-[8rem] max-md:pt-0">
                 <div className="flex flex-col text-center gap-1 text-white text-2xl  max-md:text-sm font-semibold">
-                  <h1>Download our app</h1>
-                  <h1>for all type of your devices.</h1>
+                  <h1>
+                    Download our app <br className="hidden md:block" /> for all
+                    type of your devices.
+                  </h1>
                 </div>
                 <Switch className2={`!text-white`} />
                 <Image
@@ -124,11 +129,10 @@ const AwardSection = ({ isExplore }) => {
             </div>
 
             <div className="w-full flex justify-center pb-0 mt-8">
-              <div className="flex gap-4 max-md:gap-1">
-                <div className="bg-social_gradiant rounded-xl p-4  max-md:p-2 ">
+              <div className="flex gap-4 max-md:gap-1 ">
+                <div className="bg-social_gradiant rounded-xl p-4 md:p-4   ">
                   <div className="flex justify-between ">
                     <h1 className="text-secondary  text-5xl max-md:text-4xl font-semibold">
-                      {" "}
                       <span>$</span>30
                     </h1>
                     <Image
@@ -144,7 +148,7 @@ const AwardSection = ({ isExplore }) => {
                   <p className=" max-md:text-xs">$30 welcome bonus</p>
                 </div>
 
-                <div className="bg-social_gradiant rounded-xl p-4 max-md:p-1 pb-8">
+                <div className="bg-social_gradiant rounded-xl p-4 md:p-4 ">
                   <div className="flex justify-between ">
                     <h1 className="text-secondary  text-5xl max-md:text-4xl font-semibold">
                       30 <span>%</span>
@@ -166,19 +170,16 @@ const AwardSection = ({ isExplore }) => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between absolute bottom-[-70px] w-full">
+
+          <div className="flex justify-between absolute bottom-[-50px] md:bottom-[-70px] w-full">
             <Image
               src={square_left}
-              width={400}
-              height={400}
-              className=""
+              className="w-[200px] md:w-[400px]"
               alt="inzo"
             />
             <Image
               src={square_rigtht}
-              width={400}
-              height={400}
-              className=""
+              className="w-[200px] md:w-[400px]"
               alt="inzo"
             />
           </div>
