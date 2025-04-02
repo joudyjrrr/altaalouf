@@ -61,6 +61,7 @@ const DwMethods = () => {
         </div>
       </div>
       <div className="md:hidden bg-MobDwMethods_Bg bg-contain bg-center bg-no-repeat w-full h-[335px] mx-auto"></div>
+      <div className="md:hidden absolute bottom-0 left-0 right-0 mx-auto h-[40px] w-[1000px] bg-gradient-to-l from-[#3f9ce9] to-[#00C0FF] blur-[95px] z-30"></div>
     </div>
   );
 };
