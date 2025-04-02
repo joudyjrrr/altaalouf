@@ -23,7 +23,7 @@ const OurTeamSection = ({ imgData, showButton, className }) => {
   }, [dir]);
   return (
     <>
-      <div className={`  w-full pt-24 max-md:hidden mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center ${className} `}>
+      <div className={`  w-full pt-24 max-sLg:hidden mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center ${className} `}>
         {imgData.map((image, index) => (
           <div key={index}>
             <TeamCard image={image} index={index} showButton={showButton} />
@@ -41,11 +41,18 @@ const OurTeamSection = ({ imgData, showButton, className }) => {
         spaceBetween={10}
         slidesPerView={2}
         autoplay={{ delay: 15000 }}
-        className="w-full mt-12 !hidden max-md:!block "
+        className="w-full mt-12 !pb-[65px] !hidden max-sLg:!block "
+        breakpoints={{
+          350: { slidesPerView: 1.4 },
+          500: { slidesPerView: 1.5 },
+          600: { slidesPerView: 2 },
+          768: { slidesPerView: 2.5 },
+          1000: { slidesPerView: 3 },
+          1100: { slidesPerView: 3.3 },
+        }}
       >
         {imgData.map((image, index) => (
-          <SwiperSlide key={index} className={`!h-[320px] !w-[235px] ${index === 0 && '!ms-4'} ${index % 2 === 0 ? "mb-14" : "mt-14"
-            } relative `}>
+          <SwiperSlide key={index} className={`!h-[320px] !w-[235px] ${index === 0 && '!ms-4'} relative `}>
             <TeamCard image={image} index={index} showButton={showButton} />
           </SwiperSlide>
         ))}
@@ -61,7 +68,7 @@ const TeamCard = ({ image, index, showButton }) => {
   return (
     <div
       key={index}
-      className={`h-[320px] w-[235px]   mx-auto ${index % 2 === 0 ? "md:mb-14" : " md:mt-14"
+      className={`h-[320px] w-[235px]   mx-auto ${index % 2 === 0 ? "mb-14" : "mt-14"
         } relative `}
     >
       <Image src={image.img} alt="" className="w-full h-full" />

@@ -99,7 +99,7 @@ const CompanyGlobalSection = () => {
           alt=""
         />
         <Image
-          className="absolute bottom-[-40px] end-0 z-[-1] max-md:hidden"
+          className="absolute bottom-[-40px] end-0 z-[-1] max-sLg:hidden"
           width={150}
           src={half_circule2}
           alt=""
@@ -110,7 +110,7 @@ const CompanyGlobalSection = () => {
           title2Color={`!text-primary !font-extrabold`}
           title1Color={`!font-bold !font-extrabold`}
         />
-        <div className="mt-32  grid grid-cols-4  gap-6 px-16 max-md:!hidden">
+        <div className="mt-32  grid grid-cols-4   gap-6 px-16 max-sLg:!hidden">
           {data.map((d, index) => (
            <div key={index}>
              <Card d={d} index={index} />
@@ -127,11 +127,19 @@ const CompanyGlobalSection = () => {
             dir={dir}
             spaceBetween={1}
             slidesPerView={1.4}
-            autoplay={{ delay: 15000 }}
-            className="p-8 mt-16 ms-4 max-md:p-4 mb-12 !hidden max-md:!block"
+            autoplay={{ delay: 5000 }}
+            breakpoints={{
+              350: { slidesPerView: 1.4 },
+              500: { slidesPerView: 1.5 },
+              600: { slidesPerView: 2 },
+              768: { slidesPerView: 2.5 },
+              1000: { slidesPerView: 3 },
+              1100: { slidesPerView: 3.3 },
+            }}
+            className="p-8 mt-16 ms-4 max-md:p-4 mb-12 !hidden max-sLg:!block"
           >
             {data.map((d, index) => (
-              <SwiperSlide key={index} className={`${index === 0 && 'ms-4'}`}>
+              <SwiperSlide key={index} className={`${index === 0 && 'ms-4'} ${index === 3 && 'me-8'}`}>
                 <Card d={d} index={index} />
               </SwiperSlide>
             ))}

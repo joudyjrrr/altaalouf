@@ -39,10 +39,6 @@ const data = [
     img: location3,
     title: "Lebanon",
   },
-  {
-    img: location1,
-    title: "United Arab Emirates",
-  },
 ];
 const dataTestimonials = [
   {
@@ -57,20 +53,20 @@ const dataTestimonials = [
   },
 ];
 const RepresentativeSection = () => {
-      const swiperRef = useRef(null);
-      const [dir, setDir] = useState("ltr");
-      const [swiperKey, setSwiperKey] = useState(0);
-      useEffect(() => {
-        if (typeof window !== "undefined") {
-          setDir(localStorage.getItem("dir") || "ltr");
-        }
-      }, []);
+  const swiperRef = useRef(null);
+  const [dir, setDir] = useState("ltr");
+  const [swiperKey, setSwiperKey] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setDir(localStorage.getItem("dir") || "ltr");
+    }
+  }, []);
 
-      useLanguageDirection();
-      useEffect(() => {
-        setSwiperKey((prevKey) => prevKey + 1);
-      }, [dir]);
-      useLanguageDirection();
+  useLanguageDirection();
+  useEffect(() => {
+    setSwiperKey((prevKey) => prevKey + 1);
+  }, [dir]);
+  useLanguageDirection();
   return (
     <div className="bg-location_bg bg-center bg-no-repeat bg-cover h-full Testimonials  ">
       <div className="w-full h-full">
@@ -84,25 +80,29 @@ const RepresentativeSection = () => {
           modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={3.3}
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 60000 }}
 
           dir={dir}
           className="!p-8 mt-12"
           breakpoints={{
-            320: { slidesPerView: 1 },
-            500: { slidesPerView: 1.3 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3.3, spaceBetween: 30 },
+            320: { slidesPerView: 1.3 },
+            500: { slidesPerView: 2 },
+            600: { slidesPerView: 2 },
+            700: { slidesPerView: 2 },
+            1200: { slidesPerView: 3, spaceBetween: 30 },
           }}
         >
           {data.map((d, index) => (
             <SwiperSlide dir={dir} key={index} className="location-content ">
-              <div className={`bg-location_back    rounded-xl gap-12 h-[526px] bg-no-repeat bg-center flex justify-start p-8   flex-col items-center`}>
+              <div className={`bg-location_back max-mdd:!bg-location_card_mobile  max-mdd:!h-[330px]  rounded-xl gap-12 max-mdd:gap-4 h-[526px] bg-no-repeat bg-center flex justify-start p-8   flex-col items-center`}>
                 <div className="bg-start_location">
-                  <Image src={d.img} alt="" />
+                  <Image src={d.img} alt="" className="max-mdd:w-[260px]" />
                 </div>
-                <h1 className="text-2xl font-semibold text-white max-sm:text-lg">{d.title}</h1>
+                <h1 className={`text-2xl text-nowrap  font-semibold text-white ${index === 0 ? 'max-mdd:text-base' : 'text-lg'}`}>{d.title}</h1>
               </div>
+              {/* <div className="relative w-80 h-52 rounded-xl bg-back_location bg-center shadow-lg overflow-hidden">
+                <div className="absolute bottom-0 left-0 w-full h-full bg-location_bg bg-center clip-triangle"></div>
+              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>
@@ -124,24 +124,30 @@ const RepresentativeSection = () => {
             <h1 className={`text-white`}>{`Saying`}</h1>
           </div>
         </div>
+
+
         <div className="w-full flex max-sm:hidden justify-end items-center h-full pt-12 max-sm:!pt-0">
           <Button variant={`gradiant`}>
             View More
           </Button>
         </div>
+
+
+        <div>
+
+        </div>
       </div>
-      <div className="relative testimonials pb-10 ps-16 max-sm:ps-4">
-        <div className=" flex justify-center items-center gap-32 mt-12 absolute end-0 max-sm:!end-[70px] bottom-[20%] max-sm:!bottom-[125px] z-[2000]">
+      <div className="relative testimonials pb-10 ps-16 max-sm:ps-6">
+        <div className=" flex justify-center items-center max-mdd:gap-16 gap-32 mt-12 absolute end-0 max-sm:!end-[70px] bottom-[20%] max-sm:!bottom-[125px] z-[2000]">
           <button
             onClick={() => swiperRef.current?.slidePrev()}
-            className="relative z-[2000]"
+            className="relative z-[200000]"
           >
             <Image
               src={arrowLeft}
               alt="icon"
-
-              className="me-4 rtl:rotate-180 w-[22px] max-sm:w-[18px]"
-            />
+              className="mx-8  rtl:rotate-180 w-[20px] max-mdd:w-[15px] h-[20px] max-mdd:h-[18px]"
+            />  
           </button>
           <div
             style={{
@@ -151,12 +157,12 @@ const RepresentativeSection = () => {
           ></div>
           <button
             onClick={() => swiperRef.current?.slideNext()}
-            className="relative z-[2000]"
+            className="relative z-[200000] "
           >
             <Image
               src={arrowRight}
               alt="icon"
-              className="me-4  rtl:rotate-180  w-[22px] max-sm:w-[18px]"
+              className="mx-8  rtl:rotate-180 w-[20px] max-mdd:w-[15px] h-[20px] max-mdd:h-[18px]"
             />
           </button>
         </div>
@@ -172,32 +178,32 @@ const RepresentativeSection = () => {
           dir={dir}
           spaceBetween={40}
           slidesPerView={1}
-          autoplay={{ delay: 7000 }}
+          autoplay={{ delay: 15000 }}
           breakpoints={{
-            320: { slidesPerView: 1 },
+            320: { slidesPerView: 1.2, spaceBetween: 10 },
             500: { slidesPerView: 1.2 },
             768: { slidesPerView: 1 },
             1024: { slidesPerView: 1.4, spaceBetween: 30 },
           }}
-          className="p-8 mt-10 max-md:p-4 mb-12 "
+          className="p-8 mt-16 max-md:p-4 mb-12 "
         >
           {dataTestimonials.map((d, index) => (
             <SwiperSlide
               dir={dir}
               key={index}
-              className="max-md:w-full testimonial-slide"
+              className={`max-md:w-full testimonial-slide `}
             >
               <div className=" rounded-xl testimonial-content ">
                 <div className="bg-testemoneaialsCardBg bg-cover bg-center  pb-24 gap-8  rounded-xl bg-no-repeat flex flex-col  p-8 max-sm:!p-2 relative z-10">
                   <div className="flex justify-between items-center">
-                    <div className="flex gap-8 ps-12 max-sm:!ps-2">
+                    <div className="flex gap-8 max-sm:gap-2 ps-12 max-sm:!ps-2">
                       <Image
                         src={d.img}
                         alt=""
-                        className="max-sm:w-[60px] w-[120px] h-[120px] max-sm:h-[60px] relative z-[100]"
+                        className="max-sm:w-[45px] w-[120px] h-[120px] max-sm:h-[45px] relative z-[100]"
                       />
                       <div className="flex flex-col text-white justify-center">
-                        <h1 className="text-3xl font-semibold max-md:text-lg">
+                        <h1 className="text-3xl font-semibold max-md:text-base">
                           Hashim Al-Sakkal
                         </h1>
                         <div className="flex gap-4 mt-4 max-sm:mt-1 max-sm:gap-1">
@@ -219,7 +225,7 @@ const RepresentativeSection = () => {
                     </p>
                   </div>
                   <div className="flex items-start gap-8 w-full  ps-32 max-sm:ps-4">
-                    <div className="flex flex-col gap-1 text-white text-xl max-sm:!text-base">
+                    <div className="flex flex-col gap-1 text-white text-xl max-sm:!text-sm">
                       <p>
                         From my experience with INZO, I've opened more than one
                       </p>

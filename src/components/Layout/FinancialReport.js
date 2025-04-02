@@ -17,13 +17,13 @@ const FinancialReport = () => {
   ];
   return (
     <>
-      <div className="bg-stars_white block max-sm:hidden bg-[#0f2147]  w-full pb-12   ">
+      <div className="bg-stars_white block max-mdd:hidden bg-[#0f2147]  w-full pb-12   ">
         <div className="bg-stars_white  bg-center bg-no-repeat bg-cover h-full">
           <Title title1={`Financial`} title2={`Report`} />
           <FinancialReportSection data={data} />
         </div>
       </div>
-      <div className=" max-sm:block hidden bg-[#0f2147]  w-full pb-12   ">
+      <div className=" max-mdd:block hidden bg-[#0f2147]  w-full pb-12   ">
       <Title title1={`Financial`} title2={`Report`} />
           <FinancialReportSection data={data} />
       </div>

@@ -73,7 +73,7 @@ const Footer = () => {
             <Image src={Get_In_Touch} width={500} height={60} alt="inzo" />
           </div>
           <div className="w-full flex justify-center ">
-            <div className="bg-Footer_Gr2 grid grid-cols-3  relative z-[100] max-sm:flex max-sm:flex-col px-8 max-sm:px-10 max-sm:gap-4  py-10 rounded-xl">
+            <div className="bg-Footer_Gr2 grid grid-cols-3  relative z-[100] max-md:flex max-md:flex-col px-8 max-md:px-10 max-md:gap-4  py-10 rounded-xl">
               <div className="flex flex-col relative gap-2  max-md:!pe-8 ">
                 <h1 className="text-secondary text-lg font-semibold">Call Us</h1>
                 <div className="flex gap-1 items-center text-white">
@@ -82,7 +82,7 @@ const Footer = () => {
                     +97145429310
                   </p>
                 </div>
-                <div className="bg-main_button max-sm:hidden absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
+                <div className="bg-main_button max-md:hidden absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
               </div>
 
               <div className="flex flex-col relative  gap-2 px-4 max-md:!pe-0 max-sm:px-0   max-sm:!border-none">
@@ -93,10 +93,10 @@ const Footer = () => {
                     support@inzo.co
                   </p>
                 </div>
-                <div className="bg-main_button  max-sm:hidden  absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
+                <div className="bg-main_button  max-md:hidden  absolute end-0 top-0 h-[80px] w-[1.2px]"></div>
               </div>
 
-              <div className="flex flex-col gap-2 ps-4 max-sm:!ps-0 mx-auto max-sm:mt-4 max-sm:col-span-2 ">
+              <div className="flex flex-col gap-2 ps-4 max-md:!ps-0 mx-auto max-sm:mt-4 max-sm:col-span-2 ">
                 <h1 className="text-secondary text-lg font-semibold">
                   Chat with Us
                 </h1>

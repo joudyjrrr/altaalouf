@@ -6,8 +6,8 @@ import "react-circular-progressbar/dist/styles.css";
 const FinancialReportSection = ({ data, className }) => {
   return (
     <div
-      className={`mt-16 grid grid-cols-4 max-sm:grid-cols-2 
-      gap-6 px-32 py-8 justify-center mx-auto ${className} max-sm:px-4`}
+      className={`mt-16 grid grid-cols-4 max-mdd:grid-cols-2 
+      gap-6 px-32 max-sLg:px-8 py-8 justify-center mx-auto ${className} max-sm:px-4`}
     >
       {data.map((d, idx) => (
         <div
@@ -32,12 +32,12 @@ const FinancialReportSection = ({ data, className }) => {
             />
             <div
               className={`flex  text-secondary text-4xl w-full justify-center
-                 items-center font-bold absolute  top-[35%] max-sm:top-[23%] ${d.textValue === "K" ? "!flex-row" : "!flex-col"
+                 items-center font-bold absolute  top-[35%]  ${d.textValue === "K" ? "!flex-row" : "!flex-col"
                 }`}
             >
-              <span className="text-5xl font-bold"> {d.value}</span>
+              <span className="text-5xl font-bold max-mdd:text-4xl"> {d.value}</span>
               <span
-                className={`font-bold  ${d.textValue === "K" ? "text-5xl" : "text-3xl"
+                className={`font-bold  ${d.textValue === "K" ? "text-5xl max-mdd:text-4xl" : "text-3xl max-mdd:text-xl"
                   }`}
               >
                 {" "}

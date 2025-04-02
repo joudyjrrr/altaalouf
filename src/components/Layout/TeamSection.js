@@ -14,7 +14,7 @@ import Switch from "./Switch";
 
 const TeamSection = () => {
   return (
-    <div className="bg-white w-full  relative curved-section max-md:mt-[400px]">
+    <div className="bg-white w-full  relative curved-section">
       <div className="bg-star_background2 w-full h-full bg-center bg-cover py-12">
         <div className="bg-gradient-to-b from-[#0F2147] from-45% to-transparent to-200% text-center text-white py-12">
           <Title title1={`Copy Best `} title2={`Traders`} />
