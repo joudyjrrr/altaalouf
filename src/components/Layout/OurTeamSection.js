@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { arrow } from "../../../public/images";
 import Link from "next/link";
@@ -23,7 +24,9 @@ const OurTeamSection = ({ imgData, showButton, className }) => {
   }, [dir]);
   return (
     <>
-      <div className={`  w-full pt-24 max-sLg:hidden mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center ${className} `}>
+      <div
+        className={`  w-full pt-24 max-sLg:hidden mx-auto justify-center items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5  md:px-8 gap-4 place-content-center ${className} `}
+      >
         {imgData.map((image, index) => (
           <div key={index}>
             <TeamCard image={image} index={index} showButton={showButton} />
@@ -52,7 +55,12 @@ const OurTeamSection = ({ imgData, showButton, className }) => {
         }}
       >
         {imgData.map((image, index) => (
-          <SwiperSlide key={index} className={`!h-[320px] !w-[235px] ${index === 0 && '!ms-4'} relative `}>
+          <SwiperSlide
+            key={index}
+            className={`!h-[320px] !w-[235px] ${
+              index === 0 && "!ms-4"
+            } relative `}
+          >
             <TeamCard image={image} index={index} showButton={showButton} />
           </SwiperSlide>
         ))}
@@ -63,13 +71,13 @@ const OurTeamSection = ({ imgData, showButton, className }) => {
 
 export default OurTeamSection;
 
-
 const TeamCard = ({ image, index, showButton }) => {
   return (
     <div
       key={index}
-      className={`h-[320px] w-[235px]   mx-auto ${index % 2 === 0 ? "mb-14" : "mt-14"
-        } relative `}
+      className={`h-[320px] w-[235px]   mx-auto ${
+        index % 2 === 0 ? "mb-14" : "mt-14"
+      } relative `}
     >
       <Image src={image.img} alt="" className="w-full h-full" />
       {showButton && (
@@ -90,5 +98,5 @@ const TeamCard = ({ image, index, showButton }) => {
         {image.role}
       </div>
     </div>
-  )
-}
+  );
+};
