@@ -133,6 +133,8 @@ import sock_market_trading from "./sock-market-trading.png";
 import eduOveImg from "./eduOveImg.png";
 import MobDwMethods from "./MobDwMethods.png";
 
+import bannerMob from "./bannerMob.png";
+
 import teamSvg from "./teamSvg.svg";
 
 export {
@@ -263,4 +265,5 @@ export {
   Polygon,
   teamSvg,
   MobDwMethods,
+  bannerMob,
 };

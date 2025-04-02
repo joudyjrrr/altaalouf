@@ -13,8 +13,8 @@ const StraightSection = () => {
       />
 
       <div className="flex justify-between gap-16 mt-10 md:mt-24 max-md:flex-col">
-        <div className=" w-full h-full flex flex-col px-6 md:ps-10 justify-center gap-8">
-          <h3 className="text-lg max-md:text-lg leading-8">
+        <div className=" w-full h-full flex flex-col max-md:ps-4 max-md:pe-2 px-4 md:ps-10 justify-center gap-8">
+          <h3 className="text-[0.9rem] md:text-lg leading-6 md:leading-8">
             It is a system adopted by companies that direct clients’ trades to a
             group of liquidity providers. This system works according to tools
             that are not used by the trading platform provider, but rather by a
@@ -25,7 +25,7 @@ const StraightSection = () => {
             purchase price can be from the X liquidity provider, and the selling
             price from the Y liquidity provider.
           </h3>
-          <h3 className="text-lg leading-8">
+          <h3 className="text-[0.9rem] md:text-lg leading-6 md:leading-8">
             Companies prefer this system to obtain the best price differences to
             provide to their customers, as this system provides price
             differences up to (- 3) Inzo adopts this system through the
