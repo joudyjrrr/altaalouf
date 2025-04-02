@@ -53,7 +53,6 @@ const DwMethods = () => {
               />
               <Image
                 src={img2}
-
                 alt=""
                 className={`w-32 h-32 mt-8 rounded-full hover:shadow-[0_0_15px_1px_#00BEFE] hover:scale-105 transition-all duration-500 ${img2Class}`}
               />
@@ -62,7 +61,6 @@ const DwMethods = () => {
         </div>
       </div>
       <div className="md:hidden bg-MobDwMethods_Bg bg-contain bg-center bg-no-repeat w-full h-[335px] mx-auto"></div>
-      <div className="md:hidden absolute -bottom-20 left-0 right-0 mx-auto h-[40px] w-[1000px] bg-gradient-to-l from-[#3f9ce9] to-[#00C0FF] blur-[95px] z-30"></div>
     </div>
   );
 };

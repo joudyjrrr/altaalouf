@@ -125,7 +125,7 @@ const Banner = () => {
               <VerticalSotial />
             </div>
           </div>
-          <div className="h-[20vh]  md:mb-4 bg-[#0F2147]">
+          <div className=" h-[17vh]  md:h-[20vh]  md:mb-4 bg-[#0F2147]">
             <BannerSwiper />
           </div>
         </div>

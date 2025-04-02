@@ -62,7 +62,8 @@ export default {
         optimizer_banner: "url('/images/jpeg-optimizer_banner.png')",
 
         banner: "url('/images/banner.png') ",
-        mobBanner: "url('/images/bannerMob.png') ",
+        mobBanner:
+          "linear-gradient(79.49deg, rgba(5, 27, 115, 0) 25.15%, rgba(4, 22, 88, 0.54) 60.1%, rgba(3, 13, 34, 0.7) 89.5%),url('/images/banner.png') ",
         main_button: "linear-gradient(90deg, #084196 0%, #00C0FF 100%)",
         header_gradiant:
           "linear-gradient(180deg, #08142E 34.01%, rgba(8, 20, 46, 0) 100%)",
@@ -115,6 +116,7 @@ export default {
         MultiStarBottom: "url('/images/MultiStarBottom.png')",
         location_back: "url('/images/location_back.png')",
         start_location: "url('/images/start_location.png')",
+
 
         Testimonial_back:
           "linear-gradient(174.71deg, rgba(8, 20, 46, 0) 6.18%, rgba(0, 192, 255, 0.628674) 79.61%, #00C0FF 119.12%)",
@@ -197,6 +199,8 @@ export default {
 
         parthner_bg: "url('/images/parthner_bg.png')",
         location_bg: "url('/images/location_bg.png')",
+        location_card_mobile: "url('/images/jpeg-optimizer_location-mini.png')",
+
 
         terms_Bg: "url('/images/terms&co_Bg.png')",
 
@@ -209,6 +213,7 @@ export default {
         EduOver_Bg: "url('/images/EduOver_Bg.png')",
         Education_Bg: "url('/images/education-review.png')",
         award_title_Bg: "linear-gradient(270deg, #0165FC 0%, #00C0FF 100%);",
+        back_location: "linear-gradient(57.6deg, #0F2147 12.16%, #17708E 83.99%)",
       },
 
       fontFamily: {
@@ -218,6 +223,8 @@ export default {
       screens: {
         xl: "1800px",
         lg: "1400px",
+        sLg:"1200px",
+        mdd:"800px",
         xs: "500px",
       },
     },

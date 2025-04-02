@@ -14,9 +14,13 @@ import Switch from "./Switch";
 
 const TeamSection = () => {
   return (
-    <div className="bg-white w-full  relative curved-section">
+    <div className="bg-white w-full  relative curved-section max-md:pt-[380px]">
       <div className="bg-star_background2 w-full h-full bg-center bg-cover py-12">
-        <div className="bg-gradient-to-b from-[#0F2147] from-45% to-transparent to-200% text-center text-white py-12">
+        <div
+          className="bg-gradient-to-b from-[#0F2147] from-45% 
+        to-transparent to-200% text-center
+         text-white py-12"
+        >
           <Title title1={`Copy Best `} title2={`Traders`} />
           <p className="text-lg mt-10 max-md:text-sm max-md:px-3">
             INZO offer several types of accounts that are suitable for different
