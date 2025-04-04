@@ -73,7 +73,7 @@ const page = () => {
           {data1.map((d, idx) => (
             <div
               key={idx}
-              className="bg-about_Gr_Card  p-8 px-28 max-sm:px-8 max-md:mx-2 text-center rounded-[26px] flex text-white justify-center flex-col items-center relative"
+              className="bg-about_Gr_Card  p-8 px-28 max-sm:px-8 max-md:mx-4 text-center rounded-[26px] flex text-white justify-center flex-col items-center relative"
             >
               <Image
                 src={d.img}
@@ -86,7 +86,7 @@ const page = () => {
             </div>
           ))}
         </div>
-        <div className="flex gap-8 w-full justify-center  mt-16 px-24 max-md:px-2  max-md:flex-col">
+        <div className="flex gap-8 w-full justify-center  mt-16 px-24 max-sLg:px-8 max-md:px-2  max-md:flex-col">
           {data2.map((d, idx) => (
             <div
               key={idx}
@@ -112,8 +112,8 @@ const page = () => {
               <div className="flex gap-8 w-full text-white items-center text-start mt-4">
                 <Image src={d.img} alt="" className="w-[70px]" />
                 <div className="flex flex-col">
-                  <h3 className="text-lg font-semibold max-sm:text-base">{d.titleLocation}</h3>
-                  <p className="max-md:text-sm">{d.textLocation}</p>
+                  <h3 className="text-lg font-semibold max-sm:text-sm">{d.titleLocation}</h3>
+                  <p className="max-md:text-xs">{d.textLocation}</p>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@ const page = () => {
       <WhyInzo />
       <div className="bg-stars_white max-sm:!bg-none  bg-[#0f2147]  w-full   ">
         <div className="bg-stars_white max-sm:!bg-none bg-center bg-no-repeat bg-cover h-full text-center p-12 max-sm:px-2 max-sm:py-8 ">
-          <p className="text-white text-xl leading-9 max-sm:text-base">
+          <p className="text-white text-xl leading-9 max-sm:text-xs max-sm:leading-5">
             Since the company's inception, it has been committed to offering the
             best trading environment and solving all traders'
             <br /> issues by providing them with the best solutions. Starting

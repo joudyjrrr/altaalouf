@@ -229,7 +229,8 @@ const Card = ({ d, idx }) => {
   return (
     <div
       key={idx}
-      className=" flex flex-col h-[370px]  !p-0 justify-center items-center relative 
+      className=" flex flex-col h-[370px] bg-[#0e254e] 
+      !p-0 justify-center items-center relative 
       border border-secondary rounded-[30px]"
     >
       <div className="relative h-full w-full rounded-t-[30px] overflow-hidden ">
