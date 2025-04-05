@@ -118,8 +118,6 @@ export default {
         MultiStarBottom: "url('/images/MultiStarBottom.png')",
         location_back: "url('/images/location_back.png')",
         start_location: "url('/images/start_location.png')",
-        
-
 
         Testimonial_back:
           "linear-gradient(174.71deg, rgba(8, 20, 46, 0) 6.18%, rgba(0, 192, 255, 0.628674) 79.61%, #00C0FF 119.12%)",
@@ -204,10 +202,10 @@ export default {
         location_bg: "url('/images/location_bg.png')",
         location_card_mobile: "url('/images/jpeg-optimizer_location-mini.png')",
 
-
         terms_Bg: "url('/images/terms&co_Bg.png')",
 
         agent_Bg: "url('/images/agent_Bg.png')",
+        agentMob_Bg: "url('/images/agentMob.png') ",
 
         successPartners_Bg: "url('/images/successPartners_Bg.png')",
         successPartnersCard_Bg: "url('/images/successPartnersCard_Bg.png')",
@@ -216,7 +214,8 @@ export default {
         EduOver_Bg: "url('/images/EduOver_Bg.png')",
         Education_Bg: "url('/images/education-review.png')",
         award_title_Bg: "linear-gradient(270deg, #0165FC 0%, #00C0FF 100%);",
-        back_location: "linear-gradient(57.6deg, #0F2147 12.16%, #17708E 83.99%)",
+        back_location:
+          "linear-gradient(57.6deg, #0F2147 12.16%, #17708E 83.99%)",
       },
 
       fontFamily: {
@@ -226,9 +225,9 @@ export default {
       screens: {
         xl: "1800px",
         lg: "1400px",
-        sLg:"1200px",
-        xsLg:"1000px",  
-        mdd:"800px",
+        sLg: "1200px",
+        xsLg: "1000px",
+        mdd: "800px",
         xs: "500px",
       },
     },
