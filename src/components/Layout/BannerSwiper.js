@@ -55,31 +55,35 @@ const BannerSwiper = () => {
         slidesPerView={1}
         autoplay={{ delay: 3000 }}
         breakpoints={{
-          320: { slidesPerView: 1 },
+          320: { slidesPerView: 1.4 },
           500: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
           1280: { slidesPerView: 4 },
         }}
         dir={dir}
-      //className="bg-gradient-to-t from-[#0F2147] from-70% to-transparent to-100% "
+        //className="bg-gradient-to-t from-[#0F2147] from-70% to-transparent to-100% "
+        className="gap-2"
       >
         {cryptoData.map((crypto, index) => (
           <SwiperSlide dir={dir} key={index}>
-            <div className="button-border  rounded-xl max-md:w-[325px] max-md:mx-auto">
-              <div className="p-4 bg-card_bakgound text-start  rounded-xl text-white flex flex-col items-center">
-                <div className="w-full flex gap-4">
+            <div
+              className={`button-border rounded-xl max-md:w-[255px] 
+                ms-2
+              }`}
+            >
+              <div className="p-4 max-md:px-6 md:p-4 bg-card_bakgound text-start  rounded-xl text-white flex flex-col items-center">
+                <div className="w-full flex gap-2 items-center">
                   <Image
                     src={crypto.icon}
                     alt={crypto.name}
-                    height={70}
-                    width={70}
+                    className="w-[50px] h-[50px] md:w-[70px] md:h-[70px] "
                   />
                   <div className="w-full flex flex-col ">
-                    <h3 className="text-xl font-semibold mt-2">
+                    <h3 className="text-[1rem] md:text-xl font-semibold mt-2">
                       {crypto.name}
                     </h3>
-                    <p className="text-xl font-medium mt-1 flex items-center">
+                    <p className="text-[1rem] md:text-xl font-medium mt-1 flex items-center">
                       {crypto.price}{" "}
                       <IoMdArrowDropup className="text-[#14FF38] mt-3" />
                       <span className="text-[#14FF38] font-medium mt-1  ">

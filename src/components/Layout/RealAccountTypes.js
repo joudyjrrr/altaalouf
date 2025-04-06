@@ -108,7 +108,7 @@ const RealAccountTypes = () => {
   }, [dir]);
   useLanguageDirection();
   return (
-    <div className="bg-white md:ps-12 md:px-3 md:mt-20 relative">
+    <div className="bg-white md:ps-12 md:px-3 md:mt-20 relative max-md:pb-[60px] z-40">
       <Image
         src={syrcleGlass}
 

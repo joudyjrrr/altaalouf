@@ -13,7 +13,7 @@ const ImportNote = () => {
             <Image
               src={about4}
               alt=""
-              className="rtl:rotate-180 absolute top-0 max-sm:!top-[225px] max-sm:transform max-sm:rotate-[268deg] start-[0%] max-sm:start-[-3%]  w-[300px] h-full  max-md:w-[140px] max-md:h-[120px]"
+              className="rtl:rotate-180 absolute top-0 max-sm:top-auto max-sm:!bottom-[10px] max-sm:transform max-sm:rotate-[268deg] start-[0%] max-sm:start-[-3%]  w-[300px] h-full  max-md:w-[140px] max-md:h-[120px]"
             />
             <Image
               src={about5}

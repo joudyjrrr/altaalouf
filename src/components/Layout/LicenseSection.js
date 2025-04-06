@@ -35,7 +35,7 @@ const LicenseSection = () => {
   return (
     <div className="bg-starTopBot bg-center bg-cover">
       <Title title1={`License`} title2={`Certificate`} />
-      <div className="w-full h-full relative md:px-24 pe-5 mt-8 md:mt-12">
+      <div className="w-full h-full relative md:px-24 md:pe-5 mt-8 md:mt-12">
         <Swiper
           key={swiperKey}
           modules={[Autoplay, Pagination, Navigation]}

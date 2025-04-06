@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import {
@@ -65,10 +64,13 @@ const AwardSection = ({ isExplore }) => {
   }, [dir]);
   return (
     <div
-      className={`bg-award_back1  max-sm:pt-16 bg-top bg-no-repeat to-secondary  mt-16    relative    `}
+      className={`bg-award_back1  max-sm:pt-4 bg-top bg-no-repeat to-white md:mt-16    relative    `}
     >
       <div className="bg-award_title_Bg absolute opacity-80 blur-[87px] top-0 end-[45%]"></div>
-      <div className="bg-award_back h-full">
+
+      <div className="bg-award_back h-full relative">
+        <div className="md:hidden absolute -top-5 left-0 right-0 mx-auto h-[50px] rounded-full w-[75%] bg-gradient-to-l from-[#3f9ce9] to-[#00C0FF] blur-[70px] z-30"></div>
+
         <Title title1={`Legendary`} title2={`Awards`} />
 
         <div className="grid max-sm:hidden grid-cols-4 pb-16 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-24 p-4 px-24">
@@ -89,19 +91,30 @@ const AwardSection = ({ isExplore }) => {
           spaceBetween={10}
           slidesPerView={1.4}
           autoplay={{ delay: 15000 }}
-          className={`p-8 mt-16 ms-4 max-md:p-4 mb-12 !hidden max-md:!block ${!isExplore && 'mb-0 !pb-8' }`}
+          className="p-8 mt-16 ms-4 max-md:p-4 mb-12 !hidden max-md:!block"
         >
           {cards.map((d, index) => (
-            <SwiperSlide key={index} className={`${index === 0 && 'ms-4'} me-8`}>
+            <SwiperSlide
+              key={index}
+              className={`${index === 0 && "ms-4"} me-8`}
+            >
               <Card d={d} />
             </SwiperSlide>
           ))}
         </Swiper>
+        <div
+          className="md:hidden absolute -bottom-[3.75rem] left-0 right-0 mx-auto h-[45px] rounded-full
+         w-[100%] bg-gradient-to-l from-[#3f9ce9] to-[#00C0FF] blur-[45px] z-30"
+        ></div>
       </div>
 
       {isExplore && (
         <>
-          <div className="pb-6  relative overflow-hidden z-[1000]  bg-trend_platform_bg bg-center bg-cover bg-no-repeat   h-full text-white mt-4 max-md:pt-8 ">
+          <div
+            className="pb-6  relative overflow-hidden z-[1000] 
+           bg-trend_platform_bg bg-center bg-cover bg-no-repeat  
+            h-full text-white mt-4 max-md:pt-8 "
+          >
             <div className="relative w-full bg-transparent flex justify-center items-center text-center pt-8">
               <Image
                 src={Explore}
@@ -144,7 +157,7 @@ const AwardSection = ({ isExplore }) => {
                 <Image
                   src={Apps}
                   alt=""
-                  className="w-[400px] max-md:max-w-[300px] max-mdw-[300px] my-4"
+                  className="w-[400px] max-md:max-w-[300px] max-md:w-[300px] my-4"
                 />
               </div>
             </div>
@@ -212,17 +225,19 @@ const AwardSection = ({ isExplore }) => {
 
 export default AwardSection;
 
-
-
-
 const Card = ({ d, idx }) => {
   return (
     <div
       key={idx}
-      className=" flex flex-col h-[370px]  !p-0 justify-center items-center relative border border-secondary rounded-[30px]"
+      className=" flex flex-col h-[370px] bg-[#0e254e] 
+      !p-0 justify-center items-center relative 
+      border border-secondary rounded-[30px]"
     >
       <div className="relative h-full w-full rounded-t-[30px] overflow-hidden ">
-        <div className="absolute inset-0 bg-award_card1 bg-center bg-cover mix-blend-luminosity"></div>
+        <div
+          className="absolute inset-0 bg-award_card1 bg-center bg-cover"
+          style={{ mixBlendMode: "luminosity" }}
+        ></div>
         <Image
           src={d.img}
           alt=""
@@ -231,13 +246,12 @@ const Card = ({ d, idx }) => {
       </div>
 
       <div
-        className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${d.img === award_card5 && "!py-1"
-          }`}
+        className={` bg-awarc_card_back mt-[-5px] py-4 px-3 text-center rounded-b-[30px] ${
+          d.img === award_card5 && "!py-1"
+        }`}
       >
-        <h1 className="text-white text-lg font-semibold">
-          {d.title}
-        </h1>
+        <h1 className="text-white text-lg font-semibold">{d.title}</h1>
       </div>
     </div>
-  )
-}
+  );
+};

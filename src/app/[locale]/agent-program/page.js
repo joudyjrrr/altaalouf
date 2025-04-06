@@ -42,9 +42,9 @@ const page = () => {
   ];
   return (
     <>
-      <div className="w-full h-full bg-[#0F2147] pb-20">
+      <div className="w-full h-full bg-[#0F2147]  max-md:pb-2 pb-20">
         <div className="w-full  bg-optimizer_ourTeamBg   bg-cover bg-top bg-no-repeat  ">
-          <div className="w-full pt-[15rem] bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
+          <div className="w-full pt-[15rem]  max-xs:bg-banner_page_mobile bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
             <div className="w-full   h-full flex flex-col justify-center items-end max-sm:items-center  ">
               <div className="flex flex-col gap-2 text-center w-full ">
                 <div className="flex gap-2 text-5xl max-md:text-3xl font-semibold text-center justify-center">
@@ -53,7 +53,7 @@ const page = () => {
                 </div>
                 <div
                   className="flex flex-col gap-2 text-white justify-center 
-              items-center text-[22px] px-[5rem] pt-5"
+              items-center max-md:text-[18px] text-[22px] max-md:px-4 px-[5rem] pt-5"
                 >
                   <p>Invite clients to INZO Enzo. They trade - you earn!</p>
                 </div>
@@ -65,8 +65,8 @@ const page = () => {
           className="relative  h-fit bg-[#62729400] 
    "
         >
-          <div className="relative z-10  mt-10 flex ms-10  pe-10">
-            <div className=" md:w-[700px] h-full flex flex-col ps-5 pe-24 justify-center gap-8 text-white ">
+          <div className="relative z-10  mt-10 flex flex-col md:flex-row md:ms-10  md:pe-10 gap-5">
+            <div className="w-full md:w-[700px] h-full flex flex-col ps-5  max-md:pe-3 pe-24 justify-center max-md:gap-5 gap-8 text-white ">
               <p className="text-lg max-md:text-lg leading-8">
                 Introducing Brokers (IBs) are companies or individuals
                 worldwidern money by referring clients to INZO Enzo. We partner
@@ -86,57 +86,81 @@ const page = () => {
                 attract new clients.
               </p>
             </div>
-            <div className="md:w-[600px] md:h-[450px] mt-1 ">
+            <div className="w-[85%]] md:w-[600px] h-[300px] md:h-[450px] max-md:mx-auto mt-6 md:mt-1 ">
               <Image src={agent} className="h-full w-full " alt="inzo" />
             </div>
           </div>
 
-          <div className="mx-auto flex flex-col items-center  relative z-10 md:translate-y-32">
-            <div className="grid grid-cols-[repeat(3,minmax(0,400px))] place-content-center gap-y-5  ">
+          <div className="relative max-md:mt-[100px]  mx-auto flex flex-col items-center   z-10 md:translate-y-32">
+            <div className="grid grid-cols-[repeat(1,minmax(0,90%))] md:grid-cols-[repeat(3,minmax(0,400px))] place-content-center max-md:gap-y-24 gap-y-5  ">
               {termData.map((item, index) => (
                 <div
-                  className={`flex flex-col items-center justify-start w-[380px]
-                 h-[260px] text-white  mx-auto p-5 pt-8 pb-0 rounded-3xl 
+                  className={`flex flex-col items-center justify-start w-full md:w-[380px]
+                 h-[235px] md:h-[260px] text-white  mx-auto p-4 md:p-5 pt-8 pb-0 rounded-3xl 
                   border border-[#00C0FF]  relative bg-custom-gradient text-center`}
                   key={index}
                 >
-                  <div className=" mt-12">
-                    <p className="text-2xl font-bold ">{item.title}</p>
-                    <p className="text-[1.2rem] px-3 pt-2">{item.desc}</p>
+                  <div className="mt-6 md:mt-12">
+                    <p className="text-[21px] md:text-2xl font-bold ">
+                      {item.title}
+                    </p>
+                    <p className="text-[18px] md:text-[1.2rem] px-0 md:px-3 pt-2">
+                      {item.desc}
+                    </p>
                   </div>
                   <Image
                     src={item.img}
                     width={105}
                     height={100}
-                    className="absolute -top-14 left-[38%]"
+                    className="absolute -top-14 left-[130x] md:left-[38%]"
                     alt="inzo"
                   />
                 </div>
               ))}
             </div>
             <Link href="/#">
-              <Button className="button-border2 px-10 py-6 font-semibold text-sm mx-auto mt-16 ">
+              <Button
+                className="button-border2 px-10 py-6 
+              font-semibold text-sm mx-auto mt-16 max-md:!rounded-[8px]"
+              >
                 Become an Agent
               </Button>
             </Link>
+
+            <div
+              className="block md:hidden absolute bottom-[15rem] left-0 right-0 
+        bg-agentMob_Bg h-[75%] bg-cover bg-left -z-10"
+            ></div>
           </div>
 
-          <div className="absolute bottom-24 left-0 right-0 bg-agent_Bg h-[50%] bg-cover bg-center"></div>
-          <div className="absolute bottom-0 left-0 right-0 bg-teamStars_Bg  bg-no-repeat  bg-center h-[10%]"></div>
+          <div
+            className="hidden md:block absolute bottom-24 left-0 right-0 
+          bg-agent_Bg h-[50%] bg-cover bg-center"
+          ></div>
+
+          <div
+            className="absolute bottom-0 left-0 right-0 
+          bg-teamStars_Bg  bg-no-repeat  bg-center h-[10%]"
+          ></div>
         </div>
+
         <div
-          className="relative pb-12  bg-[#0F2147] 
-    h-[100vh] flex flex-col items-center justify-center"
+          className="relative max-md:pb-0 pb-12 max-md:px-6 bg-[#0F2147] 
+           h-full md:h-[100vh] flex flex-col 
+    items-center justify-center"
         >
           <div className="absolute top-0 left-0 right-0 bg-teamStars_Bg  bg-no-repeat  bg-center h-[70%]"></div>
-          <div className="mt-[250px]">
+          <div className="mt-[0px] md:mt-[250px]">
             <Title
               title1={`Financial`}
               title2={`Report`}
               classNameImg="hidden"
             />
             <div className="mt-[110px]">
-              <FinancialReportSection data={data} className="!gap-20" />
+              <FinancialReportSection
+                data={data}
+                className="!gap-16 md:!gap-20"
+              />
             </div>
           </div>
         </div>

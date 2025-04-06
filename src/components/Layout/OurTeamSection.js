@@ -64,7 +64,6 @@ const OurTeamSection = ({ imgData, showButton, className }) => {
 
 export default OurTeamSection;
 
-
 const TeamCard = ({ image, index, showButton }) => {
   return (
     <div
