@@ -30,7 +30,7 @@ const MeetTeam = () => {
 
       <OurTeamSection imgData={imgData} showButton={true} />
       <Link href="/our-team">
-        <Button className="button-border px-5 py-6 font-semibold text-sm mx-auto mt-5">
+        <Button className="button-border px-5 py-6 font-semibold text-sm mx-auto mt-5 max-sm:mt-12">
           Meet The Whole Team
         </Button>
       </Link>

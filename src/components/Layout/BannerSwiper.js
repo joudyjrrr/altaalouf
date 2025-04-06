@@ -66,14 +66,14 @@ const BannerSwiper = () => {
       >
         {cryptoData.map((crypto, index) => (
           <SwiperSlide dir={dir} key={index}>
-            <div className="button-border  rounded-xl">
+            <div className="button-border  rounded-xl max-md:w-[325px] max-md:mx-auto">
               <div className="p-4 bg-card_bakgound text-start  rounded-xl text-white flex flex-col items-center">
                 <div className="w-full flex gap-4">
                   <Image
                     src={crypto.icon}
                     alt={crypto.name}
-                    width={70}
                     height={70}
+                    width={70}
                   />
                   <div className="w-full flex flex-col ">
                     <h3 className="text-xl font-semibold mt-2">

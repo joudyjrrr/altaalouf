@@ -8,7 +8,7 @@ const DatePickerComponents = ({ label }) => {
   const [startDate, setStartDate] = useState(new Date());
   return (
     <div className="flex flex-col gap-2 w-full text-white">
-      <label className="text-lg">{`Date of Birth`}</label>
+      <label className="text-lg max-xs:text-sm">{`Date of Birth`}</label>
       <div className="input-border relative">
          <FaRegCalendarAlt
           className="absolute end-4 z-[2000] top-1/2 transform -translate-y-1/2 text-secondary text-lg cursor-pointer"

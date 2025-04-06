@@ -20,27 +20,22 @@ const data = [
   {
     img: why1,
     title: "Trusted Broker ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments",
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
   {
     img: why2,
     title: "Instruments Diversity ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments"
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
   {
     img: why3,
     title: "Accounts Types ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments",
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
   {
     img: why3,
     title: "Accounts Types ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments",
-  },
-  {
-    img: why3,
-    title: "Accounts Types ",
-    desc: "INZO offer several types of accounts that are suitable for different trading environments",
+    desc: "INZO L.L.C is incorporated in SVG with registration number 967 LLC 2021.",
   },
 ];
 const WhyInzo = () => {
@@ -58,7 +53,7 @@ const WhyInzo = () => {
   }, [dir]);
   useLanguageDirection();
   return (
-    <div className="pb-8 bg-whayChozBg bg-no-repeat  bg-center w-full h-full">
+    <div className="pb-8 bg-whayChozBg bg-cover bg-no-repeat  bg-center w-full h-full">
       <div className="pt-4">
         <Title
           title1={`Why choose`}
@@ -67,7 +62,7 @@ const WhyInzo = () => {
           title2Color={"!text-primary"}
         />
       </div>
-      <div className="flex w-full  justify-center flex-col items-center text-lg max-md:text-sm text-center mt-16">
+      <div className="flex w-full px-4 justify-center flex-col items-center text-lg max-md:text-sm text-center mt-16">
         <p>
           It’s simple. We value trust, transparency and a high level of
           professionalism above all, offering our clients the
@@ -79,45 +74,49 @@ const WhyInzo = () => {
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={10}
         slidesPerView={1}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 15000 }}
         pagination={{
           el: ".custom-pagination2",
           clickable: true,
         }}
         dir={dir}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="!p-8 mt-8 "
+        className="!p-4 mt-8 "
         breakpoints={{
-          500: { slidesPerView: 1 },
-          768: { slidesPerView: 1 },
+          500: { slidesPerView: 1.3 },
+          768: { slidesPerView: 2 },
           1024: { slidesPerView: 2, spaceBetween: 30 },
           1270: { slidesPerView: 3.3, spaceBetween: 100 },
         }}
       >
         {data.map((d, index) => (
-          <SwiperSlide key={index} dir={dir} className="w-[400px]">
-            <div className="bg-card_why w-[400px] mx-4 py-8 ps-8 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
+          <SwiperSlide
+            key={index}
+            dir={dir}
+            className={`!w-[400px] max-sm:!w-[280px]`}
+          >
+            <div className="bg-card_why  py-8 ps-8  max-sm:!ps-6 flex flex-col justify-center gap-4  text-white h-full rounded-xl ">
               <div className="flex gap-4 items-center text-white">
-                <Image  src={d.img} alt="" width={65} height={65} />
-                <h1 className=" mask-gradient text-2xl max-md:!text-xl font-semibold">{d.title}</h1>
+                <Image src={d.img} alt="" width={65} height={65} className="w-[65px] h-[65px] max-sm:w-[50px] max-sm:h-[50px]"/>
+                <h1 className=" mask-gradient text-2xl max-md:!text-[16px] font-semibold">
+                  {d.title}
+                </h1>
               </div>
-              <p className="text-white text-lg  max-md:!text-lg">{d.desc}</p>
+              <p className="text-white text-lg   max-sm:text-sm">{d.desc}</p>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="pt-16  flex justify-center items-center gap-32 mt-6 relative z-[2000]">
+      <div className="pt-16 max-mdd:gap-16 flex justify-center items-center gap-32 mt-6 relative z-[2000]">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="relative z-[2000]"
         >
-          <Image
-            src={arrowLeft}
-            alt="icon"
-            width={22}
-            height={22}
-            className="mx-8  rtl:rotate-180"
-          />
+            <Image
+              src={arrowLeft}
+              alt="icon"
+              className="mx-8  rtl:rotate-180 w-[20px] max-mdd:w-[15px] h-[20px] max-mdd:h-[18px]"
+            />
         </button>
 
         <div className="custom-pagination2  Why flex justify-center gap-2 absolute !top-[70px] !end-[47%] rtl:!end-0"></div>
@@ -129,9 +128,7 @@ const WhyInzo = () => {
           <Image
             src={arrowRight}
             alt="icon"
-            width={22}
-            height={22}
-            className="mx-8  rtl:rotate-180"
+            className="mx-8  rtl:rotate-180 w-[20px] max-mdd:w-[15px] h-[20px] max-mdd:h-[18px]"
           />
         </button>
       </div>

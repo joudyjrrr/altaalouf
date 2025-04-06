@@ -47,17 +47,17 @@ const data2 = [
 const page = () => {
   return (
     <div className="w-full h-full">
-      <div className=" bg-optimizer_aboutBanner  h-screen  bg-cover bg-center bg-no-repeat">
-        <div className="w-full  bg-aboutBanner h-screen  bg-cover bg-center bg-no-repeat  z-[100]">
-          <div className="w-full  bg-about_Gr h-full flex justify-center items-end max-sm:items-center  pb-8">
-            <div className="flex flex-col gap-2 text-center w-full ">
+      <div className=" bg-optimizer_aboutBanner  h-screen max-sm:h-fit  bg-cover bg-center bg-no-repeat">
+        <div className="w-full  bg-aboutBanner max-sm:bg-about_mobile  h-screen max-sm:h-fit  bg-cover  bg-no-repeat  z-[100]">
+          <div className="w-full  bg-about_Gr max-sm:bg-none h-full flex justify-center items-center max-sm:items-start  pb-8">
+            <div className="flex flex-col pt-44 max-sm:pt-44 gap-2 text-center w-full ">
               <div className="flex gap-2 text-5xl font-extrabold max-md:text-3xl  text-center justify-center">
                 <h1 className={`text-secondary `}>{`About `}</h1>
                 <h1 className={`text-white `}>{`the company`}</h1>
               </div>
-              <div className="flex flex-col gap-1 pt-8  text-white text-xl max-md:text-sm">
+              <div className="flex flex-col gap-1 pt-8 max-sm:pt-2 text-white text-xl max-md:text-sm">
                 <p>
-                  INZO is a leading global broker providing trading services. .
+                  INZO is a leading global broker providing trading services.
                 </p>
                 <p>
                   It is licensed by multiple global authorities to offer the
@@ -68,29 +68,29 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#0f2147] pt-24 pb-8">
-        <div className="flex gap-8 w-full justify-center max-md:flex-col  max-md:gap-8">
+      <div className="bg-[#0f2147]  pb-8 max-sm:pt-20">
+        <div className="flex gap-8 w-full justify-center max-md:flex-col  max-md:gap-20">
           {data1.map((d, idx) => (
             <div
               key={idx}
-              className="bg-about_Gr_Card  p-8 px-28 max-md:mx-2 text-center rounded-md flex text-white justify-center flex-col items-center relative"
+              className="bg-about_Gr_Card  p-8 px-28 max-sm:px-8 max-md:mx-4 text-center rounded-[26px] flex text-white justify-center flex-col items-center relative"
             >
               <Image
                 src={d.img}
                 alt=""
                 className="absolute top-[-55px] end-[40%] w-[100px]"
               />
-              <h1 className="text-2xl font-bold mt-8">{d.title}</h1>
+              <h1 className="text-2xl font-bold mt-8 max-sm:text-xl">{d.title}</h1>
               <p className="text-lg mt-4">{d.desc1}</p>
               <p className="text-lg">{d.desc2}</p>
             </div>
           ))}
         </div>
-        <div className="flex gap-8 w-full justify-center  mt-16 px-24 max-md:px-2  max-md:flex-col">
+        <div className="flex gap-8 w-full justify-center  mt-16 px-24 max-sLg:px-8 max-md:px-2  max-md:flex-col">
           {data2.map((d, idx) => (
             <div
               key={idx}
-              className="bg-about_Gr_Card2 p-8 border max-md:mx-4 border-secondary text-center rounded-[30px] flex text-white justify-center flex-col items-center relative"
+              className="bg-about_Gr_Card2 p-8 max-sm:p-4 border max-md:mx-4 border-secondary text-center rounded-[30px] flex text-white justify-center flex-col items-center relative"
             >
               <p className="text-lg pb-4 font-medium max-md:text-sm">
                 {d.text.split(" ").map((word, i) =>
@@ -112,8 +112,8 @@ const page = () => {
               <div className="flex gap-8 w-full text-white items-center text-start mt-4">
                 <Image src={d.img} alt="" className="w-[70px]" />
                 <div className="flex flex-col">
-                  <h3 className="text-lg font-semibold">{d.titleLocation}</h3>
-                  <p className="max-md:text-sm">{d.textLocation}</p>
+                  <h3 className="text-lg font-semibold max-sm:text-sm">{d.titleLocation}</h3>
+                  <p className="max-md:text-xs">{d.textLocation}</p>
                 </div>
               </div>
             </div>
@@ -121,9 +121,9 @@ const page = () => {
         </div>
       </div>
       <WhyInzo />
-      <div className="bg-stars_white bg-[#0f2147]  w-full   ">
-        <div className="bg-stars_white bg-center bg-no-repeat bg-cover h-full text-center p-12  ">
-          <p className="text-white text-xl leading-9">
+      <div className="bg-stars_white max-sm:!bg-none  bg-[#0f2147]  w-full   ">
+        <div className="bg-stars_white max-sm:!bg-none bg-center bg-no-repeat bg-cover h-full text-center p-12 max-sm:px-2 max-sm:py-8 ">
+          <p className="text-white text-xl leading-9 max-sm:text-xs max-sm:leading-5">
             Since the company's inception, it has been committed to offering the
             best trading environment and solving all traders'
             <br /> issues by providing them with the best solutions. Starting

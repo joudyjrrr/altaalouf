@@ -7,8 +7,8 @@ import { IoIosArrowDown } from "react-icons/io";
 const SelectPhoneNumber = () => {
   const [selected, setSelected] = useState("");
   return (
-    <div className="flex flex-col  !w-[45%]   gap-1">
-      <span className="text-lg text-white">Phone Number</span>
+    <div className="flex flex-col  !w-fit   gap-1">
+      <span className="text-lg text-nowrap text-white max-xs:text-sm">Phone Number</span>
       <div className="input-border relative">
       <IoIosArrowDown className='text-secondary z-[2000] text-lg absolute top-4 end-2 cursor-pointer' />
 
@@ -25,7 +25,7 @@ const SelectPhoneNumber = () => {
           }}
           searchable
           placeholder={
-            <div className="flex gap-2 py-1">
+            <div className="flex gap-2 py-1 max-xs:text-sm">
               <Image src={flag} alt="" width={25} height={20}/>{" "}
               <p className="!text-white">+269</p>
             </div>  

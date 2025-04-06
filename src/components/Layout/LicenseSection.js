@@ -35,7 +35,7 @@ const LicenseSection = () => {
   return (
     <div className="bg-starTopBot bg-center bg-cover">
       <Title title1={`License`} title2={`Certificate`} />
-      <div className="w-full h-full relative px-24 max-md:px-4 mt-12">
+      <div className="w-full h-full relative md:px-24 pe-5 mt-8 md:mt-12">
         <Swiper
           key={swiperKey}
           modules={[Autoplay, Pagination, Navigation]}
@@ -51,13 +51,13 @@ const LicenseSection = () => {
             1024: { slidesPerView: 1.2 },
           }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          className="!p-8 max-md:!p-2"
+          className="!p-3 md:!p-8"
         >
           {[...Array(2)].map((_, index) => (
             <SwiperSlide key={index}>
-            <div className="button-border-transparent  before:!rounded-xl !p-[1px]  h-full relative my-3 rounded-xl">
+              <div className="button-border-transparent  before:!rounded-xl !p-[1px]  h-full relative my-3 rounded-xl">
                 <div className="bg-License_Bg2 bg-no-repeat h-full relative flex items-center p-1 gap-8  rounded-xl">
-                  <div className="relative h-full flex items-start">
+                  <div className="relative h-full  items-start hidden md:flex">
                     <Image
                       src={License3}
                       
@@ -73,7 +73,7 @@ const LicenseSection = () => {
                       className="absolute top-[25%] start-0"
                     />
                   </div>
-                  <div className="flex flex-col text-white py-8 max-md:py-2 gap-4 w-full">
+                  <div className="flex flex-col text-white max-md:px-4  py-7 md:py-10 gap-4 w-full">
                     <div className="flex flex-col text-lg gap-4 font-semibold max-md:text-sm max-sm:!text-xs">
                       <h1>
                         SAINT VINCENT AND THE GRENADINES LIMITED LIABILITY
@@ -85,21 +85,22 @@ const LicenseSection = () => {
                       </h1>
                     </div>
                     <div className="flex flex-col text-sm gap-2 max-md:text-sm max-sm:!text-xs">
-                      <p>
-                        (Section 12 (5)) <br/>Certificate of Formation <br/> INZO LLC (NAME
-                        OF LIMITED LIABILITY COMPANY) 967 LLC 2021 <br/>(LIMITED
-                        LIABILITY COMPANY NUMBER)
+                      <p className="leading-[1.3rem]">
+                        (Section 12 (5)) <br />
+                        Certificate of Formation <br /> INZO LLC (NAME OF
+                        LIMITED LIABILITY COMPANY) 967 LLC 2021 <br />
+                        (LIMITED LIABILITY COMPANY NUMBER)
                       </p>
                       <p>
                         I HEREBY CERTIFY THAT THE APPLICATION OF FORMATION OF
-                        THE ABOVE-MENTIONED LIMITED <br/> LIABILITY COMPANY WAS FORMED
-                        UNDER THE LIMITED LIABILITY COMPANIES ACT, CHAPTER 151
-                        OF THE REVISED LAWS <br/> OF SAINT VINCENT AND THE GRENADINES,
-                        2009 ON 6th April, 2021 (Date of Formation) REGISTRAR
-                        LIMITED LIABILITY COMPANIES
+                        THE ABOVE-MENTIONED LIMITED <br /> LIABILITY COMPANY WAS
+                        FORMED UNDER THE LIMITED LIABILITY COMPANIES ACT,
+                        CHAPTER 151 OF THE REVISED LAWS <br /> OF SAINT VINCENT
+                        AND THE GRENADINES, 2009 ON 6th April, 2021 (Date of
+                        Formation) REGISTRAR LIMITED LIABILITY COMPANIES
                       </p>
                     </div>
-                    <div className="flex flex-col text-lg gap-2 font-semibold max-md:text-sm max-sm:!text-xs">
+                    <div className="flex flex-col  gap-2 md:font-semibold text-[1rem] sm:!text-xs md:text-lg">
                       <h1>6th April, 2021 (Date of Formation)</h1>
                       <h1>REGISTRAR LIMITED LIABILITY COMPANIES</h1>
                     </div>
@@ -107,8 +108,7 @@ const LicenseSection = () => {
                   <Image
                     src={License5}
                     alt=""
-                    width={150}
-                    className="absolute bottom-[5%] end-[10%]"
+                    className="absolute bottom-[5%] end-[10%] w-[100px] md:w-[150px]"
                   />
                 </div>
               </div>

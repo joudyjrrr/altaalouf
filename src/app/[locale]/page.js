@@ -21,9 +21,7 @@ import { useEffect } from "react";
 export default function Home() {
   const t = useTranslations();
   useLanguageDirection();
-  useEffect(() => {
-    console.log("Page reloaded");
-}, []);
+
   return (
     <div className="w-full overflow-x-hidden">
       <div className="w-full h-full bg-[#3040614]">
