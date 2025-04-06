@@ -64,8 +64,8 @@ export default {
         banner: "url('/images/banner.png') ",
         banner_page_mobile: "url('/images/banner-page-mobile.png') ",
 
-        mobBanner:
-          "linear-gradient(79.49deg, rgba(5, 27, 115, 0) 25.15%, rgba(4, 22, 88, 0.54) 60.1%, rgba(3, 13, 34, 0.7) 89.5%),url('/images/banner.png') ",
+        mobBanner: "url('/images/bannerMob.png') ",
+
         main_button: "linear-gradient(90deg, #084196 0%, #00C0FF 100%)",
         header_gradiant:
           "linear-gradient(180deg, #08142E 34.01%, rgba(8, 20, 46, 0) 100%)",
@@ -203,6 +203,7 @@ export default {
         location_card_mobile: "url('/images/jpeg-optimizer_location-mini.png')",
 
         terms_Bg: "url('/images/terms&co_Bg.png')",
+        termsMob_Bg: "url('/images/termsMobBg.png')",
 
         agent_Bg: "url('/images/agent_Bg.png')",
         agentMob_Bg: "url('/images/agentMob.png') ",

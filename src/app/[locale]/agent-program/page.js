@@ -42,7 +42,7 @@ const page = () => {
   ];
   return (
     <>
-      <div className="w-full h-full bg-[#0F2147] pb-20">
+      <div className="w-full h-full bg-[#0F2147]  max-md:pb-2 pb-20">
         <div className="w-full  bg-optimizer_ourTeamBg   bg-cover bg-top bg-no-repeat  ">
           <div className="w-full pt-[15rem]  max-xs:bg-banner_page_mobile bg-ourTeamBg   bg-cover bg-top bg-no-repeat  z-[100]">
             <div className="w-full   h-full flex flex-col justify-center items-end max-sm:items-center  ">
@@ -145,8 +145,9 @@ const page = () => {
         </div>
 
         <div
-          className="relative pb-12 max-md:px-6 bg-[#0F2147] 
-    h-[100vh] flex flex-col items-center justify-center"
+          className="relative max-md:pb-0 pb-12 max-md:px-6 bg-[#0F2147] 
+           h-full md:h-[100vh] flex flex-col 
+    items-center justify-center"
         >
           <div className="absolute top-0 left-0 right-0 bg-teamStars_Bg  bg-no-repeat  bg-center h-[70%]"></div>
           <div className="mt-[0px] md:mt-[250px]">
@@ -156,7 +157,10 @@ const page = () => {
               classNameImg="hidden"
             />
             <div className="mt-[110px]">
-              <FinancialReportSection data={data} className="!gap-20" />
+              <FinancialReportSection
+                data={data}
+                className="!gap-16 md:!gap-20"
+              />
             </div>
           </div>
         </div>
