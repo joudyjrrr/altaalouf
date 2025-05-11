@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="w-full bg-primary py-4 px-8 ps-16 relative">
+      <div className="w-full bg-primary py-4 px-8 ps-16 max-sLg:ps-4 relative">
         <div className="flex text-secondary py-4 px-4  text-2xl flex-col cursor-pointer gap-6 absolute end-[-5px] top-[50px] bg-white rounded-s-xl">
           <FaFacebookF />
           <FaLinkedinIn />
@@ -40,10 +40,10 @@ const Footer = () => {
             <div className="flex items-center gap-2 ">
               <Image className="w-[70px]" src={logoDark} alt="logo" />
               <div className="flex flex-col">
-                <h1 className="text-2xl text-white  font-extrabold max-sm:text-lg">
+                <h1 className="text-2xl text-white  font-extrabold max-xsLg:text-lg">
                   {t("associationNameAr")}
                 </h1>
-                <span className="font-semibold text-lg text-white">
+                <span className="font-semibold text-lg max-xsLg:text-sm text-white">
                   {t("associationNameEn")}
                 </span>
               </div>
@@ -67,7 +67,7 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex w-full flex-col">
-            <h1 className="text-white font-semibold text-3xl ">
+            <h1 className="text-white font-semibold text-3xl max-xsLg:text-2xl">
               {t("importantLinks")}
             </h1>
             <div className="grid grid-cols-2 gap-3 mt-4">
@@ -75,7 +75,7 @@ const Footer = () => {
                 <Link
                   href={li.href}
                   key={i}
-                  className="text-white text-xl font-medium text-nowrap"
+                  className="text-white text-xl max-sLg:text-sm font-medium text-nowrap"
                 >
                   - {li.label}
                 </Link>
@@ -85,27 +85,27 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="flex flex-col w-full">
-            <h1 className="text-white font-semibold text-3xl ">
+          <h1 className="text-white font-semibold text-3xl max-xsLg:text-2xl">
               {t("contactUs")}
             </h1>
             <div className="flex gap-4 mt-4 text-white flex-col">
               <div className="flex pe-2 items-center gap-2">
                 <BsEnvelope className="text-2xl " />
-                <p className="text-2xl max-sm:text-sm font-bold">
+                <p className="text-2xl max-sLg:text-lg  font-bold">
                   HQ@altaalouf.org
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <FaPhoneAlt className="text-2xl " />
-                <p className="font-semibold text-2xl max-sm:text-xs" dir="ltr">
+                <p className="text-2xl max-sLg:text-lg  font-bold" dir="ltr">
                   +963 930 099 334
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <CiClock1 className="text-3xl " />
+                <CiClock1 className="text-3xl  " />
                 <div className="flex flex-col gap-1">
-                  <p className="font-semibold text-xl">{t("days")}</p>
-                  <p className="font-semibold text-xl">{t("workingHours")}</p>
+                  <p className="font-semibold text-xl max-sLg:text-lg">{t("days")}</p>
+                  <p className="font-semibold text-xl max-sLg:text-lg">{t("workingHours")}</p>
 
                 </div>
               </div>

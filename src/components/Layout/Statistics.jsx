@@ -54,7 +54,7 @@ const Statistics = () => {
             <span className="font-semibold text-[#575757] text-4xl">
               <CountUp start={0} end={startCount ? da.num : 0} duration={5} />
             </span>
-            <h2 className="text-[#fe830c] text-2xl font-semibold">
+            <h2 className="text-[#fe830c] text-2xl text-nowrap font-semibold">
               {da.title}
             </h2>
           </div>

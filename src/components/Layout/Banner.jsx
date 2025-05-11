@@ -4,10 +4,13 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { bannerImg } from "../../../public/images";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const Banner = () => {
   const t = useTranslations("banner");
+  const locale = useLocale();
+  const isEnglish = locale === "en";
+
   const images = [{ img: bannerImg }, { img: bannerImg }];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -40,15 +43,14 @@ const Banner = () => {
             fill
             className={`object-cover transition-opacity duration-1000 ease-in-out ${
               currentIndex === index ? "opacity-100" : "opacity-0"
-            }`}
+            } ${isEnglish ? "scale-x-[-1]" : ""}`}
             priority={index === 0}
           />
         ))}
-    
+
         <div className="absolute bottom-0 z-[10] left-0 w-full h-full bg-gradient-to-t from-black/40 to-transparent" />
       </div>
 
-  
       <div className="relative z-20 flex flex-col justify-between h-full">
         <div className="flex items-start h-full pt-24 px-6 md:px-16 text-white">
           <div className="flex flex-col text-4xl sm:text-6xl md:text-6xl lg:text-7xl font-semibold max-w-full">
@@ -60,7 +62,6 @@ const Banner = () => {
           </div>
         </div>
 
- 
         <div className="mb-4 flex gap-3 items-end justify-center">
           {images.map((_, index) => (
             <button
@@ -78,13 +79,13 @@ const Banner = () => {
         {/* Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-3 sm:left-6 text-2xl sm:text-4xl top-1/2 transform -translate-y-1/2 text-white bg-white/30 p-2 sm:p-3 rounded-full z-30"
+          className="absolute left-3 sm:left-6 text-2xl sm:text-4xl top-[53%] transform -translate-y-1/2 text-white bg-white/30 p-2 sm:p-3 rounded-full z-30"
         >
           <IoIosArrowBack />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-3 sm:right-6 text-2xl sm:text-4xl top-1/2 transform -translate-y-1/2 text-white bg-white/30 p-2 sm:p-3 rounded-full z-30"
+          className="absolute right-3 sm:right-6 text-2xl sm:text-4xl top-[53%] transform -translate-y-1/2 text-white bg-white/30 p-2 sm:p-3 rounded-full z-30"
         >
           <IoIosArrowForward />
         </button>

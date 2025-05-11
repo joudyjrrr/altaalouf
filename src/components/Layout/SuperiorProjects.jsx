@@ -1,17 +1,25 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Title from "./Title";
-import { megaphone, projectmanagement, s3, s4, s5, s6 } from "../../../public/images";
+import {
+  megaphone,
+  projectmanagement,
+  s3,
+  s4,
+  s5,
+  s6,
+} from "../../../public/images";
 import Image from "next/image";
 import { FaArrowLeft } from "react-icons/fa";
 import { CiClock1 } from "react-icons/ci";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const SuperiorProjects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slidesPerView = 3;
-
+  const pathName = usePathname();
   const t = useTranslations("projects");
 
   const data = [
@@ -74,7 +82,7 @@ const SuperiorProjects = () => {
         className2={`start-[10px] top-[-9px] w-[75px] h-[75px]`}
       />
 
-      <div className="grid grid-cols-3 gap-10 max-md:grid-cols-2 max-sm:grid-cols-1 justify-center w-fit mx-auto px-24 max-sm:px-4 transition-all duration-500">
+      <div className="grid grid-cols-3 gap-10 max-sLg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 justify-center w-fit mx-auto px-24 max-sLg:px-4 max-sm:px-4 transition-all duration-500">
         {slidesToShow.map((d, i) => (
           <div
             key={i}
@@ -90,7 +98,10 @@ const SuperiorProjects = () => {
             </div>
             <div className="flex gap-2 pb-4 pe-4 items-end h-full cursor-pointer justify-end">
               <p className="text-[#575757] text-lg">{t("readMore")}</p>
-              <FaArrowLeft className="text-xl text-secondary" />
+              className=
+              {`text-xl text-secondary  ${
+                pathName.includes("en") && " transform rotate-180"
+              }`}
             </div>
           </div>
         ))}
@@ -98,13 +109,13 @@ const SuperiorProjects = () => {
 
       <button
         onClick={handlePrev}
-        className="absolute end-2 max-sm:end-1 w-16 h-16 max-sm:w-8 max-sm:h-8 mac-sm:text-2xl text-center text-5xl flex justify-center items-center top-1/2 transform -translate-y-1/2 text-secondary bg-secondary/15 rounded-full z-30"
+        className="absolute end-2 max-sLg:end-1 w-16 h-16 max-sLg:w-8 max-sLg:h-8 max-sLg:text-2xl text-center text-5xl flex justify-center items-center top-1/2 transform -translate-y-1/2 text-secondary bg-secondary/15 rounded-full z-30"
       >
         <IoIosArrowBack />
       </button>
       <button
         onClick={handleNext}
-        className="absolute start-2 max-sm:start-1 w-16 h-16 max-sm:w-8 max-sm:h-8 mac-sm:text-2xl text-center text-5xl flex justify-center items-center top-1/2 transform -translate-y-1/2 text-secondary bg-secondary/15 rounded-full z-30"
+        className="absolute start-2 max-sLg:start-1 w-16 h-16 max-sLg:w-8 max-sLg:h-8 max-sLg:text-2xl text-center text-5xl flex justify-center items-center top-1/2 transform -translate-y-1/2 text-secondary bg-secondary/15 rounded-full z-30"
       >
         <IoIosArrowForward />
       </button>

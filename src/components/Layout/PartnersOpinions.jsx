@@ -57,11 +57,11 @@ const PartnersOpinions = () => {
         className2="start-[10px] top-[-9px] w-[75px] h-[75px]"
       />
 
-      <div className="flex w-[93%] max-sm:w-[98%] justify-center mx-auto px-24  max-sm:px-4 transition-all duration-500">
+      <div className="flex w-[93%] max-sm:w-[98%] justify-center mx-auto px-24  max-sLg:px-4 transition-all duration-500">
         {slidesToShow.map((d, i) => (
           <div
             key={i}
-            className="bg-white relative rounded-[35px] border-2 border-secondary px-24  max-sm:px-2   py-8 flex flex-col"
+            className="bg-white relative rounded-[35px] border-2 border-secondary px-24 max-sLg:px-4   max-sm:px-2   py-8 flex flex-col"
           >
             <Image
               alt=""
@@ -86,18 +86,18 @@ const PartnersOpinions = () => {
         ))}
       </div>
 
-      <button
-        onClick={handlePrev}
-        className="absolute end-2 max-sm:end-1 w-16 h-16 max-sm:w-8 max-sm:h-8 max-sm:text-2xl text-center text-5xl flex justify-center items-center top-1/2 transform -translate-y-1/2 text-primary bg-primary/15 rounded-full z-30"
-      >
-        <IoIosArrowBack />
-      </button>
-      <button
-        onClick={handleNext}
-        className="absolute start-2 max-sm:start-1 w-16 h-16 max-sm:w-8 max-sm:h-8 max-sm:text-2xl text-center text-5xl flex justify-center items-center top-1/2 transform -translate-y-1/2 text-primary bg-primary/15 rounded-full z-30"
-      >
-        <IoIosArrowForward />
-      </button>
+        <button
+           onClick={handlePrev}
+           className="absolute end-2 max-sLg:end-1 w-16 h-16 max-sLg:w-8 max-sLg:h-8 max-sLg:text-2xl text-center text-5xl flex justify-center items-center top-1/2 transform -translate-y-1/2 text-primary bg-primary/15 rounded-full z-30"
+         >
+           <IoIosArrowBack />
+         </button>
+         <button
+           onClick={handleNext}
+           className="absolute start-2 max-sLg:start-1 w-16 h-16 max-sLg:w-8 max-sLg:h-8 max-sLg:text-2xl text-center text-5xl flex justify-center items-center top-1/2 transform -translate-y-1/2 text-primary bg-primary/15 rounded-full z-30"
+         >
+           <IoIosArrowForward />
+         </button>
 
       <div className="flex justify-center mt-8 gap-2">
         {Array.from({ length: Math.ceil(data.length / slidesPerView) }).map((_, idx) => (

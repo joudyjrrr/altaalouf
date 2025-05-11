@@ -27,7 +27,7 @@ const SecondHeader = () => {
       <div className="flex justify-between items-center w-full pt-2 pe-10 ps-4 max-sm:pe-2 max-sm:ps-1">
         <div className="flex gap-4 items-center text-white">
           <Image className="w-[70px]" src={logoDark} alt="logo" />
-          <div className="flex flex-col max-sm:hidden">
+          <div className="flex flex-col max-xsLg:hidden">
             <h1 className="text-3xl font-extrabold max-sm:text-lg">
               {t('associationNameAr')}
             </h1>
@@ -36,7 +36,7 @@ const SecondHeader = () => {
             </span>
           </div>
         </div>
-        <div className="flex items-center gap-6 max-sLg:gap-2 max-md:hidden max-sm:hidden">
+        <div className="flex items-center gap-6 max-sLg:gap-2 max-xsLg:hidden">
           {Links.map((li, i) => (
             <Link
               href={li.to}
@@ -52,7 +52,7 @@ const SecondHeader = () => {
          
           <Button>{t('donateNow')}</Button>
             <LanguageSwitcher />
-          <div className="hidden max-md:flex items-center gap-4">
+          <div className="hidden max-xsLg:flex items-center gap-4">
             <button onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? (
                 <IoClose className="text-white text-3xl" />

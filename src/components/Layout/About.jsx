@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="my-[50px] bg-white">
     <Title title={t('title')} img={request} />
-    <div className="text-center px-16 text-2xl max-sm:text-base max-sm:px-4 flex flex-col gap-1 font-medium text-[#575757]">
+    <div className="text-center px-16 text-2xl max-sLg:text-xl max-sm:text-base max-sm:px-4 flex flex-col gap-1 font-medium text-[#575757]">
       <p>{t('paragraph_1')}</p>
       <p>{t('paragraph_2')}</p>
       <p>{t('paragraph_3')}</p>
