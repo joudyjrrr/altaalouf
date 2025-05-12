@@ -89,7 +89,7 @@ const page = () => {
           img={organization}
           className1="ps-20"
         />
-        <div className="relative w-full h-[146vh]">
+        <div className="relative w-full h-[146vh] max-sLg:h-[50vh] max-sm:h-[35vh]">
           <Image
             src={`/images/draw.svg`}
             alt="Draw icon"
