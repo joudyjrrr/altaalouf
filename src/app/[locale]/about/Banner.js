@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { aboutBanner } from "../../../../public/images";
 
 const Banner = () => {
-  const t = useTranslations("banner");
+  const t = useTranslations("about");
   const locale = useLocale();
   const isEnglish = locale === "en";
 
@@ -24,7 +24,7 @@ const Banner = () => {
       </div>
       <div className="relative z-20 flex flex-col justify-center items-center h-full">
         <div className="flex items-start text-9xl max-sm:text-5xl max-md:text-6xl  font-semibold max-w-full  justify-center  h-full  px-6 max-md:px-16 text-white">
-        من نحن ...
+       {t("title2")}
         </div>
       </div>
     </div>

@@ -19,11 +19,12 @@ const Footer = () => {
   const links = [
     { label: t("links.home"), href: "/" },
     { label: t("links.about"), href: "/about" },
-    { label: t("links.projects"), href: "/projects" },
+    { label: t("links.Policies"), href: "/donations" },
     { label: t("links.news"), href: "/news" },
     { label: t("links.contact"), href: "/contact" },
     { label: t("links.careers"), href: "/careers" },
-    { label: t("links.Policies"), href: "/donations" },
+    { label: t("links.projects"), href: "/projects" },
+
   ];
 
   return (
@@ -66,7 +67,7 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className="flex w-full flex-col">
+          <div className="flex w-full flex-col ">
             <h1 className="text-white font-semibold text-3xl max-xsLg:text-2xl">
               {t("importantLinks")}
             </h1>
