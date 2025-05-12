@@ -29,10 +29,24 @@ import handshake1 from "./handshake (1).png";
 import op from "./op.jpg";
 import coma from "./coma.png";
 import altaalouf from "./altaalouf o.svg";
+import aboutBanner from "./54.jpg";
+import vision from "./vision (1).png";
+import target from "./target (1).png";
+import chat from "./chat.png";
+import customer from "./customer.png";
+import organization from "./organization-chart (1).png";
+import drawio from "./_مخطط دون اسم_.drawio.svg";
 
 export {
   project,
+  drawio,
+  vision,
+  organization,
+  chat,
+  customer,
   WHO_logo,
+  aboutBanner,
+  target,
   handshake1,
   altaalouf,
   coma,

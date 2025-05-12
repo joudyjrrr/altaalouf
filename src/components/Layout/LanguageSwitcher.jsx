@@ -11,9 +11,19 @@ const LanguageSwitcher = () => {
   const toggleLanguage = () => {
     const newLang = currentLang === "en" ? "ar" : "en";
     pathSegments[0] = newLang;
-    router.replace(`/${pathSegments.join("/")}`);
-  };
 
+    router.replace(`/${pathSegments.join("/")}`);
+    switch (currentLang) {
+      case "ar":
+        document.documentElement.setAttribute("dir", "rtl");
+        document.documentElement.setAttribute("lang", currentLang);
+
+        break;
+      default:
+        document.documentElement.setAttribute("dir", "ltr");
+        document.documentElement.setAttribute("lang", currentLang);
+    }
+  };
   return (
     <div
       className="w-[70px] h-[32px] rounded-full  bg-transparent border border-white  flex items-center cursor-pointer relative"
