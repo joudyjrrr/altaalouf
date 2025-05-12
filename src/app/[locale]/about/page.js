@@ -7,7 +7,6 @@ import CardAbout from "./CardAbout";
 import {
   chat,
   customer,
-  drawio,
   organization,
   target,
   vision,
@@ -35,29 +34,29 @@ const page = () => {
         }
         noReadMore={false}
       />
-      <div className="flex px-16 gap-8 max-sm:flex-col max-sm:px-4">
+      <div className="flex px-16 gap-8 max-sm:flex-col max-sLg:px-4 ">
         <div className="flex flex-col gap-8 w-full">
           <CardAbout
             img={vision}
             title={t("visionTitle")}
             content={
-                <>
-                  <p>{t("vision")}</p>
-                </>
-              }
+              <>
+                <p>{t("vision")}</p>
+              </>
+            }
           />
           <CardAbout
             img={target}
             title={t("goalsTitle")}
             classNameImg={`!w-14 !h-14`}
             content={
-                <>
-                  <p>- {t("goals.g1")}</p>
-                  <p>- {t("goals.g2")}</p>
-                  <p>- {t("goals.g3")}</p>
-                  <p>- {t("goals.g4")}</p>
-                </>
-              }
+              <>
+                <p>- {t("goals.g1")}</p>
+                <p>- {t("goals.g2")}</p>
+                <p>- {t("goals.g3")}</p>
+                <p>- {t("goals.g4")}</p>
+              </>
+            }
           />
         </div>
         <div className="flex flex-col gap-8 pt-16 w-full">
@@ -85,12 +84,19 @@ const page = () => {
       </div>
       <div className="mt-20 w-full flex flex-col justify-center items-center">
         <Title
-      title={t("structure")}
+          title={t("structure")}
           className2={`start-[12px] top-[-9px] ps-`}
           img={organization}
           className1="ps-20"
         />
-        <Image src={drawio} alt="" className={``} />
+        <div className="relative w-full h-[146vh]">
+          <Image
+            src={`/images/draw.svg`}
+            alt="Draw icon"
+            fill
+            className=""
+          />
+        </div>
         <Partners />
         <Footer />
       </div>

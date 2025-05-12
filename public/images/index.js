@@ -35,11 +35,10 @@ import target from "./target (1).png";
 import chat from "./chat.png";
 import customer from "./customer.png";
 import organization from "./organization-chart (1).png";
-import drawio from "./_مخطط دون اسم_.drawio.svg";
+
 
 export {
   project,
-  drawio,
   vision,
   organization,
   chat,
