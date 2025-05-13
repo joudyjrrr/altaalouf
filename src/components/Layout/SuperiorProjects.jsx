@@ -98,10 +98,11 @@ const SuperiorProjects = () => {
             </div>
             <div className="flex gap-2 pb-4 pe-4 items-end h-full cursor-pointer justify-end">
               <p className="text-[#575757] text-lg">{t("readMore")}</p>
-              className=
-              {`text-xl text-secondary  ${
-                pathName.includes("en") && " transform rotate-180"
-              }`}
+              <FaArrowLeft
+                className={`text-xl text-secondary  ${
+                  pathName.includes("en") && " transform rotate-180"
+                }`}
+              />
             </div>
           </div>
         ))}

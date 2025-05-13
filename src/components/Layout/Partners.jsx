@@ -100,7 +100,7 @@ const Partners = () => {
       <div className="grid grid-cols-6 max-sLg:grid-cols-3 gap-12 max-md:grid-cols-2 max-sm:grid-cols-1 justify-center w-fit mx-auto px-24 max-sLg:px-4  transition-all duration-500">
         {slidesToShow.map((d, i) => (
           <div key={i} className="">
-            <Image alt="" src={d.img} className="w-[170px] h-[170px] " />
+            <Image alt="" src={d.img} className=" h-[170px] " />
           </div>
         ))}
       </div>

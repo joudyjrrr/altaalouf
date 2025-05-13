@@ -7,11 +7,11 @@ const Title = ({ title, img, className1, className2 }) => {
       <div
         className={`relative w-fit bg-primary rounded-[40px] px-6 ps-10 py-2 ${className1}`}
       >
-        <h1 className="text-white font-bold text-3xl">{title}</h1>
+        <h1 className="text-white font-bold text-2xl">{title}</h1>
         <Image
           src={img}
           alt=""
-          className={`absolute start-[-30px] top-0 w-[65px] h-[65px]  ${className2}`}
+          className={`absolute start-[-30px] top-0 w-[55px] h-[55px]  ${className2}`}
         />
       </div>
     </div>

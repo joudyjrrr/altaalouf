@@ -24,7 +24,6 @@ const Footer = () => {
     { label: t("links.contact"), href: "/contact" },
     { label: t("links.careers"), href: "/careers" },
     { label: t("links.projects"), href: "/projects" },
-
   ];
 
   return (
@@ -36,22 +35,26 @@ const Footer = () => {
           <FaTwitter />
         </div>
 
-        <div className="grid grid-cols-3 max-sm:grid-cols-1 justify-center mx-auto gap-4 w-full ">          {/* Logo & Newsletter */}
+        <div className="grid grid-cols-3 max-sm:grid-cols-1 justify-center mx-auto gap-4 w-full ">
+          {" "}
+          {/* Logo & Newsletter */}
           <div className="flex flex-col w-full">
             <div className="flex items-center gap-2 ">
-              <Image className="w-[70px]" src={logoDark} alt="logo" />
+              <Image className="w-[90px]" src={logoDark} alt="logo" />
               <div className="flex flex-col">
-                <h1 className="text-2xl text-white  font-extrabold max-xsLg:text-lg">
+                <h1 className="text-3xl text-white  font-extrabold max-xsLg:text-lg">
                   {t("associationNameAr")}
                 </h1>
-                <span className="font-semibold text-lg max-xsLg:text-sm text-white">
+                <span className="font-semibold text-sm  text-white">
                   {t("associationNameEn")}
                 </span>
               </div>
             </div>
-            <p className="text-white font-medium text-xl mt-4">
-              {t("description")}
-            </p>
+            <div>
+              <p className="text-white font-medium text-xl mt-4">
+                {t("description")} <br /> {t("description2")}
+              </p>
+            </div>
             {/* <div className="flex flex-col mt-4">
               <h1 className="text-white font-semibold text-xl ">
                 {t("newsletter.title")}
@@ -65,7 +68,6 @@ const Footer = () => {
               </div>
             </div> */}
           </div>
-
           {/* Links */}
           <div className="flex w-full flex-col ">
             <h1 className="text-white font-semibold text-3xl max-xsLg:text-2xl">
@@ -76,38 +78,40 @@ const Footer = () => {
                 <Link
                   href={li.href}
                   key={i}
-                  className="text-white text-xl max-sLg:text-sm font-medium text-nowrap"
+                  className="text-white text-lg max-sLg:text-sm font-medium text-nowrap"
                 >
                   - {li.label}
                 </Link>
               ))}
             </div>
           </div>
-
           {/* Contact */}
           <div className="flex flex-col w-full">
-          <h1 className="text-white font-semibold text-3xl max-xsLg:text-2xl">
+            <h1 className="text-white font-semibold text-3xl max-xsLg:text-2xl">
               {t("contactUs")}
             </h1>
             <div className="flex gap-4 mt-4 text-white flex-col">
               <div className="flex pe-2 items-center gap-2">
                 <BsEnvelope className="text-2xl " />
-                <p className="text-2xl max-sLg:text-lg  font-bold">
+                <p className="text-xl max-sLg:text-lg  font-medium">
                   HQ@altaalouf.org
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <FaPhoneAlt className="text-2xl " />
-                <p className="text-2xl max-sLg:text-lg  font-bold" dir="ltr">
+                <FaPhoneAlt className="text-xl " />
+                <p className="text-xl max-sLg:text-lg  font-medium" dir="ltr">
                   +963 930 099 334
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <CiClock1 className="text-3xl  " />
+                <CiClock1 className="text-2xl  " />
                 <div className="flex flex-col gap-1">
-                  <p className="font-semibold text-xl max-sLg:text-lg">{t("days")}</p>
-                  <p className="font-semibold text-xl max-sLg:text-lg">{t("workingHours")}</p>
-
+                  <p className="font-medium text-xl max-sLg:text-lg">
+                    {t("days")}
+                  </p>
+                  <p className="font-medium text-xl max-sLg:text-lg">
+                    {t("workingHours")}
+                  </p>
                 </div>
               </div>
             </div>

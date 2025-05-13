@@ -8,7 +8,7 @@ const FirstHeader = () => {
   const t = useTranslations('header');
 
   return (
-    <div className="bg-secondary fixed top-0 z-[100] text-white w-full h-[50px] py-2 pe-10 ps-6 max-sm:pe-2 max-sm:ps-1">
+    <div className="bg-secondary  z-[100] text-white w-full h-[50px] py-2 pe-10 ps-6 max-sm:pe-2 max-sm:ps-1">
       <div className="flex justify-between w-full h-full items-center">
         <div className="flex items-center">
           <div className="flex border-e border-white pe-2 items-center  gap-2">

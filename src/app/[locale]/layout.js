@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 import Footer from "@/components/Layout/Footer";
+import { AppProvider } from "@/lib/AppContext";
 
 const tajawal = localFont({
   src: [
@@ -44,12 +45,9 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <html>
-      <body className={`${tajawal.className}`}>
+      <body className={`${tajawal.className} relative`}>
         <NextIntlClientProvider messages={messages}>
-          <FirstHeader />
-          <SecondHeader />
-          {children}
- 
+          <AppProvider>{children}</AppProvider>
         </NextIntlClientProvider>
       </body>
     </html>
