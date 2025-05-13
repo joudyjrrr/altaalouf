@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import Banner from "./Banner";
 import About from "@/components/Layout/About";
@@ -11,14 +11,14 @@ import {
   target,
   vision,
 } from "../../../../public/images";
-import useLanguageDirection from "@/i18n/useLanguageDirection";
+
 import Title from "@/components/Layout/Title";
 import Image from "next/image";
 import Partners from "@/components/Layout/Partners";
 import Footer from "@/components/Layout/Footer";
 
 const page = () => {
-  useLanguageDirection();
+
   const t = useTranslations("about");
   return (
     <div>

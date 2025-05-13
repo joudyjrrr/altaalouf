@@ -1,13 +1,15 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { aboutBanner } from "../../../../public/images";
+import useLanguageDirection from "@/i18n/useLanguageDirection";
 
 const Banner = () => {
   const t = useTranslations("about");
   const locale = useLocale();
   const isEnglish = locale === "en";
-
+  useLanguageDirection();
   return (
     <div className="w-full h-screen relative overflow-hidden pt-20 mt-[80px]">
       <div className="absolute top-0 left-0 w-full h-full z-0">
